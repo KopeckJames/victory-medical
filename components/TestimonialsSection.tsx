@@ -14,7 +14,7 @@ const testimonials = [
     initials: 'SM',
     location: 'Austin, TX',
     rating: 5,
-    text: "Victory Medical has been my family's healthcare home for over a decade. From urgent care walk-ins to my annual physicals, the team always makes me feel like a priority. The MedSpa is an added bonus!",
+    text: "Victory Medical has been my family's healthcare home for over a decade. The team always makes me feel like a priority. The MedSpa is an added bonus!",
     service: 'Family Practice',
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     initials: 'JT',
     location: 'Westlake Hills, TX',
     rating: 5,
-    text: "The allergy program here is unlike anything I've experienced. I was skeptical about the rapid desensitization, but within 3 months I was breathing freely for the first time in years. Life-changing.",
+    text: "The allergy program here is unlike anything I've experienced. Within 3 months I was breathing freely for the first time in years. Life-changing.",
     service: 'Allergy Services',
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
     initials: 'MR',
     location: 'Austin, TX',
     rating: 5,
-    text: "Melissa at the MedSpa is incredible. My Botox results look natural and last longer than anywhere else I've been. The fact that she's also a mental health provider gives me so much confidence in her hands.",
+    text: "Melissa at the MedSpa is incredible. My Botox results look natural and last longer than anywhere else. The fact that she's a mental health provider gives me so much confidence.",
     service: 'Medical Spa',
   },
   {
@@ -38,7 +38,7 @@ const testimonials = [
     initials: 'DK',
     location: 'Cedar Park, TX',
     rating: 5,
-    text: "I came to Victory for ketamine therapy after struggling with treatment-resistant depression for years. I can't overstate how much it changed my quality of life. The clinical team is compassionate and professional.",
+    text: "I came to Victory for ketamine therapy after struggling with treatment-resistant depression for years. I can't overstate how much it changed my quality of life.",
     service: 'Ketamine Therapy',
   },
   {
@@ -46,7 +46,7 @@ const testimonials = [
     initials: 'LP',
     location: 'Austin, TX',
     rating: 4,
-    text: "The compounding pharmacy is a game-changer. My hormone therapy formulation is customized exactly to my needs, and the pharmacists take time to explain everything. Worth the visit alone.",
+    text: "The compounding pharmacy is a game-changer. My hormone formulation is customized exactly to my needs, and the pharmacists take time to explain everything.",
     service: 'Pharmacy & Hormones',
   },
   {
@@ -57,228 +57,216 @@ const testimonials = [
     text: "Needed urgent care on a Saturday — Victory was open, no wait, and the provider was thorough. Cost was a fraction of the ER. This is what healthcare should feel like.",
     service: 'Urgent Care',
   },
+  {
+    name: 'Christine B.',
+    initials: 'CB',
+    location: 'Austin, TX',
+    rating: 5,
+    text: "The CoolSculpting results were better than I expected. The team made the whole process comfortable and the follow-up care was excellent.",
+    service: 'Medical Spa',
+  },
+  {
+    name: 'Michael S.',
+    initials: 'MS',
+    location: 'Round Rock, TX',
+    rating: 5,
+    text: "Dr. Franklin has been my doctor for 15 years. His approach to integrative medicine is what keeps me coming back. Victory is genuinely different from any clinic I've been to.",
+    service: 'Primary Care',
+  },
 ]
+
+function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
+  return (
+    <div style={{
+      backgroundColor: 'rgba(255,255,255,0.05)',
+      border: '1px solid rgba(255,255,255,0.08)',
+      borderRadius: '12px',
+      padding: '28px',
+      width: '320px',
+      flexShrink: 0,
+      margin: '0 10px',
+    }}>
+      <div style={{ display: 'flex', gap: '3px', marginBottom: '12px' }}>
+        {Array.from({ length: t.rating }).map((_, i) => (
+          <svg key={i} width="13" height="13" viewBox="0 0 14 14" fill="#f5c518">
+            <path d="M7 1L8.8 5.2L13.4 5.6L10 8.6L11 13.2L7 10.8L3 13.2L4 8.6L0.6 5.6L5.2 5.2L7 1Z" />
+          </svg>
+        ))}
+      </div>
+      <div style={{
+        display: 'inline-block', fontSize: '0.6rem',
+        letterSpacing: '0.1em', textTransform: 'uppercase',
+        color: 'var(--copper)', border: '1px solid rgba(201,122,60,0.3)',
+        borderRadius: '20px', padding: '2px 10px', marginBottom: '12px',
+      }}>
+        {t.service}
+      </div>
+      <p style={{
+        fontSize: '0.875rem', color: 'rgba(255,255,255,0.72)',
+        lineHeight: 1.7, marginBottom: '20px', fontStyle: 'italic',
+      }}>
+        &ldquo;{t.text}&rdquo;
+      </p>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{
+          width: '36px', height: '36px', borderRadius: '50%',
+          backgroundColor: 'var(--lightest-teal)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          fontSize: '0.7rem', fontWeight: 600, color: 'var(--gold)', flexShrink: 0,
+        }}>
+          {t.initials}
+        </div>
+        <div>
+          <div style={{ fontSize: '0.825rem', fontWeight: 600, color: 'var(--white)' }}>{t.name}</div>
+          <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>{t.location}</div>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default function TestimonialsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const headingRef = useRef<HTMLDivElement>(null)
-  const cardsRef = useRef<HTMLDivElement>(null)
+  const row1Ref = useRef<HTMLDivElement>(null)
+  const row2Ref = useRef<HTMLDivElement>(null)
+  const ratingRef = useRef<HTMLSpanElement>(null)
+  const row1TweenRef = useRef<gsap.core.Tween | null>(null)
+  const row2TweenRef = useRef<gsap.core.Tween | null>(null)
+
+  // Duplicate for seamless loop — triple to ensure coverage
+  const row1Items = [...testimonials, ...testimonials, ...testimonials]
+  const row2Items = [...testimonials.slice(3), ...testimonials, ...testimonials, ...testimonials.slice(0, 3)]
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.fromTo(
-        headingRef.current,
-        { opacity: 0, y: 30 },
+      // Section label clipPath wipe
+      gsap.fromTo('.testimonials-label',
+        { clipPath: 'inset(0 100% 0 0)' },
         {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: 'power3.out',
-          scrollTrigger: { trigger: headingRef.current, start: 'top 80%' },
+          clipPath: 'inset(0 0% 0 0)', duration: 0.9, ease: 'power3.out',
+          scrollTrigger: { trigger: '.testimonials-label', start: 'top 85%' },
         }
       )
 
-      const cards = cardsRef.current?.querySelectorAll('.testimonial-card')
-      if (cards) {
-        gsap.fromTo(
-          cards,
-          { opacity: 0, y: 40 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.7,
-            stagger: 0.1,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: cardsRef.current, start: 'top 80%' },
-          }
-        )
+      // Rating counter
+      if (ratingRef.current) {
+        const obj = { val: 0 }
+        gsap.to(obj, {
+          val: 4.1, duration: 1.5, ease: 'power3.out',
+          scrollTrigger: { trigger: ratingRef.current, start: 'top 85%', once: true },
+          onUpdate: () => {
+            if (ratingRef.current) ratingRef.current.textContent = obj.val.toFixed(1)
+          },
+        })
+      }
+
+      // Row 1: scroll left
+      if (row1Ref.current) {
+        const itemWidth = 340 // card width + margin
+        const totalWidth = itemWidth * testimonials.length
+        row1TweenRef.current = gsap.to(row1Ref.current, {
+          x: -totalWidth,
+          duration: totalWidth / 35,
+          ease: 'none',
+          repeat: -1,
+          modifiers: {
+            x: gsap.utils.unitize((x) => parseFloat(x) % totalWidth),
+          },
+        })
+      }
+
+      // Row 2: scroll right (opposite direction)
+      if (row2Ref.current) {
+        const itemWidth = 340
+        const totalWidth = itemWidth * testimonials.length
+        gsap.set(row2Ref.current, { x: -totalWidth / 2 })
+        row2TweenRef.current = gsap.to(row2Ref.current, {
+          x: 0,
+          duration: totalWidth / 28,
+          ease: 'none',
+          repeat: -1,
+          modifiers: {
+            x: gsap.utils.unitize((x) => {
+              const val = parseFloat(x) % totalWidth
+              return val > 0 ? val - totalWidth : val
+            }),
+          },
+        })
       }
     }, sectionRef)
     return () => ctx.revert()
   }, [])
 
+  const handleRowHover = (rowNum: number, paused: boolean) => {
+    const tween = rowNum === 1 ? row1TweenRef.current : row2TweenRef.current
+    if (tween) paused ? tween.pause() : tween.resume()
+  }
+
   return (
-    <section
-      ref={sectionRef}
-      className="section"
-      style={{ backgroundColor: 'var(--teal)' }}
-    >
+    <section ref={sectionRef} className="section" style={{ backgroundColor: 'var(--teal)', overflow: 'hidden' }}>
       <div className="container">
-        {/* Heading */}
-        <div
-          ref={headingRef}
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-end',
-            marginBottom: '60px',
-            flexWrap: 'wrap',
-            gap: '24px',
-          }}
-        >
+        {/* Header */}
+        <div style={{
+          display: 'flex', justifyContent: 'space-between',
+          alignItems: 'flex-end', marginBottom: '60px',
+          flexWrap: 'wrap', gap: '24px',
+        }}>
           <div>
-            <div className="section-label" style={{ marginBottom: '16px' }}>
+            <div className="section-label testimonials-label" style={{ marginBottom: '16px' }}>
               Patient Stories
             </div>
-            <h2
-              style={{
-                fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(2rem, 4vw, 3rem)',
-                fontWeight: 400,
-                color: 'var(--white)',
-              }}
-            >
+            <h2 style={{
+              fontFamily: 'var(--font-playfair)',
+              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              fontWeight: 400, color: 'var(--white)',
+            }}>
               What Our Patients Say
             </h2>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div>
-              <div
-                style={{
-                  fontFamily: 'var(--font-playfair)',
-                  fontSize: '2rem',
-                  fontWeight: 600,
-                  color: 'var(--white)',
-                  lineHeight: 1,
-                }}
-              >
-                4.1
+              <div style={{
+                fontFamily: 'var(--font-playfair)',
+                fontSize: '2.5rem', fontWeight: 600,
+                color: 'var(--white)', lineHeight: 1,
+              }}>
+                <span ref={ratingRef}>0.0</span>
               </div>
               <div style={{ display: 'flex', gap: '2px', marginTop: '4px' }}>
-                {[1, 2, 3, 4].map((i) => (
+                {[1,2,3,4].map(i => (
                   <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="#f5c518">
-                    <path d="M7 1L8.8 5.2L13.4 5.6L10 8.6L11 13.2L7 10.8L3 13.2L4 8.6L0.6 5.6L5.2 5.2L7 1Z" />
+                    <path d="M7 1L8.8 5.2L13.4 5.6L10 8.6L11 13.2L7 10.8L3 13.2L4 8.6L0.6 5.6L5.2 5.2L7 1Z"/>
                   </svg>
                 ))}
-                <svg width="14" height="14" viewBox="0 0 14 14">
-                  <path d="M7 1L8.8 5.2L13.4 5.6L10 8.6L11 13.2L7 10.8L3 13.2L4 8.6L0.6 5.6L5.2 5.2L7 1Z" fill="none" stroke="#f5c518" strokeWidth="1"/>
-                </svg>
               </div>
-            </div>
-            <div
-              style={{
-                fontSize: '0.75rem',
-                color: 'rgba(255,255,255,0.5)',
-                letterSpacing: '0.05em',
-              }}
-            >
-              341 reviews
+              <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>341 reviews</div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Cards */}
-        <div
-          ref={cardsRef}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '24px',
-          }}
-        >
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="testimonial-card"
-              style={{
-                backgroundColor: 'rgba(255,255,255,0.05)',
-                border: '1px solid rgba(255,255,255,0.08)',
-                borderRadius: '12px',
-                padding: '32px',
-                transition: 'all 0.3s ease',
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget
-                el.style.borderColor = 'rgba(201,122,60,0.3)'
-                el.style.backgroundColor = 'rgba(201,122,60,0.05)'
-                el.style.transform = 'translateY(-4px)'
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget
-                el.style.borderColor = 'rgba(255,255,255,0.08)'
-                el.style.backgroundColor = 'rgba(255,255,255,0.05)'
-                el.style.transform = 'translateY(0)'
-              }}
-            >
-              {/* Stars */}
-              <div style={{ display: 'flex', gap: '3px', marginBottom: '16px' }}>
-                {Array.from({ length: t.rating }).map((_, si) => (
-                  <svg key={si} width="14" height="14" viewBox="0 0 14 14" fill="#f5c518">
-                    <path d="M7 1L8.8 5.2L13.4 5.6L10 8.6L11 13.2L7 10.8L3 13.2L4 8.6L0.6 5.6L5.2 5.2L7 1Z" />
-                  </svg>
-                ))}
-              </div>
+      {/* Row 1 - scrolls left */}
+      <div
+        style={{ overflow: 'hidden', marginBottom: '16px', cursor: 'grab' }}
+        onMouseEnter={() => handleRowHover(1, true)}
+        onMouseLeave={() => handleRowHover(1, false)}
+      >
+        <div ref={row1Ref} style={{ display: 'flex', willChange: 'transform' }}>
+          {row1Items.map((t, i) => (
+            <TestimonialCard key={i} t={t} />
+          ))}
+        </div>
+      </div>
 
-              {/* Service tag */}
-              <div
-                style={{
-                  display: 'inline-block',
-                  fontSize: '0.65rem',
-                  letterSpacing: '0.1em',
-                  textTransform: 'uppercase',
-                  color: 'var(--copper)',
-                  border: '1px solid rgba(201,122,60,0.3)',
-                  borderRadius: '20px',
-                  padding: '3px 10px',
-                  marginBottom: '16px',
-                }}
-              >
-                {t.service}
-              </div>
-
-              {/* Quote */}
-              <p
-                style={{
-                  fontSize: '0.9rem',
-                  color: 'rgba(255,255,255,0.75)',
-                  lineHeight: 1.7,
-                  marginBottom: '24px',
-                  fontStyle: 'italic',
-                }}
-              >
-                &ldquo;{t.text}&rdquo;
-              </p>
-
-              {/* Author */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <div
-                  style={{
-                    width: '40px',
-                    height: '40px',
-                    borderRadius: '50%',
-                    backgroundColor: 'var(--lightest-teal)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    color: 'var(--gold)',
-                    flexShrink: 0,
-                  }}
-                >
-                  {t.initials}
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontSize: '0.875rem',
-                      fontWeight: 600,
-                      color: 'var(--white)',
-                    }}
-                  >
-                    {t.name}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: '0.75rem',
-                      color: 'rgba(255,255,255,0.4)',
-                    }}
-                  >
-                    {t.location}
-                  </div>
-                </div>
-              </div>
-            </div>
+      {/* Row 2 - scrolls right */}
+      <div
+        style={{ overflow: 'hidden', cursor: 'grab' }}
+        onMouseEnter={() => handleRowHover(2, true)}
+        onMouseLeave={() => handleRowHover(2, false)}
+      >
+        <div ref={row2Ref} style={{ display: 'flex', willChange: 'transform' }}>
+          {row2Items.map((t, i) => (
+            <TestimonialCard key={i} t={t} />
           ))}
         </div>
       </div>

@@ -1,26 +1,232 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors - Victory Medical */
+  --teal: #0e2d3c;
+  --dark-teal: #050f15;
+  --light-teal: #163d52;
+  --lightest-teal: #1e4f6a;
+  --teal-shadow: #050f15b3;
+  --copper: #c97a3c;
+  --copper-glow: #c97a3c66;
+  --copper-light: #e09a5c;
+  --gold: #c4a87a;
+  --star-gold: #f5c518;
+  --white: #ffffff;
+  --pure-white: #ffffff;
+  --glass-bg: #0e2d3cb3;
+  --glass-border: #c97a3c26;
+  --muted-text: rgba(255, 255, 255, 0.72);
+  --subtle-border: rgba(255, 255, 255, 0.1);
+  --background: #0e2d3c;
+  --foreground: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--teal);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+/* Typography Scale */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/* Copper accent text */
+.text-copper {
+  color: var(--copper);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+/* Neon/glow effect for headings */
+.glow-text {
+  color: var(--copper);
+  text-shadow: 0 0 20px var(--copper-glow), 0 0 40px var(--copper-glow);
+}
+
+/* Section label style */
+.section-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--gold);
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: var(--copper);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--copper-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--copper-glow);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--subtle-border);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-teal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lightest-teal);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--copper);
+}
+
+/* Selection */
+::selection {
+  background: var(--copper-glow);
+  color: var(--white);
+}
+
+/* Hover card effects (for server components that can't use JS handlers) */
+.hover-card-copper {
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.hover-card-copper:hover {
+  border-color: rgba(201,122,60,0.4) !important;
+  background-color: rgba(201,122,60,0.05) !important;
+}
+.hover-card-lift {
+  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+.hover-card-lift:hover {
+  border-color: rgba(201,122,60,0.4) !important;
+  background-color: rgba(201,122,60,0.05) !important;
+  transform: translateY(-4px);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Section spacing */
+.section {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }

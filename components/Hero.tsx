@@ -239,11 +239,11 @@ export default function Hero() {
           bottom: '-10%',
           width: '50%',
           background: `
-            linear-gradient(to left, rgba(5,15,21,0) 0%, rgba(5,15,21,0.7) 60%, rgba(5,15,21,1) 100%),
-            url('https://victorymed.com/wp-content/uploads/2018/12/vmc-home-banner_lighter.jpg')
+            linear-gradient(to left, rgba(5,15,21,0) 0%, rgba(5,15,21,0.5) 55%, rgba(5,15,21,1) 100%),
+            url('/hero-image.svg')
           `,
           backgroundSize: 'cover',
-          backgroundPosition: 'center right',
+          backgroundPosition: 'center center',
           zIndex: 1,
           willChange: 'transform',
         }}

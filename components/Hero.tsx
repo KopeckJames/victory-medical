@@ -232,6 +232,7 @@ export default function Hero() {
       {/* Right side photo panel — set VIDEO_SRC to a .mp4 URL to activate video hero */}
       <div
         ref={photoPanelRef}
+        className="hero-photo-panel"
         style={{
           position: 'absolute',
           right: 0,
@@ -357,7 +358,7 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
+            <div className="hero-stats" style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
               {stats.map((stat, i) => (
                 <div
                   key={stat.label}

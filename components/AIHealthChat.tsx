@@ -29,6 +29,12 @@ export default function AIHealthChat() {
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  // Sync body class for cross-component mobile coordination
+  useEffect(() => {
+    document.body.classList.toggle('ai-chat-open', isOpen)
+    return () => document.body.classList.remove('ai-chat-open')
+  }, [isOpen])
+
   // Panel open/close animation
   useEffect(() => {
     const panel = panelRef.current

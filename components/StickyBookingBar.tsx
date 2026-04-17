@@ -56,6 +56,7 @@ export default function StickyBookingBar() {
   return (
     <div
       ref={barRef}
+      id="sticky-booking-bar"
       style={{
         position: 'fixed',
         bottom: '92px',  // Above the AI chat button
@@ -64,6 +65,7 @@ export default function StickyBookingBar() {
         zIndex: 8500,
         opacity: 0,
         pointerEvents: visible ? 'all' : 'none',
+        transition: 'opacity 0.2s ease, transform 0.2s ease',
       }}
     >
       <div style={{

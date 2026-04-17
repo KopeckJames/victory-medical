@@ -34,12 +34,14 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--teal);
   color: var(--white);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* Typography Scale */
@@ -479,12 +481,50 @@ footer .disclaimer-text {
   /* Hero stats row wraps better */
   .hero-stats { gap: 24px !important; }
 
-  /* Sticky booking bar text hide on very small screens */
-  .booking-bar-text { display: none; }
+  /* Sticky booking bar text hide on mobile */
+  .booking-bar-text { display: none !important; }
+
+  /* Hero photo panel — hide so headline gets full width */
+  .hero-photo-panel { display: none !important; }
+
+  /* Treatment showcase — vertical stack on mobile */
+  .treatment-track {
+    flex-direction: column !important;
+    overflow-x: visible !important;
+    width: 100% !important;
+  }
+  .treatment-card {
+    width: 100% !important;
+    flex-shrink: unset !important;
+    height: auto !important;
+    min-height: 280px !important;
+  }
+
+  /* Blog article layout — stack sidebar below content */
+  .article-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .article-layout aside {
+    position: static !important;
+  }
+
+  /* Hide AI chat panel booking bar when chat is open */
+  body.ai-chat-open #sticky-booking-bar {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: translateX(-50%) translateY(80px) !important;
+    transition: opacity 0.2s ease, transform 0.2s ease !important;
+  }
 }
 
 @media (max-width: 480px) {
   .container { padding: 0 16px !important; }
   .section { padding: 60px 0 !important; }
   .btn-primary, .btn-outline { padding: 12px 20px !important; font-size: 0.75rem !important; }
+
+  /* Minimum tap targets for filter chips */
+  .team-filter-chip { min-height: 44px !important; padding: 10px 18px !important; }
+
+  /* Minimum readable font size floor on very small screens */
+  .section-label { font-size: 0.75rem !important; }
 }

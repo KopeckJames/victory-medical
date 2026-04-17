@@ -302,6 +302,7 @@ export default function TeamGrid({ team }: TeamGridProps) {
           <button
             key={cat}
             onClick={() => setActiveFilter(cat)}
+            className="team-filter-chip"
             style={{
               padding: '7px 16px',
               borderRadius: '24px',

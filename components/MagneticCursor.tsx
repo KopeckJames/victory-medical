@@ -10,6 +10,13 @@ export default function MagneticCursor() {
   useEffect(() => {
     if (typeof window === 'undefined') return
 
+    // No custom cursor on touch devices — saves battery and avoids ghost cursor
+    if (window.matchMedia('(pointer: coarse)').matches) {
+      if (dotRef.current) dotRef.current.style.display = 'none'
+      if (ringRef.current) ringRef.current.style.display = 'none'
+      return
+    }
+
     const dot = dotRef.current
     const ring = ringRef.current
     if (!dot || !ring) return

@@ -193,7 +193,7 @@ export default function StatsStrip() {
                 lineHeight: 1.3,
               }}>{stat.label}</div>
               <div style={{
-                fontSize: '0.68rem', color: 'rgba(255,255,255,0.35)',
+                fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)',
                 letterSpacing: '0.02em',
               }}>{stat.description}</div>
             </div>

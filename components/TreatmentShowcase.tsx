@@ -88,6 +88,8 @@ export default function TreatmentShowcase() {
     const track = trackRef.current
     if (!section || !track) return
 
+    const isMobile = window.innerWidth < 768
+
     const ctx = gsap.context(() => {
       // Section heading reveal
       gsap.fromTo('.showcase-heading',
@@ -106,40 +108,57 @@ export default function TreatmentShowcase() {
         }
       )
 
-      // Horizontal scroll: pin the section and scroll track
-      const totalWidth = track.scrollWidth - track.offsetWidth
-      if (totalWidth > 0) {
-        gsap.to(track, {
-          x: -totalWidth,
-          ease: 'none',
-          scrollTrigger: {
-            trigger: section,
-            start: 'top top',
-            end: () => `+=${totalWidth + 200}`,
-            pin: true,
-            scrub: 1,
-            anticipatePin: 1,
-          },
-        })
-      }
-
-      // Card entrance animations (stagger as they come into view via scroll)
-      cardsRef.current.forEach((card, i) => {
-        if (!card) return
-        gsap.fromTo(card,
-          { opacity: 0, y: 40 },
-          {
-            opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
+      if (!isMobile) {
+        // Desktop only: horizontal scroll pin
+        const totalWidth = track.scrollWidth - track.offsetWidth
+        if (totalWidth > 0) {
+          gsap.to(track, {
+            x: -totalWidth,
+            ease: 'none',
             scrollTrigger: {
               trigger: section,
-              start: `top top`,
-              // Each card appears as we scroll through the section
-              once: true,
+              start: 'top top',
+              end: () => `+=${totalWidth + 200}`,
+              pin: true,
+              scrub: 1,
+              anticipatePin: 1,
             },
-            delay: i * 0.1,
-          }
-        )
-      })
+          })
+        }
+
+        // Card entrance on desktop
+        cardsRef.current.forEach((card, i) => {
+          if (!card) return
+          gsap.fromTo(card,
+            { opacity: 0, y: 40 },
+            {
+              opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
+              scrollTrigger: {
+                trigger: section,
+                start: 'top top',
+                once: true,
+              },
+              delay: i * 0.1,
+            }
+          )
+        })
+      } else {
+        // Mobile: stagger cards as they scroll into view vertically
+        cardsRef.current.forEach((card) => {
+          if (!card) return
+          gsap.fromTo(card,
+            { opacity: 0, y: 30 },
+            {
+              opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
+              scrollTrigger: {
+                trigger: card,
+                start: 'top 88%',
+                once: true,
+              },
+            }
+          )
+        })
+      }
     }, section)
 
     return () => ctx.revert()
@@ -210,6 +229,7 @@ export default function TreatmentShowcase() {
       {/* Horizontal scroll track */}
       <div
         ref={trackRef}
+        className="treatment-track"
         style={{
           display: 'flex',
           gap: '20px',
@@ -221,6 +241,7 @@ export default function TreatmentShowcase() {
           <div
             key={t.number}
             ref={el => { cardsRef.current[i] = el }}
+            className="treatment-card"
             style={{
               flexShrink: 0,
               width: '340px',

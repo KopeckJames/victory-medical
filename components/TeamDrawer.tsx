@@ -34,14 +34,36 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
   const backdropRef = useRef<HTMLDivElement>(null)
   const isVisible = member !== null
 
-  // Handle open animation when member changes to non-null
+  // Handle open animation + swipe-to-close gesture
   useEffect(() => {
     if (!member || !drawerRef.current) return
+
+    const drawerEl = drawerRef.current
+
     gsap.fromTo(
-      drawerRef.current,
+      drawerEl,
       { x: '100%' },
       { x: '0%', duration: 0.45, ease: 'power3.out' }
     )
+
+    // Swipe right to close on touch devices
+    let touchStartX = 0
+    const onTouchStart = (e: TouchEvent) => {
+      touchStartX = e.touches[0].clientX
+    }
+    const onTouchEnd = (e: TouchEvent) => {
+      const deltaX = e.changedTouches[0].clientX - touchStartX
+      if (deltaX > 80) handleClose()
+    }
+
+    drawerEl.addEventListener('touchstart', onTouchStart, { passive: true })
+    drawerEl.addEventListener('touchend', onTouchEnd, { passive: true })
+
+    return () => {
+      drawerEl.removeEventListener('touchstart', onTouchStart)
+      drawerEl.removeEventListener('touchend', onTouchEnd)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [member])
 
   // Handle Escape key

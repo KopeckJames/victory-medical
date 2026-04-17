@@ -246,8 +246,8 @@ export default function NewsletterSection() {
                 )}
 
                 <p style={{
-                  marginTop: '16px', fontSize: '0.65rem',
-                  color: 'rgba(255,255,255,0.25)', textAlign: 'center', lineHeight: 1.5,
+                  marginTop: '16px', fontSize: '0.72rem',
+                  color: 'rgba(255,255,255,0.45)', textAlign: 'center', lineHeight: 1.5,
                 }}>
                   We respect your privacy. Unsubscribe at any time. No spam — ever.
                 </p>

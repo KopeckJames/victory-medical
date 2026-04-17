@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CTASection from '@/components/CTASection'
+import BeforeAfterGallery from '@/components/BeforeAfterSlider'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -429,6 +430,7 @@ export default function MedSpaPage() {
           </section>
         ))}
 
+        <BeforeAfterGallery />
         <CTASection />
       </main>
       <Footer />

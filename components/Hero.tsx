@@ -263,7 +263,7 @@ export default function Hero() {
             <h1
               style={{
                 fontFamily: 'var(--font-playfair)',
-                fontSize: 'clamp(2.8rem, 6vw, 4.5rem)',
+                fontSize: 'clamp(2rem, 5.5vw, 4.5rem)',
                 fontWeight: 400,
                 lineHeight: 1.1,
                 marginBottom: '28px',
@@ -275,13 +275,18 @@ export default function Hero() {
                   display: 'block',
                   color: 'var(--copper)',
                   textShadow: '0 0 20px var(--copper-glow), 0 0 40px rgba(201,122,60,0.2)',
+                  whiteSpace: 'nowrap',
                 }}
               >
                 {splitChars('Complete Healthcare.')}
               </span>
               <span
                 ref={line2Ref}
-                style={{ display: 'block', color: 'var(--white)' }}
+                style={{
+                  display: 'block',
+                  color: 'var(--white)',
+                  whiteSpace: 'nowrap',
+                }}
               >
                 {splitChars('Exceptional Results.')}
               </span>

@@ -430,6 +430,124 @@ export default function MedSpaPage() {
           </section>
         ))}
 
+        {/* Skincare Products */}
+        <section
+          style={{
+            backgroundColor: 'var(--teal)',
+            padding: '100px 0',
+            borderTop: '1px solid rgba(255,255,255,0.06)',
+          }}
+        >
+          <div className="container">
+            <div style={{ textAlign: 'center', marginBottom: '64px' }}>
+              <div className="section-label" style={{ justifyContent: 'center', marginBottom: '16px' }}>
+                Professional Skincare
+              </div>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-playfair)',
+                  fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
+                  fontWeight: 400,
+                  color: 'var(--white)',
+                  marginBottom: '16px',
+                }}
+              >
+                Medical-Grade Products We Trust
+              </h2>
+              <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.55)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.7 }}>
+                We carry only physician-recommended, clinically proven skincare lines — the same brands our providers use in-treatment and prescribe for home maintenance.
+              </p>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '24px' }}>
+              {[
+                {
+                  brand: 'EltaMD',
+                  tagline: 'The dermatologist-recommended sunscreen',
+                  description: 'EltaMD is the #1 dermatologist-recommended professional sunscreen brand. Their zinc oxide-based formulas provide broad-spectrum UVA/UVB protection without irritation — perfect before and after aesthetic treatments.',
+                  products: ['UV Clear SPF 46', 'UV Physical SPF 41', 'UV Facial SPF 30', 'Barrier Renewal Complex', 'Foaming Facial Cleanser'],
+                  color: '#8bb8c8',
+                },
+                {
+                  brand: 'IMAGE Skincare',
+                  tagline: 'Clinical skincare with proven results',
+                  description: 'IMAGE Skincare combines cutting-edge science with clean, responsible ingredients. Their professional lines address everything from active acne and hyperpigmentation to advanced anti-aging and barrier repair.',
+                  products: ['VITAL C Hydrating Serum', 'ILUMA Brightening Serum', 'AGELESS Total Retinol-A', 'CLEAR CELL Salicylic Cleanser', 'MAX Stem Cell Serum'],
+                  color: '#c4a87a',
+                },
+                {
+                  brand: 'PCA Skin',
+                  tagline: 'Science-backed correction & prevention',
+                  description: 'PCA Skin has specialized in professional-grade chemical peels and corrective skincare since 1990. Their formulas are clinically proven to deliver visible improvements in tone, texture, and signs of aging.',
+                  products: ['Hyaluronic Acid Boosting Serum', 'C-Quench Antioxidant Serum', 'Intensive Age Refining Treatment', 'Weightless Protection SPF 45', 'Hydrating Serum'],
+                  color: '#c97a3c',
+                },
+              ].map((brand) => (
+                <div
+                  key={brand.brand}
+                  className="hover-card-lift"
+                  style={{
+                    backgroundColor: 'rgba(255,255,255,0.04)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: '16px',
+                    padding: '32px',
+                    borderTop: `3px solid ${brand.color}50`,
+                  }}
+                >
+                  <div style={{
+                    fontSize: '0.6rem', letterSpacing: '0.15em',
+                    textTransform: 'uppercase', color: brand.color,
+                    marginBottom: '8px', fontWeight: 600,
+                  }}>
+                    {brand.tagline}
+                  </div>
+                  <h3 style={{
+                    fontFamily: 'var(--font-playfair)',
+                    fontSize: '1.6rem', fontWeight: 400,
+                    color: 'var(--white)', marginBottom: '16px',
+                  }}>
+                    {brand.brand}
+                  </h3>
+                  <p style={{
+                    fontSize: '0.875rem', color: 'rgba(255,255,255,0.6)',
+                    lineHeight: 1.7, marginBottom: '24px',
+                  }}>
+                    {brand.description}
+                  </p>
+                  <div style={{
+                    fontSize: '0.6rem', letterSpacing: '0.1em',
+                    textTransform: 'uppercase', color: 'var(--gold)',
+                    marginBottom: '12px', fontWeight: 600,
+                  }}>
+                    Featured Products
+                  </div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {brand.products.map(p => (
+                      <div key={p} style={{
+                        display: 'flex', alignItems: 'center', gap: '8px',
+                        fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)',
+                      }}>
+                        <span style={{
+                          width: '5px', height: '5px', borderRadius: '50%',
+                          backgroundColor: brand.color, flexShrink: 0, opacity: 0.7,
+                        }} />
+                        {p}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p style={{
+              textAlign: 'center', marginTop: '40px',
+              fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)',
+            }}>
+              Products available for purchase at our Ben White location or ask your provider at your next appointment.
+            </p>
+          </div>
+        </section>
+
         <BeforeAfterGallery />
         <CTASection />
       </main>

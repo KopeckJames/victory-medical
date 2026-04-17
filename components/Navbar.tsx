@@ -22,6 +22,8 @@ const navLinks = [
       { label: 'Hormone Therapy', href: '/services#hormones' },
       { label: 'Ketamine Therapy', href: '/services#ketamine' },
       { label: 'Physical Medicine', href: '/services#physical-medicine' },
+      { label: 'Acupuncture', href: '/services#acupuncture' },
+      { label: 'Regenerative Medicine', href: '/services#regenerative-medicine' },
       { label: 'Pharmacy', href: '/services#pharmacy' },
     ],
   },

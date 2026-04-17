@@ -4,40 +4,11 @@ import { useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { FEATURED_TEAM } from '@/lib/team-data'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
 }
-
-const team = [
-  {
-    name: 'Dr. William Franklin, MD',
-    title: 'Founder & Medical Director',
-    credentials: 'MD — UTMB Galveston · Provider Since 1983',
-    bio: 'Dr. Franklin founded Victory Medical in 1996 with a vision for integrated healthcare that treats the whole person. He has specialized training in Natural Hormone Replacement Therapy and Anti-Aging Medicine.',
-    initials: 'WF',
-    imageUrl: 'https://victorymed.com/wp-content/uploads/2018/12/img_0779-crop-u60940.jpg',
-    specialties: ['Integrative Medicine', 'Hormone Therapy', 'Anti-Aging', 'Primary Care'],
-  },
-  {
-    name: 'Melissa Gabrielli, DNP',
-    title: 'Ketamine Therapist & MedSpa Injector',
-    credentials: 'APRN, FNP-BC, PMHNP-BC · Dual Board-Certified',
-    bio: 'Doctorate in Nursing from University of South Alabama. Dual board-certified in mental health and family practice. Expert in ketamine therapy for PTSD, trauma, and aesthetic injections.',
-    initials: 'MG',
-    imageUrl: null,
-    specialties: ['Ketamine Therapy', 'Botox', 'Dermal Fillers', 'Mental Health'],
-  },
-  {
-    name: 'Ola Zylka, MSN, FNP-C',
-    title: 'Nurse Practitioner & Nurse Injector',
-    credentials: 'MSN · Aesthetic Specialist · Neurotoxin Certified',
-    bio: 'Five-plus years in nursing and aesthetics. Texas Laser and Aesthetics certified. Specializes in injectables, lasers, and advanced facial treatments for natural, comprehensive results.',
-    initials: 'OZ',
-    imageUrl: null,
-    specialties: ['Botox & Dysport', 'Sculptra', 'Lasers', 'Advanced Facials'],
-  },
-]
 
 export default function TeamSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -120,8 +91,8 @@ export default function TeamSection() {
           </Link>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
-          {team.map((member, i) => (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
+          {FEATURED_TEAM.map((member, i) => (
             <div
               key={i}
               className="team-card"

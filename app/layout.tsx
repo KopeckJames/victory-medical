@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
-import PageTransition from '@/components/PageTransition'
 import MagneticCursor from '@/components/MagneticCursor'
 import SocialProof from '@/components/SocialProof'
 import AIHealthChat from '@/components/AIHealthChat'
@@ -35,7 +34,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <MagneticCursor />
         <SocialProof />
-        <PageTransition>{children}</PageTransition>
+        {children}
         <StickyBookingBar />
         <AIHealthChat />
       </body>

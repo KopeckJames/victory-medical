@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import { BLOG_POSTS } from '@/lib/blog-data'
 import type { Metadata } from 'next'
 
@@ -76,6 +77,16 @@ export default function BlogPage() {
             </p>
           </div>
         </section>
+
+        {/* ── Breadcrumb ───────────────────────────────────────────────── */}
+        <div className="container" style={{ paddingTop: '24px', paddingBottom: '8px' }}>
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Health Blog' },
+            ]}
+          />
+        </div>
 
         {/* ── Post Grid ────────────────────────────────────────────────── */}
         <section

@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -131,6 +132,17 @@ export default function InsurancePage() {
             </div>
           </div>
         </section>
+
+        {/* ── Breadcrumb ────────────────────────────────────────────────── */}
+        <div className="container" style={{ paddingTop: '24px', paddingBottom: '8px' }}>
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Patients' },
+              { label: 'Insurance & Coverage' },
+            ]}
+          />
+        </div>
 
         {/* ── Accepted Plans Grid ───────────────────────────────────────── */}
         <section className="section" style={{ backgroundColor: 'var(--teal)' }}>

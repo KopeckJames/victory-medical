@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { type TeamMember, FILTER_CATEGORIES } from '@/lib/team-data'
+import TeamDrawer from './TeamDrawer'
 
 // Category accent colors
 const CATEGORY_COLORS: Record<string, string> = {
@@ -27,9 +28,10 @@ function getCategoryColor(categories: string[]) {
 interface TeamCardProps {
   member: TeamMember
   index: number
+  onClick: () => void
 }
 
-function TeamCard({ member, index }: TeamCardProps) {
+function TeamCard({ member, index, onClick }: TeamCardProps) {
   const color = getCategoryColor(member.categories)
   const cardRef = useRef<HTMLDivElement>(null)
 
@@ -45,6 +47,7 @@ function TeamCard({ member, index }: TeamCardProps) {
     <div
       ref={cardRef}
       className="card-depth"
+      onClick={onClick}
       style={{
         borderRadius: '16px',
         overflow: 'hidden',
@@ -52,6 +55,7 @@ function TeamCard({ member, index }: TeamCardProps) {
         flexDirection: 'column',
         opacity: 0,
         position: 'relative',
+        cursor: 'pointer',
       }}
       onMouseEnter={e => {
         gsap.to(e.currentTarget, { y: -5, duration: 0.3, ease: 'power2.out' })
@@ -248,6 +252,7 @@ interface TeamGridProps {
 
 export default function TeamGrid({ team }: TeamGridProps) {
   const [activeFilter, setActiveFilter] = useState('All')
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null)
   const gridRef = useRef<HTMLDivElement>(null)
 
   const filtered = useMemo(() => {
@@ -255,16 +260,35 @@ export default function TeamGrid({ team }: TeamGridProps) {
     return team.filter(m => !m.anchor && m.categories.includes(activeFilter))
   }, [activeFilter, team])
 
-  // Re-animate grid on filter change
+  // Re-animate grid on filter change with exit animation
   useEffect(() => {
     if (!gridRef.current) return
     const cards = gridRef.current.querySelectorAll('.card-depth')
-    gsap.set(cards, { opacity: 0, y: 20 })
-    gsap.to(cards, {
-      opacity: 1, y: 0,
-      duration: 0.45, stagger: 0.04,
-      ease: 'power3.out', delay: 0.05,
-    })
+
+    const runEntrance = () => {
+      gsap.set(cards, { opacity: 0, y: 20 })
+      gsap.to(cards, {
+        opacity: 1, y: 0,
+        duration: 0.45, stagger: 0.04,
+        ease: 'power3.out', delay: 0.05,
+      })
+    }
+
+    // If any cards are currently visible, fade them out first
+    const visibleCards = Array.from(cards).filter(
+      card => parseFloat((card as HTMLElement).style.opacity || '0') > 0
+    )
+
+    if (visibleCards.length > 0) {
+      gsap.to(visibleCards, {
+        opacity: 0, y: -12,
+        duration: 0.2, stagger: 0.02,
+        ease: 'power2.in',
+        onComplete: runEntrance,
+      })
+    } else {
+      runEntrance()
+    }
   }, [filtered])
 
   return (
@@ -332,18 +356,34 @@ export default function TeamGrid({ team }: TeamGridProps) {
         }}
       >
         {filtered.map((member, i) => (
-          <TeamCard key={member.name} member={member} index={i} />
+          <TeamCard key={member.name} member={member} index={i} onClick={() => setSelectedMember(member)} />
         ))}
       </div>
 
       {filtered.length === 0 && (
         <div style={{
-          textAlign: 'center', padding: '60px',
-          color: 'rgba(255,255,255,0.3)', fontSize: '0.875rem',
+          textAlign: 'center', padding: '80px 40px',
+          display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px',
         }}>
-          No providers in this category.
+          <div style={{
+            width: '56px', height: '56px', borderRadius: '50%',
+            backgroundColor: 'rgba(201,122,60,0.08)',
+            border: '1px solid rgba(201,122,60,0.2)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: '1.4rem', color: 'rgba(201,122,60,0.5)',
+          }}>
+            ◎
+          </div>
+          <div style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-playfair)' }}>
+            No providers in this category
+          </div>
+          <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', maxWidth: '300px', lineHeight: 1.6 }}>
+            Try selecting a different department or view all providers.
+          </div>
         </div>
       )}
+
+      <TeamDrawer member={selectedMember} onClose={() => setSelectedMember(null)} />
     </div>
   )
 }

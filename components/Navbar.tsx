@@ -10,23 +10,39 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
 }
 
-const navLinks = [
-  {
-    label: 'Services',
-    href: '/services',
-    dropdown: [
+const serviceMegaMenu = {
+  col1: {
+    heading: 'Clinical Care',
+    items: [
       { label: 'Family & Primary Care', href: '/services#primary-care' },
       { label: 'Urgent Care', href: '/services#urgent-care' },
       { label: 'Allergy Services', href: '/services#allergy' },
-      { label: 'Weight Loss', href: '/services#weight-loss' },
+      { label: 'Medical Weight Loss', href: '/services#weight-loss' },
       { label: 'Hormone Therapy', href: '/services#hormones' },
-      { label: 'Ketamine Therapy', href: '/services#ketamine' },
       { label: 'Physical Medicine', href: '/services#physical-medicine' },
+    ],
+  },
+  col2: {
+    heading: 'Specialized',
+    items: [
+      { label: 'Ketamine Therapy', href: '/services#ketamine' },
       { label: 'Acupuncture', href: '/services#acupuncture' },
       { label: 'Regenerative Medicine', href: '/services#regenerative-medicine' },
       { label: 'Pharmacy', href: '/services#pharmacy' },
       { label: 'MDVIP Concierge', href: '/mdvip' },
     ],
+  },
+}
+
+const navLinks = [
+  {
+    label: 'Services',
+    href: '/services',
+    dropdown: [
+      ...serviceMegaMenu.col1.items,
+      ...serviceMegaMenu.col2.items,
+    ],
+    megaMenu: true,
   },
   {
     label: 'MedSpa',
@@ -202,12 +218,16 @@ export default function Navbar() {
                     textDecoration: 'none',
                     transition: 'color 0.3s ease',
                     display: 'flex', alignItems: 'center', gap: '4px',
+                    paddingBottom: '2px',
+                    borderBottom: pathname === link.href || pathname.startsWith(link.href + '/') ? '2px solid var(--copper)' : '2px solid transparent',
                   }}
                   onMouseEnter={(e) => {
-                    if (pathname !== link.href) (e.target as HTMLElement).style.color = 'var(--copper)'
+                    const isActive = pathname === link.href || pathname.startsWith(link.href + '/')
+                    if (!isActive) (e.currentTarget as HTMLElement).style.color = 'var(--copper)'
                   }}
                   onMouseLeave={(e) => {
-                    if (pathname !== link.href) (e.target as HTMLElement).style.color = 'var(--white)'
+                    const isActive = pathname === link.href || pathname.startsWith(link.href + '/')
+                    if (!isActive) (e.currentTarget as HTMLElement).style.color = 'var(--white)'
                   }}
                 >
                   {link.label}
@@ -221,7 +241,7 @@ export default function Navbar() {
                   )}
                 </Link>
 
-                {link.dropdown && (
+                {link.dropdown && !link.megaMenu && (
                   <div style={{
                     position: 'absolute',
                     top: 'calc(100% + 16px)',
@@ -265,6 +285,124 @@ export default function Navbar() {
                         {item.label}
                       </Link>
                     ))}
+                  </div>
+                )}
+
+                {link.megaMenu && (
+                  <div style={{
+                    position: 'absolute',
+                    top: 'calc(100% + 16px)',
+                    left: '50%',
+                    transform: `translateX(-50%) translateY(${activeDropdown === link.label ? '0' : '10px'})`,
+                    backgroundColor: 'var(--light-teal)',
+                    border: '1px solid var(--glass-border)',
+                    borderTop: '3px solid var(--copper)',
+                    borderRadius: '0 0 8px 8px',
+                    minWidth: '520px',
+                    opacity: activeDropdown === link.label ? 1 : 0,
+                    visibility: activeDropdown === link.label ? 'visible' : 'hidden',
+                    transition: 'opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease',
+                    boxShadow: '0 20px 40px rgba(5,15,21,0.6)',
+                  }}>
+                    {/* Two-column grid */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', padding: '16px 0 0' }}>
+                      {/* Column 1 */}
+                      <div style={{ padding: '0 8px 0 16px' }}>
+                        <div style={{
+                          fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase',
+                          color: 'var(--gold)', fontWeight: 600, padding: '0 12px 8px',
+                        }}>
+                          {serviceMegaMenu.col1.heading}
+                        </div>
+                        {serviceMegaMenu.col1.items.map((item) => (
+                          <Link
+                            key={item.label}
+                            href={item.href}
+                            className="dropdown-item"
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: '8px',
+                              padding: '9px 12px',
+                              fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)',
+                              textDecoration: 'none', transition: 'all 0.2s ease',
+                              letterSpacing: '0.03em',
+                            }}
+                            onMouseEnter={(e) => {
+                              const el = e.currentTarget
+                              el.style.color = 'var(--copper)'
+                              el.style.backgroundColor = 'rgba(201,122,60,0.08)'
+                            }}
+                            onMouseLeave={(e) => {
+                              const el = e.currentTarget
+                              el.style.color = 'rgba(255,255,255,0.8)'
+                              el.style.backgroundColor = 'transparent'
+                            }}
+                          >
+                            <span style={{ width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--copper)', flexShrink: 0 }} />
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                      {/* Column 2 */}
+                      <div style={{ padding: '0 16px 0 8px', borderLeft: '1px solid rgba(255,255,255,0.06)' }}>
+                        <div style={{
+                          fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase',
+                          color: 'var(--gold)', fontWeight: 600, padding: '0 12px 8px',
+                        }}>
+                          {serviceMegaMenu.col2.heading}
+                        </div>
+                        {serviceMegaMenu.col2.items.map((item) => (
+                          <Link
+                            key={item.label}
+                            href={item.href}
+                            className="dropdown-item"
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: '8px',
+                              padding: '9px 12px',
+                              fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)',
+                              textDecoration: 'none', transition: 'all 0.2s ease',
+                              letterSpacing: '0.03em',
+                            }}
+                            onMouseEnter={(e) => {
+                              const el = e.currentTarget
+                              el.style.color = 'var(--copper)'
+                              el.style.backgroundColor = 'rgba(201,122,60,0.08)'
+                            }}
+                            onMouseLeave={(e) => {
+                              const el = e.currentTarget
+                              el.style.color = 'rgba(255,255,255,0.8)'
+                              el.style.backgroundColor = 'transparent'
+                            }}
+                          >
+                            <span style={{ width: '5px', height: '5px', borderRadius: '50%', backgroundColor: 'var(--copper)', flexShrink: 0 }} />
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                    {/* Featured strip */}
+                    <div style={{
+                      borderTop: '1px solid rgba(255,255,255,0.06)',
+                      padding: '12px 20px',
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                      marginTop: '8px',
+                    }}>
+                      <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.03em' }}>
+                        Complete care under one roof · 3 Austin-area locations
+                      </span>
+                      <Link
+                        href="/services"
+                        style={{
+                          fontSize: '0.72rem', color: 'var(--copper)',
+                          textDecoration: 'none', fontWeight: 600,
+                          letterSpacing: '0.05em', whiteSpace: 'nowrap',
+                          transition: 'opacity 0.2s ease',
+                        }}
+                        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = '0.75' }}
+                        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = '1' }}
+                      >
+                        View All Services →
+                      </Link>
+                    </div>
                   </div>
                 )}
               </div>

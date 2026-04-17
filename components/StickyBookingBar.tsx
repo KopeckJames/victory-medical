@@ -10,6 +10,7 @@ if (typeof window !== 'undefined') {
 
 export default function StickyBookingBar() {
   const barRef = useRef<HTMLDivElement>(null)
+  const bookBtnRef = useRef<HTMLAnchorElement>(null)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -36,7 +37,20 @@ export default function StickyBookingBar() {
         },
       })
     })
-    return () => ctx.revert()
+
+    // Pulse the Book Now button every 30s to re-attract attention
+    const pulseInterval = setInterval(() => {
+      if (bookBtnRef.current) {
+        gsap.timeline()
+          .to(bookBtnRef.current, { scale: 1.06, duration: 0.18, ease: 'power2.out' })
+          .to(bookBtnRef.current, { scale: 1, duration: 0.28, ease: 'elastic.out(1.2, 0.5)' })
+      }
+    }, 30000)
+
+    return () => {
+      ctx.revert()
+      clearInterval(pulseInterval)
+    }
   }, [])
 
   return (
@@ -112,11 +126,12 @@ export default function StickyBookingBar() {
             (512) 462-3627
           </a>
           <a
+            ref={bookBtnRef}
             href="https://www.priviahealth.com/practice/victory-medical/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
-            style={{ padding: '8px 18px', fontSize: '0.75rem', borderRadius: '24px' }}
+            style={{ padding: '8px 18px', fontSize: '0.75rem', borderRadius: '24px', display: 'inline-block' }}
           >
             Book Now
           </a>

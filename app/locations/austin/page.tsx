@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -241,6 +242,17 @@ export default function AustinLocationPage() {
             </div>
           </div>
         </section>
+
+        {/* ── Breadcrumb ───────────────────────────────────────── */}
+        <div className="container" style={{ paddingTop: '24px', paddingBottom: '8px' }}>
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Locations', href: '/locations' },
+              { label: 'Austin' },
+            ]}
+          />
+        </div>
 
         {/* ── At a Glance ──────────────────────────────────────── */}
         <section style={{ backgroundColor: 'var(--light-teal)', padding: '64px 0' }}>

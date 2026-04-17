@@ -1,20 +1,24 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CTASection from '@/components/CTASection'
-import type { Metadata } from 'next'
+import ServicesAccordion from '@/components/ServicesAccordion'
+import type { Metadata, NextPage } from 'next'
+import type { Service } from '@/components/ServicesAccordion'
 
 export const metadata: Metadata = {
   title: 'Medical Services | Victory Medical Austin TX',
-  description: 'Comprehensive medical services in Austin and Westlake Hills, TX. Family practice, urgent care, allergy treatment, ketamine therapy, weight loss, hormone therapy, physical medicine, and more.',
+  description:
+    'Comprehensive medical services in Austin and Westlake Hills, TX. Family practice, urgent care, allergy treatment, ketamine therapy, weight loss, hormone therapy, physical medicine, and more.',
 }
 
-const services = [
+const services: Service[] = [
   {
     id: 'primary-care',
     icon: '⊕',
     title: 'Family & Primary Care',
     subtitle: 'Board-certified physicians for the whole family',
-    description: 'Comprehensive primary and preventative care for all ages — in-person or via telemedicine. Our board-certified physicians, physician assistants, and nurse practitioners provide personalized care tailored to your health goals.',
+    description:
+      'Comprehensive primary and preventative care for all ages — in-person or via telemedicine. Our board-certified physicians, physician assistants, and nurse practitioners provide personalized care tailored to your health goals.',
     features: [
       'Annual physicals and wellness exams',
       'Chronic disease management (diabetes, hypertension)',
@@ -34,7 +38,8 @@ const services = [
     icon: '⚡',
     title: 'Urgent Care',
     subtitle: '50–300% less than the average ER visit',
-    description: 'Walk-in, no appointment needed. Board-certified doctors, NPs, and PAs treat patients of all ages for non-life-threatening conditions. Extended hours including evenings and weekends at all locations.',
+    description:
+      'Walk-in, no appointment needed. Board-certified doctors, NPs, and PAs treat patients of all ages for non-life-threatening conditions. Extended hours including evenings and weekends at all locations.',
     features: [
       'Walk-ins welcome — no appointment needed',
       'Extended hours including evenings',
@@ -54,7 +59,8 @@ const services = [
     icon: '◎',
     title: 'Allergy Services',
     subtitle: 'Harvard Protocol — Unique to Victory Medical',
-    description: 'Full-spectrum allergy testing and immunotherapy for 75+ regional allergens. Our unique rapid desensitization protocol, developed from Harvard research, helps most patients find relief within months — not years.',
+    description:
+      'Full-spectrum allergy testing and immunotherapy for 75+ regional allergens. Our unique rapid desensitization protocol, developed from Harvard research, helps most patients find relief within months — not years.',
     features: [
       'Skin prick testing (75+ regional allergens)',
       'Intradermal allergy testing',
@@ -73,7 +79,8 @@ const services = [
     icon: '◇',
     title: 'Medical Weight Loss',
     subtitle: 'Medically supervised, personalized programs',
-    description: 'Physician-supervised weight loss programs combining prescription therapy, nutritional guidance, and personal coaching. Custom appetite suppressants and injection therapy accelerate and sustain your results.',
+    description:
+      'Physician-supervised weight loss programs combining prescription therapy, nutritional guidance, and personal coaching. Custom appetite suppressants and injection therapy accelerate and sustain your results.',
     features: [
       'Custom appetite suppressant prescriptions',
       'Compounded weight loss medications',
@@ -92,7 +99,8 @@ const services = [
     icon: '⟳',
     title: 'Natural Hormone Replacement',
     subtitle: 'Club Longevity — Holistic anti-aging medicine',
-    description: 'Custom-compounded natural hormone therapy for menopause, low testosterone, and anti-aging. Our "Club Longevity" program takes a comprehensive approach combining hormones, exercise, diet, and supplements.',
+    description:
+      'Custom-compounded natural hormone therapy for menopause, low testosterone, and anti-aging. Our "Club Longevity" program takes a comprehensive approach combining hormones, exercise, diet, and supplements.',
     features: [
       'Bioidentical hormone therapy',
       'Menopause management',
@@ -112,7 +120,8 @@ const services = [
     icon: '✦',
     title: 'Ketamine Therapy',
     subtitle: 'One of few licensed infusion clinics in the US',
-    description: 'Physician-monitored ketamine infusion therapy for treatment-resistant mental health conditions and chronic pain. 40-minute infusions with results that begin within hours. Sustained relief over a series of sessions.',
+    description:
+      'Physician-monitored ketamine infusion therapy for treatment-resistant mental health conditions and chronic pain. 40-minute infusions with results that begin within hours. Sustained relief over a series of sessions.',
     features: [
       'Licensed IV ketamine infusions',
       'Physician-monitored sessions',
@@ -132,7 +141,8 @@ const services = [
     icon: '⊞',
     title: 'Physical Medicine',
     subtitle: 'Chiropractic, PT, and massage under one roof',
-    description: 'A multidisciplinary team of physical therapists, chiropractors, massage therapists, and rehabilitation technicians focused on restoring function and preventing future injury.',
+    description:
+      'A multidisciplinary team of physical therapists, chiropractors, massage therapists, and rehabilitation technicians focused on restoring function and preventing future injury.',
     features: [
       'Chiropractic care',
       'Physical therapy',
@@ -151,7 +161,8 @@ const services = [
     icon: '⬡',
     title: 'On-Site Compounding Pharmacy',
     subtitle: 'Custom medications formulated for you',
-    description: 'Full-service compounding pharmacy at our main Austin location. We create custom medications precisely tailored to your needs — allergen-free, unique dosage forms, and formulations unavailable commercially.',
+    description:
+      'Full-service compounding pharmacy at our main Austin location. We create custom medications precisely tailored to your needs — allergen-free, unique dosage forms, and formulations unavailable commercially.',
     features: [
       'Custom dosage formulations',
       'Allergen-free compounds (no dyes, lactose, gluten)',
@@ -171,7 +182,8 @@ const services = [
     icon: '⊛',
     title: 'Acupuncture',
     subtitle: 'Traditional medicine meets integrative care',
-    description: 'Licensed acupuncture integrated within Victory Medical\'s comprehensive wellness model. Our licensed acupuncturist and nurse practitioner Jason Spees combines traditional Chinese medicine with modern integrative care to address pain, mental health, and systemic wellness.',
+    description:
+      "Licensed acupuncture integrated within Victory Medical's comprehensive wellness model. Our licensed acupuncturist and nurse practitioner Jason Spees combines traditional Chinese medicine with modern integrative care to address pain, mental health, and systemic wellness.",
     features: [
       'Traditional acupuncture therapy',
       'Chronic pain management',
@@ -191,7 +203,8 @@ const services = [
     icon: '⟡',
     title: 'Regenerative Medicine & Peptide Therapy',
     subtitle: 'Cutting-edge cellular health optimization',
-    description: 'Advanced regenerative therapies designed to support cellular repair, longevity, and peak performance. Led by Judith Chedville, Director of Regenerative Medicine, our peptide protocols and regenerative treatments offer a forward-looking approach to health optimization.',
+    description:
+      'Advanced regenerative therapies designed to support cellular repair, longevity, and peak performance. Led by Judith Chedville, Director of Regenerative Medicine, our peptide protocols and regenerative treatments offer a forward-looking approach to health optimization.',
     features: [
       'Peptide therapy protocols',
       'BPC-157 tissue repair',
@@ -211,7 +224,8 @@ const services = [
     icon: '◈',
     title: 'Additional Services',
     subtitle: 'Comprehensive care for every need',
-    description: 'Victory Medical offers a full spectrum of specialty and preventive services to keep you and your family healthy at every stage of life.',
+    description:
+      'Victory Medical offers a full spectrum of specialty and preventive services to keep you and your family healthy at every stage of life.',
     features: [
       'Telemedicine visits',
       'Mammogram screening',
@@ -227,18 +241,9 @@ const services = [
   },
 ]
 
-export default function ServicesPage() {
+const ServicesPage: NextPage = () => {
   return (
     <>
-      <style>{`
-        @media (max-width: 860px) {
-          .service-inner-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
-        }
-        @media (max-width: 640px) {
-          .service-card { padding: 28px !important; }
-          .service-features-grid { grid-template-columns: 1fr !important; }
-        }
-      `}</style>
       <Navbar />
       <main>
         {/* Page Hero */}
@@ -255,14 +260,16 @@ export default function ServicesPage() {
             style={{
               position: 'absolute',
               inset: 0,
-              background: 'radial-gradient(ellipse 60% 60% at 30% 50%, rgba(201,122,60,0.08) 0%, transparent 70%)',
+              background:
+                'radial-gradient(ellipse 60% 60% at 30% 50%, rgba(201,122,60,0.08) 0%, transparent 70%)',
             }}
           />
           <div
             style={{
               position: 'absolute',
               inset: 0,
-              backgroundImage: 'linear-gradient(rgba(201,122,60,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.02) 1px, transparent 1px)',
+              backgroundImage:
+                'linear-gradient(rgba(201,122,60,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.02) 1px, transparent 1px)',
               backgroundSize: '60px 60px',
             }}
           />
@@ -291,170 +298,17 @@ export default function ServicesPage() {
                 lineHeight: 1.7,
               }}
             >
-              From your family&apos;s primary care to cutting-edge ketamine therapy and medical aesthetics — Victory Medical brings integrated, comprehensive medicine under one roof at three Austin-area locations.
+              From your family&apos;s primary care to cutting-edge ketamine therapy and medical
+              aesthetics — Victory Medical brings integrated, comprehensive medicine under one roof
+              at three Austin-area locations.
             </p>
           </div>
         </section>
 
-        {/* Services List */}
+        {/* Services Accordion */}
         <section style={{ backgroundColor: 'var(--teal)', padding: '80px 0' }}>
           <div className="container">
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-              {services.map((service, i) => (
-                <div
-                  key={service.id}
-                  id={service.id}
-                  className="service-card"
-                  style={{
-                    backgroundColor: i % 2 === 0 ? 'rgba(255,255,255,0.03)' : 'rgba(255,255,255,0.01)',
-                    border: '1px solid rgba(255,255,255,0.06)',
-                    borderRadius: '16px',
-                    padding: '48px',
-                    marginBottom: '16px',
-                  }}
-                >
-                  <div
-                    className="service-inner-grid"
-                    style={{
-                      display: 'grid',
-                      gridTemplateColumns: '1fr 1.2fr',
-                      gap: '60px',
-                      alignItems: 'start',
-                    }}
-                  >
-                    {/* Left */}
-                    <div>
-                      <div
-                        style={{
-                          width: '48px',
-                          height: '48px',
-                          borderRadius: '12px',
-                          backgroundColor: 'rgba(201,122,60,0.15)',
-                          border: '1px solid rgba(201,122,60,0.3)',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          fontSize: '1.2rem',
-                          color: 'var(--copper)',
-                          marginBottom: '20px',
-                        }}
-                      >
-                        {service.icon}
-                      </div>
-                      <div
-                        style={{
-                          fontSize: '0.7rem',
-                          letterSpacing: '0.12em',
-                          textTransform: 'uppercase',
-                          color: 'var(--copper)',
-                          marginBottom: '8px',
-                          fontWeight: 500,
-                        }}
-                      >
-                        {service.subtitle}
-                      </div>
-                      <h2
-                        style={{
-                          fontFamily: 'var(--font-playfair)',
-                          fontSize: '2rem',
-                          fontWeight: 400,
-                          color: 'var(--white)',
-                          marginBottom: '20px',
-                        }}
-                      >
-                        {service.title}
-                      </h2>
-                      <p
-                        style={{
-                          fontSize: '1rem',
-                          color: 'rgba(255,255,255,0.7)',
-                          lineHeight: 1.7,
-                          marginBottom: '24px',
-                        }}
-                      >
-                        {service.description}
-                      </p>
-                      {service.callout && (
-                        <div
-                          style={{
-                            padding: '16px 20px',
-                            backgroundColor: 'rgba(201,122,60,0.08)',
-                            borderLeft: '3px solid var(--copper)',
-                            borderRadius: '0 8px 8px 0',
-                            fontSize: '0.875rem',
-                            color: 'rgba(255,255,255,0.75)',
-                            fontStyle: 'italic',
-                          }}
-                        >
-                          {service.callout}
-                        </div>
-                      )}
-                    </div>
-
-                    {/* Right — features */}
-                    <div>
-                      <div
-                        style={{
-                          fontSize: '0.65rem',
-                          letterSpacing: '0.12em',
-                          textTransform: 'uppercase',
-                          color: 'var(--gold)',
-                          marginBottom: '20px',
-                          fontWeight: 600,
-                        }}
-                      >
-                        What&apos;s Included
-                      </div>
-                      <div
-                        className="service-features-grid"
-                        style={{
-                          display: 'grid',
-                          gridTemplateColumns: '1fr 1fr',
-                          gap: '10px',
-                        }}
-                      >
-                        {service.features.map((feature) => (
-                          <div
-                            key={feature}
-                            style={{
-                              display: 'flex',
-                              alignItems: 'flex-start',
-                              gap: '10px',
-                              fontSize: '0.875rem',
-                              color: 'rgba(255,255,255,0.7)',
-                            }}
-                          >
-                            <span
-                              style={{
-                                width: '6px',
-                                height: '6px',
-                                borderRadius: '50%',
-                                backgroundColor: 'var(--copper)',
-                                marginTop: '7px',
-                                flexShrink: 0,
-                              }}
-                            />
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
-
-                      <div style={{ marginTop: '32px' }}>
-                        <a
-                          href="https://www.priviahealth.com/practice/victory-medical/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn-primary"
-                          style={{ padding: '12px 24px', fontSize: '0.8rem' }}
-                        >
-                          Book This Service
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <ServicesAccordion services={services} />
           </div>
         </section>
 
@@ -464,3 +318,5 @@ export default function ServicesPage() {
     </>
   )
 }
+
+export default ServicesPage

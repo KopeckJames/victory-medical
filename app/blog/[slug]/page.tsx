@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
+import ReadingProgress from '@/components/ReadingProgress'
 import { BLOG_POSTS } from '@/lib/blog-data'
 import type { Metadata } from 'next'
 
@@ -50,6 +52,7 @@ export default async function BlogPostPage({ params }: Props) {
     <>
       <Navbar />
       <main>
+        <ReadingProgress />
         {/* ── Article prose styles ─────────────────────────────────────── */}
         <style>{`
           .article-body h2 {
@@ -238,6 +241,17 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </div>
         </section>
+
+        {/* ── Breadcrumb ───────────────────────────────────────────────── */}
+        <div className="container" style={{ paddingTop: '24px', paddingBottom: '8px' }}>
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Blog', href: '/blog' },
+              { label: post.title },
+            ]}
+          />
+        </div>
 
         {/* ── Article Body + Sidebar Layout ────────────────────────────── */}
         <section

@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -219,6 +220,17 @@ export default function MDVIPPage() {
             </div>
           </div>
         </section>
+
+        {/* ── Breadcrumb ────────────────────────────────────────────────── */}
+        <div className="container" style={{ paddingTop: '24px', paddingBottom: '8px' }}>
+          <Breadcrumb
+            items={[
+              { label: 'Home', href: '/' },
+              { label: 'Services', href: '/services' },
+              { label: 'MDVIP Concierge' },
+            ]}
+          />
+        </div>
 
         {/* ── What is MDVIP ─────────────────────────────────────────────── */}
         <section className="section" style={{ backgroundColor: 'var(--teal)' }}>

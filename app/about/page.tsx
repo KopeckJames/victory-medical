@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import CTASection from '@/components/CTASection'
 import TeamGrid from '@/components/TeamGrid'
+import Image from 'next/image'
 import { TEAM, FOUNDER } from '@/lib/team-data'
 import type { Metadata } from 'next'
 
@@ -200,11 +201,12 @@ export default function AboutPage() {
                     position: 'relative',
                   }}>
                     {FOUNDER.imageUrl ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
+                      <Image
                         src={FOUNDER.imageUrl}
                         alt={FOUNDER.name}
-                        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }}
+                        fill
+                        sizes="300px"
+                        style={{ objectFit: 'cover', objectPosition: 'center top' }}
                       />
                     ) : (
                       <div style={{

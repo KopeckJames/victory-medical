@@ -39,6 +39,67 @@ export default function Footer() {
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}
     >
+      {/* Pre-footer CTA strip */}
+      <div style={{
+        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        padding: '48px 0',
+        background: 'linear-gradient(135deg, rgba(201,122,60,0.07) 0%, transparent 60%)',
+      }}>
+        <div className="container" style={{
+          display: 'flex', alignItems: 'center',
+          justifyContent: 'space-between', flexWrap: 'wrap', gap: '24px',
+        }}>
+          <div>
+            <div style={{
+              fontSize: '0.65rem', letterSpacing: '0.15em',
+              textTransform: 'uppercase', color: 'var(--gold)',
+              marginBottom: '8px', fontWeight: 600,
+            }}>
+              Same-day appointments available
+            </div>
+            <p style={{
+              fontFamily: 'var(--font-playfair)',
+              fontSize: 'clamp(1.3rem, 2.5vw, 1.8rem)',
+              fontWeight: 400, color: 'var(--white)',
+              lineHeight: 1.2, margin: 0,
+            }}>
+              Ready to feel better?{' '}
+              <span style={{ color: 'var(--copper)' }}>We&apos;re here for you.</span>
+            </p>
+          </div>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' }}>
+            <a
+              href="tel:5124623627"
+              style={{
+                padding: '11px 22px', borderRadius: '4px',
+                border: '1px solid rgba(255,255,255,0.2)',
+                fontSize: '0.8rem', fontWeight: 500,
+                letterSpacing: '0.06em', textTransform: 'uppercase',
+                color: 'var(--white)', textDecoration: 'none',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.borderColor = 'var(--copper)'
+                e.currentTarget.style.color = 'var(--copper)'
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'
+                e.currentTarget.style.color = 'var(--white)'
+              }}
+            >
+              (512) 462-3627
+            </a>
+            <a
+              href="https://www.priviahealth.com/practice/victory-medical/"
+              target="_blank" rel="noopener noreferrer"
+              className="btn-primary"
+              style={{ padding: '11px 24px' }}
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
       {/* Main Footer */}
       <div className="container" style={{ paddingTop: '80px', paddingBottom: '60px' }}>
         <div
@@ -390,9 +451,10 @@ export default function Footer() {
       >
         <div className="container">
           <p
+            className="disclaimer-text"
             style={{
               fontSize: '0.7rem',
-              color: 'rgba(255,255,255,0.35)',
+              color: 'rgba(255,255,255,0.55)',
               textAlign: 'center',
               maxWidth: '900px',
               margin: '0 auto',

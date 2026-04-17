@@ -12,6 +12,7 @@ import LocationsSection from '@/components/LocationsSection'
 import NewsletterSection from '@/components/NewsletterSection'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
+import SectionDivider from '@/components/SectionDivider'
 
 export default function HomePage() {
   return (
@@ -21,11 +22,14 @@ export default function HomePage() {
         <Hero />
         <ServicesMarquee />
         <StatsStrip />
+        <SectionDivider fromColor="var(--dark-teal)" toColor="var(--teal)" />
         <TreatmentShowcase />
         <ServicesSection />
+        <SectionDivider fromColor="var(--teal)" toColor="var(--dark-teal)" flip />
         <WhyChooseSection />
         <ServiceFinder />
         <TeamSection />
+        <SectionDivider fromColor="var(--teal)" toColor="var(--dark-teal)" />
         <TestimonialsSection />
         <LocationsSection />
         <NewsletterSection />

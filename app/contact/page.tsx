@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ContactForm from '@/components/ContactForm'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -103,6 +104,7 @@ export default function ContactPage() {
         @media (max-width: 768px) {
           .contact-booking-grid { grid-template-columns: 1fr !important; }
           .contact-location-cols { grid-template-columns: 1fr !important; gap: 24px !important; }
+          .contact-message-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
       <Navbar />
@@ -255,6 +257,165 @@ export default function ContactPage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Send a Message */}
+        <section className="section" style={{ backgroundColor: 'var(--dark-teal)' }}>
+          <div className="container">
+            <div
+              className="contact-message-grid"
+              style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'start' }}
+            >
+              <div>
+                <div className="section-label" style={{ marginBottom: '16px' }}>
+                  Send a Message
+                </div>
+                <h2
+                  style={{
+                    fontFamily: 'var(--font-playfair)',
+                    fontSize: 'clamp(1.8rem, 3vw, 2.4rem)',
+                    fontWeight: 400,
+                    color: 'var(--white)',
+                    marginBottom: '20px',
+                    lineHeight: 1.2,
+                  }}
+                >
+                  We&apos;ll Get Back to You Within{' '}
+                  <span style={{ color: 'var(--copper)' }}>1 Business Day</span>
+                </h2>
+                <p
+                  style={{
+                    fontSize: '1rem',
+                    color: 'var(--muted-text)',
+                    lineHeight: 1.75,
+                    marginBottom: '32px',
+                  }}
+                >
+                  Have a question about our services, insurance coverage, or want to learn more
+                  before booking? Send us a message and a member of our care team will respond
+                  promptly.
+                </p>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+                    <div
+                      style={{
+                        width: '40px',
+                        height: '40px',
+                        borderRadius: '10px',
+                        backgroundColor: 'rgba(201,122,60,0.12)',
+                        border: '1px solid rgba(201,122,60,0.25)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0,
+                        color: 'var(--copper)',
+                        fontSize: '1rem',
+                      }}
+                    >
+                      ☎
+                    </div>
+                    <div>
+                      <div
+                        style={{
+                          fontSize: '0.7rem',
+                          letterSpacing: '0.1em',
+                          textTransform: 'uppercase',
+                          color: 'var(--gold)',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        Phone
+                      </div>
+                      <a
+                        href="tel:5124623627"
+                        style={{ fontSize: '1rem', color: 'var(--white)', textDecoration: 'none', fontWeight: 500 }}
+                      >
+                        (512) 462-3627
+                      </a>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+                    <div
+                      style={{
+                        width: '40px',
+                        height: '40px',
+                        borderRadius: '10px',
+                        backgroundColor: 'rgba(201,122,60,0.12)',
+                        border: '1px solid rgba(201,122,60,0.25)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0,
+                        color: 'var(--copper)',
+                        fontSize: '1rem',
+                      }}
+                    >
+                      ✉
+                    </div>
+                    <div>
+                      <div
+                        style={{
+                          fontSize: '0.7rem',
+                          letterSpacing: '0.1em',
+                          textTransform: 'uppercase',
+                          color: 'var(--gold)',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        Email
+                      </div>
+                      <a
+                        href="mailto:info@victorymed.com"
+                        style={{ fontSize: '1rem', color: 'var(--white)', textDecoration: 'none' }}
+                      >
+                        info@victorymed.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px' }}>
+                    <div
+                      style={{
+                        width: '40px',
+                        height: '40px',
+                        borderRadius: '10px',
+                        backgroundColor: 'rgba(201,122,60,0.12)',
+                        border: '1px solid rgba(201,122,60,0.25)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        flexShrink: 0,
+                        color: 'var(--copper)',
+                        fontSize: '1rem',
+                      }}
+                    >
+                      ⟳
+                    </div>
+                    <div>
+                      <div
+                        style={{
+                          fontSize: '0.7rem',
+                          letterSpacing: '0.1em',
+                          textTransform: 'uppercase',
+                          color: 'var(--gold)',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        Response Time
+                      </div>
+                      <div style={{ fontSize: '1rem', color: 'var(--white)' }}>
+                        Within 1 business day
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ContactForm />
             </div>
           </div>
         </section>

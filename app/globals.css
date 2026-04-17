@@ -418,6 +418,52 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+/* ─── Skip to content link (accessibility) ─── */
+.skip-link {
+  position: fixed;
+  top: -80px;
+  left: 24px;
+  padding: 10px 20px;
+  background: var(--copper);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 0 0 10px 10px;
+  z-index: 99999;
+  text-decoration: none;
+  transition: top 0.25s ease;
+  box-shadow: 0 4px 20px rgba(201,122,60,0.4);
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ─── Custom focus styles ─── */
+:focus-visible {
+  outline: 2px solid rgba(201,122,60,0.75);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid rgba(201,122,60,0.75);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Input focus (copper glow) ─── */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: rgba(201,122,60,0.55) !important;
+  box-shadow: 0 0 0 3px rgba(201,122,60,0.12);
+}
+
+/* ─── Contrast improvements ─── */
+/* Footer disclaimer — was 0.35, now 0.55 for WCAG AA */
+footer .disclaimer-text {
+  color: rgba(255,255,255,0.55) !important;
+}
+
 /* ─── Global mobile responsive fixes ─── */
 @media (max-width: 768px) {
   /* Contact page grids */

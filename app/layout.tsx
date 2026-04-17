@@ -88,9 +88,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <MagneticCursor />
         <SocialProof />
-        {children}
+        <div id="main-content">{children}</div>
         <StickyBookingBar />
         <AIHealthChat />
       </body>

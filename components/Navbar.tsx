@@ -25,6 +25,7 @@ const navLinks = [
       { label: 'Acupuncture', href: '/services#acupuncture' },
       { label: 'Regenerative Medicine', href: '/services#regenerative-medicine' },
       { label: 'Pharmacy', href: '/services#pharmacy' },
+      { label: 'MDVIP Concierge', href: '/mdvip' },
     ],
   },
   {
@@ -38,7 +39,18 @@ const navLinks = [
       { label: 'Before & Afters', href: '/medspa#gallery' },
     ],
   },
+  { label: 'Locations', href: '/locations' },
   { label: 'About', href: '/about' },
+  {
+    label: 'Patients',
+    href: '/insurance',
+    dropdown: [
+      { label: 'Insurance & Coverage', href: '/insurance' },
+      { label: 'Patient Reviews', href: '/reviews' },
+      { label: 'Health Blog', href: '/blog' },
+      { label: 'Patient Portal', href: 'https://vmc.pharmetika.com/patient_access/portal/login' },
+    ],
+  },
   { label: 'Contact', href: '/contact' },
 ]
 

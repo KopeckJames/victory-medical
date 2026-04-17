@@ -230,6 +230,15 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <style>{`
+        @media (max-width: 860px) {
+          .service-inner-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+        }
+        @media (max-width: 640px) {
+          .service-card { padding: 28px !important; }
+          .service-features-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
       <Navbar />
       <main>
         {/* Page Hero */}
@@ -295,6 +304,7 @@ export default function ServicesPage() {
                 <div
                   key={service.id}
                   id={service.id}
+                  className="service-card"
                   style={{
                     backgroundColor: i % 2 === 0 ? 'rgba(255,255,255,0.03)' : 'rgba(255,255,255,0.01)',
                     border: '1px solid rgba(255,255,255,0.06)',
@@ -304,6 +314,7 @@ export default function ServicesPage() {
                   }}
                 >
                   <div
+                    className="service-inner-grid"
                     style={{
                       display: 'grid',
                       gridTemplateColumns: '1fr 1.2fr',
@@ -395,6 +406,7 @@ export default function ServicesPage() {
                         What&apos;s Included
                       </div>
                       <div
+                        className="service-features-grid"
                         style={{
                           display: 'grid',
                           gridTemplateColumns: '1fr 1fr',

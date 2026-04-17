@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { FEATURED_TEAM } from '@/lib/team-data'
@@ -112,14 +113,12 @@ export default function TeamSection() {
                 backgroundColor: 'var(--dark-teal)',
               }}>
                 {member.imageUrl ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
+                  <Image
                     src={member.imageUrl}
                     alt={member.name}
-                    style={{
-                      width: '100%', height: '100%',
-                      objectFit: 'cover', objectPosition: 'center top',
-                    }}
+                    fill
+                    sizes="200px"
+                    style={{ objectFit: 'cover', objectPosition: 'center top' }}
                   />
                 ) : (
                   <div

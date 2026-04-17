@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useMemo, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import { gsap } from 'gsap'
 import { type TeamMember, FILTER_CATEGORIES } from '@/lib/team-data'
 
@@ -79,15 +80,17 @@ function TeamCard({ member, index }: TeamCardProps) {
           width: '52px', height: '52px',
           borderRadius: '50%', flexShrink: 0,
           overflow: 'hidden',
+          position: 'relative',
           border: `2px solid ${color}40`,
           boxShadow: `0 0 0 4px ${color}15`,
         }}>
           {member.imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
+            <Image
               src={member.imageUrl}
               alt={member.name}
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+              fill
+              sizes="52px"
+              style={{ objectFit: 'cover', objectPosition: 'top' }}
             />
           ) : (
             <div style={{

@@ -99,6 +99,12 @@ const bookingOptions = [
 export default function ContactPage() {
   return (
     <>
+      <style>{`
+        @media (max-width: 768px) {
+          .contact-booking-grid { grid-template-columns: 1fr !important; }
+          .contact-location-cols { grid-template-columns: 1fr !important; gap: 24px !important; }
+        }
+      `}</style>
       <Navbar />
       <main>
         {/* Hero */}
@@ -210,7 +216,7 @@ export default function ContactPage() {
               </h2>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
+            <div className="contact-booking-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
               {bookingOptions.map((option) => (
                 <div
                   key={option.title}
@@ -295,7 +301,7 @@ export default function ContactPage() {
                     {loc.name}
                   </h3>
 
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
+                  <div className="contact-location-cols" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px' }}>
                     {/* Contact */}
                     <div>
                       <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', fontWeight: 600 }}>

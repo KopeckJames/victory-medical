@@ -417,3 +417,28 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
   line-height: 1.2;
 }
+
+/* ─── Global mobile responsive fixes ─── */
+@media (max-width: 768px) {
+  /* Contact page grids */
+  .contact-booking-grid { grid-template-columns: 1fr !important; }
+  .contact-location-cols { grid-template-columns: 1fr !important; gap: 24px !important; }
+
+  /* Booking options 2-col → 1-col */
+  .booking-options-grid { grid-template-columns: 1fr !important; }
+
+  /* TeamSection cards */
+  .team-card-grid { grid-template-columns: 1fr !important; }
+
+  /* Hero stats row wraps better */
+  .hero-stats { gap: 24px !important; }
+
+  /* Sticky booking bar text hide on very small screens */
+  .booking-bar-text { display: none; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px !important; }
+  .section { padding: 60px 0 !important; }
+  .btn-primary, .btn-outline { padding: 12px 20px !important; font-size: 0.75rem !important; }
+}

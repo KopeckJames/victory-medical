@@ -229,7 +229,7 @@ export default function Hero() {
         }}
       />
 
-      {/* Right side photo panel */}
+      {/* Right side photo panel — set VIDEO_SRC to a .mp4 URL to activate video hero */}
       <div
         ref={photoPanelRef}
         style={{
@@ -238,16 +238,48 @@ export default function Hero() {
           top: '-10%',
           bottom: '-10%',
           width: '50%',
-          background: `
-            linear-gradient(to left, rgba(5,15,21,0) 0%, rgba(5,15,21,0.5) 55%, rgba(5,15,21,1) 100%),
-            url('/hero-image.svg')
-          `,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center center',
           zIndex: 1,
           willChange: 'transform',
+          overflow: 'hidden',
         }}
-      />
+      >
+        {/* Gradient overlay — always rendered on top of whatever is behind it */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(to left, rgba(5,15,21,0) 0%, rgba(5,15,21,0.5) 55%, rgba(5,15,21,1) 100%)',
+          zIndex: 2,
+          pointerEvents: 'none',
+        }} />
+        {/* Background fallback pattern */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: `url('/hero-image.svg') center center / cover no-repeat`,
+          zIndex: 1,
+        }} />
+        {/* Video hero — replace VIDEO_SRC with actual mp4 URL to enable */}
+        {/* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */}
+        {(false as boolean) && (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center',
+              zIndex: 1,
+            }}
+          >
+            {/* <source src="/hero.mp4" type="video/mp4" /> */}
+          </video>
+        )}
+      </div>
 
       {/* Content */}
       <div style={{ position: 'relative', zIndex: 2, width: '100%' }}>

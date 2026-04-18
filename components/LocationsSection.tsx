@@ -136,7 +136,7 @@ export default function LocationsSection() {
           </h2>
         </div>
 
-        <div style={{
+        <div className="loc-section-grid" style={{
           display: 'grid', gridTemplateColumns: '1fr 1.5fr',
           gap: '40px', alignItems: 'start',
         }}>
@@ -173,6 +173,7 @@ export default function LocationsSection() {
           {/* Location Detail */}
           <div
             ref={detailRef}
+            className="loc-detail-panel"
             style={{
               backgroundColor: 'rgba(255,255,255,0.04)',
               border: '1px solid rgba(201,122,60,0.2)',
@@ -187,7 +188,7 @@ export default function LocationsSection() {
               {loc.name}
             </h3>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '32px' }}>
+            <div className="loc-detail-inner-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', marginBottom: '32px' }}>
               {/* Contact */}
               <div>
                 <div style={{

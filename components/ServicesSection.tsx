@@ -144,12 +144,13 @@ export default function ServicesSection() {
         {/* Accordion Cards */}
         <div
           ref={cardsContainerRef}
+          className="services-accordion-container"
           style={{ display: 'flex', gap: '12px', height: '460px' }}
         >
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="service-accordion-card"
+              className={`service-accordion-card${activeIndex === index ? ' service-accordion-card--active' : ''}`}
               onClick={() => setActiveIndex(index)}
               style={{
                 flex: activeIndex === index ? 4 : 1,
@@ -172,14 +173,14 @@ export default function ServicesSection() {
               }} />
 
               {/* Collapsed vertical title */}
-              <div style={{
+              <div className="svc-collapsed-label" style={{
                 position: 'absolute', inset: 0,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 zIndex: 2,
                 opacity: activeIndex === index ? 0 : 1,
                 transition: 'opacity 0.3s ease',
               }}>
-                <div style={{
+                <div className="svc-collapsed-title" style={{
                   writingMode: 'vertical-rl',
                   textOrientation: 'mixed',
                   transform: 'rotate(180deg)',
@@ -195,7 +196,7 @@ export default function ServicesSection() {
               </div>
 
               {/* Expanded content */}
-              <div style={{
+              <div className="svc-expanded-content" style={{
                 position: 'absolute', inset: 0,
                 padding: '40px',
                 display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',

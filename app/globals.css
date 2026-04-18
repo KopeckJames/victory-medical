@@ -614,3 +614,64 @@ footer .disclaimer-text {
 @media (max-width: 640px) {
   .acc-title { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; }
 }
+
+/* ─── Locations section — single column on mobile ─── */
+@media (max-width: 768px) {
+  .loc-section-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  .loc-detail-panel {
+    padding: 24px !important;
+  }
+  .loc-detail-inner-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    margin-bottom: 24px !important;
+  }
+}
+
+/* ─── Services accordion — vertical stack on mobile ─── */
+@media (max-width: 768px) {
+  .services-accordion-container {
+    flex-direction: column !important;
+    height: auto !important;
+    gap: 8px !important;
+  }
+  /* Collapsed card: slim title bar */
+  .service-accordion-card {
+    flex: none !important;
+    width: 100% !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    transition: height 0.45s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  }
+  /* Active card: tall enough for content */
+  .service-accordion-card--active {
+    height: 400px !important;
+    min-height: 400px !important;
+  }
+  /* Collapsed label: switch to horizontal left-aligned */
+  .svc-collapsed-label {
+    justify-content: flex-start !important;
+    padding: 0 20px !important;
+  }
+  .svc-collapsed-title {
+    writing-mode: horizontal-tb !important;
+    transform: none !important;
+    font-size: 0.82rem !important;
+    letter-spacing: 0.08em !important;
+  }
+  /* Expanded content: tighter padding, smaller text */
+  .svc-expanded-content {
+    padding: 24px !important;
+  }
+  .svc-expanded-content h3 {
+    font-size: 1.35rem !important;
+    margin-bottom: 8px !important;
+  }
+  .svc-expanded-content p {
+    font-size: 0.8rem !important;
+    margin-bottom: 14px !important;
+  }
+}

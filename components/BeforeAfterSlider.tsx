@@ -12,8 +12,8 @@ interface SlideItem {
   label: string
   beforeLabel: string
   afterLabel: string
-  beforeBg: string
-  afterBg: string
+  beforeImg: string
+  afterImg: string
   treatment: string
   timeframe: string
 }
@@ -23,8 +23,8 @@ const slides: SlideItem[] = [
     label: 'Botox — Forehead Lines',
     beforeLabel: 'Before',
     afterLabel: '2 Weeks After',
-    beforeBg: 'linear-gradient(135deg, #1a3a4a 0%, #0d2433 100%)',
-    afterBg: 'linear-gradient(135deg, #0e2d3c 0%, #163d52 100%)',
+    beforeImg: '/before-after/botox-before.jpg',
+    afterImg: '/before-after/botox-after.jpg',
     treatment: 'Botox / Dysport',
     timeframe: '2–4 weeks for full results',
   },
@@ -32,8 +32,8 @@ const slides: SlideItem[] = [
     label: 'CoolSculpting — Abdomen',
     beforeLabel: 'Before',
     afterLabel: '3 Months After',
-    beforeBg: 'linear-gradient(135deg, #1c3545 0%, #0f2535 100%)',
-    afterBg: 'linear-gradient(135deg, #0e2d3c 0%, #1a4a60 100%)',
+    beforeImg: '/before-after/coolsculpting-before.jpg',
+    afterImg: '/before-after/coolsculpting-after.jpg',
     treatment: 'CoolSculpting®',
     timeframe: '1–3 months for full results',
   },
@@ -41,8 +41,8 @@ const slides: SlideItem[] = [
     label: 'HydraFacial — Skin Texture',
     beforeLabel: 'Before',
     afterLabel: 'Immediately After',
-    beforeBg: 'linear-gradient(135deg, #182e3c 0%, #0c2030 100%)',
-    afterBg: 'linear-gradient(135deg, #163d52 0%, #1e5570 100%)',
+    beforeImg: '/before-after/hydrafacial-before.jpg',
+    afterImg: '/before-after/hydrafacial-after.jpg',
     treatment: 'HydraFacial MD',
     timeframe: 'Immediate results, zero downtime',
   },
@@ -50,8 +50,8 @@ const slides: SlideItem[] = [
     label: 'Dermal Fillers — Lips',
     beforeLabel: 'Before',
     afterLabel: '1 Week After',
-    beforeBg: 'linear-gradient(135deg, #1a2e3e 0%, #0e2030 100%)',
-    afterBg: 'linear-gradient(135deg, #0e2d3c 0%, #164558 100%)',
+    beforeImg: '/before-after/fillers-before.jpg',
+    afterImg: '/before-after/fillers-after.jpg',
     treatment: 'Dermal Fillers',
     timeframe: '1–2 weeks for final look',
   },
@@ -134,22 +134,22 @@ function Slider({ slide }: SliderProps) {
       {/* After (full width, behind) */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: slide.afterBg,
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        backgroundImage: `url(${slide.afterImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}>
-        {/* Simulated "after" visual with glow effect */}
         <div style={{
-          width: '120px', height: '120px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(201,122,60,0.25) 0%, rgba(14,45,60,0.1) 70%)',
-          boxShadow: '0 0 60px rgba(201,122,60,0.3)',
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to top, rgba(5,15,21,0.45) 0%, transparent 50%)',
         }} />
         <div style={{
           position: 'absolute', bottom: '16px', right: '16px',
           fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase',
           color: 'var(--copper)', fontWeight: 600,
-          backgroundColor: 'rgba(201,122,60,0.15)',
+          backgroundColor: 'rgba(5,15,21,0.7)',
           padding: '4px 10px', borderRadius: '20px',
-          border: '1px solid rgba(201,122,60,0.3)',
+          border: '1px solid rgba(201,122,60,0.4)',
+          backdropFilter: 'blur(8px)',
         }}>
           {slide.afterLabel}
         </div>
@@ -159,22 +159,23 @@ function Slider({ slide }: SliderProps) {
       <div style={{
         position: 'absolute', inset: 0,
         clipPath: `inset(0 ${100 - position}% 0 0)`,
-        background: slide.beforeBg,
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        backgroundImage: `url(${slide.beforeImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         transition: isDragging ? 'none' : 'clip-path 0.05s',
       }}>
         <div style={{
-          width: '120px', height: '120px', borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%)',
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to top, rgba(5,15,21,0.45) 0%, transparent 50%)',
         }} />
-        {/* Before label */}
         <div style={{
           position: 'absolute', bottom: '16px', left: '16px',
           fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase',
-          color: 'rgba(255,255,255,0.6)', fontWeight: 600,
-          backgroundColor: 'rgba(255,255,255,0.08)',
+          color: 'rgba(255,255,255,0.9)', fontWeight: 600,
+          backgroundColor: 'rgba(5,15,21,0.7)',
           padding: '4px 10px', borderRadius: '20px',
-          border: '1px solid rgba(255,255,255,0.15)',
+          border: '1px solid rgba(255,255,255,0.2)',
+          backdropFilter: 'blur(8px)',
         }}>
           {slide.beforeLabel}
         </div>

@@ -95,10 +95,7 @@ export default function CTASection() {
       />
 
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-        <div style={{
-          display: 'grid', gridTemplateColumns: '1fr 1fr',
-          gap: '80px', alignItems: 'center',
-        }}>
+        <div className="cta-grid">
           {/* Left */}
           <div ref={leftContentRef}>
             <div data-line className="section-label cta-section-label" style={{ marginBottom: '20px' }}>
@@ -124,6 +121,7 @@ export default function CTASection() {
           {/* Right — booking card */}
           <div
             ref={cardRef}
+            className="cta-card"
             style={{
               backgroundColor: 'rgba(255,255,255,0.04)',
               border: '1px solid rgba(201,122,60,0.2)',

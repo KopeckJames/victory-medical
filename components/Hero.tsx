@@ -284,7 +284,7 @@ export default function Hero() {
 
       {/* Content */}
       <div style={{ position: 'relative', zIndex: 2, width: '100%' }}>
-        <div className="container" style={{ paddingTop: '140px', paddingBottom: '120px' }}>
+        <div className="container hero-content-container" style={{ paddingTop: '140px', paddingBottom: '120px' }}>
           <div style={{ maxWidth: '680px' }}>
 
             {/* Label */}
@@ -294,6 +294,7 @@ export default function Hero() {
 
             {/* Headline with char-split */}
             <h1
+              className="hero-headline"
               style={{
                 fontFamily: 'var(--font-playfair)',
                 fontSize: 'clamp(2rem, 5.5vw, 4.5rem)',

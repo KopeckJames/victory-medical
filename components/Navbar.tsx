@@ -73,6 +73,7 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null)
   const pathname = usePathname()
   const navRef = useRef<HTMLElement>(null)
   const borderLineRef = useRef<HTMLDivElement>(null)
@@ -132,9 +133,16 @@ export default function Navbar() {
     }
   }, [mobileOpen])
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [mobileOpen])
+
   useEffect(() => {
     setMobileOpen(false)
     setActiveDropdown(null)
+    setMobileExpanded(null)
   }, [pathname])
 
   return (
@@ -199,8 +207,8 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <div
-            className="hidden lg:flex"
-            style={{ display: 'flex', alignItems: 'center', gap: '36px' }}
+            className="nav-desktop"
+            style={{ alignItems: 'center', gap: '36px' }}
           >
             {navLinks.map((link) => (
               <div
@@ -429,10 +437,10 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden"
+            className="nav-hamburger"
             style={{
               background: 'none', border: 'none', cursor: 'pointer',
-              padding: '8px', display: 'flex', flexDirection: 'column', gap: '5px',
+              padding: '8px', flexDirection: 'column', gap: '5px',
             }}
             aria-label="Toggle menu"
           >
@@ -457,54 +465,118 @@ export default function Navbar() {
         style={{
           position: 'fixed', top: '80px', left: 0, right: 0, bottom: 0,
           backgroundColor: 'var(--dark-teal)',
-          zIndex: 999, overflowY: 'auto', padding: '40px 24px',
+          zIndex: 999, overflowY: 'auto', padding: '8px 24px 48px',
           transform: 'translateY(-100%)', opacity: 0,
         }}
-        className="lg:hidden"
+        className="mobile-menu-overlay"
       >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <nav>
           {navLinks.map((link) => (
-            <div key={link.label}>
-              <Link href={link.href} style={{
-                display: 'block', fontSize: '1.5rem',
-                fontFamily: 'var(--font-playfair)',
-                color: 'var(--white)', textDecoration: 'none',
-                padding: '12px 0', borderBottom: '1px solid rgba(255,255,255,0.08)',
-              }}>
-                {link.label}
-              </Link>
+            <div key={link.label} style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <Link
+                  href={link.href}
+                  style={{
+                    flex: 1, display: 'block',
+                    fontSize: '1.15rem',
+                    fontFamily: 'var(--font-playfair)',
+                    color: pathname === link.href || pathname.startsWith(link.href + '/') ? 'var(--copper)' : 'var(--white)',
+                    textDecoration: 'none',
+                    padding: '18px 0',
+                    lineHeight: 1.3,
+                  }}
+                >
+                  {link.label}
+                </Link>
+                {link.dropdown && (
+                  <button
+                    onClick={() => setMobileExpanded(prev => prev === link.label ? null : link.label)}
+                    style={{
+                      background: 'none', border: 'none',
+                      color: mobileExpanded === link.label ? 'var(--copper)' : 'rgba(255,255,255,0.4)',
+                      cursor: 'pointer', padding: '18px 6px',
+                      display: 'flex', alignItems: 'center',
+                      transition: 'color 0.2s',
+                    }}
+                    aria-label={`${mobileExpanded === link.label ? 'Collapse' : 'Expand'} ${link.label}`}
+                  >
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      style={{
+                        transform: mobileExpanded === link.label ? 'rotate(180deg)' : 'rotate(0)',
+                        transition: 'transform 0.3s ease',
+                      }}
+                    >
+                      <path d="M4 7L9 12L14 7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </button>
+                )}
+              </div>
+
               {link.dropdown && (
-                <div style={{ paddingLeft: '16px', marginTop: '4px' }}>
-                  {link.dropdown.map((item) => (
-                    <Link key={item.label} href={item.href} style={{
-                      display: 'block', fontSize: '0.875rem',
-                      color: 'rgba(255,255,255,0.6)', textDecoration: 'none', padding: '8px 0',
-                    }}>
-                      {item.label}
-                    </Link>
-                  ))}
+                <div style={{
+                  maxHeight: mobileExpanded === link.label ? '600px' : '0',
+                  overflow: 'hidden',
+                  transition: 'max-height 0.4s ease',
+                }}>
+                  <div style={{ paddingBottom: '12px' }}>
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        style={{
+                          display: 'flex', alignItems: 'center', gap: '10px',
+                          fontSize: '0.9rem',
+                          color: 'rgba(255,255,255,0.6)',
+                          textDecoration: 'none',
+                          padding: '10px 8px',
+                          borderBottom: '1px solid rgba(255,255,255,0.04)',
+                          letterSpacing: '0.02em',
+                        }}
+                      >
+                        <span style={{
+                          width: '4px', height: '4px', borderRadius: '50%',
+                          backgroundColor: 'rgba(201,122,60,0.7)',
+                          flexShrink: 0,
+                        }} />
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
           ))}
-          <div style={{ marginTop: '24px' }}>
-            <a href="tel:5124623627" style={{
-              display: 'block', fontSize: '1.2rem',
-              color: 'var(--copper)', textDecoration: 'none', marginBottom: '16px',
-            }}>
-              (512) 462-3627
-            </a>
+
+          {/* Mobile CTAs */}
+          <div style={{ paddingTop: '32px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <a
               href="https://www.priviahealth.com/practice/victory-medical/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
-              style={{ display: 'inline-flex' }}
+              style={{ display: 'flex', justifyContent: 'center', textDecoration: 'none' }}
             >
               Book an Appointment
             </a>
+            <a
+              href="tel:5124623627"
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                padding: '14px',
+                fontSize: '0.875rem', color: 'var(--gold)',
+                textDecoration: 'none', fontWeight: 500,
+                border: '1px solid rgba(255,255,255,0.12)',
+                borderRadius: '4px',
+                letterSpacing: '0.04em',
+              }}
+            >
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
+                <path d="M14.5 11.5L12 14C9.5 11.5 4.5 6.5 2 4l2.5-2.5L7 5l-1.5 1.5C6.5 7.5 8.5 9.5 9.5 10.5L11 9l3.5 2.5z" fill="currentColor"/>
+              </svg>
+              (512) 462-3627
+            </a>
           </div>
-        </div>
+        </nav>
       </div>
     </>
   )

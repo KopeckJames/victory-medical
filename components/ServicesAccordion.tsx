@@ -127,7 +127,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
           .acc-header-inner { padding: 16px 18px !important; }
           .acc-content-inner { padding: 0 18px 24px !important; }
           .acc-features-grid { grid-template-columns: 1fr !important; }
-          .acc-title { font-size: 1rem !important; }
+          .acc-title { font-size: 1rem !important; white-space: normal !important; overflow: visible !important; text-overflow: clip !important; }
           .acc-category-tag { display: none !important; }
         }
       `}</style>

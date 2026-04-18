@@ -487,17 +487,46 @@ footer .disclaimer-text {
   /* Hero photo panel — hide so headline gets full width */
   .hero-photo-panel { display: none !important; }
 
-  /* Treatment showcase — vertical stack on mobile */
+  /* Treatment showcase — compact horizontal cards on mobile */
   .treatment-track {
     flex-direction: column !important;
     overflow-x: visible !important;
     width: 100% !important;
+    padding-bottom: 48px !important;
   }
+  .tc-scroll-hint { display: none !important; }
   .treatment-card {
     width: 100% !important;
     flex-shrink: unset !important;
     height: auto !important;
-    min-height: 280px !important;
+    min-height: 0 !important;
+    flex-direction: row !important;
+    padding: 20px !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+  .tc-number { display: none !important; }
+  .tc-top {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  .tc-category { margin-bottom: 6px !important; }
+  .tc-title {
+    font-size: 1.05rem !important;
+    margin-bottom: 0 !important;
+    white-space: normal !important;
+  }
+  .tc-desc { display: none !important; }
+  .tc-bottom { flex-shrink: 0 !important; }
+  .tc-bottom-inner {
+    border-top: none !important;
+    border-left: 1px solid rgba(255,255,255,0.08) !important;
+    padding-top: 0 !important;
+    padding-left: 16px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    min-width: 80px !important;
   }
 
   /* Blog article layout — stack sidebar below content */
@@ -527,4 +556,61 @@ footer .disclaimer-text {
 
   /* Minimum readable font size floor on very small screens */
   .section-label { font-size: 0.75rem !important; }
+}
+
+/* ─── Nav visibility (fixes inline-style vs Tailwind specificity war) ─── */
+.nav-desktop { display: none; }
+.nav-hamburger { display: flex; }
+.mobile-menu-overlay { display: block; }
+@media (min-width: 1024px) {
+  .nav-desktop { display: flex; }
+  .nav-hamburger { display: none !important; }
+  .mobile-menu-overlay { display: none !important; }
+}
+
+/* ─── Footer responsive grid ─── */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 60px;
+}
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+@media (max-width: 640px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+/* ─── CTA Section responsive grid ─── */
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .cta-grid { grid-template-columns: 1fr; gap: 48px; }
+  .cta-card { padding: 32px !important; }
+}
+
+/* ─── Hero headline — allow wrap on mobile ─── */
+@media (max-width: 768px) {
+  .hero-headline span { white-space: normal !important; }
+  .hero-content-container { padding-top: 110px !important; padding-bottom: 60px !important; }
+}
+
+/* ─── Contact page location cards ─── */
+@media (max-width: 900px) {
+  .contact-location-cols { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .location-card { padding: 28px !important; }
+}
+
+/* ─── Social proof notification ─── */
+@media (max-width: 480px) {
+  .social-proof-wrap { max-width: calc(100vw - 48px) !important; }
+}
+
+/* ─── Accordion title allow wrap on mobile ─── */
+@media (max-width: 640px) {
+  .acc-title { white-space: normal !important; overflow: visible !important; text-overflow: clip !important; }
 }

@@ -434,6 +434,7 @@ export default function ContactPage() {
               {locations.map((loc, i) => (
                 <div
                   key={i}
+                  className="location-card"
                   style={{
                     backgroundColor: 'rgba(255,255,255,0.04)',
                     border: `1px solid ${loc.featured ? 'rgba(201,122,60,0.3)' : 'rgba(255,255,255,0.07)'}`,

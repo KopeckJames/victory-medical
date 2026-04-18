@@ -102,14 +102,7 @@ export default function Footer() {
       </div>
       {/* Main Footer */}
       <div className="container" style={{ paddingTop: '80px', paddingBottom: '60px' }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '2fr 1fr 1fr 1fr',
-            gap: '60px',
-          }}
-          className="grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
-        >
+        <div className="footer-grid">
           {/* Brand Column */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
@@ -492,7 +485,7 @@ export default function Footer() {
           >
             © {currentYear} Victory Medical. All rights reserved.
           </p>
-          <div style={{ display: 'flex', gap: '24px' }}>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             {['Privacy Policy', 'Terms & Conditions', 'HIPAA Notice', 'Sitemap'].map((item) => (
               <Link
                 key={item}

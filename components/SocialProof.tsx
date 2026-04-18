@@ -84,7 +84,7 @@ export default function SocialProof() {
         opacity: 0,
       }}
     >
-      <div style={{
+      <div className="social-proof-wrap" style={{
         display: 'flex',
         alignItems: 'center',
         gap: '12px',

@@ -213,7 +213,7 @@ export default function TreatmentShowcase() {
             From prevention to transformation — every service you need, coordinated by one integrated team.
           </p>
         </div>
-        <div style={{
+        <div className="tc-scroll-hint" style={{
           marginTop: '16px', display: 'flex', alignItems: 'center', gap: '8px',
           opacity: 0.5,
         }}>
@@ -273,7 +273,7 @@ export default function TreatmentShowcase() {
             }}
           >
             {/* Number */}
-            <div style={{
+            <div className="tc-number" style={{
               position: 'absolute', top: '24px', right: '28px',
               fontSize: '4rem', fontWeight: 700,
               fontFamily: 'var(--font-playfair)',
@@ -282,28 +282,28 @@ export default function TreatmentShowcase() {
             }}>{t.number}</div>
 
             {/* Top */}
-            <div>
-              <div style={{
+            <div className="tc-top">
+              <div className="tc-category" style={{
                 fontSize: '0.65rem', letterSpacing: '0.15em',
                 textTransform: 'uppercase', color: 'var(--copper)',
                 marginBottom: '16px', fontWeight: 600,
               }}>{t.category}</div>
-              <h3 style={{
+              <h3 className="tc-title" style={{
                 fontFamily: 'var(--font-playfair)',
                 fontSize: '1.6rem', fontWeight: 400,
                 color: 'var(--white)', lineHeight: 1.25,
                 marginBottom: '16px',
                 whiteSpace: 'pre-line',
               }}>{t.title}</h3>
-              <p style={{
+              <p className="tc-desc" style={{
                 fontSize: '0.875rem', color: 'rgba(255,255,255,0.65)',
                 lineHeight: 1.7,
               }}>{t.description}</p>
             </div>
 
             {/* Bottom */}
-            <div>
-              <div style={{
+            <div className="tc-bottom">
+              <div className="tc-bottom-inner" style={{
                 borderTop: '1px solid rgba(255,255,255,0.08)',
                 paddingTop: '20px',
                 display: 'flex', alignItems: 'center',

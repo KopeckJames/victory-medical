@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/next'
 import MagneticCursor from '@/components/MagneticCursor'
 import SocialProof from '@/components/SocialProof'
 import AIHealthChat from '@/components/AIHealthChat'
@@ -94,6 +95,7 @@ export default function RootLayout({
         <div id="main-content">{children}</div>
         <StickyBookingBar />
         <AIHealthChat />
+        <Analytics />
       </body>
     </html>
   )

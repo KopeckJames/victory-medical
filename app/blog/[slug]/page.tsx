@@ -253,6 +253,19 @@ export default async function BlogPostPage({ params }: Props) {
           />
         </div>
 
+        {/* ── Featured Image ───────────────────────────────────────────── */}
+        <div className="container" style={{ paddingTop: '0', paddingBottom: '0' }}>
+          <div style={{
+            width: '100%',
+            height: '400px',
+            backgroundImage: `url(${post.featuredImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            borderRadius: '16px',
+            marginBottom: '0',
+          }} />
+        </div>
+
         {/* ── Article Body + Sidebar Layout ────────────────────────────── */}
         <section
           style={{

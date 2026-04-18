@@ -112,11 +112,24 @@ export default function BlogPage() {
                     backgroundColor: 'rgba(255,255,255,0.04)',
                     border: '1px solid rgba(255,255,255,0.09)',
                     borderRadius: '12px',
-                    padding: '28px',
+                    overflow: 'hidden',
                     textDecoration: 'none',
                     color: 'inherit',
                   }}
                 >
+                  {/* Featured image */}
+                  <div style={{
+                    width: '100%',
+                    height: '200px',
+                    backgroundImage: `url(${post.featuredImage})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    flexShrink: 0,
+                  }} />
+
+                  {/* Card content */}
+                  <div style={{ padding: '28px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+
                   {/* Category badge */}
                   <div style={{ marginBottom: '16px' }}>
                     <span
@@ -234,6 +247,7 @@ export default function BlogPage() {
                       →
                     </span>
                   </div>
+                  </div>{/* end card content */}
                 </Link>
               ))}
             </div>

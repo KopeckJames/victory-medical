@@ -252,11 +252,13 @@ export default function Hero() {
           zIndex: 2,
           pointerEvents: 'none',
         }} />
-        {/* Background fallback pattern */}
+        {/* Hero photo */}
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: `url('/hero-image.svg') center center / cover no-repeat`,
+          backgroundImage: `url('/hero/medical-team.jpg')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
           zIndex: 1,
         }} />
         {/* Video hero — replace VIDEO_SRC with actual mp4 URL to enable */}

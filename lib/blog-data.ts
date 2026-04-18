@@ -7,6 +7,7 @@ export interface BlogPost {
   category: string
   author: string
   authorTitle: string
+  featuredImage: string
   content: string
 }
 
@@ -21,6 +22,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Mental Health',
     author: 'Melissa Gabrielli, DNP',
     authorTitle: 'Ketamine Therapist & Psychiatric NP',
+    featuredImage: '/blog/ketamine-iv.jpg',
     content: `
 <p>For patients living with treatment-resistant depression, PTSD, or severe anxiety, the search for relief can feel endless. Antidepressants that worked for others leave you unchanged. Therapy sessions produce insights but not the neurological shift that makes those insights stick. Ketamine-assisted therapy represents something genuinely different — and at Victory Medical's Austin clinic, we've seen it change lives.</p>
 
@@ -74,6 +76,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Allergy',
     author: 'Victory Medical Staff',
     authorTitle: 'Victory Medical Clinical Team',
+    featuredImage: '/blog/allergy-pollen.jpg',
     content: `
 <p>If you've ever started traditional allergy immunotherapy, you know the commitment it demands: weekly shots for six to twelve months to reach a maintenance dose, then monthly shots for three to five years. For many patients, this timeline means years of antihistamines, congestion, and missed days while waiting to reach the dose that actually controls symptoms. The Harvard Allergy Protocol changes that equation.</p>
 
@@ -127,6 +130,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Weight Loss',
     author: 'Victory Medical Staff',
     authorTitle: 'Victory Medical Clinical Team',
+    featuredImage: '/blog/weight-loss-blog.jpg',
     content: `
 <p>Every January, millions of Americans restart the same weight loss cycle: a new diet app, a gym membership, a motivational podcast. By March, most have returned to their previous habits. The 95% long-term failure rate of self-directed weight loss is not a personal failing — it is a predictable consequence of treating a complex metabolic condition as a willpower problem. Physician-supervised weight loss programs work because they address the actual biology of weight regulation.</p>
 
@@ -180,6 +184,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'Primary Care',
     author: 'Victory Medical Staff',
     authorTitle: 'Victory Medical Clinical Team',
+    featuredImage: '/blog/doctor-consult.jpg',
     content: `
 <p>The American primary care system is under strain. The average physician appointment in the United States lasts 18 minutes. Primary care physicians carry patient panels of 2,000–2,500 people. The result is care that is reactive rather than preventive, rushed rather than thorough, and often fragmented from one visit to the next. MDVIP concierge medicine exists as a direct response to this reality — and Victory Medical has offered it as part of our practice since 2020.</p>
 
@@ -240,6 +245,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: 'MedSpa',
     author: 'Ola Zylka, MSN, FNP-C',
     authorTitle: 'Nurse Practitioner & Nurse Injector',
+    featuredImage: '/treatments/medspa.jpg',
     content: `
 <p>Despite consistent diet and exercise, many patients find that certain areas of fat resist all their efforts. The flanks, lower abdomen, inner thighs, and submental area (under the chin) are notorious for stubborn fat deposits that seem immune to caloric restriction. CoolSculpting — clinically known as cryolipolysis — is the most extensively studied non-surgical fat reduction technology in the world, with over 11 million treatments performed globally. At Victory Medical's dedicated MedSpa at 2108 W Ben White Blvd, we've helped hundreds of Austin patients achieve the body contour they've worked toward.</p>
 

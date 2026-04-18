@@ -20,6 +20,7 @@ const treatments = [
     color: 'rgba(201,122,60,0.12)',
     borderColor: 'rgba(201,122,60,0.3)',
     href: '/services#primary-care',
+    image: '/treatments/primary-care.jpg',
   },
   {
     number: '02',
@@ -31,6 +32,7 @@ const treatments = [
     color: 'rgba(196,168,122,0.1)',
     borderColor: 'rgba(196,168,122,0.25)',
     href: '/medspa',
+    image: '/treatments/medspa.jpg',
   },
   {
     number: '03',
@@ -42,6 +44,7 @@ const treatments = [
     color: 'rgba(14,45,60,0.8)',
     borderColor: 'rgba(201,122,60,0.2)',
     href: '/services#ketamine',
+    image: '/treatments/iv-ketamine.jpg',
   },
   {
     number: '04',
@@ -53,6 +56,7 @@ const treatments = [
     color: 'rgba(201,122,60,0.08)',
     borderColor: 'rgba(201,122,60,0.25)',
     href: '/services#allergy',
+    image: '/treatments/allergy-test.jpg',
   },
   {
     number: '05',
@@ -64,6 +68,7 @@ const treatments = [
     color: 'rgba(196,168,122,0.08)',
     borderColor: 'rgba(196,168,122,0.2)',
     href: '/services#weight-loss',
+    image: '/treatments/weight-loss.jpg',
   },
   {
     number: '06',
@@ -75,6 +80,7 @@ const treatments = [
     color: 'rgba(201,122,60,0.1)',
     borderColor: 'rgba(201,122,60,0.3)',
     href: '/services#hormones',
+    image: '/treatments/longevity.jpg',
   },
 ]
 
@@ -272,6 +278,20 @@ export default function TreatmentShowcase() {
               })
             }}
           >
+            {/* Card photo — bottom-right accent */}
+            <div style={{
+              position: 'absolute', bottom: 0, right: 0,
+              width: '140px', height: '140px',
+              backgroundImage: `url(${t.image})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              borderTopLeftRadius: '60px',
+              borderBottomRightRadius: '20px',
+              opacity: 0.25,
+              maskImage: 'radial-gradient(ellipse at bottom right, black 40%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at bottom right, black 40%, transparent 80%)',
+            }} />
+
             {/* Number */}
             <div className="tc-number" style={{
               position: 'absolute', top: '24px', right: '28px',

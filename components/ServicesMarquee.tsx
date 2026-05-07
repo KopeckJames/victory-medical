@@ -57,7 +57,7 @@ export default function ServicesMarquee() {
                 fontSize: '0.75rem',
                 letterSpacing: '0.1em',
                 textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.7)',
+                color: 'rgba(26,58,71,0.7)',
                 fontWeight: 500,
               }}
             >

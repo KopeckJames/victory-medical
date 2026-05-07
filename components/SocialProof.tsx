@@ -88,8 +88,8 @@ export default function SocialProof() {
         display: 'flex',
         alignItems: 'center',
         gap: '12px',
-        backgroundColor: '#071820',
-        border: '1px solid rgba(201,122,60,0.25)',
+        backgroundColor: '#f5fbfc',
+        border: '1px solid rgba(34,184,209,0.25)',
         borderRadius: '14px',
         padding: '12px 16px',
         boxShadow: '0 12px 40px rgba(0,0,0,0.5)',
@@ -99,7 +99,7 @@ export default function SocialProof() {
         {/* Avatar */}
         <div style={{
           width: '40px', height: '40px', borderRadius: '50%',
-          background: 'linear-gradient(135deg, var(--copper) 0%, #e09a5c 100%)',
+          background: 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           fontSize: '0.7rem', fontWeight: 700, color: 'white',
           flexShrink: 0,
@@ -122,7 +122,7 @@ export default function SocialProof() {
           </div>
           <div style={{
             fontSize: '0.72rem',
-            color: 'rgba(255,255,255,0.6)',
+            color: 'rgba(26,58,71,0.6)',
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
@@ -132,7 +132,7 @@ export default function SocialProof() {
         </div>
 
         <div style={{
-          fontSize: '0.6rem', color: 'rgba(255,255,255,0.3)',
+          fontSize: '0.6rem', color: 'rgba(26,58,71,0.3)',
           flexShrink: 0, letterSpacing: '0.05em',
         }}>
           {notif.time}

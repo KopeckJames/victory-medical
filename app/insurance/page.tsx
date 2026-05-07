@@ -74,12 +74,12 @@ export default function InsurancePage() {
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'radial-gradient(ellipse 60% 60% at 20% 60%, rgba(201,122,60,0.09) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 60% 60% at 20% 60%, rgba(34,184,209,0.09) 0%, transparent 70%)',
           }} />
           <div style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
             pointerEvents: 'none',
           }} />
@@ -110,7 +110,7 @@ export default function InsurancePage() {
             </p>
             <p style={{
               fontSize: '0.95rem',
-              color: 'rgba(255,255,255,0.5)',
+              color: 'rgba(26,58,71,0.5)',
               maxWidth: '560px',
               lineHeight: 1.8,
               marginBottom: '40px',
@@ -176,12 +176,12 @@ export default function InsurancePage() {
                   key={insurer}
                   style={{
                     padding: '14px 20px',
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(201,122,60,0.25)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(34,184,209,0.25)',
                     borderRadius: '50px',
                     textAlign: 'center',
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.85)',
+                    color: 'rgba(26,58,71,0.85)',
                     fontWeight: 500,
                   }}
                 >
@@ -192,8 +192,8 @@ export default function InsurancePage() {
 
             <div style={{
               padding: '20px 28px',
-              backgroundColor: 'rgba(201,122,60,0.07)',
-              border: '1px solid rgba(201,122,60,0.2)',
+              backgroundColor: 'rgba(34,184,209,0.07)',
+              border: '1px solid rgba(34,184,209,0.2)',
               borderRadius: '12px',
               display: 'flex',
               alignItems: 'center',
@@ -201,7 +201,7 @@ export default function InsurancePage() {
               flexWrap: 'wrap',
             }}>
               <span style={{ fontSize: '1rem', color: 'var(--copper)' }}>&#9432;</span>
-              <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.6, margin: 0 }}>
+              <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.7)', lineHeight: 1.6, margin: 0 }}>
                 <strong style={{ color: 'var(--white)', fontWeight: 600 }}>List updated regularly</strong> — individual plans and sub-networks vary. Call{' '}
                 <a href="tel:5124623627" style={{ color: 'var(--copper)', textDecoration: 'none' }}>(512) 462-3627</a>{' '}
                 to verify your specific plan before your visit.
@@ -231,8 +231,8 @@ export default function InsurancePage() {
             </div>
 
             <div style={{
-              backgroundColor: 'rgba(255,255,255,0.03)',
-              border: '1px solid rgba(255,255,255,0.07)',
+              backgroundColor: 'rgba(26,58,71,0.03)',
+              border: '1px solid rgba(26,58,71,0.07)',
               borderRadius: '16px',
               overflow: 'hidden',
             }}>
@@ -241,8 +241,8 @@ export default function InsurancePage() {
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr 1fr',
                 padding: '14px 32px',
-                backgroundColor: 'rgba(201,122,60,0.08)',
-                borderBottom: '1px solid rgba(255,255,255,0.06)',
+                backgroundColor: 'rgba(34,184,209,0.08)',
+                borderBottom: '1px solid rgba(26,58,71,0.06)',
               }}>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 600 }}>Service</div>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 600 }}>Self-Pay Rate</div>
@@ -256,8 +256,8 @@ export default function InsurancePage() {
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr 1fr',
                     padding: '20px 32px',
-                    borderBottom: i < selfPayRates.length - 1 ? '1px solid rgba(255,255,255,0.05)' : 'none',
-                    backgroundColor: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.015)',
+                    borderBottom: i < selfPayRates.length - 1 ? '1px solid rgba(26,58,71,0.05)' : 'none',
+                    backgroundColor: i % 2 === 0 ? 'transparent' : 'rgba(26,58,71,0.015)',
                     alignItems: 'center',
                   }}
                 >
@@ -268,12 +268,12 @@ export default function InsurancePage() {
                     fontWeight: 600,
                     fontFamily: 'var(--font-playfair)',
                   }}>{row.price}</div>
-                  <div style={{ fontSize: '0.825rem', color: 'rgba(255,255,255,0.5)' }}>{row.note}</div>
+                  <div style={{ fontSize: '0.825rem', color: 'rgba(26,58,71,0.5)' }}>{row.note}</div>
                 </div>
               ))}
             </div>
 
-            <p style={{ marginTop: '20px', fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', lineHeight: 1.6 }}>
+            <p style={{ marginTop: '20px', fontSize: '0.8rem', color: 'rgba(26,58,71,0.3)', lineHeight: 1.6 }}>
               Prices are approximate and may vary based on complexity. Final pricing discussed before treatment. HSA and FSA accepted for most medical services.
             </p>
           </div>
@@ -283,8 +283,8 @@ export default function InsurancePage() {
         <section style={{ backgroundColor: 'var(--teal)', padding: '80px 0' }}>
           <div className="container">
             <div style={{
-              background: 'linear-gradient(135deg, rgba(201,122,60,0.1) 0%, rgba(14,45,60,0.6) 100%)',
-              border: '1px solid rgba(201,122,60,0.3)',
+              background: 'linear-gradient(135deg, rgba(34,184,209,0.1) 0%, rgba(255,255,255,0.6) 100%)',
+              border: '1px solid rgba(34,184,209,0.3)',
               borderRadius: '20px',
               padding: '60px',
               display: 'grid',
@@ -341,7 +341,7 @@ export default function InsurancePage() {
                   style={{
                     borderRadius: '14px',
                     padding: '32px',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                   }}
                 >
                   <h3 style={{
@@ -361,8 +361,8 @@ export default function InsurancePage() {
                       width: '24px',
                       height: '24px',
                       borderRadius: '50%',
-                      backgroundColor: 'rgba(201,122,60,0.15)',
-                      border: '1px solid rgba(201,122,60,0.3)',
+                      backgroundColor: 'rgba(34,184,209,0.15)',
+                      border: '1px solid rgba(34,184,209,0.3)',
                       fontSize: '0.65rem',
                       color: 'var(--copper)',
                       fontWeight: 700,
@@ -373,7 +373,7 @@ export default function InsurancePage() {
                   </h3>
                   <p style={{
                     fontSize: '0.9rem',
-                    color: 'rgba(255,255,255,0.65)',
+                    color: 'rgba(26,58,71,0.65)',
                     lineHeight: 1.8,
                     paddingLeft: '36px',
                     margin: 0,
@@ -390,8 +390,8 @@ export default function InsurancePage() {
         <section style={{ backgroundColor: 'var(--teal)', padding: '100px 0' }}>
           <div className="container">
             <div style={{
-              background: 'linear-gradient(135deg, rgba(201,122,60,0.08) 0%, rgba(14,45,60,0.9) 100%)',
-              border: '1px solid rgba(201,122,60,0.2)',
+              background: 'linear-gradient(135deg, rgba(34,184,209,0.08) 0%, rgba(255,255,255,0.9) 100%)',
+              border: '1px solid rgba(34,184,209,0.2)',
               borderRadius: '24px',
               padding: '80px',
               textAlign: 'center',

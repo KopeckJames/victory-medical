@@ -34,7 +34,7 @@ export default function BlogPage() {
               position: 'absolute',
               inset: 0,
               background:
-                'radial-gradient(ellipse 60% 60% at 80% 40%, rgba(201,122,60,0.09) 0%, transparent 70%)',
+                'radial-gradient(ellipse 60% 60% at 80% 40%, rgba(34,184,209,0.09) 0%, transparent 70%)',
               pointerEvents: 'none',
             }}
           />
@@ -43,7 +43,7 @@ export default function BlogPage() {
               position: 'absolute',
               inset: 0,
               backgroundImage:
-                'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+                'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
               backgroundSize: '60px 60px',
               pointerEvents: 'none',
             }}
@@ -109,8 +109,8 @@ export default function BlogPage() {
                   style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.09)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.09)',
                     borderRadius: '12px',
                     overflow: 'hidden',
                     textDecoration: 'none',
@@ -140,8 +140,8 @@ export default function BlogPage() {
                         letterSpacing: '0.12em',
                         textTransform: 'uppercase',
                         color: 'var(--copper)',
-                        backgroundColor: 'rgba(201,122,60,0.1)',
-                        border: '1px solid rgba(201,122,60,0.25)',
+                        backgroundColor: 'rgba(34,184,209,0.1)',
+                        border: '1px solid rgba(34,184,209,0.25)',
                         borderRadius: '20px',
                         padding: '4px 12px',
                       }}
@@ -169,7 +169,7 @@ export default function BlogPage() {
                   <p
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255,255,255,0.6)',
+                      color: 'rgba(26,58,71,0.6)',
                       lineHeight: 1.7,
                       marginBottom: '24px',
                       flexGrow: 1,
@@ -189,7 +189,7 @@ export default function BlogPage() {
                     }}
                   >
                     <span
-                      style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.38)' }}
+                      style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.38)' }}
                     >
                       {post.date}
                     </span>
@@ -198,12 +198,12 @@ export default function BlogPage() {
                         width: '3px',
                         height: '3px',
                         borderRadius: '50%',
-                        backgroundColor: 'rgba(255,255,255,0.2)',
+                        backgroundColor: 'rgba(26,58,71,0.2)',
                         flexShrink: 0,
                       }}
                     />
                     <span
-                      style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.38)' }}
+                      style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.38)' }}
                     >
                       {post.readTime}
                     </span>
@@ -212,12 +212,12 @@ export default function BlogPage() {
                         width: '3px',
                         height: '3px',
                         borderRadius: '50%',
-                        backgroundColor: 'rgba(255,255,255,0.2)',
+                        backgroundColor: 'rgba(26,58,71,0.2)',
                         flexShrink: 0,
                       }}
                     />
                     <span
-                      style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)' }}
+                      style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.45)' }}
                     >
                       {post.author}
                     </span>

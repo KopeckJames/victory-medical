@@ -67,7 +67,7 @@ export default function NewsletterSection() {
           position: 'absolute',
           top: '-100px', right: '-150px',
           width: '500px', height: '500px',
-          background: 'radial-gradient(ellipse, rgba(201,122,60,0.09) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse, rgba(34,184,209,0.09) 0%, transparent 70%)',
           pointerEvents: 'none',
           willChange: 'transform',
         }}
@@ -76,7 +76,7 @@ export default function NewsletterSection() {
         position: 'absolute',
         bottom: '-80px', left: '-100px',
         width: '400px', height: '400px',
-        background: 'radial-gradient(ellipse, rgba(196,168,122,0.06) 0%, transparent 70%)',
+        background: 'radial-gradient(ellipse, rgba(34,109,122,0.06) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -84,8 +84,8 @@ export default function NewsletterSection() {
         <div
           ref={cardRef}
           style={{
-            background: 'linear-gradient(135deg, rgba(201,122,60,0.08) 0%, rgba(14,45,60,0.95) 50%, rgba(196,168,122,0.05) 100%)',
-            border: '1px solid rgba(201,122,60,0.2)',
+            background: 'linear-gradient(135deg, rgba(34,184,209,0.08) 0%, rgba(255,255,255,0.95) 50%, rgba(34,109,122,0.05) 100%)',
+            border: '1px solid rgba(34,184,209,0.2)',
             borderRadius: '28px',
             padding: 'clamp(40px, 6vw, 72px)',
             display: 'grid',
@@ -129,8 +129,8 @@ export default function NewsletterSection() {
                 }}>
                   <div style={{
                     width: '18px', height: '18px', borderRadius: '50%',
-                    background: 'rgba(201,122,60,0.2)',
-                    border: '1px solid rgba(201,122,60,0.4)',
+                    background: 'rgba(34,184,209,0.2)',
+                    border: '1px solid rgba(34,184,209,0.4)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     flexShrink: 0, marginTop: '2px',
                   }}>
@@ -138,7 +138,7 @@ export default function NewsletterSection() {
                       <path d="M1.5 4L3 5.5L6.5 2" stroke="var(--copper)" strokeWidth="1.5" strokeLinecap="round"/>
                     </svg>
                   </div>
-                  <span style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.5 }}>
+                  <span style={{ fontSize: '0.85rem', color: 'rgba(26,58,71,0.65)', lineHeight: 1.5 }}>
                     {item}
                   </span>
                 </div>
@@ -148,8 +148,8 @@ export default function NewsletterSection() {
 
           {/* Right — Form */}
           <div style={{
-            backgroundColor: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(255,255,255,0.07)',
+            backgroundColor: 'rgba(26,58,71,0.04)',
+            border: '1px solid rgba(26,58,71,0.07)',
             borderRadius: '20px',
             padding: '40px',
           }}>
@@ -167,7 +167,7 @@ export default function NewsletterSection() {
                   fontSize: '1.3rem', color: 'var(--white)', marginBottom: '12px',
                 }}>You&apos;re on the list!</h3>
                 <p style={{
-                  fontSize: '0.875rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.6,
+                  fontSize: '0.875rem', color: 'rgba(26,58,71,0.5)', lineHeight: 1.6,
                 }}>
                   Welcome to the Victory Medical community. Check your inbox for a welcome message.
                 </p>
@@ -195,14 +195,14 @@ export default function NewsletterSection() {
                       placeholder="Your name"
                       style={{
                         width: '100%', padding: '12px 16px',
-                        backgroundColor: 'rgba(255,255,255,0.06)',
-                        border: '1px solid rgba(255,255,255,0.1)',
+                        backgroundColor: 'rgba(26,58,71,0.06)',
+                        border: '1px solid rgba(26,58,71,0.1)',
                         borderRadius: '10px',
                         fontSize: '0.875rem', color: 'white',
                         outline: 'none', transition: 'border-color 0.2s',
                       }}
-                      onFocus={e => { e.target.style.borderColor = 'rgba(201,122,60,0.4)' }}
-                      onBlur={e => { e.target.style.borderColor = 'rgba(255,255,255,0.1)' }}
+                      onFocus={e => { e.target.style.borderColor = 'rgba(34,184,209,0.4)' }}
+                      onBlur={e => { e.target.style.borderColor = 'rgba(26,58,71,0.1)' }}
                     />
                   </div>
                   <div style={{ marginBottom: '16px' }}>
@@ -214,14 +214,14 @@ export default function NewsletterSection() {
                       required
                       style={{
                         width: '100%', padding: '12px 16px',
-                        backgroundColor: 'rgba(255,255,255,0.06)',
-                        border: '1px solid rgba(255,255,255,0.1)',
+                        backgroundColor: 'rgba(26,58,71,0.06)',
+                        border: '1px solid rgba(26,58,71,0.1)',
                         borderRadius: '10px',
                         fontSize: '0.875rem', color: 'white',
                         outline: 'none', transition: 'border-color 0.2s',
                       }}
-                      onFocus={e => { e.target.style.borderColor = 'rgba(201,122,60,0.4)' }}
-                      onBlur={e => { e.target.style.borderColor = 'rgba(255,255,255,0.1)' }}
+                      onFocus={e => { e.target.style.borderColor = 'rgba(34,184,209,0.4)' }}
+                      onBlur={e => { e.target.style.borderColor = 'rgba(26,58,71,0.1)' }}
                     />
                   </div>
                   <button
@@ -247,7 +247,7 @@ export default function NewsletterSection() {
 
                 <p style={{
                   marginTop: '16px', fontSize: '0.72rem',
-                  color: 'rgba(255,255,255,0.45)', textAlign: 'center', lineHeight: 1.5,
+                  color: 'rgba(26,58,71,0.45)', textAlign: 'center', lineHeight: 1.5,
                 }}>
                   We respect your privacy. Unsubscribe at any time. No spam — ever.
                 </p>

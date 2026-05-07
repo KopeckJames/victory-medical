@@ -226,7 +226,7 @@ export default function ServiceFinder() {
         position: 'absolute', bottom: '-200px', left: '50%',
         transform: 'translateX(-50%)',
         width: '800px', height: '600px',
-        background: 'radial-gradient(ellipse, rgba(201,122,60,0.06) 0%, transparent 70%)',
+        background: 'radial-gradient(ellipse, rgba(34,184,209,0.06) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -259,8 +259,8 @@ export default function ServiceFinder() {
           ref={containerRef}
           style={{
             maxWidth: '680px', margin: '0 auto',
-            backgroundColor: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(201,122,60,0.2)',
+            backgroundColor: 'rgba(26,58,71,0.04)',
+            border: '1px solid rgba(34,184,209,0.2)',
             borderRadius: '24px',
             overflow: 'hidden',
             boxShadow: '0 24px 60px rgba(0,0,0,0.3)',
@@ -268,7 +268,7 @@ export default function ServiceFinder() {
         >
           {/* Progress bar */}
           <div style={{
-            height: '3px', backgroundColor: 'rgba(255,255,255,0.06)',
+            height: '3px', backgroundColor: 'rgba(26,58,71,0.06)',
           }}>
             <div
               ref={progressRef}
@@ -293,12 +293,12 @@ export default function ServiceFinder() {
                       height: '4px', flex: 1, borderRadius: '2px',
                       backgroundColor: i <= currentStep
                         ? 'var(--copper)'
-                        : 'rgba(255,255,255,0.1)',
+                        : 'rgba(26,58,71,0.1)',
                       transition: 'background-color 0.3s',
                     }} />
                   ))}
                   <span style={{
-                    fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)',
+                    fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)',
                     letterSpacing: '0.05em', flexShrink: 0, marginLeft: '4px',
                   }}>{currentStep + 1}/{steps.length}</span>
                 </div>
@@ -324,11 +324,11 @@ export default function ServiceFinder() {
                       style={{
                         padding: '20px',
                         background: hoveredOption === opt.value
-                          ? 'rgba(201,122,60,0.15)'
-                          : 'rgba(255,255,255,0.04)',
+                          ? 'rgba(34,184,209,0.15)'
+                          : 'rgba(26,58,71,0.04)',
                         border: `1px solid ${hoveredOption === opt.value
-                          ? 'rgba(201,122,60,0.5)'
-                          : 'rgba(255,255,255,0.08)'}`,
+                          ? 'rgba(34,184,209,0.5)'
+                          : 'rgba(26,58,71,0.08)'}`,
                         borderRadius: '14px',
                         textAlign: 'left',
                         cursor: 'pointer',
@@ -342,7 +342,7 @@ export default function ServiceFinder() {
                       }}>{opt.icon}</div>
                       <div style={{
                         fontSize: '0.875rem', fontWeight: 500,
-                        color: hoveredOption === opt.value ? 'var(--white)' : 'rgba(255,255,255,0.85)',
+                        color: hoveredOption === opt.value ? 'var(--white)' : 'rgba(26,58,71,0.85)',
                         lineHeight: 1.4,
                       }}>{opt.label}</div>
                     </button>
@@ -355,7 +355,7 @@ export default function ServiceFinder() {
                 <div style={{ textAlign: 'center', marginBottom: '32px' }}>
                   <div style={{
                     width: '56px', height: '56px', borderRadius: '50%',
-                    background: 'linear-gradient(135deg, var(--copper), #e09a5c)',
+                    background: 'linear-gradient(135deg, var(--copper), #4fc8dd)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     margin: '0 auto 16px',
                     fontSize: '1.4rem',
@@ -367,7 +367,7 @@ export default function ServiceFinder() {
                   }}>
                     Your Personalized Match
                   </h3>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.5)' }}>
+                  <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.5)' }}>
                     Based on your answers, we recommend:
                   </p>
                 </div>
@@ -376,8 +376,8 @@ export default function ServiceFinder() {
                   {recommendations.map((rec, i) => (
                     <div key={i} style={{
                       padding: '24px',
-                      backgroundColor: 'rgba(201,122,60,0.08)',
-                      border: '1px solid rgba(201,122,60,0.25)',
+                      backgroundColor: 'rgba(34,184,209,0.08)',
+                      border: '1px solid rgba(34,184,209,0.25)',
                       borderRadius: '14px',
                     }}>
                       <div style={{
@@ -391,7 +391,7 @@ export default function ServiceFinder() {
                         color: 'var(--white)', marginBottom: '10px',
                       }}>{rec.service}</h4>
                       <p style={{
-                        fontSize: '0.825rem', color: 'rgba(255,255,255,0.65)',
+                        fontSize: '0.825rem', color: 'rgba(26,58,71,0.65)',
                         lineHeight: 1.6, marginBottom: '16px',
                       }}>{rec.description}</p>
                       <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
@@ -416,18 +416,18 @@ export default function ServiceFinder() {
                   onClick={reset}
                   style={{
                     marginTop: '24px', width: '100%', padding: '12px',
-                    background: 'none', border: '1px solid rgba(255,255,255,0.1)',
-                    borderRadius: '10px', color: 'rgba(255,255,255,0.4)',
+                    background: 'none', border: '1px solid rgba(26,58,71,0.1)',
+                    borderRadius: '10px', color: 'rgba(26,58,71,0.4)',
                     cursor: 'pointer', fontSize: '0.8rem',
                     transition: 'all 0.2s', letterSpacing: '0.05em',
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'
-                    e.currentTarget.style.color = 'rgba(255,255,255,0.7)'
+                    e.currentTarget.style.borderColor = 'rgba(26,58,71,0.25)'
+                    e.currentTarget.style.color = 'rgba(26,58,71,0.7)'
                   }}
                   onMouseLeave={e => {
-                    e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'
-                    e.currentTarget.style.color = 'rgba(255,255,255,0.4)'
+                    e.currentTarget.style.borderColor = 'rgba(26,58,71,0.1)'
+                    e.currentTarget.style.color = 'rgba(26,58,71,0.4)'
                   }}
                 >
                   ← Start over

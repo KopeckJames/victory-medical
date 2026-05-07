@@ -16,7 +16,7 @@ const services = [
     subtitle: 'Board-certified physicians for the whole family',
     description: 'Comprehensive primary and preventative care for all ages — in-person or via telemedicine. Includes routine checkups, immunizations, chronic disease management, and same-day appointments.',
     links: ['Annual Physicals', 'Chronic Care', 'Telemedicine', 'Immunizations', 'Workers Comp'],
-    bg: '#0e2d3c',
+    bg: '#ffffff',
   },
   {
     id: 'urgent-care',
@@ -24,7 +24,7 @@ const services = [
     subtitle: '50–300% less than the average ER',
     description: 'Walk-in, no appointment needed. Board-certified providers treat all ages for non-life-threatening conditions. Extended hours, including evenings and weekends.',
     links: ['Walk-ins Welcome', 'Extended Hours', 'All Ages', 'Injuries & Illness'],
-    bg: '#162b38',
+    bg: '#f5fbfc',
   },
   {
     id: 'medspa',
@@ -33,7 +33,7 @@ const services = [
     description: 'From Botox and fillers to CoolSculpting and laser treatments — all performed or supervised by board-certified providers. Beauty with the safety of medicine.',
     links: ['Botox & Dysport', 'Dermal Fillers', 'CoolSculpting®', 'Laser Treatments', 'HydraFacial'],
     href: '/medspa',
-    bg: '#1a2d38',
+    bg: '#f5fbfc',
   },
   {
     id: 'ketamine',
@@ -41,7 +41,7 @@ const services = [
     subtitle: 'Licensed infusion therapy',
     description: 'One of few licensed ketamine infusion clinics in the US. Physician-monitored treatment for PTSD, depression, anxiety, chronic pain, and more. Results within hours.',
     links: ['PTSD', 'Depression', 'Chronic Pain', 'OCD', 'Anxiety'],
-    bg: '#0d2230',
+    bg: '#f5fbfc',
   },
   {
     id: 'allergy',
@@ -49,7 +49,7 @@ const services = [
     subtitle: 'Harvard Protocol — Unique to Victory',
     description: 'Full allergy testing for 75+ regional allergens. Rapid desensitization protocol unique to Victory — most patients see relief in months, not years.',
     links: ['Allergy Testing', 'Immunotherapy', 'Asthma', 'Rapid Desensitization'],
-    bg: '#132635',
+    bg: '#f5fbfc',
   },
 ]
 
@@ -157,18 +157,18 @@ export default function ServicesSection() {
                 transition: 'flex 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)',
                 backgroundColor: service.bg,
                 borderRadius: '16px',
-                border: `1px solid ${activeIndex === index ? 'rgba(201,122,60,0.5)' : 'rgba(255,255,255,0.08)'}`,
+                border: `1px solid ${activeIndex === index ? 'rgba(34,184,209,0.5)' : 'rgba(26,58,71,0.08)'}`,
                 overflow: 'hidden',
                 cursor: 'pointer',
                 position: 'relative',
-                boxShadow: activeIndex === index ? '0 0 30px rgba(201,122,60,0.15)' : 'none',
+                boxShadow: activeIndex === index ? '0 0 30px rgba(34,184,209,0.15)' : 'none',
                 willChange: 'transform',
               }}
             >
               {/* Gradient overlay */}
               <div style={{
                 position: 'absolute', inset: 0,
-                background: 'linear-gradient(to top, rgba(5,15,21,0.95) 0%, rgba(5,15,21,0.3) 100%)',
+                background: 'linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.3) 100%)',
                 zIndex: 1,
               }} />
 
@@ -187,7 +187,7 @@ export default function ServicesSection() {
                   fontSize: '0.75rem',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
-                  color: 'rgba(255,255,255,0.7)',
+                  color: 'rgba(26,58,71,0.7)',
                   fontWeight: 500,
                   whiteSpace: 'nowrap',
                 }}>
@@ -220,7 +220,7 @@ export default function ServicesSection() {
                   {service.title}
                 </h3>
                 <p data-reveal style={{
-                  fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)',
+                  fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)',
                   lineHeight: 1.6, marginBottom: '20px', maxWidth: '360px',
                 }}>
                   {service.description}
@@ -229,8 +229,8 @@ export default function ServicesSection() {
                   {service.links.map((item) => (
                     <span key={item} style={{
                       fontSize: '0.7rem', padding: '4px 12px',
-                      border: '1px solid rgba(201,122,60,0.4)',
-                      borderRadius: '20px', color: 'rgba(255,255,255,0.75)',
+                      border: '1px solid rgba(34,184,209,0.4)',
+                      borderRadius: '20px', color: 'rgba(26,58,71,0.75)',
                       letterSpacing: '0.05em',
                     }}>
                       {item}

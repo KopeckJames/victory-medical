@@ -127,12 +127,12 @@ export default function MDVIPPage() {
           {/* Background accents */}
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'radial-gradient(ellipse 70% 70% at 80% 40%, rgba(201,122,60,0.12) 0%, transparent 65%)',
+            background: 'radial-gradient(ellipse 70% 70% at 80% 40%, rgba(34,184,209,0.12) 0%, transparent 65%)',
           }} />
           <div style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'linear-gradient(rgba(196,168,122,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(196,168,122,0.02) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(34,109,122,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(34,109,122,0.02) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
             pointerEvents: 'none',
           }} />
@@ -157,7 +157,7 @@ export default function MDVIPPage() {
             </h1>
             <p style={{
               fontSize: '1.2rem',
-              color: 'rgba(255,255,255,0.8)',
+              color: 'rgba(26,58,71,0.8)',
               maxWidth: '580px',
               lineHeight: 1.75,
               marginBottom: '20px',
@@ -183,7 +183,7 @@ export default function MDVIPPage() {
               flexWrap: 'wrap',
               marginBottom: '48px',
               paddingBottom: '48px',
-              borderBottom: '1px solid rgba(255,255,255,0.08)',
+              borderBottom: '1px solid rgba(26,58,71,0.08)',
             }}>
               {[
                 { stat: '150', label: 'Max patients per physician' },
@@ -200,7 +200,7 @@ export default function MDVIPPage() {
                     lineHeight: 1,
                     marginBottom: '6px',
                   }}>{item.stat}</div>
-                  <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' }}>{item.label}</div>
+                  <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.5)' }}>{item.label}</div>
                 </div>
               ))}
             </div>
@@ -254,16 +254,16 @@ export default function MDVIPPage() {
                 }}>
                   What is MDVIP?
                 </h2>
-                <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.75)', lineHeight: 1.85, marginBottom: '20px' }}>
+                <p style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.75)', lineHeight: 1.85, marginBottom: '20px' }}>
                   MDVIP is a national concierge medicine partnership that allows select physicians to dramatically reduce their patient panel. Instead of seeing 25–30 patients per day in rushed 7-minute appointments, MDVIP physicians serve a maximum of 150–200 patients with the time and attention each one deserves.
                 </p>
-                <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.85, marginBottom: '32px' }}>
+                <p style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.65)', lineHeight: 1.85, marginBottom: '32px' }}>
                   At Victory Medical&apos;s Westlake Hills location — 3811 Bee Caves Rd — our MDVIP program combines this elevated access model with Victory&apos;s 28-year legacy of integrated, whole-person care.
                 </p>
                 <div style={{
                   padding: '24px',
-                  backgroundColor: 'rgba(201,122,60,0.08)',
-                  border: '1px solid rgba(201,122,60,0.2)',
+                  backgroundColor: 'rgba(34,184,209,0.08)',
+                  border: '1px solid rgba(34,184,209,0.2)',
                   borderLeft: '3px solid var(--copper)',
                   borderRadius: '0 12px 12px 0',
                 }}>
@@ -271,7 +271,7 @@ export default function MDVIPPage() {
                   <div style={{ fontSize: '1.3rem', fontFamily: 'var(--font-playfair)', color: 'var(--white)', marginBottom: '6px' }}>
                     $1,800 – $2,200 / year
                   </div>
-                  <div style={{ fontSize: '0.825rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6 }}>
+                  <div style={{ fontSize: '0.825rem', color: 'rgba(26,58,71,0.55)', lineHeight: 1.6 }}>
                     Annual fee paid directly to MDVIP. Your insurance continues to apply for all clinical services. HSA/FSA may be applicable — ask your administrator.
                   </div>
                 </div>
@@ -292,14 +292,14 @@ export default function MDVIPPage() {
                       gridTemplateColumns: '1fr 1fr 1fr',
                       gap: '16px',
                       padding: '16px 20px',
-                      backgroundColor: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(255,255,255,0.06)',
+                      backgroundColor: 'rgba(26,58,71,0.03)',
+                      border: '1px solid rgba(26,58,71,0.06)',
                       borderRadius: '10px',
                       alignItems: 'center',
                     }}
                   >
-                    <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontWeight: 500 }}>{row.label}</div>
-                    <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', textDecoration: 'line-through' }}>{row.traditional}</div>
+                    <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.5)', fontWeight: 500 }}>{row.label}</div>
+                    <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.4)', textDecoration: 'line-through' }}>{row.traditional}</div>
                     <div style={{ fontSize: '0.875rem', color: 'var(--copper)', fontWeight: 600 }}>{row.mdvip}</div>
                   </div>
                 ))}
@@ -339,8 +339,8 @@ export default function MDVIPPage() {
                   key={benefit.title}
                   className="hover-card-copper"
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.03)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '16px',
                     padding: '36px 28px',
                   }}
@@ -349,8 +349,8 @@ export default function MDVIPPage() {
                     width: '48px',
                     height: '48px',
                     borderRadius: '12px',
-                    backgroundColor: 'rgba(201,122,60,0.12)',
-                    border: '1px solid rgba(201,122,60,0.25)',
+                    backgroundColor: 'rgba(34,184,209,0.12)',
+                    border: '1px solid rgba(34,184,209,0.25)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -369,7 +369,7 @@ export default function MDVIPPage() {
                   }}>
                     {benefit.title}
                   </h3>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, margin: 0 }}>
+                  <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.6)', lineHeight: 1.7, margin: 0 }}>
                     {benefit.description}
                   </p>
                 </div>
@@ -401,7 +401,7 @@ export default function MDVIPPage() {
                 top: '8px',
                 bottom: '8px',
                 width: '2px',
-                background: 'linear-gradient(to bottom, rgba(201,122,60,0.8), rgba(201,122,60,0.1))',
+                background: 'linear-gradient(to bottom, rgba(34,184,209,0.8), rgba(34,184,209,0.1))',
               }} />
 
               {timeline.map((item, i) => (
@@ -425,17 +425,17 @@ export default function MDVIPPage() {
                     height: '18px',
                     borderRadius: '50%',
                     backgroundColor: i === 0 ? 'var(--copper)' : 'var(--teal)',
-                    border: `2px solid ${i === 0 ? 'var(--copper)' : 'rgba(201,122,60,0.5)'}`,
+                    border: `2px solid ${i === 0 ? 'var(--copper)' : 'rgba(34,184,209,0.5)'}`,
                     boxShadow: i === 0
-                      ? '0 0 0 4px rgba(201,122,60,0.15), 0 0 12px rgba(201,122,60,0.4)'
-                      : '0 0 0 3px rgba(201,122,60,0.08)',
+                      ? '0 0 0 4px rgba(34,184,209,0.15), 0 0 12px rgba(34,184,209,0.4)'
+                      : '0 0 0 3px rgba(34,184,209,0.08)',
                   }} />
 
                   <div style={{
                     fontFamily: 'var(--font-playfair)',
                     fontSize: '2rem',
                     fontWeight: 400,
-                    color: 'rgba(201,122,60,0.4)',
+                    color: 'rgba(34,184,209,0.4)',
                     lineHeight: 1,
                     paddingTop: '2px',
                   }}>
@@ -451,7 +451,7 @@ export default function MDVIPPage() {
                     }}>
                       {item.title}
                     </h3>
-                    <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.75, margin: 0 }}>
+                    <p style={{ fontSize: '0.9rem', color: 'rgba(26,58,71,0.6)', lineHeight: 1.75, margin: 0 }}>
                       {item.description}
                     </p>
                   </div>
@@ -517,7 +517,7 @@ export default function MDVIPPage() {
                     }}>
                       {item.label}
                     </h3>
-                    <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.7, margin: 0 }}>
+                    <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.6)', lineHeight: 1.7, margin: 0 }}>
                       {item.description}
                     </p>
                   </div>
@@ -547,8 +547,8 @@ export default function MDVIPPage() {
                 <div
                   key={i}
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '14px',
                     padding: '32px',
                   }}
@@ -570,8 +570,8 @@ export default function MDVIPPage() {
                       width: '24px',
                       height: '24px',
                       borderRadius: '50%',
-                      backgroundColor: 'rgba(201,122,60,0.15)',
-                      border: '1px solid rgba(201,122,60,0.3)',
+                      backgroundColor: 'rgba(34,184,209,0.15)',
+                      border: '1px solid rgba(34,184,209,0.3)',
                       fontSize: '0.65rem',
                       color: 'var(--copper)',
                       fontWeight: 700,
@@ -582,7 +582,7 @@ export default function MDVIPPage() {
                   </h3>
                   <p style={{
                     fontSize: '0.9rem',
-                    color: 'rgba(255,255,255,0.65)',
+                    color: 'rgba(26,58,71,0.65)',
                     lineHeight: 1.8,
                     paddingLeft: '36px',
                     margin: 0,
@@ -599,8 +599,8 @@ export default function MDVIPPage() {
         <section style={{ backgroundColor: 'var(--dark-teal)', padding: '100px 0' }}>
           <div className="container">
             <div style={{
-              background: 'linear-gradient(135deg, rgba(201,122,60,0.12) 0%, rgba(5,15,21,0.95) 100%)',
-              border: '1px solid rgba(201,122,60,0.3)',
+              background: 'linear-gradient(135deg, rgba(34,184,209,0.12) 0%, rgba(255,255,255,0.95) 100%)',
+              border: '1px solid rgba(34,184,209,0.3)',
               borderRadius: '24px',
               padding: '80px',
               display: 'grid',
@@ -634,7 +634,7 @@ export default function MDVIPPage() {
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', minWidth: '60px' }}>Address</span>
-                    <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem' }}>
+                    <span style={{ color: 'rgba(26,58,71,0.7)', fontSize: '0.9rem' }}>
                       3811 Bee Caves Rd, Westlake Hills TX 78746
                     </span>
                   </div>
@@ -660,12 +660,12 @@ export default function MDVIPPage() {
                   width: '160px',
                   height: '160px',
                   borderRadius: '50%',
-                  border: '2px solid rgba(201,122,60,0.3)',
+                  border: '2px solid rgba(34,184,209,0.3)',
                   display: 'flex',
                   flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  background: 'radial-gradient(ellipse at center, rgba(201,122,60,0.08) 0%, transparent 70%)',
+                  background: 'radial-gradient(ellipse at center, rgba(34,184,209,0.08) 0%, transparent 70%)',
                 }}>
                   <div style={{
                     fontFamily: 'var(--font-playfair)',
@@ -675,7 +675,7 @@ export default function MDVIPPage() {
                     lineHeight: 1,
                     marginBottom: '6px',
                   }}>150</div>
-                  <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', textAlign: 'center', maxWidth: '100px', lineHeight: 1.4 }}>
+                  <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)', textAlign: 'center', maxWidth: '100px', lineHeight: 1.4 }}>
                     max patients per physician
                   </div>
                 </div>

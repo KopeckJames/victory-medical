@@ -182,7 +182,7 @@ function StarDisplay({ rating, size = 16 }: { rating: number; size?: number }) {
           key={star}
           style={{
             fontSize: `${size}px`,
-            color: star <= rating ? '#f5b942' : 'rgba(255,255,255,0.2)',
+            color: star <= rating ? '#f5b942' : 'rgba(26,58,71,0.2)',
             lineHeight: 1,
           }}
         >
@@ -211,12 +211,12 @@ export default function ReviewsPage() {
         >
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'radial-gradient(ellipse 60% 60% at 20% 60%, rgba(201,122,60,0.09) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 60% 60% at 20% 60%, rgba(34,184,209,0.09) 0%, transparent 70%)',
           }} />
           <div style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
             pointerEvents: 'none',
           }} />
@@ -254,7 +254,7 @@ export default function ReviewsPage() {
                 }}>4.1</span>
                 <div>
                   <StarDisplay rating={4} size={24} />
-                  <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.5)', marginTop: '6px' }}>
+                  <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.5)', marginTop: '6px' }}>
                     341 reviews
                   </div>
                 </div>
@@ -263,7 +263,7 @@ export default function ReviewsPage() {
               <div style={{
                 height: '60px',
                 width: '1px',
-                backgroundColor: 'rgba(255,255,255,0.1)',
+                backgroundColor: 'rgba(26,58,71,0.1)',
               }} />
 
               <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
@@ -272,11 +272,11 @@ export default function ReviewsPage() {
                     key={platform}
                     style={{
                       padding: '8px 18px',
-                      backgroundColor: 'rgba(255,255,255,0.05)',
-                      border: '1px solid rgba(255,255,255,0.1)',
+                      backgroundColor: 'rgba(26,58,71,0.05)',
+                      border: '1px solid rgba(26,58,71,0.1)',
                       borderRadius: '8px',
                       fontSize: '0.85rem',
-                      color: 'rgba(255,255,255,0.7)',
+                      color: 'rgba(26,58,71,0.7)',
                     }}
                   >
                     {platform}
@@ -330,10 +330,10 @@ export default function ReviewsPage() {
                   4.1
                 </div>
                 <StarDisplay rating={4} size={28} />
-                <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.45)', marginTop: '10px' }}>
+                <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.45)', marginTop: '10px' }}>
                   out of 5 stars
                 </div>
-                <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.35)', marginTop: '4px' }}>
+                <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.35)', marginTop: '4px' }}>
                   341 total ratings
                 </div>
               </div>
@@ -355,7 +355,7 @@ export default function ReviewsPage() {
                       alignItems: 'center',
                       gap: '4px',
                       fontSize: '0.8rem',
-                      color: 'rgba(255,255,255,0.6)',
+                      color: 'rgba(26,58,71,0.6)',
                     }}>
                       {bar.stars}
                       <span style={{ color: '#f5b942', fontSize: '0.75rem' }}>★</span>
@@ -363,17 +363,17 @@ export default function ReviewsPage() {
                     <div style={{
                       height: '8px',
                       borderRadius: '4px',
-                      backgroundColor: 'rgba(255,255,255,0.08)',
+                      backgroundColor: 'rgba(26,58,71,0.08)',
                       overflow: 'hidden',
                     }}>
                       <div style={{
                         height: '100%',
                         width: `${bar.percent}%`,
                         borderRadius: '4px',
-                        backgroundColor: bar.stars >= 4 ? 'var(--copper)' : bar.stars === 3 ? 'rgba(201,122,60,0.5)' : 'rgba(255,255,255,0.2)',
+                        backgroundColor: bar.stars >= 4 ? 'var(--copper)' : bar.stars === 3 ? 'rgba(34,184,209,0.5)' : 'rgba(26,58,71,0.2)',
                       }} />
                     </div>
-                    <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', textAlign: 'right' }}>
+                    <div style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.4)', textAlign: 'right' }}>
                       {bar.count}
                     </div>
                   </div>
@@ -408,8 +408,8 @@ export default function ReviewsPage() {
                   key={i}
                   className="hover-card-lift"
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '16px',
                     padding: '28px',
                     display: 'flex',
@@ -428,7 +428,7 @@ export default function ReviewsPage() {
                       }}>
                         {review.name}
                       </div>
-                      <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)' }}>
+                      <div style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.4)' }}>
                         {review.date}
                       </div>
                     </div>
@@ -440,8 +440,8 @@ export default function ReviewsPage() {
                     <span style={{
                       fontSize: '0.65rem',
                       padding: '3px 10px',
-                      backgroundColor: 'rgba(201,122,60,0.1)',
-                      border: '1px solid rgba(201,122,60,0.2)',
+                      backgroundColor: 'rgba(34,184,209,0.1)',
+                      border: '1px solid rgba(34,184,209,0.2)',
                       borderRadius: '20px',
                       color: 'var(--copper)',
                       letterSpacing: '0.06em',
@@ -454,7 +454,7 @@ export default function ReviewsPage() {
                   {/* Review text */}
                   <p style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.7)',
+                    color: 'rgba(26,58,71,0.7)',
                     lineHeight: 1.75,
                     margin: 0,
                     flexGrow: 1,
@@ -468,7 +468,7 @@ export default function ReviewsPage() {
                     alignItems: 'center',
                     gap: '6px',
                     fontSize: '0.7rem',
-                    color: 'rgba(255,255,255,0.3)',
+                    color: 'rgba(26,58,71,0.3)',
                   }}>
                     <span style={{
                       display: 'inline-flex',
@@ -494,8 +494,8 @@ export default function ReviewsPage() {
         <section style={{ backgroundColor: 'var(--teal)', padding: '80px 0' }}>
           <div className="container">
             <div style={{
-              background: 'linear-gradient(135deg, rgba(201,122,60,0.08) 0%, rgba(14,45,60,0.9) 100%)',
-              border: '1px solid rgba(201,122,60,0.2)',
+              background: 'linear-gradient(135deg, rgba(34,184,209,0.08) 0%, rgba(255,255,255,0.9) 100%)',
+              border: '1px solid rgba(34,184,209,0.2)',
               borderRadius: '20px',
               padding: '60px',
               textAlign: 'center',
@@ -544,7 +544,7 @@ export default function ReviewsPage() {
         </section>
 
         {/* ── Stats Strip ───────────────────────────────────────────────── */}
-        <section style={{ backgroundColor: 'var(--dark-teal)', padding: '60px 0', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+        <section style={{ backgroundColor: 'var(--dark-teal)', padding: '60px 0', borderTop: '1px solid rgba(26,58,71,0.05)' }}>
           <div className="container">
             <div style={{
               display: 'grid',
@@ -566,7 +566,7 @@ export default function ReviewsPage() {
                   }}>
                     {stat.value}
                   </div>
-                  <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)', lineHeight: 1.5 }}>
+                  <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.45)', lineHeight: 1.5 }}>
                     {stat.label}
                   </div>
                 </div>

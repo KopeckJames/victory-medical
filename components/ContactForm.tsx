@@ -18,8 +18,8 @@ const SERVICE_OPTIONS = [
 
 const inputStyle: React.CSSProperties = {
   width: '100%',
-  backgroundColor: 'rgba(255,255,255,0.06)',
-  border: '1px solid rgba(255,255,255,0.1)',
+  backgroundColor: 'rgba(26,58,71,0.06)',
+  border: '1px solid rgba(26,58,71,0.1)',
   borderRadius: 8,
   padding: '12px 16px',
   color: 'var(--white)',
@@ -50,7 +50,7 @@ export default function ContactForm() {
 
   const getFocusStyle = (field: string): React.CSSProperties => ({
     ...inputStyle,
-    borderColor: focusedField === field ? 'rgba(201,122,60,0.5)' : 'rgba(255,255,255,0.1)',
+    borderColor: focusedField === field ? 'rgba(34,184,209,0.5)' : 'rgba(26,58,71,0.1)',
   })
 
   function validate(): string[] {
@@ -91,8 +91,8 @@ export default function ContactForm() {
     return (
       <div
         style={{
-          backgroundColor: 'rgba(255,255,255,0.04)',
-          border: '1px solid rgba(255,255,255,0.08)',
+          backgroundColor: 'rgba(26,58,71,0.04)',
+          border: '1px solid rgba(26,58,71,0.08)',
           borderRadius: 16,
           padding: 36,
           display: 'flex',
@@ -109,8 +109,8 @@ export default function ContactForm() {
             width: '64px',
             height: '64px',
             borderRadius: '50%',
-            backgroundColor: 'rgba(201,122,60,0.15)',
-            border: '1px solid rgba(201,122,60,0.4)',
+            backgroundColor: 'rgba(34,184,209,0.15)',
+            border: '1px solid rgba(34,184,209,0.4)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -141,7 +141,7 @@ export default function ContactForm() {
           >
             Message Sent
           </h3>
-          <p style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}>
+          <p style={{ fontSize: '0.95rem', color: 'rgba(26,58,71,0.6)', lineHeight: 1.6 }}>
             Thank you! We&apos;ll be in touch within 1 business day.
           </p>
         </div>
@@ -152,8 +152,8 @@ export default function ContactForm() {
   return (
     <div
       style={{
-        backgroundColor: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.08)',
+        backgroundColor: 'rgba(26,58,71,0.04)',
+        border: '1px solid rgba(26,58,71,0.08)',
         borderRadius: 16,
         padding: 36,
       }}
@@ -161,8 +161,8 @@ export default function ContactForm() {
       {errors.length > 0 && (
         <div
           style={{
-            backgroundColor: 'rgba(201,122,60,0.1)',
-            border: '1px solid rgba(201,122,60,0.3)',
+            backgroundColor: 'rgba(34,184,209,0.1)',
+            border: '1px solid rgba(34,184,209,0.3)',
             borderRadius: 8,
             padding: '12px 16px',
             marginBottom: '24px',
@@ -182,8 +182,8 @@ export default function ContactForm() {
       {status === 'error' && (
         <div
           style={{
-            backgroundColor: 'rgba(201,122,60,0.1)',
-            border: '1px solid rgba(201,122,60,0.3)',
+            backgroundColor: 'rgba(34,184,209,0.1)',
+            border: '1px solid rgba(34,184,209,0.3)',
             borderRadius: 8,
             padding: '12px 16px',
             marginBottom: '24px',

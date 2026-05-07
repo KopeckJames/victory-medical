@@ -36,14 +36,14 @@ export default function Footer() {
     <footer
       style={{
         backgroundColor: 'var(--dark-teal)',
-        borderTop: '1px solid rgba(255,255,255,0.05)',
+        borderTop: '1px solid rgba(26,58,71,0.05)',
       }}
     >
       {/* Pre-footer CTA strip */}
       <div style={{
-        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        borderBottom: '1px solid rgba(26,58,71,0.06)',
         padding: '48px 0',
-        background: 'linear-gradient(135deg, rgba(201,122,60,0.07) 0%, transparent 60%)',
+        background: 'linear-gradient(135deg, rgba(34,184,209,0.07) 0%, transparent 60%)',
       }}>
         <div className="container" style={{
           display: 'flex', alignItems: 'center',
@@ -72,7 +72,7 @@ export default function Footer() {
               href="tel:5124623627"
               style={{
                 padding: '11px 22px', borderRadius: '4px',
-                border: '1px solid rgba(255,255,255,0.2)',
+                border: '1px solid rgba(26,58,71,0.2)',
                 fontSize: '0.8rem', fontWeight: 500,
                 letterSpacing: '0.06em', textTransform: 'uppercase',
                 color: 'var(--white)', textDecoration: 'none',
@@ -83,7 +83,7 @@ export default function Footer() {
                 e.currentTarget.style.color = 'var(--copper)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'
+                e.currentTarget.style.borderColor = 'rgba(26,58,71,0.2)'
                 e.currentTarget.style.color = 'var(--white)'
               }}
             >
@@ -110,7 +110,7 @@ export default function Footer() {
                 style={{
                   width: '36px',
                   height: '36px',
-                  background: 'linear-gradient(135deg, var(--copper) 0%, #e09a5c 100%)',
+                  background: 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
                   borderRadius: '8px',
                   display: 'flex',
                   alignItems: 'center',
@@ -171,11 +171,11 @@ export default function Footer() {
                   width: '36px',
                   height: '36px',
                   borderRadius: '50%',
-                  border: '1px solid rgba(255,255,255,0.15)',
+                  border: '1px solid rgba(26,58,71,0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'rgba(255,255,255,0.6)',
+                  color: 'rgba(26,58,71,0.6)',
                   textDecoration: 'none',
                   fontSize: '0.8rem',
                   transition: 'all 0.3s ease',
@@ -187,8 +187,8 @@ export default function Footer() {
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget
-                  el.style.borderColor = 'rgba(255,255,255,0.15)'
-                  el.style.color = 'rgba(255,255,255,0.6)'
+                  el.style.borderColor = 'rgba(26,58,71,0.15)'
+                  el.style.color = 'rgba(26,58,71,0.6)'
                 }}
                 aria-label="Facebook"
               >
@@ -202,11 +202,11 @@ export default function Footer() {
                   width: '36px',
                   height: '36px',
                   borderRadius: '50%',
-                  border: '1px solid rgba(255,255,255,0.15)',
+                  border: '1px solid rgba(26,58,71,0.15)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  color: 'rgba(255,255,255,0.6)',
+                  color: 'rgba(26,58,71,0.6)',
                   textDecoration: 'none',
                   fontSize: '0.75rem',
                   transition: 'all 0.3s ease',
@@ -218,8 +218,8 @@ export default function Footer() {
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget
-                  el.style.borderColor = 'rgba(255,255,255,0.15)'
-                  el.style.color = 'rgba(255,255,255,0.6)'
+                  el.style.borderColor = 'rgba(26,58,71,0.15)'
+                  el.style.color = 'rgba(26,58,71,0.6)'
                 }}
                 aria-label="Instagram"
               >
@@ -251,7 +251,7 @@ export default function Footer() {
                     key={loc}
                     style={{
                       fontSize: '0.78rem',
-                      color: 'rgba(255,255,255,0.5)',
+                      color: 'rgba(26,58,71,0.5)',
                     }}
                   >
                     {loc}
@@ -282,7 +282,7 @@ export default function Footer() {
                   href={link.href}
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.6)',
+                    color: 'rgba(26,58,71,0.6)',
                     textDecoration: 'none',
                     transition: 'all 0.3s ease',
                   }}
@@ -293,7 +293,7 @@ export default function Footer() {
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget
-                    el.style.color = 'rgba(255,255,255,0.6)'
+                    el.style.color = 'rgba(26,58,71,0.6)'
                     el.style.paddingLeft = '0'
                   }}
                 >
@@ -324,7 +324,7 @@ export default function Footer() {
                   href={link.href}
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.6)',
+                    color: 'rgba(26,58,71,0.6)',
                     textDecoration: 'none',
                     transition: 'all 0.3s ease',
                   }}
@@ -335,7 +335,7 @@ export default function Footer() {
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget
-                    el.style.color = 'rgba(255,255,255,0.6)'
+                    el.style.color = 'rgba(26,58,71,0.6)'
                     el.style.paddingLeft = '0'
                   }}
                 >
@@ -368,7 +368,7 @@ export default function Footer() {
                   rel={link.external ? 'noopener noreferrer' : undefined}
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.6)',
+                    color: 'rgba(26,58,71,0.6)',
                     textDecoration: 'none',
                     transition: 'all 0.3s ease',
                   }}
@@ -379,7 +379,7 @@ export default function Footer() {
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget
-                    el.style.color = 'rgba(255,255,255,0.6)'
+                    el.style.color = 'rgba(26,58,71,0.6)'
                     el.style.paddingLeft = '0'
                   }}
                 >
@@ -423,7 +423,7 @@ export default function Footer() {
                 style={{
                   display: 'block',
                   fontSize: '0.8rem',
-                  color: 'rgba(255,255,255,0.5)',
+                  color: 'rgba(26,58,71,0.5)',
                   textDecoration: 'none',
                 }}
               >
@@ -437,7 +437,7 @@ export default function Footer() {
       {/* Medical Disclaimer */}
       <div
         style={{
-          borderTop: '1px solid rgba(255,255,255,0.05)',
+          borderTop: '1px solid rgba(26,58,71,0.05)',
           padding: '20px 0',
           backgroundColor: 'rgba(0,0,0,0.15)',
         }}
@@ -447,7 +447,7 @@ export default function Footer() {
             className="disclaimer-text"
             style={{
               fontSize: '0.7rem',
-              color: 'rgba(255,255,255,0.55)',
+              color: 'rgba(26,58,71,0.55)',
               textAlign: 'center',
               maxWidth: '900px',
               margin: '0 auto',
@@ -462,7 +462,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div
         style={{
-          borderTop: '1px solid rgba(255,255,255,0.05)',
+          borderTop: '1px solid rgba(26,58,71,0.05)',
           padding: '20px 0',
           backgroundColor: 'rgba(0,0,0,0.2)',
         }}
@@ -480,7 +480,7 @@ export default function Footer() {
           <p
             style={{
               fontSize: '0.75rem',
-              color: 'rgba(255,255,255,0.4)',
+              color: 'rgba(26,58,71,0.4)',
             }}
           >
             © {currentYear} Victory Medical. All rights reserved.
@@ -492,12 +492,12 @@ export default function Footer() {
                 href="#"
                 style={{
                   fontSize: '0.7rem',
-                  color: 'rgba(255,255,255,0.35)',
+                  color: 'rgba(26,58,71,0.35)',
                   textDecoration: 'none',
                   transition: 'color 0.3s ease',
                 }}
-                onMouseEnter={(e) => ((e.target as HTMLElement).style.color = 'rgba(255,255,255,0.7)')}
-                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'rgba(255,255,255,0.35)')}
+                onMouseEnter={(e) => ((e.target as HTMLElement).style.color = 'rgba(26,58,71,0.7)')}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = 'rgba(26,58,71,0.35)')}
               >
                 {item}
               </Link>

@@ -49,7 +49,7 @@ export default function TeamSection() {
 
         // GSAP hover
         card.addEventListener('mouseenter', () => {
-          gsap.to(card, { y: -6, boxShadow: '0 20px 40px rgba(5,15,21,0.5)', duration: 0.4, ease: 'power3.out' })
+          gsap.to(card, { y: -6, boxShadow: '0 20px 40px rgba(255,255,255,0.5)', duration: 0.4, ease: 'power3.out' })
           if (img) gsap.to(img, { scale: 1.04, duration: 0.6, ease: 'power2.out' })
           if (tags.length) {
             gsap.fromTo(tags,
@@ -98,8 +98,8 @@ export default function TeamSection() {
               key={i}
               className="team-card"
               style={{
-                backgroundColor: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.08)',
+                backgroundColor: 'rgba(26,58,71,0.04)',
+                border: '1px solid rgba(26,58,71,0.08)',
                 borderRadius: '16px',
                 overflow: 'hidden',
                 cursor: 'pointer',
@@ -133,7 +133,7 @@ export default function TeamSection() {
                       width: '80px', height: '80px',
                       borderRadius: '50%',
                       backgroundColor: 'var(--lightest-teal)',
-                      border: '2px solid rgba(201,122,60,0.4)',
+                      border: '2px solid rgba(34,184,209,0.4)',
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       fontFamily: 'var(--font-playfair)',
                       fontSize: '1.8rem', color: 'var(--gold)',
@@ -146,7 +146,7 @@ export default function TeamSection() {
                 <div style={{
                   position: 'absolute', bottom: 0, left: 0, right: 0,
                   height: '60px',
-                  background: 'linear-gradient(to top, rgba(14,45,60,0.8), transparent)',
+                  background: 'linear-gradient(to top, rgba(255,255,255,0.8), transparent)',
                 }} />
                 {/* Curtain overlay */}
                 <div
@@ -175,13 +175,13 @@ export default function TeamSection() {
                   {member.title}
                 </div>
                 <div style={{
-                  fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)',
+                  fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)',
                   marginBottom: '16px', lineHeight: 1.5,
                 }}>
                   {member.credentials}
                 </div>
                 <p style={{
-                  fontSize: '0.825rem', color: 'rgba(255,255,255,0.65)',
+                  fontSize: '0.825rem', color: 'rgba(26,58,71,0.65)',
                   lineHeight: 1.7, marginBottom: '16px',
                 }}>
                   {member.bio}
@@ -190,9 +190,9 @@ export default function TeamSection() {
                   {member.specialties.map((s) => (
                     <span key={s} className="specialty-tag" style={{
                       fontSize: '0.65rem', padding: '3px 10px',
-                      backgroundColor: 'rgba(201,122,60,0.08)',
-                      border: '1px solid rgba(201,122,60,0.2)',
-                      borderRadius: '20px', color: 'rgba(255,255,255,0.7)',
+                      backgroundColor: 'rgba(34,184,209,0.08)',
+                      border: '1px solid rgba(34,184,209,0.2)',
+                      borderRadius: '20px', color: 'rgba(26,58,71,0.7)',
                       letterSpacing: '0.03em',
                     }}>
                       {s}

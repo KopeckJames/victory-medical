@@ -69,7 +69,7 @@ export default async function BlogPostPage({ params }: Props) {
             font-family: var(--font-playfair);
             font-size: 1.15rem;
             font-weight: 600;
-            color: rgba(255,255,255,0.9);
+            color: rgba(26,58,71,0.9);
             margin-top: 2rem;
             margin-bottom: 0.75rem;
             line-height: 1.35;
@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
           .article-body p {
             font-size: 1.05rem;
             line-height: 1.85;
-            color: rgba(255,255,255,0.75);
+            color: rgba(26,58,71,0.75);
             margin-bottom: 1.25rem;
           }
           .article-body ul {
@@ -88,7 +88,7 @@ export default async function BlogPostPage({ params }: Props) {
           .article-body ul li {
             font-size: 1.05rem;
             line-height: 1.75;
-            color: rgba(255,255,255,0.72);
+            color: rgba(26,58,71,0.72);
             padding: 5px 0 5px 22px;
             position: relative;
           }
@@ -103,7 +103,7 @@ export default async function BlogPostPage({ params }: Props) {
             background-color: var(--copper);
           }
           .article-body strong {
-            color: rgba(255,255,255,0.92);
+            color: rgba(26,58,71,0.92);
             font-weight: 600;
           }
           .article-body h2:first-child,
@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: Props) {
               position: 'absolute',
               inset: 0,
               background:
-                'radial-gradient(ellipse 50% 70% at 20% 60%, rgba(201,122,60,0.08) 0%, transparent 65%)',
+                'radial-gradient(ellipse 50% 70% at 20% 60%, rgba(34,184,209,0.08) 0%, transparent 65%)',
               pointerEvents: 'none',
             }}
           />
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: Props) {
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
                 fontWeight: 500,
-                color: 'rgba(255,255,255,0.45)',
+                color: 'rgba(26,58,71,0.45)',
                 textDecoration: 'none',
                 marginBottom: '32px',
                 transition: 'color 0.2s ease',
@@ -164,8 +164,8 @@ export default async function BlogPostPage({ params }: Props) {
                   letterSpacing: '0.14em',
                   textTransform: 'uppercase',
                   color: 'var(--copper)',
-                  backgroundColor: 'rgba(201,122,60,0.1)',
-                  border: '1px solid rgba(201,122,60,0.25)',
+                  backgroundColor: 'rgba(34,184,209,0.1)',
+                  border: '1px solid rgba(34,184,209,0.25)',
                   borderRadius: '20px',
                   padding: '5px 14px',
                 }}
@@ -216,12 +216,12 @@ export default async function BlogPostPage({ params }: Props) {
                 style={{
                   width: '1px',
                   height: '32px',
-                  backgroundColor: 'rgba(255,255,255,0.15)',
+                  backgroundColor: 'rgba(26,58,71,0.15)',
                   flexShrink: 0,
                 }}
               />
 
-              <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)' }}>
+              <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.45)' }}>
                 {post.date}
               </div>
 
@@ -230,12 +230,12 @@ export default async function BlogPostPage({ params }: Props) {
                   width: '4px',
                   height: '4px',
                   borderRadius: '50%',
-                  backgroundColor: 'rgba(255,255,255,0.25)',
+                  backgroundColor: 'rgba(26,58,71,0.25)',
                   flexShrink: 0,
                 }}
               />
 
-              <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.45)' }}>
+              <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.45)' }}>
                 {post.readTime}
               </div>
             </div>
@@ -296,8 +296,8 @@ export default async function BlogPostPage({ params }: Props) {
                     marginTop: '60px',
                     padding: '40px',
                     background:
-                      'linear-gradient(135deg, rgba(201,122,60,0.1) 0%, rgba(14,45,60,0.8) 100%)',
-                    border: '1px solid rgba(201,122,60,0.25)',
+                      'linear-gradient(135deg, rgba(34,184,209,0.1) 0%, rgba(255,255,255,0.8) 100%)',
+                    border: '1px solid rgba(34,184,209,0.25)',
                     borderRadius: '16px',
                   }}
                 >
@@ -318,7 +318,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <p
                     style={{
                       fontSize: '0.9rem',
-                      color: 'rgba(255,255,255,0.65)',
+                      color: 'rgba(26,58,71,0.65)',
                       lineHeight: 1.75,
                       marginBottom: '24px',
                     }}
@@ -365,8 +365,8 @@ export default async function BlogPostPage({ params }: Props) {
                         className="hover-card-lift"
                         style={{
                           display: 'block',
-                          backgroundColor: 'rgba(255,255,255,0.04)',
-                          border: '1px solid rgba(255,255,255,0.08)',
+                          backgroundColor: 'rgba(26,58,71,0.04)',
+                          border: '1px solid rgba(26,58,71,0.08)',
                           borderRadius: '10px',
                           padding: '20px',
                           textDecoration: 'none',
@@ -401,7 +401,7 @@ export default async function BlogPostPage({ params }: Props) {
                         <div
                           style={{
                             fontSize: '0.7rem',
-                            color: 'rgba(255,255,255,0.35)',
+                            color: 'rgba(26,58,71,0.35)',
                           }}
                         >
                           {related.readTime} · {related.author}
@@ -422,7 +422,7 @@ export default async function BlogPostPage({ params }: Props) {
                         letterSpacing: '0.08em',
                         textTransform: 'uppercase',
                         color: 'var(--copper)',
-                        border: '1px solid rgba(201,122,60,0.3)',
+                        border: '1px solid rgba(34,184,209,0.3)',
                         borderRadius: '6px',
                         textDecoration: 'none',
                         transition: 'background-color 0.2s ease, border-color 0.2s ease',
@@ -438,8 +438,8 @@ export default async function BlogPostPage({ params }: Props) {
                 <div
                   style={{
                     marginTop: '28px',
-                    backgroundColor: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.03)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '10px',
                     padding: '20px',
                   }}
@@ -459,7 +459,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <p
                     style={{
                       fontSize: '0.8rem',
-                      color: 'rgba(255,255,255,0.55)',
+                      color: 'rgba(26,58,71,0.55)',
                       lineHeight: 1.6,
                       marginBottom: '14px',
                     }}
@@ -488,7 +488,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <style>{`
         .hover-back-link:hover {
-          color: rgba(255,255,255,0.75) !important;
+          color: rgba(26,58,71,0.75) !important;
         }
         @media (max-width: 900px) {
           .article-layout {

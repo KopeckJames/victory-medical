@@ -32,11 +32,11 @@ export default function LocationsPage() {
         >
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'radial-gradient(ellipse 60% 60% at 30% 50%, rgba(201,122,60,0.08) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 60% 60% at 30% 50%, rgba(34,184,209,0.08) 0%, transparent 70%)',
           }} />
           <div style={{
             position: 'absolute', inset: 0,
-            backgroundImage: 'linear-gradient(rgba(201,122,60,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.02) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(34,184,209,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.02) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
             pointerEvents: 'none',
           }} />
@@ -77,8 +77,8 @@ export default function LocationsPage() {
             <div style={{
               borderRadius: '20px',
               overflow: 'hidden',
-              border: '1px solid rgba(201,122,60,0.4)',
-              backgroundColor: 'rgba(201,122,60,0.04)',
+              border: '1px solid rgba(34,184,209,0.4)',
+              backgroundColor: 'rgba(34,184,209,0.04)',
               marginBottom: '24px',
             }}>
               {/* Copper gradient bar */}
@@ -91,8 +91,8 @@ export default function LocationsPage() {
                     display: 'inline-block',
                     fontSize: '0.62rem', letterSpacing: '0.12em', textTransform: 'uppercase',
                     fontWeight: 600, color: 'var(--copper)',
-                    backgroundColor: 'rgba(201,122,60,0.12)',
-                    border: '1px solid rgba(201,122,60,0.3)',
+                    backgroundColor: 'rgba(34,184,209,0.12)',
+                    border: '1px solid rgba(34,184,209,0.3)',
                     borderRadius: '20px', padding: '4px 14px', marginBottom: '20px',
                   }}>
                     Main Campus · Est. 1996
@@ -108,10 +108,10 @@ export default function LocationsPage() {
                   </h2>
 
                   <div style={{ marginBottom: '28px' }}>
-                    <div style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.8)', marginBottom: '2px' }}>
+                    <div style={{ fontSize: '0.95rem', color: 'rgba(26,58,71,0.8)', marginBottom: '2px' }}>
                       4303 Victory Drive
                     </div>
-                    <div style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.8)', marginBottom: '14px' }}>
+                    <div style={{ fontSize: '0.95rem', color: 'rgba(26,58,71,0.8)', marginBottom: '14px' }}>
                       Austin, TX 78704
                     </div>
                     <a href="tel:5124623627" style={{
@@ -137,10 +137,10 @@ export default function LocationsPage() {
                     <div key={h.days} style={{
                       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                       padding: '8px 0',
-                      borderBottom: '1px solid rgba(255,255,255,0.06)',
+                      borderBottom: '1px solid rgba(26,58,71,0.06)',
                       fontSize: '0.875rem',
                     }}>
-                      <span style={{ color: 'rgba(255,255,255,0.5)' }}>{h.days}</span>
+                      <span style={{ color: 'rgba(26,58,71,0.5)' }}>{h.days}</span>
                       <span style={{ color: 'var(--white)', fontWeight: 500 }}>{h.time}</span>
                     </div>
                   ))}
@@ -154,13 +154,13 @@ export default function LocationsPage() {
                       {['Walk-ins welcome', 'Draw station on-site', 'On-site compounding pharmacy'].map((h) => (
                         <div key={h} style={{
                           display: 'flex', alignItems: 'center', gap: '12px',
-                          fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)',
+                          fontSize: '0.9rem', color: 'rgba(26,58,71,0.8)',
                           marginBottom: '12px',
                         }}>
                           <div style={{
                             width: '22px', height: '22px', borderRadius: '50%', flexShrink: 0,
-                            backgroundColor: 'rgba(201,122,60,0.15)',
-                            border: '1px solid rgba(201,122,60,0.35)',
+                            backgroundColor: 'rgba(34,184,209,0.15)',
+                            border: '1px solid rgba(34,184,209,0.35)',
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
                           }}>
                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
@@ -184,9 +184,9 @@ export default function LocationsPage() {
                         {['Family Practice', 'Urgent Care', 'Allergy Services', 'Weight Loss', 'Hormone Therapy', 'Ketamine Therapy', 'Pharmacy', 'Physical Medicine'].map((s) => (
                           <span key={s} style={{
                             fontSize: '0.72rem', padding: '4px 12px',
-                            backgroundColor: 'rgba(201,122,60,0.08)',
-                            border: '1px solid rgba(201,122,60,0.2)',
-                            borderRadius: '20px', color: 'rgba(255,255,255,0.8)',
+                            backgroundColor: 'rgba(34,184,209,0.08)',
+                            border: '1px solid rgba(34,184,209,0.2)',
+                            borderRadius: '20px', color: 'rgba(26,58,71,0.8)',
                           }}>
                             {s}
                           </span>
@@ -219,19 +219,19 @@ export default function LocationsPage() {
               <div style={{
                 borderRadius: '16px',
                 overflow: 'hidden',
-                border: '1px solid rgba(255,255,255,0.09)',
-                backgroundColor: 'rgba(255,255,255,0.025)',
+                border: '1px solid rgba(26,58,71,0.09)',
+                backgroundColor: 'rgba(26,58,71,0.025)',
                 display: 'flex',
                 flexDirection: 'column',
               }}>
-                <div style={{ height: '3px', background: 'linear-gradient(90deg, rgba(196,168,122,0.6), transparent)' }} />
+                <div style={{ height: '3px', background: 'linear-gradient(90deg, rgba(34,109,122,0.6), transparent)' }} />
                 <div style={{ padding: '32px', flex: 1, display: 'flex', flexDirection: 'column' }}>
                   <span style={{
                     display: 'inline-block',
                     fontSize: '0.62rem', letterSpacing: '0.12em', textTransform: 'uppercase',
                     fontWeight: 600, color: 'var(--gold)',
-                    backgroundColor: 'rgba(196,168,122,0.08)',
-                    border: '1px solid rgba(196,168,122,0.2)',
+                    backgroundColor: 'rgba(34,109,122,0.08)',
+                    border: '1px solid rgba(34,109,122,0.2)',
                     borderRadius: '20px', padding: '4px 12px', marginBottom: '16px',
                   }}>
                     Aesthetic Medicine
@@ -246,10 +246,10 @@ export default function LocationsPage() {
                   </h2>
 
                   <div style={{ marginBottom: '20px' }}>
-                    <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)', marginBottom: '2px' }}>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)', marginBottom: '2px' }}>
                       2108 W Ben White Blvd
                     </div>
-                    <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)', marginBottom: '12px' }}>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)', marginBottom: '12px' }}>
                       Austin, TX 78704
                     </div>
                     <a href="tel:5129696900" style={{
@@ -273,11 +273,11 @@ export default function LocationsPage() {
                     ].map((h) => (
                       <div key={h.days} style={{
                         display: 'flex', justifyContent: 'space-between',
-                        padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.05)',
+                        padding: '6px 0', borderBottom: '1px solid rgba(26,58,71,0.05)',
                         fontSize: '0.8rem',
                       }}>
-                        <span style={{ color: 'rgba(255,255,255,0.5)' }}>{h.days}</span>
-                        <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 500 }}>{h.time}</span>
+                        <span style={{ color: 'rgba(26,58,71,0.5)' }}>{h.days}</span>
+                        <span style={{ color: 'rgba(26,58,71,0.85)', fontWeight: 500 }}>{h.time}</span>
                       </div>
                     ))}
                   </div>
@@ -286,7 +286,7 @@ export default function LocationsPage() {
                     {['Book via Jane App', 'Physician-supervised', 'Free consultations'].map((h) => (
                       <div key={h} style={{
                         display: 'flex', alignItems: 'center', gap: '8px',
-                        fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)', marginBottom: '6px',
+                        fontSize: '0.8rem', color: 'rgba(26,58,71,0.65)', marginBottom: '6px',
                       }}>
                         <span style={{
                           width: '5px', height: '5px', borderRadius: '50%',
@@ -301,9 +301,9 @@ export default function LocationsPage() {
                     {['Botox & Dysport', 'Dermal Fillers', 'CoolSculpting', 'HydraFacial', 'Laser Treatments', 'Microneedling', 'IV Therapy', 'Ketamine Consults'].map((s) => (
                       <span key={s} style={{
                         fontSize: '0.68rem', padding: '3px 10px',
-                        backgroundColor: 'rgba(255,255,255,0.05)',
-                        border: '1px solid rgba(255,255,255,0.1)',
-                        borderRadius: '20px', color: 'rgba(255,255,255,0.65)',
+                        backgroundColor: 'rgba(26,58,71,0.05)',
+                        border: '1px solid rgba(26,58,71,0.1)',
+                        borderRadius: '20px', color: 'rgba(26,58,71,0.65)',
                       }}>
                         {s}
                       </span>
@@ -330,8 +330,8 @@ export default function LocationsPage() {
               <div style={{
                 borderRadius: '16px',
                 overflow: 'hidden',
-                border: '1px solid rgba(255,255,255,0.09)',
-                backgroundColor: 'rgba(255,255,255,0.025)',
+                border: '1px solid rgba(26,58,71,0.09)',
+                backgroundColor: 'rgba(26,58,71,0.025)',
                 display: 'flex',
                 flexDirection: 'column',
               }}>
@@ -357,10 +357,10 @@ export default function LocationsPage() {
                   </h2>
 
                   <div style={{ marginBottom: '20px' }}>
-                    <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)', marginBottom: '2px' }}>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)', marginBottom: '2px' }}>
                       3811 Bee Caves Rd, Suite 100 & 101
                     </div>
-                    <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)', marginBottom: '12px' }}>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)', marginBottom: '12px' }}>
                       Westlake Hills, TX 78746
                     </div>
                     <a href="tel:5124623627" style={{
@@ -384,11 +384,11 @@ export default function LocationsPage() {
                     ].map((h) => (
                       <div key={h.days} style={{
                         display: 'flex', justifyContent: 'space-between',
-                        padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.05)',
+                        padding: '6px 0', borderBottom: '1px solid rgba(26,58,71,0.05)',
                         fontSize: '0.8rem',
                       }}>
-                        <span style={{ color: 'rgba(255,255,255,0.5)' }}>{h.days}</span>
-                        <span style={{ color: 'rgba(255,255,255,0.85)', fontWeight: 500 }}>{h.time}</span>
+                        <span style={{ color: 'rgba(26,58,71,0.5)' }}>{h.days}</span>
+                        <span style={{ color: 'rgba(26,58,71,0.85)', fontWeight: 500 }}>{h.time}</span>
                       </div>
                     ))}
                   </div>
@@ -397,7 +397,7 @@ export default function LocationsPage() {
                     {['Walk-ins welcome', 'Draw station Mon–Fri 8am–4pm', 'MDVIP concierge available'].map((h) => (
                       <div key={h} style={{
                         display: 'flex', alignItems: 'center', gap: '8px',
-                        fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)', marginBottom: '6px',
+                        fontSize: '0.8rem', color: 'rgba(26,58,71,0.65)', marginBottom: '6px',
                       }}>
                         <span style={{
                           width: '5px', height: '5px', borderRadius: '50%',
@@ -412,9 +412,9 @@ export default function LocationsPage() {
                     {['Family Practice', 'Urgent Care', 'Allergy Services', 'MedSpa Treatments', 'MDVIP Concierge', 'Weight Loss'].map((s) => (
                       <span key={s} style={{
                         fontSize: '0.68rem', padding: '3px 10px',
-                        backgroundColor: 'rgba(255,255,255,0.05)',
-                        border: '1px solid rgba(255,255,255,0.1)',
-                        borderRadius: '20px', color: 'rgba(255,255,255,0.65)',
+                        backgroundColor: 'rgba(26,58,71,0.05)',
+                        border: '1px solid rgba(26,58,71,0.1)',
+                        borderRadius: '20px', color: 'rgba(26,58,71,0.65)',
                       }}>
                         {s}
                       </span>
@@ -470,9 +470,9 @@ export default function LocationsPage() {
               {serviceAreas.map((city) => (
                 <span key={city} style={{
                   fontSize: '0.8rem', padding: '8px 18px',
-                  backgroundColor: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  borderRadius: '24px', color: 'rgba(255,255,255,0.7)',
+                  backgroundColor: 'rgba(26,58,71,0.04)',
+                  border: '1px solid rgba(26,58,71,0.1)',
+                  borderRadius: '24px', color: 'rgba(26,58,71,0.7)',
                 }}>
                   {city}
                 </span>
@@ -482,8 +482,8 @@ export default function LocationsPage() {
             <div style={{
               maxWidth: '600px', margin: '0 auto',
               padding: '36px 44px',
-              backgroundColor: 'rgba(201,122,60,0.07)',
-              border: '1px solid rgba(201,122,60,0.22)',
+              backgroundColor: 'rgba(34,184,209,0.07)',
+              border: '1px solid rgba(34,184,209,0.22)',
               borderRadius: '16px', textAlign: 'center',
             }}>
               <div style={{ fontSize: '1.4rem', marginBottom: '12px', color: 'var(--copper)' }}>◎</div>
@@ -522,7 +522,7 @@ export default function LocationsPage() {
           grid-template-columns: 1fr 1fr;
         }
         .loc-featured-left {
-          border-right: 1px solid rgba(255,255,255,0.07);
+          border-right: 1px solid rgba(26,58,71,0.07);
         }
 
         /* Two sub-cards: side-by-side on desktop */
@@ -538,7 +538,7 @@ export default function LocationsPage() {
           .loc-featured-grid { grid-template-columns: 1fr; }
           .loc-featured-left {
             border-right: none;
-            border-bottom: 1px solid rgba(255,255,255,0.07);
+            border-bottom: 1px solid rgba(26,58,71,0.07);
           }
         }
 

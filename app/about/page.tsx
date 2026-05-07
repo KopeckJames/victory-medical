@@ -46,12 +46,12 @@ export default function AboutPage() {
         >
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'radial-gradient(ellipse 60% 60% at 20% 60%, rgba(201,122,60,0.09) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 60% 60% at 20% 60%, rgba(34,184,209,0.09) 0%, transparent 70%)',
           }} />
           <div style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: 'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
             backgroundSize: '60px 60px',
             pointerEvents: 'none',
           }} />
@@ -77,7 +77,7 @@ export default function AboutPage() {
             </p>
             <p style={{
               fontSize: '1rem',
-              color: 'rgba(255,255,255,0.5)',
+              color: 'rgba(26,58,71,0.5)',
               maxWidth: '560px',
               lineHeight: 1.8,
             }}>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                     &ldquo;At Victory Medical, we have but one ultimate goal: to provide for all of our patients&apos; needs with the best medical care possible.&rdquo;
                   </p>
                 </blockquote>
-                <p style={{ fontSize: '0.95rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}>
+                <p style={{ fontSize: '0.95rem', color: 'rgba(26,58,71,0.5)', lineHeight: 1.8 }}>
                   Our caring team of physicians and staff bring experience, knowledge, passion, and professionalism to every patient interaction — whether you&apos;re here for a routine checkup or cutting-edge regenerative therapy.
                 </p>
               </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                         color: 'var(--white)', marginBottom: '5px',
                         fontFamily: 'var(--font-playfair)',
                       }}>{value.label}</div>
-                      <div style={{ fontSize: '0.825rem', color: 'rgba(255,255,255,0.55)', lineHeight: 1.6 }}>
+                      <div style={{ fontSize: '0.825rem', color: 'rgba(26,58,71,0.55)', lineHeight: 1.6 }}>
                         {value.text}
                       </div>
                     </div>
@@ -176,7 +176,7 @@ export default function AboutPage() {
             <div style={{
               position: 'absolute',
               inset: 0,
-              background: 'radial-gradient(ellipse 50% 70% at 80% 50%, rgba(201,122,60,0.07) 0%, transparent 60%)',
+              background: 'radial-gradient(ellipse 50% 70% at 80% 50%, rgba(34,184,209,0.07) 0%, transparent 60%)',
               pointerEvents: 'none',
             }} />
             <div className="container" style={{ position: 'relative' }}>
@@ -196,7 +196,7 @@ export default function AboutPage() {
                     borderRadius: '16px',
                     overflow: 'hidden',
                     backgroundColor: 'var(--light-teal)',
-                    border: '1px solid rgba(201,122,60,0.25)',
+                    border: '1px solid rgba(34,184,209,0.25)',
                     marginBottom: '20px',
                     position: 'relative',
                   }}>
@@ -223,16 +223,16 @@ export default function AboutPage() {
                     <div style={{
                       position: 'absolute', bottom: 0, left: 0, right: 0,
                       height: '80px',
-                      background: 'linear-gradient(to top, rgba(5,15,21,0.8), transparent)',
+                      background: 'linear-gradient(to top, rgba(255,255,255,0.8), transparent)',
                     }} />
                   </div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                     {FOUNDER.specialties.map(s => (
                       <span key={s} style={{
                         fontSize: '0.65rem', padding: '3px 10px',
-                        backgroundColor: 'rgba(201,122,60,0.1)',
-                        border: '1px solid rgba(201,122,60,0.2)',
-                        borderRadius: '20px', color: 'rgba(255,255,255,0.7)',
+                        backgroundColor: 'rgba(34,184,209,0.1)',
+                        border: '1px solid rgba(34,184,209,0.2)',
+                        borderRadius: '20px', color: 'rgba(26,58,71,0.7)',
                       }}>{s}</span>
                     ))}
                   </div>
@@ -248,11 +248,11 @@ export default function AboutPage() {
                   <div style={{ fontSize: '0.875rem', color: 'var(--copper)', fontWeight: 500, marginBottom: '6px' }}>
                     {FOUNDER.title}
                   </div>
-                  <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', marginBottom: '28px' }}>
+                  <div style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.4)', marginBottom: '28px' }}>
                     {FOUNDER.credentials}
                   </div>
                   <p style={{
-                    fontSize: '1rem', color: 'rgba(255,255,255,0.75)',
+                    fontSize: '1rem', color: 'rgba(26,58,71,0.75)',
                     lineHeight: 1.85, marginBottom: '28px',
                   }}>
                     {FOUNDER.bio}
@@ -276,8 +276,8 @@ export default function AboutPage() {
                       ].map(a => (
                         <span key={a} style={{
                           fontSize: '0.68rem', padding: '4px 12px',
-                          backgroundColor: 'rgba(196,168,122,0.08)',
-                          border: '1px solid rgba(196,168,122,0.2)',
+                          backgroundColor: 'rgba(34,109,122,0.08)',
+                          border: '1px solid rgba(34,109,122,0.2)',
                           borderRadius: '20px', color: 'var(--gold)',
                         }}>{a}</span>
                       ))}
@@ -289,7 +289,7 @@ export default function AboutPage() {
                     paddingLeft: '20px',
                   }}>
                     <p style={{
-                      fontSize: '0.95rem', color: 'rgba(255,255,255,0.6)',
+                      fontSize: '0.95rem', color: 'rgba(26,58,71,0.6)',
                       fontStyle: 'italic', lineHeight: 1.7, marginBottom: '6px',
                     }}>
                       &ldquo;Healing is a matter of time, but it is sometimes also a matter of opportunity.&rdquo;
@@ -319,7 +319,7 @@ export default function AboutPage() {
                   Meet the Full Team
                 </h2>
                 <p style={{
-                  fontSize: '0.875rem', color: 'rgba(255,255,255,0.4)',
+                  fontSize: '0.875rem', color: 'rgba(26,58,71,0.4)',
                   maxWidth: '340px', lineHeight: 1.6,
                 }}>
                   20+ physicians, nurse practitioners, PAs, and specialists across three Austin-area locations.
@@ -356,7 +356,7 @@ export default function AboutPage() {
                 left: '10px',
                 top: '8px', bottom: '8px',
                 width: '2px',
-                background: 'linear-gradient(to bottom, rgba(201,122,60,0.7), rgba(201,122,60,0.1))',
+                background: 'linear-gradient(to bottom, rgba(34,184,209,0.7), rgba(34,184,209,0.1))',
               }} />
 
               {milestones.map((m, i) => (
@@ -379,10 +379,10 @@ export default function AboutPage() {
                     height: '18px',
                     borderRadius: '50%',
                     backgroundColor: i === 0 ? 'var(--copper)' : 'var(--dark-teal)',
-                    border: `2px solid ${i === 0 ? 'var(--copper)' : 'rgba(201,122,60,0.5)'}`,
+                    border: `2px solid ${i === 0 ? 'var(--copper)' : 'rgba(34,184,209,0.5)'}`,
                     boxShadow: i === 0
-                      ? '0 0 0 4px rgba(201,122,60,0.15), 0 0 12px rgba(201,122,60,0.4)'
-                      : '0 0 0 3px rgba(201,122,60,0.08)',
+                      ? '0 0 0 4px rgba(34,184,209,0.15), 0 0 12px rgba(34,184,209,0.4)'
+                      : '0 0 0 3px rgba(34,184,209,0.08)',
                   }} />
 
                   <div style={{
@@ -395,7 +395,7 @@ export default function AboutPage() {
                   }}>{m.year}</div>
                   <div style={{
                     fontSize: '0.9rem',
-                    color: 'rgba(255,255,255,0.7)',
+                    color: 'rgba(26,58,71,0.7)',
                     lineHeight: 1.55,
                     paddingTop: '2px',
                   }}>{m.event}</div>
@@ -409,8 +409,8 @@ export default function AboutPage() {
         <section style={{ backgroundColor: 'var(--teal)', padding: '80px 0' }}>
           <div className="container">
             <div style={{
-              background: 'linear-gradient(135deg, rgba(201,122,60,0.08) 0%, rgba(14,45,60,0.9) 100%)',
-              border: '1px solid rgba(201,122,60,0.2)',
+              background: 'linear-gradient(135deg, rgba(34,184,209,0.08) 0%, rgba(255,255,255,0.9) 100%)',
+              border: '1px solid rgba(34,184,209,0.2)',
               borderRadius: '24px',
               padding: '60px',
               textAlign: 'center',

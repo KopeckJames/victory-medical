@@ -81,7 +81,7 @@ export default function WestlakeHillsLocationPage() {
               position: 'absolute',
               inset: 0,
               background:
-                'radial-gradient(ellipse 60% 70% at 75% 50%, rgba(201,122,60,0.08) 0%, transparent 70%)',
+                'radial-gradient(ellipse 60% 70% at 75% 50%, rgba(34,184,209,0.08) 0%, transparent 70%)',
             }}
           />
           <div
@@ -89,7 +89,7 @@ export default function WestlakeHillsLocationPage() {
               position: 'absolute',
               inset: 0,
               backgroundImage:
-                'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+                'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
               backgroundSize: '60px 60px',
               pointerEvents: 'none',
             }}
@@ -99,7 +99,7 @@ export default function WestlakeHillsLocationPage() {
             <div
               style={{
                 fontSize: '0.75rem',
-                color: 'rgba(255,255,255,0.4)',
+                color: 'rgba(26,58,71,0.4)',
                 marginBottom: '24px',
                 display: 'flex',
                 gap: '8px',
@@ -153,7 +153,7 @@ export default function WestlakeHillsLocationPage() {
                 >
                   Address
                 </div>
-                <div style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.9)' }}>
+                <div style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.9)' }}>
                   3811 Bee Caves Rd, Suite 100 &amp; 101, Westlake Hills TX 78746
                 </div>
               </div>
@@ -193,8 +193,8 @@ export default function WestlakeHillsLocationPage() {
                   alignItems: 'center',
                   gap: '8px',
                   padding: '8px 18px',
-                  backgroundColor: 'rgba(201,122,60,0.15)',
-                  border: '1px solid rgba(201,122,60,0.4)',
+                  backgroundColor: 'rgba(34,184,209,0.15)',
+                  border: '1px solid rgba(34,184,209,0.4)',
                   borderRadius: '24px',
                   fontSize: '0.8rem',
                   color: 'var(--copper)',
@@ -219,8 +219,8 @@ export default function WestlakeHillsLocationPage() {
                   alignItems: 'center',
                   gap: '8px',
                   padding: '8px 18px',
-                  backgroundColor: 'rgba(196,168,122,0.12)',
-                  border: '1px solid rgba(196,168,122,0.3)',
+                  backgroundColor: 'rgba(34,109,122,0.12)',
+                  border: '1px solid rgba(34,109,122,0.3)',
                   borderRadius: '24px',
                   fontSize: '0.8rem',
                   color: 'var(--gold)',
@@ -290,16 +290,16 @@ export default function WestlakeHillsLocationPage() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       fontSize: '0.875rem',
-                      color: h.time === 'Closed' ? 'rgba(255,255,255,0.35)' : 'rgba(255,255,255,0.75)',
+                      color: h.time === 'Closed' ? 'rgba(26,58,71,0.35)' : 'rgba(26,58,71,0.75)',
                       marginBottom: '8px',
                       paddingBottom: '8px',
-                      borderBottom: '1px solid rgba(255,255,255,0.06)',
+                      borderBottom: '1px solid rgba(26,58,71,0.06)',
                     }}
                   >
                     <span>{h.days}</span>
                     <span
                       style={{
-                        color: h.time === 'Closed' ? 'rgba(255,255,255,0.3)' : 'var(--white)',
+                        color: h.time === 'Closed' ? 'rgba(26,58,71,0.3)' : 'var(--white)',
                         fontWeight: 500,
                       }}
                     >
@@ -326,7 +326,7 @@ export default function WestlakeHillsLocationPage() {
                 <p
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.75)',
+                    color: 'rgba(26,58,71,0.75)',
                     lineHeight: 1.7,
                     marginBottom: '12px',
                   }}
@@ -338,8 +338,8 @@ export default function WestlakeHillsLocationPage() {
                     display: 'inline-block',
                     fontSize: '0.75rem',
                     color: 'var(--copper)',
-                    backgroundColor: 'rgba(201,122,60,0.1)',
-                    border: '1px solid rgba(201,122,60,0.25)',
+                    backgroundColor: 'rgba(34,184,209,0.1)',
+                    border: '1px solid rgba(34,184,209,0.25)',
                     borderRadius: '20px',
                     padding: '4px 12px',
                     marginBottom: '8px',
@@ -376,7 +376,7 @@ export default function WestlakeHillsLocationPage() {
                       alignItems: 'center',
                       gap: '10px',
                       fontSize: '0.85rem',
-                      color: 'rgba(255,255,255,0.7)',
+                      color: 'rgba(26,58,71,0.7)',
                       marginBottom: '8px',
                     }}
                   >
@@ -440,7 +440,7 @@ export default function WestlakeHillsLocationPage() {
                 <p
                   style={{
                     fontSize: '0.95rem',
-                    color: 'rgba(255,255,255,0.6)',
+                    color: 'rgba(26,58,71,0.6)',
                     lineHeight: 1.7,
                   }}
                 >
@@ -510,7 +510,7 @@ export default function WestlakeHillsLocationPage() {
                       <div
                         style={{
                           fontSize: '0.825rem',
-                          color: 'rgba(255,255,255,0.55)',
+                          color: 'rgba(26,58,71,0.55)',
                           lineHeight: 1.6,
                         }}
                       >
@@ -558,8 +558,8 @@ export default function WestlakeHillsLocationPage() {
                   style={{
                     display: 'block',
                     textDecoration: 'none',
-                    backgroundColor: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.03)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '12px',
                     padding: '28px',
                   }}
@@ -569,8 +569,8 @@ export default function WestlakeHillsLocationPage() {
                       width: '44px',
                       height: '44px',
                       borderRadius: '10px',
-                      backgroundColor: 'rgba(201,122,60,0.12)',
-                      border: '1px solid rgba(201,122,60,0.25)',
+                      backgroundColor: 'rgba(34,184,209,0.12)',
+                      border: '1px solid rgba(34,184,209,0.25)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -595,7 +595,7 @@ export default function WestlakeHillsLocationPage() {
                   <p
                     style={{
                       fontSize: '0.85rem',
-                      color: 'rgba(255,255,255,0.6)',
+                      color: 'rgba(26,58,71,0.6)',
                       lineHeight: 1.65,
                     }}
                   >
@@ -624,11 +624,11 @@ export default function WestlakeHillsLocationPage() {
           <div className="container">
             <div
               style={{
-                border: '1px solid rgba(201,122,60,0.45)',
+                border: '1px solid rgba(34,184,209,0.45)',
                 borderRadius: '20px',
                 overflow: 'hidden',
                 background:
-                  'linear-gradient(135deg, rgba(201,122,60,0.08) 0%, rgba(14,45,60,0.95) 60%)',
+                  'linear-gradient(135deg, rgba(34,184,209,0.08) 0%, rgba(255,255,255,0.95) 60%)',
                 padding: '56px',
                 position: 'relative',
               }}
@@ -642,7 +642,7 @@ export default function WestlakeHillsLocationPage() {
                   right: 0,
                   height: '3px',
                   background:
-                    'linear-gradient(90deg, var(--copper), rgba(201,122,60,0.3))',
+                    'linear-gradient(90deg, var(--copper), rgba(34,184,209,0.3))',
                 }}
               />
 
@@ -662,8 +662,8 @@ export default function WestlakeHillsLocationPage() {
                       letterSpacing: '0.15em',
                       textTransform: 'uppercase',
                       color: 'var(--copper)',
-                      backgroundColor: 'rgba(201,122,60,0.15)',
-                      border: '1px solid rgba(201,122,60,0.35)',
+                      backgroundColor: 'rgba(34,184,209,0.15)',
+                      border: '1px solid rgba(34,184,209,0.35)',
                       borderRadius: '20px',
                       padding: '5px 14px',
                       marginBottom: '20px',
@@ -719,7 +719,7 @@ export default function WestlakeHillsLocationPage() {
                         alignItems: 'center',
                         gap: '12px',
                         fontSize: '0.875rem',
-                        color: 'rgba(255,255,255,0.75)',
+                        color: 'rgba(26,58,71,0.75)',
                       }}
                     >
                       <span
@@ -770,8 +770,8 @@ export default function WestlakeHillsLocationPage() {
               <div>
                 <div
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.08)',
                     borderRadius: '16px',
                     padding: '32px',
                     marginBottom: '24px',
@@ -792,7 +792,7 @@ export default function WestlakeHillsLocationPage() {
                   <p
                     style={{
                       fontSize: '0.9rem',
-                      color: 'rgba(255,255,255,0.7)',
+                      color: 'rgba(26,58,71,0.7)',
                       lineHeight: 1.7,
                       marginBottom: '16px',
                     }}
@@ -816,7 +816,7 @@ export default function WestlakeHillsLocationPage() {
                   <p
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255,255,255,0.65)',
+                      color: 'rgba(26,58,71,0.65)',
                       lineHeight: 1.6,
                     }}
                   >
@@ -899,7 +899,7 @@ export default function WestlakeHillsLocationPage() {
                       <div
                         style={{
                           fontSize: '0.95rem',
-                          color: 'rgba(255,255,255,0.85)',
+                          color: 'rgba(26,58,71,0.85)',
                           whiteSpace: 'pre-line',
                         }}
                       >
@@ -918,7 +918,7 @@ export default function WestlakeHillsLocationPage() {
           style={{
             backgroundColor: 'var(--teal)',
             padding: '80px 0',
-            borderTop: '1px solid rgba(255,255,255,0.06)',
+            borderTop: '1px solid rgba(26,58,71,0.06)',
           }}
         >
           <div className="container" style={{ textAlign: 'center' }}>

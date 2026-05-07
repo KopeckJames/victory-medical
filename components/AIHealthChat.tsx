@@ -156,10 +156,10 @@ export default function AIHealthChat() {
           right: 0,
           width: 'min(380px, calc(100vw - 32px))',
           height: 'min(560px, calc(100vh - 120px))',
-          backgroundColor: '#071820',
-          border: '1px solid rgba(201,122,60,0.25)',
+          backgroundColor: '#f5fbfc',
+          border: '1px solid rgba(34,184,209,0.25)',
           borderRadius: '20px',
-          boxShadow: '0 24px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.04)',
+          boxShadow: '0 24px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(26,58,71,0.04)',
           display: 'flex',
           flexDirection: 'column',
           overflow: 'hidden',
@@ -170,15 +170,15 @@ export default function AIHealthChat() {
         {/* Header */}
         <div style={{
           padding: '20px 20px 16px',
-          borderBottom: '1px solid rgba(255,255,255,0.06)',
-          background: 'linear-gradient(135deg, #0e2d3c 0%, #071820 100%)',
+          borderBottom: '1px solid rgba(26,58,71,0.06)',
+          background: 'linear-gradient(135deg, #ffffff 0%, #f5fbfc 100%)',
           flexShrink: 0,
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '4px' }}>
             <div style={{
               width: '36px', height: '36px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, var(--copper) 0%, #e09a5c 100%)',
+              background: 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               fontSize: '14px', fontWeight: 700, color: 'white',
               fontFamily: 'var(--font-playfair)',
@@ -195,7 +195,7 @@ export default function AIHealthChat() {
                   backgroundColor: '#22c55e', flexShrink: 0,
                   boxShadow: '0 0 6px rgba(34,197,94,0.6)',
                 }} />
-                <span style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.5)', letterSpacing: '0.05em' }}>
+                <span style={{ fontSize: '0.65rem', color: 'rgba(26,58,71,0.5)', letterSpacing: '0.05em' }}>
                   Online · Instant responses
                 </span>
               </div>
@@ -204,7 +204,7 @@ export default function AIHealthChat() {
               onClick={() => setIsOpen(false)}
               style={{
                 marginLeft: 'auto', background: 'none', border: 'none',
-                color: 'rgba(255,255,255,0.4)', cursor: 'pointer',
+                color: 'rgba(26,58,71,0.4)', cursor: 'pointer',
                 padding: '4px', lineHeight: 1, fontSize: '18px',
               }}
               aria-label="Close chat"
@@ -221,7 +221,7 @@ export default function AIHealthChat() {
           {messages.length === 0 && (
             <div style={{ textAlign: 'center', padding: '20px 0' }}>
               <div style={{ fontSize: '2rem', marginBottom: '12px' }}>⚕</div>
-              <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', lineHeight: 1.6 }}>
+              <p style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.4)', lineHeight: 1.6 }}>
                 Your personal Victory Medical guide.<br/>Ask me anything about our services.
               </p>
             </div>
@@ -241,11 +241,11 @@ export default function AIHealthChat() {
                 borderRadius: msg.role === 'user' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
                 backgroundColor: msg.role === 'user'
                   ? 'var(--copper)'
-                  : 'rgba(255,255,255,0.06)',
-                border: msg.role === 'assistant' ? '1px solid rgba(255,255,255,0.08)' : 'none',
+                  : 'rgba(26,58,71,0.06)',
+                border: msg.role === 'assistant' ? '1px solid rgba(26,58,71,0.08)' : 'none',
                 fontSize: '0.825rem',
                 lineHeight: 1.6,
-                color: msg.role === 'user' ? 'white' : 'rgba(255,255,255,0.9)',
+                color: msg.role === 'user' ? 'white' : 'rgba(26,58,71,0.9)',
                 letterSpacing: '0.01em',
               }}>
                 {msg.content}
@@ -290,19 +290,19 @@ export default function AIHealthChat() {
                 onClick={() => sendMessage(q)}
                 style={{
                   fontSize: '0.7rem', padding: '5px 10px',
-                  backgroundColor: 'rgba(201,122,60,0.12)',
-                  border: '1px solid rgba(201,122,60,0.25)',
-                  borderRadius: '20px', color: 'rgba(255,255,255,0.7)',
+                  backgroundColor: 'rgba(34,184,209,0.12)',
+                  border: '1px solid rgba(34,184,209,0.25)',
+                  borderRadius: '20px', color: 'rgba(26,58,71,0.7)',
                   cursor: 'pointer', transition: 'all 0.2s',
                   lineHeight: 1.4,
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.backgroundColor = 'rgba(201,122,60,0.2)'
+                  e.currentTarget.style.backgroundColor = 'rgba(34,184,209,0.2)'
                   e.currentTarget.style.color = 'white'
                 }}
                 onMouseLeave={e => {
-                  e.currentTarget.style.backgroundColor = 'rgba(201,122,60,0.12)'
-                  e.currentTarget.style.color = 'rgba(255,255,255,0.7)'
+                  e.currentTarget.style.backgroundColor = 'rgba(34,184,209,0.12)'
+                  e.currentTarget.style.color = 'rgba(26,58,71,0.7)'
                 }}
               >{q}</button>
             ))}
@@ -314,7 +314,7 @@ export default function AIHealthChat() {
           onSubmit={handleSubmit}
           style={{
             padding: '12px 16px',
-            borderTop: '1px solid rgba(255,255,255,0.06)',
+            borderTop: '1px solid rgba(26,58,71,0.06)',
             display: 'flex', gap: '8px', alignItems: 'center',
             backgroundColor: 'rgba(0,0,0,0.15)',
             flexShrink: 0,
@@ -327,22 +327,22 @@ export default function AIHealthChat() {
             placeholder="Ask about services, symptoms..."
             disabled={isLoading}
             style={{
-              flex: 1, background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.1)',
+              flex: 1, background: 'rgba(26,58,71,0.06)',
+              border: '1px solid rgba(26,58,71,0.1)',
               borderRadius: '10px', padding: '10px 14px',
               fontSize: '0.8rem', color: 'white',
               outline: 'none',
               transition: 'border-color 0.2s',
             }}
-            onFocus={e => { e.target.style.borderColor = 'rgba(201,122,60,0.4)' }}
-            onBlur={e => { e.target.style.borderColor = 'rgba(255,255,255,0.1)' }}
+            onFocus={e => { e.target.style.borderColor = 'rgba(34,184,209,0.4)' }}
+            onBlur={e => { e.target.style.borderColor = 'rgba(26,58,71,0.1)' }}
           />
           <button
             type="submit"
             disabled={!input.trim() || isLoading}
             style={{
               width: '36px', height: '36px', borderRadius: '10px',
-              background: input.trim() ? 'var(--copper)' : 'rgba(255,255,255,0.08)',
+              background: input.trim() ? 'var(--copper)' : 'rgba(26,58,71,0.08)',
               border: 'none', cursor: input.trim() ? 'pointer' : 'default',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               transition: 'all 0.2s', flexShrink: 0,
@@ -358,7 +358,7 @@ export default function AIHealthChat() {
         {/* Disclaimer */}
         <div style={{
           padding: '8px 16px',
-          fontSize: '0.6rem', color: 'rgba(255,255,255,0.25)',
+          fontSize: '0.6rem', color: 'rgba(26,58,71,0.25)',
           textAlign: 'center', lineHeight: 1.4,
           backgroundColor: 'rgba(0,0,0,0.1)',
           flexShrink: 0,
@@ -374,12 +374,12 @@ export default function AIHealthChat() {
         style={{
           width: '56px', height: '56px', borderRadius: '50%',
           background: isOpen
-            ? 'rgba(201,122,60,0.2)'
-            : 'linear-gradient(135deg, var(--copper) 0%, #e09a5c 100%)',
-          border: isOpen ? '1px solid rgba(201,122,60,0.4)' : 'none',
+            ? 'rgba(34,184,209,0.2)'
+            : 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
+          border: isOpen ? '1px solid rgba(34,184,209,0.4)' : 'none',
           cursor: 'pointer',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
-          boxShadow: isOpen ? 'none' : '0 8px 30px rgba(201,122,60,0.5)',
+          boxShadow: isOpen ? 'none' : '0 8px 30px rgba(34,184,209,0.5)',
           transition: 'all 0.3s ease',
           position: 'relative',
           zIndex: 1,
@@ -402,7 +402,7 @@ export default function AIHealthChat() {
             position: 'absolute', top: '2px', right: '2px',
             width: '10px', height: '10px', borderRadius: '50%',
             backgroundColor: '#22c55e',
-            border: '2px solid #071820',
+            border: '2px solid #f5fbfc',
             animation: 'pulse-dot 2s ease-in-out infinite',
           }} />
         )}

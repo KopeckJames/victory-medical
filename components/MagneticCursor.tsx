@@ -51,8 +51,8 @@ export default function MagneticCursor() {
 
       gsap.to(ring, {
         width: 60, height: 60,
-        borderColor: 'rgba(201,122,60,0.8)',
-        backgroundColor: 'rgba(201,122,60,0.08)',
+        borderColor: 'rgba(34,184,209,0.8)',
+        backgroundColor: 'rgba(34,184,209,0.08)',
         duration: 0.3, ease: 'power2.out',
       })
       gsap.to(dot, {
@@ -84,7 +84,7 @@ export default function MagneticCursor() {
 
       gsap.to(ring, {
         width: 40, height: 40,
-        borderColor: 'rgba(255,255,255,0.5)',
+        borderColor: 'rgba(26,58,71,0.5)',
         backgroundColor: 'transparent',
         duration: 0.4, ease: 'power2.out',
       })
@@ -104,7 +104,7 @@ export default function MagneticCursor() {
     const onMouseEnterLink = () => {
       gsap.to(ring, {
         width: 50, height: 50,
-        borderColor: 'rgba(196,168,122,0.7)',
+        borderColor: 'rgba(34,109,122,0.7)',
         duration: 0.3, ease: 'power2.out',
       })
     }
@@ -112,7 +112,7 @@ export default function MagneticCursor() {
     const onMouseLeaveLink = () => {
       gsap.to(ring, {
         width: 40, height: 40,
-        borderColor: 'rgba(255,255,255,0.5)',
+        borderColor: 'rgba(26,58,71,0.5)',
         duration: 0.3, ease: 'power2.out',
       })
     }
@@ -184,7 +184,7 @@ export default function MagneticCursor() {
           top: 0, left: 0,
           width: '40px', height: '40px',
           borderRadius: '50%',
-          border: '1px solid rgba(255,255,255,0.5)',
+          border: '1px solid rgba(26,58,71,0.5)',
           backgroundColor: 'transparent',
           pointerEvents: 'none',
           zIndex: 99998,

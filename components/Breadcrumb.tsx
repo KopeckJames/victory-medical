@@ -34,7 +34,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
               {index > 0 && (
                 <span
                   aria-hidden="true"
-                  style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.25)' }}
+                  style={{ fontSize: '0.75rem', color: 'rgba(26,58,71,0.25)' }}
                 >
                   /
                 </span>
@@ -47,7 +47,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                     alignItems: 'center',
                     gap: '5px',
                     fontSize: '0.75rem',
-                    color: 'rgba(255,255,255,0.5)',
+                    color: 'rgba(26,58,71,0.5)',
                     textDecoration: 'none',
                   }}
                 >
@@ -78,7 +78,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                     alignItems: 'center',
                     gap: '5px',
                     fontSize: '0.75rem',
-                    color: isLast ? 'var(--copper)' : 'rgba(255,255,255,0.45)',
+                    color: isLast ? 'var(--copper)' : 'rgba(26,58,71,0.45)',
                   }}
                 >
                   {isFirst && !item.href && (

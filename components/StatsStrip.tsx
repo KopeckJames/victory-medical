@@ -86,8 +86,8 @@ export default function StatsStrip() {
       ref={sectionRef}
       style={{
         backgroundColor: 'var(--dark-teal)',
-        borderTop: '1px solid rgba(255,255,255,0.05)',
-        borderBottom: '1px solid rgba(255,255,255,0.05)',
+        borderTop: '1px solid rgba(26,58,71,0.05)',
+        borderBottom: '1px solid rgba(26,58,71,0.05)',
         padding: '60px 0',
         position: 'relative',
         overflow: 'hidden',
@@ -96,7 +96,7 @@ export default function StatsStrip() {
       {/* Background shimmer line */}
       <div style={{
         position: 'absolute', top: 0, left: 0, right: 0, height: '1px',
-        background: 'linear-gradient(90deg, transparent, rgba(201,122,60,0.4), transparent)',
+        background: 'linear-gradient(90deg, transparent, rgba(34,184,209,0.4), transparent)',
         pointerEvents: 'none',
       }} />
 
@@ -118,8 +118,8 @@ export default function StatsStrip() {
                 alignItems: 'center',
                 textAlign: 'center',
                 padding: '24px 16px',
-                backgroundColor: 'rgba(255,255,255,0.025)',
-                border: '1px solid rgba(255,255,255,0.06)',
+                backgroundColor: 'rgba(26,58,71,0.025)',
+                border: '1px solid rgba(26,58,71,0.06)',
                 borderRadius: '16px',
                 position: 'relative',
                 opacity: 0,
@@ -127,15 +127,15 @@ export default function StatsStrip() {
               }}
               onMouseEnter={e => {
                 gsap.to(e.currentTarget, {
-                  borderColor: 'rgba(201,122,60,0.35)',
-                  backgroundColor: 'rgba(201,122,60,0.05)',
+                  borderColor: 'rgba(34,184,209,0.35)',
+                  backgroundColor: 'rgba(34,184,209,0.05)',
                   y: -4, duration: 0.3, ease: 'power2.out',
                 })
               }}
               onMouseLeave={e => {
                 gsap.to(e.currentTarget, {
-                  borderColor: 'rgba(255,255,255,0.06)',
-                  backgroundColor: 'rgba(255,255,255,0.025)',
+                  borderColor: 'rgba(26,58,71,0.06)',
+                  backgroundColor: 'rgba(26,58,71,0.025)',
                   y: 0, duration: 0.3, ease: 'power2.in',
                 })
               }}
@@ -147,7 +147,7 @@ export default function StatsStrip() {
                   <circle
                     cx="34" cy="34" r="28"
                     fill="none"
-                    stroke="rgba(255,255,255,0.06)"
+                    stroke="rgba(26,58,71,0.06)"
                     strokeWidth="2"
                   />
                   {/* Progress */}
@@ -193,7 +193,7 @@ export default function StatsStrip() {
                 lineHeight: 1.3,
               }}>{stat.label}</div>
               <div style={{
-                fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)',
+                fontSize: '0.72rem', color: 'rgba(26,58,71,0.5)',
                 letterSpacing: '0.02em',
               }}>{stat.description}</div>
             </div>

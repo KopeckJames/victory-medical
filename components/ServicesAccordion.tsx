@@ -92,7 +92,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
   const handleHeaderMouseEnter = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
     if (id !== openId) {
       gsap.to(e.currentTarget, {
-        backgroundColor: 'rgba(255,255,255,0.02)',
+        backgroundColor: 'rgba(26,58,71,0.02)',
         duration: 0.2,
         ease: 'power1.out',
       })
@@ -102,7 +102,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
   const handleHeaderMouseLeave = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
     if (id !== openId) {
       gsap.to(e.currentTarget, {
-        backgroundColor: 'rgba(255,255,255,0)',
+        backgroundColor: 'rgba(26,58,71,0)',
         duration: 0.2,
         ease: 'power1.out',
       })
@@ -136,7 +136,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
         style={{
           borderRadius: '16px',
           overflow: 'hidden',
-          border: '1px solid rgba(255,255,255,0.08)',
+          border: '1px solid rgba(26,58,71,0.08)',
         }}
       >
         {services.map((service) => {
@@ -171,8 +171,8 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                   justifyContent: 'space-between',
                   padding: '20px 28px',
                   cursor: 'pointer',
-                  borderBottom: '1px solid rgba(255,255,255,0.06)',
-                  backgroundColor: isOpen ? 'rgba(201,122,60,0.05)' : 'rgba(255,255,255,0)',
+                  borderBottom: '1px solid rgba(26,58,71,0.06)',
+                  backgroundColor: isOpen ? 'rgba(34,184,209,0.05)' : 'rgba(26,58,71,0)',
                   transition: 'background-color 0.25s ease',
                   userSelect: 'none',
                   WebkitUserSelect: 'none',
@@ -187,8 +187,8 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                       height: '40px',
                       flexShrink: 0,
                       borderRadius: '10px',
-                      backgroundColor: 'rgba(201,122,60,0.15)',
-                      border: '1px solid rgba(201,122,60,0.3)',
+                      backgroundColor: 'rgba(34,184,209,0.15)',
+                      border: '1px solid rgba(34,184,209,0.3)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -244,9 +244,9 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                       padding: '4px 10px',
                       borderRadius: '4px',
                       backgroundColor: isOpen
-                        ? 'rgba(201,122,60,0.12)'
-                        : 'rgba(196,168,122,0.08)',
-                      border: `1px solid ${isOpen ? 'rgba(201,122,60,0.25)' : 'rgba(196,168,122,0.15)'}`,
+                        ? 'rgba(34,184,209,0.12)'
+                        : 'rgba(34,109,122,0.08)',
+                      border: `1px solid ${isOpen ? 'rgba(34,184,209,0.25)' : 'rgba(34,109,122,0.15)'}`,
                       transition: 'all 0.25s ease',
                     }}
                   >
@@ -273,7 +273,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                     style={{
                       transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
                       transition: 'transform 0.3s ease',
-                      color: isOpen ? 'var(--copper)' : 'rgba(255,255,255,0.4)',
+                      color: isOpen ? 'var(--copper)' : 'rgba(26,58,71,0.4)',
                     }}
                   >
                     <path
@@ -307,7 +307,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                   <div
                     style={{
                       height: '1px',
-                      backgroundColor: 'rgba(201,122,60,0.15)',
+                      backgroundColor: 'rgba(34,184,209,0.15)',
                       marginBottom: '28px',
                     }}
                   />
@@ -327,7 +327,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                       <p
                         style={{
                           fontSize: '1rem',
-                          color: 'rgba(255,255,255,0.7)',
+                          color: 'rgba(26,58,71,0.7)',
                           lineHeight: 1.75,
                           marginBottom: '24px',
                         }}
@@ -338,11 +338,11 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                         <div
                           style={{
                             padding: '16px 20px',
-                            backgroundColor: 'rgba(201,122,60,0.08)',
+                            backgroundColor: 'rgba(34,184,209,0.08)',
                             borderLeft: '3px solid var(--copper)',
                             borderRadius: '0 8px 8px 0',
                             fontSize: '0.875rem',
-                            color: 'rgba(255,255,255,0.75)',
+                            color: 'rgba(26,58,71,0.75)',
                             fontStyle: 'italic',
                             marginBottom: '28px',
                           }}
@@ -391,7 +391,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                               alignItems: 'flex-start',
                               gap: '10px',
                               fontSize: '0.875rem',
-                              color: 'rgba(255,255,255,0.7)',
+                              color: 'rgba(26,58,71,0.7)',
                             }}
                           >
                             <span

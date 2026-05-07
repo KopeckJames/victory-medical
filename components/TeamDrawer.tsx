@@ -7,13 +7,13 @@ import { gsap } from 'gsap'
 import { type TeamMember } from '@/lib/team-data'
 
 const CATEGORY_COLORS: Record<string, string> = {
-  Physicians: '#c97a3c',
-  'Nurse Practitioners': '#c4a87a',
+  Physicians: '#22b8d1',
+  'Nurse Practitioners': '#226d7a',
   'Physician Assistants': '#8ba8b8',
-  Aesthetics: '#e09a5c',
+  Aesthetics: '#4fc8dd',
   'Ketamine & Mental Health': '#a08ab8',
   'Physical Medicine': '#6aa88a',
-  MDVIP: '#c97a3c',
+  MDVIP: '#22b8d1',
   Pharmacy: '#8bb8a8',
 }
 
@@ -140,9 +140,9 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               width: '40px',
               height: '40px',
               borderRadius: '50%',
-              border: '1px solid rgba(255,255,255,0.12)',
-              backgroundColor: 'rgba(255,255,255,0.05)',
-              color: 'rgba(255,255,255,0.7)',
+              border: '1px solid rgba(26,58,71,0.12)',
+              backgroundColor: 'rgba(26,58,71,0.05)',
+              color: 'rgba(26,58,71,0.7)',
               cursor: 'pointer',
               display: 'flex',
               alignItems: 'center',
@@ -150,12 +150,12 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               flexShrink: 0,
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)'
+              e.currentTarget.style.backgroundColor = 'rgba(26,58,71,0.1)'
               e.currentTarget.style.color = 'var(--white)'
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'
-              e.currentTarget.style.color = 'rgba(255,255,255,0.7)'
+              e.currentTarget.style.backgroundColor = 'rgba(26,58,71,0.05)'
+              e.currentTarget.style.color = 'rgba(26,58,71,0.7)'
             }}
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -167,7 +167,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
         {/* Header section */}
         <div style={{
           padding: '0 32px 24px',
-          borderBottom: '1px solid rgba(255,255,255,0.07)',
+          borderBottom: '1px solid rgba(26,58,71,0.07)',
           flexShrink: 0,
         }}>
           <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
@@ -231,7 +231,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               {member.credentials && (
                 <div style={{
                   fontSize: '0.75rem',
-                  color: 'rgba(255,255,255,0.4)',
+                  color: 'rgba(26,58,71,0.4)',
                   lineHeight: 1.45,
                   marginBottom: '10px',
                 }}>
@@ -245,10 +245,10 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
                 gap: '5px',
                 fontSize: '0.68rem',
                 padding: '3px 10px',
-                backgroundColor: 'rgba(255,255,255,0.06)',
-                border: '1px solid rgba(255,255,255,0.1)',
+                backgroundColor: 'rgba(26,58,71,0.06)',
+                border: '1px solid rgba(26,58,71,0.1)',
                 borderRadius: '20px',
-                color: 'rgba(255,255,255,0.55)',
+                color: 'rgba(26,58,71,0.55)',
                 letterSpacing: '0.02em',
               }}>
                 <svg width="9" height="9" viewBox="0 0 10 12" fill="none">
@@ -298,7 +298,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
             <div className="section-label" style={{
               fontSize: '0.6rem',
               letterSpacing: '0.12em',
-              color: 'rgba(255,255,255,0.3)',
+              color: 'rgba(26,58,71,0.3)',
               marginBottom: '10px',
               textTransform: 'uppercase',
             }}>
@@ -306,7 +306,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
             </div>
             <p style={{
               fontSize: '0.85rem',
-              color: 'rgba(255,255,255,0.7)',
+              color: 'rgba(26,58,71,0.7)',
               lineHeight: 1.75,
             }}>
               {member.bio}
@@ -319,7 +319,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               <div style={{
                 fontSize: '0.6rem',
                 letterSpacing: '0.12em',
-                color: 'rgba(255,255,255,0.3)',
+                color: 'rgba(26,58,71,0.3)',
                 marginBottom: '10px',
                 textTransform: 'uppercase',
               }}>
@@ -333,7 +333,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
                     backgroundColor: `${color}12`,
                     border: `1px solid ${color}28`,
                     borderRadius: '20px',
-                    color: 'rgba(255,255,255,0.7)',
+                    color: 'rgba(26,58,71,0.7)',
                     letterSpacing: '0.02em',
                   }}>
                     {s}
@@ -349,7 +349,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               <div style={{
                 fontSize: '0.6rem',
                 letterSpacing: '0.12em',
-                color: 'rgba(255,255,255,0.3)',
+                color: 'rgba(26,58,71,0.3)',
                 marginBottom: '10px',
                 textTransform: 'uppercase',
               }}>
@@ -363,7 +363,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
                 </svg>
                 <span style={{
                   fontSize: '0.8rem',
-                  color: 'rgba(255,255,255,0.6)',
+                  color: 'rgba(26,58,71,0.6)',
                 }}>
                   {member.languages.join(' · ')}
                 </span>
@@ -376,7 +376,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
             <div style={{
               fontSize: '0.6rem',
               letterSpacing: '0.12em',
-              color: 'rgba(255,255,255,0.3)',
+              color: 'rgba(26,58,71,0.3)',
               marginBottom: '10px',
               textTransform: 'uppercase',
             }}>
@@ -384,7 +384,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
             </div>
             <span style={{
               fontSize: '0.8rem',
-              color: 'rgba(255,255,255,0.6)',
+              color: 'rgba(26,58,71,0.6)',
             }}>
               {member.location}
             </span>
@@ -396,7 +396,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               <div style={{
                 fontSize: '0.6rem',
                 letterSpacing: '0.12em',
-                color: 'rgba(255,255,255,0.3)',
+                color: 'rgba(26,58,71,0.3)',
                 marginBottom: '10px',
                 textTransform: 'uppercase',
               }}>
@@ -428,7 +428,7 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
         {/* Bottom CTA */}
         <div style={{
           padding: '24px 32px',
-          borderTop: '1px solid rgba(255,255,255,0.07)',
+          borderTop: '1px solid rgba(26,58,71,0.07)',
           flexShrink: 0,
           position: 'sticky',
           bottom: 0,
@@ -461,14 +461,14 @@ export default function TeamDrawer({ member, onClose }: TeamDrawerProps) {
               display: 'block',
               textAlign: 'center',
               fontSize: '0.75rem',
-              color: 'rgba(255,255,255,0.45)',
+              color: 'rgba(26,58,71,0.45)',
               textDecoration: 'none',
               letterSpacing: '0.04em',
               padding: '8px',
               transition: 'color 0.2s',
             }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.75)' }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.45)' }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(26,58,71,0.75)' }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(26,58,71,0.45)' }}
           >
             View full team &rarr;
           </Link>

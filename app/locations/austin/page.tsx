@@ -94,7 +94,7 @@ export default function AustinLocationPage() {
               position: 'absolute',
               inset: 0,
               background:
-                'radial-gradient(ellipse 60% 70% at 20% 60%, rgba(201,122,60,0.09) 0%, transparent 70%)',
+                'radial-gradient(ellipse 60% 70% at 20% 60%, rgba(34,184,209,0.09) 0%, transparent 70%)',
             }}
           />
           <div
@@ -102,7 +102,7 @@ export default function AustinLocationPage() {
               position: 'absolute',
               inset: 0,
               backgroundImage:
-                'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+                'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
               backgroundSize: '60px 60px',
               pointerEvents: 'none',
             }}
@@ -112,7 +112,7 @@ export default function AustinLocationPage() {
             <div
               style={{
                 fontSize: '0.75rem',
-                color: 'rgba(255,255,255,0.4)',
+                color: 'rgba(26,58,71,0.4)',
                 marginBottom: '24px',
                 display: 'flex',
                 gap: '8px',
@@ -166,7 +166,7 @@ export default function AustinLocationPage() {
                 >
                   Address
                 </div>
-                <div style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.9)' }}>
+                <div style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.9)' }}>
                   4303 Victory Drive, Austin TX 78704
                 </div>
               </div>
@@ -203,8 +203,8 @@ export default function AustinLocationPage() {
                 alignItems: 'center',
                 gap: '8px',
                 padding: '8px 18px',
-                backgroundColor: 'rgba(201,122,60,0.15)',
-                border: '1px solid rgba(201,122,60,0.4)',
+                backgroundColor: 'rgba(34,184,209,0.15)',
+                border: '1px solid rgba(34,184,209,0.4)',
                 borderRadius: '24px',
                 fontSize: '0.8rem',
                 color: 'var(--copper)',
@@ -285,10 +285,10 @@ export default function AustinLocationPage() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       fontSize: '0.875rem',
-                      color: 'rgba(255,255,255,0.75)',
+                      color: 'rgba(26,58,71,0.75)',
                       marginBottom: '8px',
                       paddingBottom: '8px',
-                      borderBottom: '1px solid rgba(255,255,255,0.06)',
+                      borderBottom: '1px solid rgba(26,58,71,0.06)',
                     }}
                   >
                     <span>{h.days}</span>
@@ -314,7 +314,7 @@ export default function AustinLocationPage() {
                 <p
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.75)',
+                    color: 'rgba(26,58,71,0.75)',
                     lineHeight: 1.7,
                     marginBottom: '12px',
                   }}
@@ -326,8 +326,8 @@ export default function AustinLocationPage() {
                     display: 'inline-block',
                     fontSize: '0.75rem',
                     color: 'var(--copper)',
-                    backgroundColor: 'rgba(201,122,60,0.1)',
-                    border: '1px solid rgba(201,122,60,0.25)',
+                    backgroundColor: 'rgba(34,184,209,0.1)',
+                    border: '1px solid rgba(34,184,209,0.25)',
                     borderRadius: '20px',
                     padding: '4px 12px',
                   }}
@@ -363,7 +363,7 @@ export default function AustinLocationPage() {
                       alignItems: 'center',
                       gap: '10px',
                       fontSize: '0.85rem',
-                      color: 'rgba(255,255,255,0.7)',
+                      color: 'rgba(26,58,71,0.7)',
                       marginBottom: '8px',
                     }}
                   >
@@ -418,8 +418,8 @@ export default function AustinLocationPage() {
                   style={{
                     display: 'block',
                     textDecoration: 'none',
-                    backgroundColor: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.03)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '12px',
                     padding: '28px',
                     transition: 'border-color 0.2s',
@@ -430,8 +430,8 @@ export default function AustinLocationPage() {
                       width: '44px',
                       height: '44px',
                       borderRadius: '10px',
-                      backgroundColor: 'rgba(201,122,60,0.12)',
-                      border: '1px solid rgba(201,122,60,0.25)',
+                      backgroundColor: 'rgba(34,184,209,0.12)',
+                      border: '1px solid rgba(34,184,209,0.25)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -456,7 +456,7 @@ export default function AustinLocationPage() {
                   <p
                     style={{
                       fontSize: '0.85rem',
-                      color: 'rgba(255,255,255,0.6)',
+                      color: 'rgba(26,58,71,0.6)',
                       lineHeight: 1.65,
                     }}
                   >
@@ -485,7 +485,7 @@ export default function AustinLocationPage() {
           style={{
             backgroundColor: 'var(--dark-teal)',
             padding: '64px 0',
-            borderTop: '1px solid rgba(255,255,255,0.05)',
+            borderTop: '1px solid rgba(26,58,71,0.05)',
           }}
         >
           <div className="container">
@@ -555,7 +555,7 @@ export default function AustinLocationPage() {
                     }}
                   >
                     <span style={{ fontSize: '1rem', color: 'var(--copper)' }}>{item.icon}</span>
-                    <span style={{ fontSize: '0.825rem', color: 'rgba(255,255,255,0.75)' }}>
+                    <span style={{ fontSize: '0.825rem', color: 'rgba(26,58,71,0.75)' }}>
                       {item.label}
                     </span>
                   </div>
@@ -595,8 +595,8 @@ export default function AustinLocationPage() {
               <div>
                 <div
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.08)',
                     borderRadius: '16px',
                     padding: '32px',
                     marginBottom: '24px',
@@ -617,7 +617,7 @@ export default function AustinLocationPage() {
                   <p
                     style={{
                       fontSize: '0.9rem',
-                      color: 'rgba(255,255,255,0.7)',
+                      color: 'rgba(26,58,71,0.7)',
                       lineHeight: 1.7,
                       marginBottom: '16px',
                     }}
@@ -638,7 +638,7 @@ export default function AustinLocationPage() {
                   >
                     Parking
                   </div>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.65)', lineHeight: 1.6 }}>
+                  <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.65)', lineHeight: 1.6 }}>
                     Free on-site parking lot. Additional street parking available on Victory Drive.
                     ADA accessible spaces located at the main entrance.
                   </p>
@@ -716,7 +716,7 @@ export default function AustinLocationPage() {
                       <div
                         style={{
                           fontSize: '0.95rem',
-                          color: 'rgba(255,255,255,0.85)',
+                          color: 'rgba(26,58,71,0.85)',
                           whiteSpace: 'pre-line',
                         }}
                       >
@@ -735,7 +735,7 @@ export default function AustinLocationPage() {
           style={{
             backgroundColor: 'var(--dark-teal)',
             padding: '80px 0',
-            borderTop: '1px solid rgba(255,255,255,0.06)',
+            borderTop: '1px solid rgba(26,58,71,0.06)',
           }}
         >
           <div className="container" style={{ textAlign: 'center' }}>

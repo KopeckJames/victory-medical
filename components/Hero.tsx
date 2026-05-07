@@ -107,7 +107,7 @@ export default function Hero() {
       // Copper glow pulse after chars land
       if (line1Ref.current) {
         tl.to(line1Ref.current, {
-          textShadow: '0 0 40px rgba(201,122,60,0.7), 0 0 80px rgba(201,122,60,0.4)',
+          textShadow: '0 0 40px rgba(34,184,209,0.7), 0 0 80px rgba(34,184,209,0.4)',
           duration: 1,
           ease: 'power2.inOut',
           yoyo: true,
@@ -197,7 +197,7 @@ export default function Hero() {
           left: '-10%',
           width: '70%',
           height: '80%',
-          background: 'radial-gradient(ellipse 80% 60% at 30% 50%, rgba(201,122,60,0.14) 0%, transparent 65%)',
+          background: 'radial-gradient(ellipse 80% 60% at 30% 50%, rgba(34,184,209,0.14) 0%, transparent 65%)',
           pointerEvents: 'none',
           zIndex: 0,
           willChange: 'transform',
@@ -209,7 +209,7 @@ export default function Hero() {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(135deg, #050f15 0%, #0e2d3c 50%, #050f15 100%)',
+          background: 'linear-gradient(135deg, #f5fbfc 0%, #ffffff 50%, #f5fbfc 100%)',
           zIndex: 0,
         }}
       />
@@ -220,8 +220,8 @@ export default function Hero() {
           position: 'absolute',
           inset: 0,
           backgroundImage: `
-            linear-gradient(rgba(201,122,60,0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(201,122,60,0.03) 1px, transparent 1px)
+            linear-gradient(rgba(34,184,209,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(34,184,209,0.03) 1px, transparent 1px)
           `,
           backgroundSize: '60px 60px',
           zIndex: 1,
@@ -248,7 +248,7 @@ export default function Hero() {
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(to left, rgba(5,15,21,0) 0%, rgba(5,15,21,0.5) 55%, rgba(5,15,21,1) 100%)',
+          background: 'linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 55%, rgba(255,255,255,1) 100%)',
           zIndex: 2,
           pointerEvents: 'none',
         }} />
@@ -310,7 +310,7 @@ export default function Hero() {
                 style={{
                   display: 'block',
                   color: 'var(--copper)',
-                  textShadow: '0 0 20px var(--copper-glow), 0 0 40px rgba(201,122,60,0.2)',
+                  textShadow: '0 0 20px var(--copper-glow), 0 0 40px rgba(34,184,209,0.2)',
                   whiteSpace: 'nowrap',
                 }}
               >
@@ -421,7 +421,7 @@ export default function Hero() {
             fontSize: '0.6rem',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
-            color: 'rgba(255,255,255,0.4)',
+            color: 'rgba(26,58,71,0.4)',
           }}
         >
           Scroll

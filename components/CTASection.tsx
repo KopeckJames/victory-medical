@@ -87,7 +87,7 @@ export default function CTASection() {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse 60% 80% at 50% 50%, rgba(201,122,60,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 60% 80% at 50% 50%, rgba(34,184,209,0.08) 0%, transparent 70%)',
           pointerEvents: 'none',
           zIndex: 0,
           willChange: 'transform',
@@ -123,8 +123,8 @@ export default function CTASection() {
             ref={cardRef}
             className="cta-card"
             style={{
-              backgroundColor: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(201,122,60,0.2)',
+              backgroundColor: 'rgba(26,58,71,0.04)',
+              border: '1px solid rgba(34,184,209,0.2)',
               borderRadius: '20px',
               padding: '48px',
             }}
@@ -137,7 +137,7 @@ export default function CTASection() {
               Book Your Appointment
             </h3>
             <p style={{
-              fontSize: '0.875rem', color: 'rgba(255,255,255,0.5)',
+              fontSize: '0.875rem', color: 'rgba(26,58,71,0.5)',
               marginBottom: '32px',
             }}>
               Available online 24/7 or call us during business hours
@@ -154,7 +154,7 @@ export default function CTASection() {
                 <span className="btn-shimmer" style={{
                   position: 'absolute', top: 0, left: 0,
                   width: '60%', height: '100%',
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent)',
+                  background: 'linear-gradient(90deg, transparent, rgba(26,58,71,0.25), transparent)',
                   transform: 'translateX(-100%)',
                   pointerEvents: 'none',
                 }} />
@@ -170,7 +170,7 @@ export default function CTASection() {
                 <span className="btn-shimmer" style={{
                   position: 'absolute', top: 0, left: 0,
                   width: '60%', height: '100%',
-                  background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent)',
+                  background: 'linear-gradient(90deg, transparent, rgba(26,58,71,0.12), transparent)',
                   transform: 'translateX(-100%)',
                   pointerEvents: 'none',
                 }} />
@@ -183,7 +183,7 @@ export default function CTASection() {
                   justifyContent: 'center', gap: '8px',
                   padding: '14px', fontSize: '0.875rem',
                   color: 'var(--gold)', textDecoration: 'none',
-                  borderTop: '1px solid rgba(255,255,255,0.08)',
+                  borderTop: '1px solid rgba(26,58,71,0.08)',
                   marginTop: '8px', paddingTop: '20px', fontWeight: 500,
                 }}
               >
@@ -196,13 +196,13 @@ export default function CTASection() {
 
             <div style={{
               marginTop: '28px', paddingTop: '24px',
-              borderTop: '1px solid rgba(255,255,255,0.08)',
+              borderTop: '1px solid rgba(26,58,71,0.08)',
               display: 'flex', gap: '16px', flexWrap: 'wrap',
             }}>
               {['Privia Medical Group', 'Walk-ins Welcome', 'All Insurance'].map((badge) => (
                 <span key={badge} style={{
                   fontSize: '0.7rem', letterSpacing: '0.05em',
-                  color: 'rgba(255,255,255,0.4)',
+                  color: 'rgba(26,58,71,0.4)',
                   display: 'flex', alignItems: 'center', gap: '6px',
                 }}>
                   <span style={{

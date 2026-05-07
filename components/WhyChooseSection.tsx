@@ -98,11 +98,11 @@ export default function WhyChooseSection() {
         // GSAP hover (replace inline style mutations)
         item.addEventListener('mouseenter', () => {
           gsap.to(line, { width: 80, duration: 0.3, ease: 'power2.out' })
-          gsap.to(item, { backgroundColor: 'rgba(201,122,60,0.05)', duration: 0.3 })
+          gsap.to(item, { backgroundColor: 'rgba(34,184,209,0.05)', duration: 0.3 })
         })
         item.addEventListener('mouseleave', () => {
           gsap.to(line, { width: 40, duration: 0.3, ease: 'power2.in' })
-          gsap.to(item, { backgroundColor: 'rgba(255,255,255,0.03)', duration: 0.3 })
+          gsap.to(item, { backgroundColor: 'rgba(26,58,71,0.03)', duration: 0.3 })
         })
       })
     }, sectionRef)
@@ -122,7 +122,7 @@ export default function WhyChooseSection() {
       <div style={{
         position: 'absolute', top: '-200px', right: '-200px',
         width: '600px', height: '600px',
-        background: 'radial-gradient(circle, rgba(201,122,60,0.06) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(34,184,209,0.06) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -159,15 +159,15 @@ export default function WhyChooseSection() {
               ref={(el) => { itemsRef.current[i] = el }}
               style={{
                 padding: '40px',
-                backgroundColor: 'rgba(255,255,255,0.03)',
-                border: '1px solid rgba(255,255,255,0.05)',
+                backgroundColor: 'rgba(26,58,71,0.03)',
+                border: '1px solid rgba(26,58,71,0.05)',
                 position: 'relative',
                 cursor: 'default',
               }}
             >
               <div className="number-badge" style={{
                 position: 'absolute', top: '20px', right: '24px',
-                fontSize: '0.65rem', color: 'rgba(255,255,255,0.15)',
+                fontSize: '0.65rem', color: 'rgba(26,58,71,0.15)',
                 fontWeight: 600, letterSpacing: '0.1em',
                 opacity: 0,
               }}>
@@ -189,7 +189,7 @@ export default function WhyChooseSection() {
               </h3>
               <p style={{
                 fontSize: '0.875rem',
-                color: 'rgba(255,255,255,0.6)', lineHeight: 1.7,
+                color: 'rgba(26,58,71,0.6)', lineHeight: 1.7,
                 opacity: 0,
               }}>
                 {reason.description}

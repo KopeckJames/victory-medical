@@ -9,7 +9,7 @@ export default function NotFound() {
       <main
         style={{
           minHeight: 'calc(100vh - 80px)',
-          backgroundColor: '#050f15',
+          backgroundColor: '#f5fbfc',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -21,7 +21,7 @@ export default function NotFound() {
             style={{
               width: '60px',
               height: '2px',
-              backgroundColor: '#c97a3c',
+              backgroundColor: '#22b8d1',
               margin: '0 auto 2rem',
               opacity: 0.6,
             }}
@@ -33,7 +33,7 @@ export default function NotFound() {
               fontFamily: 'var(--font-playfair)',
               fontSize: 'clamp(7rem, 20vw, 14rem)',
               fontWeight: 700,
-              color: '#c97a3c',
+              color: '#22b8d1',
               opacity: 0.15,
               lineHeight: 1,
               margin: 0,
@@ -62,7 +62,7 @@ export default function NotFound() {
             style={{
               fontFamily: 'var(--font-inter)',
               fontSize: '1rem',
-              color: 'rgba(255,255,255,0.6)',
+              color: 'rgba(26,58,71,0.6)',
               maxWidth: '480px',
               margin: '0 auto 2.5rem',
               lineHeight: 1.7,
@@ -77,7 +77,7 @@ export default function NotFound() {
             style={{
               width: '40px',
               height: '1px',
-              backgroundColor: '#c97a3c',
+              backgroundColor: '#22b8d1',
               margin: '0 auto 2.5rem',
               opacity: 0.4,
             }}
@@ -123,7 +123,7 @@ export default function NotFound() {
             style={{
               width: '60px',
               height: '2px',
-              backgroundColor: '#c97a3c',
+              backgroundColor: '#22b8d1',
               margin: '3rem auto 0',
               opacity: 0.6,
             }}

@@ -140,15 +140,15 @@ function Slider({ slide }: SliderProps) {
       }}>
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to top, rgba(5,15,21,0.45) 0%, transparent 50%)',
+          background: 'linear-gradient(to top, rgba(255,255,255,0.45) 0%, transparent 50%)',
         }} />
         <div style={{
           position: 'absolute', bottom: '16px', right: '16px',
           fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase',
           color: 'var(--copper)', fontWeight: 600,
-          backgroundColor: 'rgba(5,15,21,0.7)',
+          backgroundColor: 'rgba(255,255,255,0.7)',
           padding: '4px 10px', borderRadius: '20px',
-          border: '1px solid rgba(201,122,60,0.4)',
+          border: '1px solid rgba(34,184,209,0.4)',
           backdropFilter: 'blur(8px)',
         }}>
           {slide.afterLabel}
@@ -166,15 +166,15 @@ function Slider({ slide }: SliderProps) {
       }}>
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to top, rgba(5,15,21,0.45) 0%, transparent 50%)',
+          background: 'linear-gradient(to top, rgba(255,255,255,0.45) 0%, transparent 50%)',
         }} />
         <div style={{
           position: 'absolute', bottom: '16px', left: '16px',
           fontSize: '0.7rem', letterSpacing: '0.1em', textTransform: 'uppercase',
-          color: 'rgba(255,255,255,0.9)', fontWeight: 600,
-          backgroundColor: 'rgba(5,15,21,0.7)',
+          color: 'rgba(26,58,71,0.9)', fontWeight: 600,
+          backgroundColor: 'rgba(255,255,255,0.7)',
           padding: '4px 10px', borderRadius: '20px',
-          border: '1px solid rgba(255,255,255,0.2)',
+          border: '1px solid rgba(26,58,71,0.2)',
           backdropFilter: 'blur(8px)',
         }}>
           {slide.beforeLabel}
@@ -189,7 +189,7 @@ function Slider({ slide }: SliderProps) {
         backgroundColor: 'white',
         transform: 'translateX(-1px)',
         zIndex: 10,
-        boxShadow: '0 0 10px rgba(255,255,255,0.5)',
+        boxShadow: '0 0 10px rgba(26,58,71,0.5)',
       }} />
 
       {/* Handle */}
@@ -211,8 +211,8 @@ function Slider({ slide }: SliderProps) {
         }}
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M5 3L2 8L5 13" stroke="#c97a3c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          <path d="M11 3L14 8L11 13" stroke="#c97a3c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M5 3L2 8L5 13" stroke="#22b8d1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M11 3L14 8L11 13" stroke="#22b8d1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
 
@@ -222,7 +222,7 @@ function Slider({ slide }: SliderProps) {
           position: 'absolute', top: '12px', left: '50%',
           transform: 'translateX(-50%)',
           fontSize: '0.6rem', letterSpacing: '0.1em', textTransform: 'uppercase',
-          color: 'rgba(255,255,255,0.5)', zIndex: 12,
+          color: 'rgba(26,58,71,0.5)', zIndex: 12,
           pointerEvents: 'none',
           animation: 'pulse-hint 2s ease-in-out infinite',
         }}>
@@ -279,7 +279,7 @@ export default function BeforeAfterGallery() {
       <div style={{
         position: 'absolute', top: 0, right: 0,
         width: '500px', height: '500px',
-        background: 'radial-gradient(circle, rgba(201,122,60,0.07) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(34,184,209,0.07) 0%, transparent 70%)',
         pointerEvents: 'none',
       }} />
 
@@ -316,9 +316,9 @@ export default function BeforeAfterGallery() {
               style={{
                 padding: '8px 16px',
                 borderRadius: '20px',
-                border: `1px solid ${activeSlide === i ? 'rgba(201,122,60,0.6)' : 'rgba(255,255,255,0.1)'}`,
-                backgroundColor: activeSlide === i ? 'rgba(201,122,60,0.15)' : 'transparent',
-                color: activeSlide === i ? 'var(--copper)' : 'rgba(255,255,255,0.5)',
+                border: `1px solid ${activeSlide === i ? 'rgba(34,184,209,0.6)' : 'rgba(26,58,71,0.1)'}`,
+                backgroundColor: activeSlide === i ? 'rgba(34,184,209,0.15)' : 'transparent',
+                color: activeSlide === i ? 'var(--copper)' : 'rgba(26,58,71,0.5)',
                 fontSize: '0.75rem',
                 cursor: 'pointer',
                 transition: 'all 0.2s',
@@ -334,8 +334,8 @@ export default function BeforeAfterGallery() {
         <div
           className="ba-card"
           style={{
-            backgroundColor: 'rgba(255,255,255,0.03)',
-            border: '1px solid rgba(201,122,60,0.15)',
+            backgroundColor: 'rgba(26,58,71,0.03)',
+            border: '1px solid rgba(34,184,209,0.15)',
             borderRadius: '20px',
             padding: '32px',
           }}
@@ -361,7 +361,7 @@ export default function BeforeAfterGallery() {
                 fontSize: '0.65rem', letterSpacing: '0.12em', textTransform: 'uppercase',
                 color: 'var(--gold)', marginBottom: '4px',
               }}>Timeline</div>
-              <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.7)' }}>
+              <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.7)' }}>
                 {slides[activeSlide].timeframe}
               </div>
             </div>
@@ -379,7 +379,7 @@ export default function BeforeAfterGallery() {
 
         <div style={{
           marginTop: '16px', textAlign: 'center',
-          fontSize: '0.7rem', color: 'rgba(255,255,255,0.25)', lineHeight: 1.5,
+          fontSize: '0.7rem', color: 'rgba(26,58,71,0.25)', lineHeight: 1.5,
         }}>
           * Results illustrated are representative. Individual outcomes vary. Consult with our providers for personalized expectations.
         </div>

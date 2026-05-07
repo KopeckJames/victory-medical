@@ -123,7 +123,7 @@ export default function ContactPage() {
             style={{
               position: 'absolute',
               inset: 0,
-              background: 'radial-gradient(ellipse 50% 60% at 80% 40%, rgba(201,122,60,0.08) 0%, transparent 70%)',
+              background: 'radial-gradient(ellipse 50% 60% at 80% 40%, rgba(34,184,209,0.08) 0%, transparent 70%)',
             }}
           />
           <div className="container" style={{ position: 'relative' }}>
@@ -156,8 +156,8 @@ export default function ContactPage() {
                   gap: '12px',
                   textDecoration: 'none',
                   padding: '16px 24px',
-                  backgroundColor: 'rgba(201,122,60,0.1)',
-                  border: '1px solid rgba(201,122,60,0.3)',
+                  backgroundColor: 'rgba(34,184,209,0.1)',
+                  border: '1px solid rgba(34,184,209,0.3)',
                   borderRadius: '10px',
                   transition: 'all 0.3s ease',
                 }}
@@ -175,8 +175,8 @@ export default function ContactPage() {
                   gap: '12px',
                   textDecoration: 'none',
                   padding: '16px 24px',
-                  backgroundColor: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.1)',
+                  backgroundColor: 'rgba(26,58,71,0.04)',
+                  border: '1px solid rgba(26,58,71,0.1)',
                   borderRadius: '10px',
                   transition: 'all 0.3s ease',
                 }}
@@ -194,8 +194,8 @@ export default function ContactPage() {
                   gap: '12px',
                   textDecoration: 'none',
                   padding: '16px 24px',
-                  backgroundColor: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.1)',
+                  backgroundColor: 'rgba(26,58,71,0.04)',
+                  border: '1px solid rgba(26,58,71,0.1)',
                   borderRadius: '10px',
                 }}
               >
@@ -223,8 +223,8 @@ export default function ContactPage() {
                 <div
                   key={option.title}
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.08)',
                     borderRadius: '16px',
                     padding: '32px',
                     display: 'flex',
@@ -237,7 +237,7 @@ export default function ContactPage() {
                     <h3 style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.1rem', fontWeight: 400, color: 'var(--white)', marginBottom: '8px' }}>
                       {option.title}
                     </h3>
-                    <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.6 }}>
+                    <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.6)', lineHeight: 1.6 }}>
                       {option.description}
                     </p>
                   </div>
@@ -251,7 +251,7 @@ export default function ContactPage() {
                     >
                       {option.cta}
                     </a>
-                    <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.35)', marginTop: '8px' }}>
+                    <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.35)', marginTop: '8px' }}>
                       {option.note}
                     </div>
                   </div>
@@ -305,8 +305,8 @@ export default function ContactPage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: 'rgba(201,122,60,0.12)',
-                        border: '1px solid rgba(201,122,60,0.25)',
+                        backgroundColor: 'rgba(34,184,209,0.12)',
+                        border: '1px solid rgba(34,184,209,0.25)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -344,8 +344,8 @@ export default function ContactPage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: 'rgba(201,122,60,0.12)',
-                        border: '1px solid rgba(201,122,60,0.25)',
+                        backgroundColor: 'rgba(34,184,209,0.12)',
+                        border: '1px solid rgba(34,184,209,0.25)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -383,8 +383,8 @@ export default function ContactPage() {
                         width: '40px',
                         height: '40px',
                         borderRadius: '10px',
-                        backgroundColor: 'rgba(201,122,60,0.12)',
-                        border: '1px solid rgba(201,122,60,0.25)',
+                        backgroundColor: 'rgba(34,184,209,0.12)',
+                        border: '1px solid rgba(34,184,209,0.25)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -436,8 +436,8 @@ export default function ContactPage() {
                   key={i}
                   className="location-card"
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: `1px solid ${loc.featured ? 'rgba(201,122,60,0.3)' : 'rgba(255,255,255,0.07)'}`,
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: `1px solid ${loc.featured ? 'rgba(34,184,209,0.3)' : 'rgba(26,58,71,0.07)'}`,
                     borderRadius: '16px',
                     padding: '40px',
                   }}
@@ -450,7 +450,7 @@ export default function ContactPage() {
                         letterSpacing: '0.1em',
                         textTransform: 'uppercase',
                         color: 'var(--copper)',
-                        border: '1px solid rgba(201,122,60,0.4)',
+                        border: '1px solid rgba(34,184,209,0.4)',
                         borderRadius: '20px',
                         padding: '3px 12px',
                         marginBottom: '16px',
@@ -469,18 +469,18 @@ export default function ContactPage() {
                       <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', fontWeight: 600 }}>
                         Address & Phone
                       </div>
-                      <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>{loc.address}</div>
-                      <div style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', marginBottom: '16px' }}>{loc.city}</div>
+                      <div style={{ fontSize: '0.9rem', color: 'rgba(26,58,71,0.7)', marginBottom: '4px' }}>{loc.address}</div>
+                      <div style={{ fontSize: '0.9rem', color: 'rgba(26,58,71,0.7)', marginBottom: '16px' }}>{loc.city}</div>
                       <a href={`tel:${loc.phone.replace(/\D/g, '')}`} style={{ display: 'block', fontSize: '1.1rem', color: 'var(--copper)', textDecoration: 'none', fontWeight: 600, marginBottom: '8px' }}>
                         {loc.phone}
                       </a>
                       {loc.email && (
-                        <a href={`mailto:${loc.email}`} style={{ display: 'block', fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none', marginBottom: '6px' }}>
+                        <a href={`mailto:${loc.email}`} style={{ display: 'block', fontSize: '0.85rem', color: 'rgba(26,58,71,0.5)', textDecoration: 'none', marginBottom: '6px' }}>
                           {loc.email}
                         </a>
                       )}
                       {loc.fax && (
-                        <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)' }}>Fax: {loc.fax}</div>
+                        <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.4)' }}>Fax: {loc.fax}</div>
                       )}
                     </div>
 
@@ -491,12 +491,12 @@ export default function ContactPage() {
                       </div>
                       {loc.hours.map((h) => (
                         <div key={h.days} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', gap: '16px' }}>
-                          <span style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)' }}>{h.days}</span>
-                          <span style={{ fontSize: '0.85rem', color: h.time === 'Closed' ? 'rgba(255,255,255,0.3)' : 'var(--white)', fontWeight: 500, flexShrink: 0 }}>{h.time}</span>
+                          <span style={{ fontSize: '0.85rem', color: 'rgba(26,58,71,0.55)' }}>{h.days}</span>
+                          <span style={{ fontSize: '0.85rem', color: h.time === 'Closed' ? 'rgba(26,58,71,0.3)' : 'var(--white)', fontWeight: 500, flexShrink: 0 }}>{h.time}</span>
                         </div>
                       ))}
                       {loc.drawStation && (
-                        <div style={{ marginTop: '12px', padding: '10px 14px', backgroundColor: 'rgba(196,168,122,0.08)', border: '1px solid rgba(196,168,122,0.15)', borderRadius: '8px', fontSize: '0.75rem', color: 'var(--gold)', lineHeight: 1.5 }}>
+                        <div style={{ marginTop: '12px', padding: '10px 14px', backgroundColor: 'rgba(34,109,122,0.08)', border: '1px solid rgba(34,109,122,0.15)', borderRadius: '8px', fontSize: '0.75rem', color: 'var(--gold)', lineHeight: 1.5 }}>
                           🩸 Draw Station: {loc.drawStation}
                         </div>
                       )}
@@ -509,7 +509,7 @@ export default function ContactPage() {
                       </div>
                       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '24px' }}>
                         {loc.services.map((s) => (
-                          <span key={s} style={{ fontSize: '0.7rem', padding: '3px 10px', backgroundColor: 'rgba(201,122,60,0.08)', border: '1px solid rgba(201,122,60,0.2)', borderRadius: '20px', color: 'rgba(255,255,255,0.75)' }}>
+                          <span key={s} style={{ fontSize: '0.7rem', padding: '3px 10px', backgroundColor: 'rgba(34,184,209,0.08)', border: '1px solid rgba(34,184,209,0.2)', borderRadius: '20px', color: 'rgba(26,58,71,0.75)' }}>
                             {s}
                           </span>
                         ))}
@@ -536,8 +536,8 @@ export default function ContactPage() {
           <div className="container">
             <div
               style={{
-                backgroundColor: 'rgba(255,255,255,0.03)',
-                border: '1px solid rgba(255,255,255,0.07)',
+                backgroundColor: 'rgba(26,58,71,0.03)',
+                border: '1px solid rgba(26,58,71,0.07)',
                 borderRadius: '16px',
                 padding: '40px',
                 textAlign: 'center',
@@ -549,12 +549,12 @@ export default function ContactPage() {
               <h2 style={{ fontFamily: 'var(--font-playfair)', fontSize: '1.8rem', fontWeight: 400, color: 'var(--white)', marginBottom: '16px' }}>
                 Serving All of Central Texas
               </h2>
-              <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.55)', marginBottom: '20px' }}>
+              <p style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.55)', marginBottom: '20px' }}>
                 In-person visits at our Austin and Westlake Hills locations. Telemedicine available statewide across Texas.
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px' }}>
                 {['Austin', 'Westlake Hills', 'Cedar Park', 'Round Rock', 'Pflugerville', 'Georgetown', 'Lakeway', 'Buda', 'Bastrop', 'San Marcos', 'Marble Falls', 'All of Texas (Telehealth)'].map((city) => (
-                  <span key={city} style={{ fontSize: '0.8rem', padding: '5px 14px', backgroundColor: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '20px', color: 'rgba(255,255,255,0.65)' }}>
+                  <span key={city} style={{ fontSize: '0.8rem', padding: '5px 14px', backgroundColor: 'rgba(26,58,71,0.05)', border: '1px solid rgba(26,58,71,0.08)', borderRadius: '20px', color: 'rgba(26,58,71,0.65)' }}>
                     {city}
                   </span>
                 ))}

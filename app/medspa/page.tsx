@@ -163,7 +163,7 @@ export default function MedSpaPage() {
             style={{
               position: 'absolute',
               inset: 0,
-              background: 'radial-gradient(ellipse 70% 60% at 70% 50%, rgba(201,122,60,0.1) 0%, transparent 60%)',
+              background: 'radial-gradient(ellipse 70% 60% at 70% 50%, rgba(34,184,209,0.1) 0%, transparent 60%)',
             }}
           />
           <div className="container" style={{ position: 'relative' }}>
@@ -219,8 +219,8 @@ export default function MedSpaPage() {
               style={{
                 marginTop: '48px',
                 padding: '20px 24px',
-                backgroundColor: 'rgba(201,122,60,0.08)',
-                border: '1px solid rgba(201,122,60,0.2)',
+                backgroundColor: 'rgba(34,184,209,0.08)',
+                border: '1px solid rgba(34,184,209,0.2)',
                 borderRadius: '12px',
                 display: 'inline-flex',
                 gap: '24px',
@@ -229,7 +229,7 @@ export default function MedSpaPage() {
             >
               <div>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '4px' }}>MedSpa Location</div>
-                <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.8)' }}>2108 W Ben White Blvd, Austin TX</div>
+                <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.8)' }}>2108 W Ben White Blvd, Austin TX</div>
               </div>
               <div>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '4px' }}>MedSpa Phone</div>
@@ -237,7 +237,7 @@ export default function MedSpaPage() {
               </div>
               <div>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '4px' }}>Hours</div>
-                <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.8)' }}>Mon 9–4 · Tue–Fri 9–5</div>
+                <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.8)' }}>Mon 9–4 · Tue–Fri 9–5</div>
               </div>
             </div>
           </div>
@@ -269,7 +269,7 @@ export default function MedSpaPage() {
                       height: '48px',
                       borderRadius: '50%',
                       backgroundColor: 'var(--lightest-teal)',
-                      border: '2px solid rgba(201,122,60,0.4)',
+                      border: '2px solid rgba(34,184,209,0.4)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -284,7 +284,7 @@ export default function MedSpaPage() {
                   <div>
                     <div style={{ fontFamily: 'var(--font-playfair)', fontSize: '0.95rem', color: 'var(--white)', marginBottom: '2px' }}>{p.name}</div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--copper)', marginBottom: '6px' }}>{p.role}</div>
-                    <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', lineHeight: 1.5 }}>{p.note}</div>
+                    <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.6)', lineHeight: 1.5 }}>{p.note}</div>
                     <a
                       href={p.booking}
                       target="_blank"
@@ -354,8 +354,8 @@ export default function MedSpaPage() {
                     key={treatment.name}
                     className="hover-card-copper"
                     style={{
-                      backgroundColor: 'rgba(255,255,255,0.04)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      backgroundColor: 'rgba(26,58,71,0.04)',
+                      border: '1px solid rgba(26,58,71,0.08)',
                       borderRadius: '12px',
                       padding: '28px',
                     }}
@@ -374,7 +374,7 @@ export default function MedSpaPage() {
                     <p
                       style={{
                         fontSize: '0.875rem',
-                        color: 'rgba(255,255,255,0.65)',
+                        color: 'rgba(26,58,71,0.65)',
                         lineHeight: 1.7,
                         marginBottom: '16px',
                       }}
@@ -400,10 +400,10 @@ export default function MedSpaPage() {
                             style={{
                               fontSize: '0.7rem',
                               padding: '3px 10px',
-                              backgroundColor: 'rgba(201,122,60,0.1)',
-                              border: '1px solid rgba(201,122,60,0.2)',
+                              backgroundColor: 'rgba(34,184,209,0.1)',
+                              border: '1px solid rgba(34,184,209,0.2)',
                               borderRadius: '20px',
-                              color: 'rgba(255,255,255,0.75)',
+                              color: 'rgba(26,58,71,0.75)',
                             }}
                           >
                             {area}
@@ -435,7 +435,7 @@ export default function MedSpaPage() {
           style={{
             backgroundColor: 'var(--teal)',
             padding: '100px 0',
-            borderTop: '1px solid rgba(255,255,255,0.06)',
+            borderTop: '1px solid rgba(26,58,71,0.06)',
           }}
         >
           <div className="container">
@@ -454,7 +454,7 @@ export default function MedSpaPage() {
               >
                 Medical-Grade Products We Trust
               </h2>
-              <p style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.55)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.7 }}>
+              <p style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.55)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.7 }}>
                 We carry only physician-recommended, clinically proven skincare lines — the same brands our providers use in-treatment and prescribe for home maintenance.
               </p>
             </div>
@@ -473,22 +473,22 @@ export default function MedSpaPage() {
                   tagline: 'Clinical skincare with proven results',
                   description: 'IMAGE Skincare combines cutting-edge science with clean, responsible ingredients. Their professional lines address everything from active acne and hyperpigmentation to advanced anti-aging and barrier repair.',
                   products: ['VITAL C Hydrating Serum', 'ILUMA Brightening Serum', 'AGELESS Total Retinol-A', 'CLEAR CELL Salicylic Cleanser', 'MAX Stem Cell Serum'],
-                  color: '#c4a87a',
+                  color: '#226d7a',
                 },
                 {
                   brand: 'PCA Skin',
                   tagline: 'Science-backed correction & prevention',
                   description: 'PCA Skin has specialized in professional-grade chemical peels and corrective skincare since 1990. Their formulas are clinically proven to deliver visible improvements in tone, texture, and signs of aging.',
                   products: ['Hyaluronic Acid Boosting Serum', 'C-Quench Antioxidant Serum', 'Intensive Age Refining Treatment', 'Weightless Protection SPF 45', 'Hydrating Serum'],
-                  color: '#c97a3c',
+                  color: '#22b8d1',
                 },
               ].map((brand) => (
                 <div
                   key={brand.brand}
                   className="hover-card-lift"
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(26,58,71,0.04)',
+                    border: '1px solid rgba(26,58,71,0.08)',
                     borderRadius: '16px',
                     padding: '32px',
                     borderTop: `3px solid ${brand.color}50`,
@@ -509,7 +509,7 @@ export default function MedSpaPage() {
                     {brand.brand}
                   </h3>
                   <p style={{
-                    fontSize: '0.875rem', color: 'rgba(255,255,255,0.6)',
+                    fontSize: '0.875rem', color: 'rgba(26,58,71,0.6)',
                     lineHeight: 1.7, marginBottom: '24px',
                   }}>
                     {brand.description}
@@ -525,7 +525,7 @@ export default function MedSpaPage() {
                     {brand.products.map(p => (
                       <div key={p} style={{
                         display: 'flex', alignItems: 'center', gap: '8px',
-                        fontSize: '0.8rem', color: 'rgba(255,255,255,0.65)',
+                        fontSize: '0.8rem', color: 'rgba(26,58,71,0.65)',
                       }}>
                         <span style={{
                           width: '5px', height: '5px', borderRadius: '50%',
@@ -541,7 +541,7 @@ export default function MedSpaPage() {
 
             <p style={{
               textAlign: 'center', marginTop: '40px',
-              fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)',
+              fontSize: '0.8rem', color: 'rgba(26,58,71,0.3)',
             }}>
               Products available for purchase at our Ben White location or ask your provider at your next appointment.
             </p>

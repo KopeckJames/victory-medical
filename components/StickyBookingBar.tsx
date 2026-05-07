@@ -73,10 +73,10 @@ export default function StickyBookingBar() {
         alignItems: 'center',
         gap: '12px',
         backgroundColor: 'var(--dark-teal)',
-        border: '1px solid rgba(201,122,60,0.3)',
+        border: '1px solid rgba(34,184,209,0.3)',
         borderRadius: '40px',
         padding: '10px 10px 10px 20px',
-        boxShadow: '0 8px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04)',
+        boxShadow: '0 8px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(26,58,71,0.04)',
         backdropFilter: 'blur(20px)',
       }}>
         <div className="booking-bar-text" style={{
@@ -88,7 +88,7 @@ export default function StickyBookingBar() {
             boxShadow: '0 0 6px rgba(34,197,94,0.6)',
           }} />
           <span style={{
-            fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)',
+            fontSize: '0.75rem', color: 'rgba(26,58,71,0.6)',
             letterSpacing: '0.03em', whiteSpace: 'nowrap',
           }}>
             Accepting new patients
@@ -97,7 +97,7 @@ export default function StickyBookingBar() {
 
         <div className="booking-bar-text" style={{
           width: '1px', height: '16px',
-          backgroundColor: 'rgba(255,255,255,0.1)',
+          backgroundColor: 'rgba(26,58,71,0.1)',
         }} />
 
         <div style={{ display: 'flex', gap: '8px' }}>
@@ -107,19 +107,19 @@ export default function StickyBookingBar() {
               display: 'flex', alignItems: 'center', gap: '6px',
               padding: '8px 14px',
               borderRadius: '24px',
-              border: '1px solid rgba(255,255,255,0.12)',
-              fontSize: '0.75rem', color: 'rgba(255,255,255,0.7)',
+              border: '1px solid rgba(26,58,71,0.12)',
+              fontSize: '0.75rem', color: 'rgba(26,58,71,0.7)',
               textDecoration: 'none',
               transition: 'all 0.2s',
               whiteSpace: 'nowrap',
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.borderColor = 'rgba(201,122,60,0.4)'
+              e.currentTarget.style.borderColor = 'rgba(34,184,209,0.4)'
               e.currentTarget.style.color = 'var(--copper)'
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
-              e.currentTarget.style.color = 'rgba(255,255,255,0.7)'
+              e.currentTarget.style.borderColor = 'rgba(26,58,71,0.12)'
+              e.currentTarget.style.color = 'rgba(26,58,71,0.7)'
             }}
           >
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none">

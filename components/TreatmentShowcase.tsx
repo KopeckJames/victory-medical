@@ -17,8 +17,8 @@ const treatments = [
     description: 'Comprehensive family medicine with same-day sick visits, preventive care, and chronic disease management. Your dedicated provider. No rushed appointments.',
     stat: '25+ years',
     statLabel: 'serving Austin',
-    color: 'rgba(201,122,60,0.12)',
-    borderColor: 'rgba(201,122,60,0.3)',
+    color: 'rgba(34,184,209,0.12)',
+    borderColor: 'rgba(34,184,209,0.3)',
     href: '/services#primary-care',
     image: '/treatments/primary-care.jpg',
   },
@@ -29,8 +29,8 @@ const treatments = [
     description: 'Physician-supervised aesthetics from Botox and fillers to CoolSculpting and laser treatments. Real results, medical-grade safety.',
     stat: '15+',
     statLabel: 'aesthetic treatments',
-    color: 'rgba(196,168,122,0.1)',
-    borderColor: 'rgba(196,168,122,0.25)',
+    color: 'rgba(34,109,122,0.1)',
+    borderColor: 'rgba(34,109,122,0.25)',
     href: '/medspa',
     image: '/treatments/medspa.jpg',
   },
@@ -41,8 +41,8 @@ const treatments = [
     description: 'IV ketamine infusion for treatment-resistant depression, PTSD, anxiety, and chronic pain. Physician-monitored. Transformative results.',
     stat: '70%',
     statLabel: 'response rate',
-    color: 'rgba(14,45,60,0.8)',
-    borderColor: 'rgba(201,122,60,0.2)',
+    color: 'rgba(255,255,255,0.8)',
+    borderColor: 'rgba(34,184,209,0.2)',
     href: '/services#ketamine',
     image: '/treatments/iv-ketamine.jpg',
   },
@@ -53,8 +53,8 @@ const treatments = [
     description: 'Our exclusive rapid desensitization program — developed from Harvard research — gives patients lasting allergy relief in months, not years.',
     stat: 'Exclusive',
     statLabel: 'in Central Texas',
-    color: 'rgba(201,122,60,0.08)',
-    borderColor: 'rgba(201,122,60,0.25)',
+    color: 'rgba(34,184,209,0.08)',
+    borderColor: 'rgba(34,184,209,0.25)',
     href: '/services#allergy',
     image: '/treatments/allergy-test.jpg',
   },
@@ -65,8 +65,8 @@ const treatments = [
     description: 'Medical weight loss with GLP-1 medications, metabolic testing, and personalized nutrition. Science-backed. Sustainable results.',
     stat: '3',
     statLabel: 'Austin locations',
-    color: 'rgba(196,168,122,0.08)',
-    borderColor: 'rgba(196,168,122,0.2)',
+    color: 'rgba(34,109,122,0.08)',
+    borderColor: 'rgba(34,109,122,0.2)',
     href: '/services#weight-loss',
     image: '/treatments/weight-loss.jpg',
   },
@@ -77,8 +77,8 @@ const treatments = [
     description: 'Bioidentical hormone replacement, testosterone therapy, and thyroid optimization. Feel like yourself again — better than ever.',
     stat: '∞',
     statLabel: 'vitality restored',
-    color: 'rgba(201,122,60,0.1)',
-    borderColor: 'rgba(201,122,60,0.3)',
+    color: 'rgba(34,184,209,0.1)',
+    borderColor: 'rgba(34,184,209,0.3)',
     href: '/services#hormones',
     image: '/treatments/longevity.jpg',
   },
@@ -183,8 +183,8 @@ export default function TreatmentShowcase() {
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: `
-          linear-gradient(rgba(201,122,60,0.02) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(201,122,60,0.02) 1px, transparent 1px)
+          linear-gradient(rgba(34,184,209,0.02) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(34,184,209,0.02) 1px, transparent 1px)
         `,
         backgroundSize: '80px 80px',
         pointerEvents: 'none',
@@ -297,7 +297,7 @@ export default function TreatmentShowcase() {
               position: 'absolute', top: '24px', right: '28px',
               fontSize: '4rem', fontWeight: 700,
               fontFamily: 'var(--font-playfair)',
-              color: 'rgba(255,255,255,0.04)',
+              color: 'rgba(26,58,71,0.04)',
               lineHeight: 1, userSelect: 'none',
             }}>{t.number}</div>
 
@@ -316,7 +316,7 @@ export default function TreatmentShowcase() {
                 whiteSpace: 'pre-line',
               }}>{t.title}</h3>
               <p className="tc-desc" style={{
-                fontSize: '0.875rem', color: 'rgba(255,255,255,0.65)',
+                fontSize: '0.875rem', color: 'rgba(26,58,71,0.65)',
                 lineHeight: 1.7,
               }}>{t.description}</p>
             </div>
@@ -324,7 +324,7 @@ export default function TreatmentShowcase() {
             {/* Bottom */}
             <div className="tc-bottom">
               <div className="tc-bottom-inner" style={{
-                borderTop: '1px solid rgba(255,255,255,0.08)',
+                borderTop: '1px solid rgba(26,58,71,0.08)',
                 paddingTop: '20px',
                 display: 'flex', alignItems: 'center',
                 justifyContent: 'space-between',
@@ -336,7 +336,7 @@ export default function TreatmentShowcase() {
                     color: 'var(--copper)', lineHeight: 1,
                   }}>{t.stat}</div>
                   <div style={{
-                    fontSize: '0.65rem', color: 'rgba(255,255,255,0.4)',
+                    fontSize: '0.65rem', color: 'rgba(26,58,71,0.4)',
                     marginTop: '4px', letterSpacing: '0.05em',
                   }}>{t.statLabel}</div>
                 </div>

@@ -164,7 +164,7 @@ export default function Navbar() {
           style={{
             position: 'absolute', bottom: 0, left: 0, right: 0,
             height: '1px',
-            backgroundColor: 'rgba(201,122,60,0.3)',
+            backgroundColor: 'rgba(34,184,209,0.3)',
             transformOrigin: 'left center',
             transform: 'scaleX(0)',
           }}
@@ -179,7 +179,7 @@ export default function Navbar() {
             <div ref={logoRef} style={{ display: 'flex', alignItems: 'center', gap: '10px', willChange: 'transform' }}>
               <div style={{
                 width: '36px', height: '36px',
-                background: 'linear-gradient(135deg, var(--copper) 0%, #e09a5c 100%)',
+                background: 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
                 borderRadius: '8px',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 fontSize: '18px', fontWeight: 700, color: 'white',
@@ -264,7 +264,7 @@ export default function Navbar() {
                     visibility: activeDropdown === link.label ? 'visible' : 'hidden',
                     transform: `translateX(-50%) translateY(${activeDropdown === link.label ? '0' : '10px'})`,
                     transition: 'opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease',
-                    boxShadow: '0 20px 40px rgba(5,15,21,0.6)',
+                    boxShadow: '0 20px 40px rgba(255,255,255,0.6)',
                   }}>
                     {link.dropdown.map((item) => (
                       <Link
@@ -273,7 +273,7 @@ export default function Navbar() {
                         className="dropdown-item"
                         style={{
                           display: 'block', padding: '10px 20px',
-                          fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)',
+                          fontSize: '0.8rem', color: 'rgba(26,58,71,0.8)',
                           textDecoration: 'none', transition: 'all 0.2s ease',
                           letterSpacing: '0.03em',
                         }}
@@ -281,11 +281,11 @@ export default function Navbar() {
                           const el = e.currentTarget
                           el.style.color = 'var(--copper)'
                           el.style.paddingLeft = '28px'
-                          el.style.backgroundColor = 'rgba(201,122,60,0.08)'
+                          el.style.backgroundColor = 'rgba(34,184,209,0.08)'
                         }}
                         onMouseLeave={(e) => {
                           const el = e.currentTarget
-                          el.style.color = 'rgba(255,255,255,0.8)'
+                          el.style.color = 'rgba(26,58,71,0.8)'
                           el.style.paddingLeft = '20px'
                           el.style.backgroundColor = 'transparent'
                         }}
@@ -310,7 +310,7 @@ export default function Navbar() {
                     opacity: activeDropdown === link.label ? 1 : 0,
                     visibility: activeDropdown === link.label ? 'visible' : 'hidden',
                     transition: 'opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease',
-                    boxShadow: '0 20px 40px rgba(5,15,21,0.6)',
+                    boxShadow: '0 20px 40px rgba(255,255,255,0.6)',
                   }}>
                     {/* Two-column grid */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', padding: '16px 0 0' }}>
@@ -330,18 +330,18 @@ export default function Navbar() {
                             style={{
                               display: 'flex', alignItems: 'center', gap: '8px',
                               padding: '9px 12px',
-                              fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)',
+                              fontSize: '0.8rem', color: 'rgba(26,58,71,0.8)',
                               textDecoration: 'none', transition: 'all 0.2s ease',
                               letterSpacing: '0.03em',
                             }}
                             onMouseEnter={(e) => {
                               const el = e.currentTarget
                               el.style.color = 'var(--copper)'
-                              el.style.backgroundColor = 'rgba(201,122,60,0.08)'
+                              el.style.backgroundColor = 'rgba(34,184,209,0.08)'
                             }}
                             onMouseLeave={(e) => {
                               const el = e.currentTarget
-                              el.style.color = 'rgba(255,255,255,0.8)'
+                              el.style.color = 'rgba(26,58,71,0.8)'
                               el.style.backgroundColor = 'transparent'
                             }}
                           >
@@ -351,7 +351,7 @@ export default function Navbar() {
                         ))}
                       </div>
                       {/* Column 2 */}
-                      <div style={{ padding: '0 16px 0 8px', borderLeft: '1px solid rgba(255,255,255,0.06)' }}>
+                      <div style={{ padding: '0 16px 0 8px', borderLeft: '1px solid rgba(26,58,71,0.06)' }}>
                         <div style={{
                           fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase',
                           color: 'var(--gold)', fontWeight: 600, padding: '0 12px 8px',
@@ -366,18 +366,18 @@ export default function Navbar() {
                             style={{
                               display: 'flex', alignItems: 'center', gap: '8px',
                               padding: '9px 12px',
-                              fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)',
+                              fontSize: '0.8rem', color: 'rgba(26,58,71,0.8)',
                               textDecoration: 'none', transition: 'all 0.2s ease',
                               letterSpacing: '0.03em',
                             }}
                             onMouseEnter={(e) => {
                               const el = e.currentTarget
                               el.style.color = 'var(--copper)'
-                              el.style.backgroundColor = 'rgba(201,122,60,0.08)'
+                              el.style.backgroundColor = 'rgba(34,184,209,0.08)'
                             }}
                             onMouseLeave={(e) => {
                               const el = e.currentTarget
-                              el.style.color = 'rgba(255,255,255,0.8)'
+                              el.style.color = 'rgba(26,58,71,0.8)'
                               el.style.backgroundColor = 'transparent'
                             }}
                           >
@@ -389,12 +389,12 @@ export default function Navbar() {
                     </div>
                     {/* Featured strip */}
                     <div style={{
-                      borderTop: '1px solid rgba(255,255,255,0.06)',
+                      borderTop: '1px solid rgba(26,58,71,0.06)',
                       padding: '12px 20px',
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                       marginTop: '8px',
                     }}>
-                      <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.45)', letterSpacing: '0.03em' }}>
+                      <span style={{ fontSize: '0.72rem', color: 'rgba(26,58,71,0.45)', letterSpacing: '0.03em' }}>
                         Complete care under one roof · 3 Austin-area locations
                       </span>
                       <Link
@@ -472,7 +472,7 @@ export default function Navbar() {
       >
         <nav>
           {navLinks.map((link) => (
-            <div key={link.label} style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
+            <div key={link.label} style={{ borderBottom: '1px solid rgba(26,58,71,0.07)' }}>
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <Link
                   href={link.href}
@@ -493,7 +493,7 @@ export default function Navbar() {
                     onClick={() => setMobileExpanded(prev => prev === link.label ? null : link.label)}
                     style={{
                       background: 'none', border: 'none',
-                      color: mobileExpanded === link.label ? 'var(--copper)' : 'rgba(255,255,255,0.4)',
+                      color: mobileExpanded === link.label ? 'var(--copper)' : 'rgba(26,58,71,0.4)',
                       cursor: 'pointer', padding: '18px 6px',
                       display: 'flex', alignItems: 'center',
                       transition: 'color 0.2s',
@@ -526,16 +526,16 @@ export default function Navbar() {
                         style={{
                           display: 'flex', alignItems: 'center', gap: '10px',
                           fontSize: '0.9rem',
-                          color: 'rgba(255,255,255,0.6)',
+                          color: 'rgba(26,58,71,0.6)',
                           textDecoration: 'none',
                           padding: '10px 8px',
-                          borderBottom: '1px solid rgba(255,255,255,0.04)',
+                          borderBottom: '1px solid rgba(26,58,71,0.04)',
                           letterSpacing: '0.02em',
                         }}
                       >
                         <span style={{
                           width: '4px', height: '4px', borderRadius: '50%',
-                          backgroundColor: 'rgba(201,122,60,0.7)',
+                          backgroundColor: 'rgba(34,184,209,0.7)',
                           flexShrink: 0,
                         }} />
                         {item.label}
@@ -565,7 +565,7 @@ export default function Navbar() {
                 padding: '14px',
                 fontSize: '0.875rem', color: 'var(--gold)',
                 textDecoration: 'none', fontWeight: 500,
-                border: '1px solid rgba(255,255,255,0.12)',
+                border: '1px solid rgba(26,58,71,0.12)',
                 borderRadius: '4px',
                 letterSpacing: '0.04em',
               }}

@@ -8,13 +8,13 @@ import TeamDrawer from './TeamDrawer'
 
 // Category accent colors
 const CATEGORY_COLORS: Record<string, string> = {
-  Physicians: '#c97a3c',
-  'Nurse Practitioners': '#c4a87a',
+  Physicians: '#22b8d1',
+  'Nurse Practitioners': '#226d7a',
   'Physician Assistants': '#8ba8b8',
-  Aesthetics: '#e09a5c',
+  Aesthetics: '#4fc8dd',
   'Ketamine & Mental Health': '#a08ab8',
   'Physical Medicine': '#6aa88a',
-  MDVIP: '#c97a3c',
+  MDVIP: '#22b8d1',
   Pharmacy: '#8bb8a8',
 }
 
@@ -127,7 +127,7 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
             {member.title}
           </div>
           <div style={{
-            fontSize: '0.6rem', color: 'rgba(255,255,255,0.35)',
+            fontSize: '0.6rem', color: 'rgba(26,58,71,0.35)',
             lineHeight: 1.4,
           }}>
             {member.location}
@@ -155,7 +155,7 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
         )}
         <p style={{
           fontSize: '0.78rem',
-          color: 'rgba(255,255,255,0.55)',
+          color: 'rgba(26,58,71,0.55)',
           lineHeight: 1.65,
           display: '-webkit-box',
           WebkitLineClamp: 3,
@@ -177,7 +177,7 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
             backgroundColor: `${color}12`,
             border: `1px solid ${color}25`,
             borderRadius: '20px',
-            color: 'rgba(255,255,255,0.65)',
+            color: 'rgba(26,58,71,0.65)',
             letterSpacing: '0.02em',
           }}>
             {s}
@@ -186,10 +186,10 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
         {member.specialties.length > 3 && (
           <span style={{
             fontSize: '0.6rem', padding: '3px 8px',
-            backgroundColor: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(255,255,255,0.08)',
+            backgroundColor: 'rgba(26,58,71,0.04)',
+            border: '1px solid rgba(26,58,71,0.08)',
             borderRadius: '20px',
-            color: 'rgba(255,255,255,0.3)',
+            color: 'rgba(26,58,71,0.3)',
           }}>
             +{member.specialties.length - 3}
           </span>
@@ -200,7 +200,7 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
       {member.languages && member.languages.length > 1 && (
         <div style={{
           padding: '8px 24px 16px',
-          borderTop: '1px solid rgba(255,255,255,0.05)',
+          borderTop: '1px solid rgba(26,58,71,0.05)',
           display: 'flex', alignItems: 'center', gap: '6px',
         }}>
           <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
@@ -208,7 +208,7 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
             <path d="M6 1C6 1 4 3.5 4 6C4 8.5 6 11 6 11" stroke={color} strokeWidth="1" strokeOpacity="0.6"/>
             <path d="M1 6H11" stroke={color} strokeWidth="1" strokeOpacity="0.6"/>
           </svg>
-          <span style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.4)' }}>
+          <span style={{ fontSize: '0.6rem', color: 'rgba(26,58,71,0.4)' }}>
             {member.languages.join(' · ')}
           </span>
         </div>
@@ -218,7 +218,7 @@ function TeamCard({ member, index, onClick }: TeamCardProps) {
       {member.booking && (
         <div style={{
           padding: '12px 24px',
-          borderTop: '1px solid rgba(255,255,255,0.05)',
+          borderTop: '1px solid rgba(26,58,71,0.05)',
           flexShrink: 0,
         }}>
           <a
@@ -306,9 +306,9 @@ export default function TeamGrid({ team }: TeamGridProps) {
             style={{
               padding: '7px 16px',
               borderRadius: '24px',
-              border: `1px solid ${activeFilter === cat ? 'rgba(201,122,60,0.6)' : 'rgba(255,255,255,0.1)'}`,
-              backgroundColor: activeFilter === cat ? 'rgba(201,122,60,0.15)' : 'transparent',
-              color: activeFilter === cat ? 'var(--copper)' : 'rgba(255,255,255,0.5)',
+              border: `1px solid ${activeFilter === cat ? 'rgba(34,184,209,0.6)' : 'rgba(26,58,71,0.1)'}`,
+              backgroundColor: activeFilter === cat ? 'rgba(34,184,209,0.15)' : 'transparent',
+              color: activeFilter === cat ? 'var(--copper)' : 'rgba(26,58,71,0.5)',
               fontSize: '0.72rem', letterSpacing: '0.04em',
               cursor: 'pointer',
               transition: 'all 0.2s',
@@ -316,14 +316,14 @@ export default function TeamGrid({ team }: TeamGridProps) {
             }}
             onMouseEnter={e => {
               if (activeFilter !== cat) {
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'
-                e.currentTarget.style.color = 'rgba(255,255,255,0.75)'
+                e.currentTarget.style.borderColor = 'rgba(26,58,71,0.2)'
+                e.currentTarget.style.color = 'rgba(26,58,71,0.75)'
               }
             }}
             onMouseLeave={e => {
               if (activeFilter !== cat) {
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)'
-                e.currentTarget.style.color = 'rgba(255,255,255,0.5)'
+                e.currentTarget.style.borderColor = 'rgba(26,58,71,0.1)'
+                e.currentTarget.style.color = 'rgba(26,58,71,0.5)'
               }
             }}
           >
@@ -331,7 +331,7 @@ export default function TeamGrid({ team }: TeamGridProps) {
             {cat !== 'All' && (
               <span style={{
                 marginLeft: '6px', fontSize: '0.6rem',
-                color: activeFilter === cat ? 'var(--copper)' : 'rgba(255,255,255,0.25)',
+                color: activeFilter === cat ? 'var(--copper)' : 'rgba(26,58,71,0.25)',
               }}>
                 {team.filter(m => !m.anchor && m.categories.includes(cat)).length}
               </span>
@@ -340,7 +340,7 @@ export default function TeamGrid({ team }: TeamGridProps) {
         ))}
         <span style={{
           marginLeft: 'auto', fontSize: '0.72rem',
-          color: 'rgba(255,255,255,0.25)',
+          color: 'rgba(26,58,71,0.25)',
           display: 'flex', alignItems: 'center',
         }}>
           {filtered.length} provider{filtered.length !== 1 ? 's' : ''}
@@ -368,17 +368,17 @@ export default function TeamGrid({ team }: TeamGridProps) {
         }}>
           <div style={{
             width: '56px', height: '56px', borderRadius: '50%',
-            backgroundColor: 'rgba(201,122,60,0.08)',
-            border: '1px solid rgba(201,122,60,0.2)',
+            backgroundColor: 'rgba(34,184,209,0.08)',
+            border: '1px solid rgba(34,184,209,0.2)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '1.4rem', color: 'rgba(201,122,60,0.5)',
+            fontSize: '1.4rem', color: 'rgba(34,184,209,0.5)',
           }}>
             ◎
           </div>
-          <div style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-playfair)' }}>
+          <div style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.5)', fontFamily: 'var(--font-playfair)' }}>
             No providers in this category
           </div>
-          <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.3)', maxWidth: '300px', lineHeight: 1.6 }}>
+          <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.3)', maxWidth: '300px', lineHeight: 1.6 }}>
             Try selecting a different department or view all providers.
           </div>
         </div>

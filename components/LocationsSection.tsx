@@ -148,8 +148,8 @@ export default function LocationsSection() {
                 onClick={() => setActiveLocation(i)}
                 style={{
                   padding: '24px',
-                  backgroundColor: activeLocation === i ? 'rgba(201,122,60,0.1)' : 'rgba(255,255,255,0.04)',
-                  border: `1px solid ${activeLocation === i ? 'rgba(201,122,60,0.4)' : 'rgba(255,255,255,0.08)'}`,
+                  backgroundColor: activeLocation === i ? 'rgba(34,184,209,0.1)' : 'rgba(26,58,71,0.04)',
+                  border: `1px solid ${activeLocation === i ? 'rgba(34,184,209,0.4)' : 'rgba(26,58,71,0.08)'}`,
                   borderRadius: '12px', cursor: 'pointer',
                   textAlign: 'left',
                   transition: 'all 0.3s ease',
@@ -163,7 +163,7 @@ export default function LocationsSection() {
                 }}>
                   {location.name}
                 </div>
-                <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' }}>
+                <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.5)' }}>
                   {location.address}, {location.city}
                 </div>
               </button>
@@ -175,8 +175,8 @@ export default function LocationsSection() {
             ref={detailRef}
             className="loc-detail-panel"
             style={{
-              backgroundColor: 'rgba(255,255,255,0.04)',
-              border: '1px solid rgba(201,122,60,0.2)',
+              backgroundColor: 'rgba(26,58,71,0.04)',
+              border: '1px solid rgba(34,184,209,0.2)',
               borderRadius: '16px', padding: '40px',
             }}
           >
@@ -198,8 +198,8 @@ export default function LocationsSection() {
                 }}>
                   Contact
                 </div>
-                <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.7)', marginBottom: '6px' }}>{loc.address}</div>
-                <div style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.7)', marginBottom: '12px' }}>{loc.city}</div>
+                <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.7)', marginBottom: '6px' }}>{loc.address}</div>
+                <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.7)', marginBottom: '12px' }}>{loc.city}</div>
                 <a href={`tel:${loc.phone.replace(/\D/g, '')}`} style={{
                   fontSize: '1rem', color: 'var(--copper)',
                   textDecoration: 'none', fontWeight: 500,
@@ -222,7 +222,7 @@ export default function LocationsSection() {
                     display: 'flex', justifyContent: 'space-between',
                     fontSize: '0.825rem', marginBottom: '6px',
                   }}>
-                    <span style={{ color: 'rgba(255,255,255,0.6)' }}>{h.days}</span>
+                    <span style={{ color: 'rgba(26,58,71,0.6)' }}>{h.days}</span>
                     <span style={{ color: 'var(--white)', fontWeight: 500 }}>{h.time}</span>
                   </div>
                 ))}
@@ -230,8 +230,8 @@ export default function LocationsSection() {
                   <div style={{
                     marginTop: '12px', fontSize: '0.75rem',
                     color: 'var(--gold)',
-                    backgroundColor: 'rgba(196,168,122,0.1)',
-                    border: '1px solid rgba(196,168,122,0.2)',
+                    backgroundColor: 'rgba(34,109,122,0.1)',
+                    border: '1px solid rgba(34,109,122,0.2)',
                     borderRadius: '6px', padding: '8px 12px',
                   }}>
                     Draw Station: {loc.drawStation}
@@ -253,9 +253,9 @@ export default function LocationsSection() {
                 {loc.services.map((s) => (
                   <span key={s} className="service-tag" style={{
                     fontSize: '0.75rem', padding: '5px 12px',
-                    backgroundColor: 'rgba(201,122,60,0.1)',
-                    border: '1px solid rgba(201,122,60,0.25)',
-                    borderRadius: '20px', color: 'rgba(255,255,255,0.8)',
+                    backgroundColor: 'rgba(34,184,209,0.1)',
+                    border: '1px solid rgba(34,184,209,0.25)',
+                    borderRadius: '20px', color: 'rgba(26,58,71,0.8)',
                   }}>
                     {s}
                   </span>

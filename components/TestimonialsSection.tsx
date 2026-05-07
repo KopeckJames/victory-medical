@@ -78,8 +78,8 @@ const testimonials = [
 function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
     <div style={{
-      backgroundColor: 'rgba(255,255,255,0.05)',
-      border: '1px solid rgba(255,255,255,0.08)',
+      backgroundColor: 'rgba(26,58,71,0.05)',
+      border: '1px solid rgba(26,58,71,0.08)',
       borderRadius: '12px',
       padding: '28px',
       width: '320px',
@@ -96,13 +96,13 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
       <div style={{
         display: 'inline-block', fontSize: '0.6rem',
         letterSpacing: '0.1em', textTransform: 'uppercase',
-        color: 'var(--copper)', border: '1px solid rgba(201,122,60,0.3)',
+        color: 'var(--copper)', border: '1px solid rgba(34,184,209,0.3)',
         borderRadius: '20px', padding: '2px 10px', marginBottom: '12px',
       }}>
         {t.service}
       </div>
       <p style={{
-        fontSize: '0.875rem', color: 'rgba(255,255,255,0.72)',
+        fontSize: '0.875rem', color: 'rgba(26,58,71,0.72)',
         lineHeight: 1.7, marginBottom: '20px', fontStyle: 'italic',
       }}>
         &ldquo;{t.text}&rdquo;
@@ -118,7 +118,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
         </div>
         <div>
           <div style={{ fontSize: '0.825rem', fontWeight: 600, color: 'var(--white)' }}>{t.name}</div>
-          <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>{t.location}</div>
+          <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)' }}>{t.location}</div>
         </div>
       </div>
     </div>
@@ -239,7 +239,7 @@ export default function TestimonialsSection() {
                   </svg>
                 ))}
               </div>
-              <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', marginTop: '4px' }}>341 reviews</div>
+              <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)', marginTop: '4px' }}>341 reviews</div>
             </div>
           </div>
         </div>

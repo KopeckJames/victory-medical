@@ -261,7 +261,7 @@ const ServicesPage: NextPage = () => {
               position: 'absolute',
               inset: 0,
               background:
-                'radial-gradient(ellipse 60% 60% at 30% 50%, rgba(201,122,60,0.08) 0%, transparent 70%)',
+                'radial-gradient(ellipse 60% 60% at 30% 50%, rgba(34,184,209,0.08) 0%, transparent 70%)',
             }}
           />
           <div
@@ -269,7 +269,7 @@ const ServicesPage: NextPage = () => {
               position: 'absolute',
               inset: 0,
               backgroundImage:
-                'linear-gradient(rgba(201,122,60,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.02) 1px, transparent 1px)',
+                'linear-gradient(rgba(34,184,209,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.02) 1px, transparent 1px)',
               backgroundSize: '60px 60px',
             }}
           />

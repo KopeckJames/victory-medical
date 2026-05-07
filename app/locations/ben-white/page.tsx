@@ -120,7 +120,7 @@ export default function BenWhiteLocationPage() {
               position: 'absolute',
               inset: 0,
               background:
-                'radial-gradient(ellipse 70% 60% at 70% 50%, rgba(201,122,60,0.1) 0%, transparent 60%)',
+                'radial-gradient(ellipse 70% 60% at 70% 50%, rgba(34,184,209,0.1) 0%, transparent 60%)',
             }}
           />
           <div
@@ -128,7 +128,7 @@ export default function BenWhiteLocationPage() {
               position: 'absolute',
               inset: 0,
               backgroundImage:
-                'linear-gradient(rgba(201,122,60,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,60,0.025) 1px, transparent 1px)',
+                'linear-gradient(rgba(34,184,209,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(34,184,209,0.025) 1px, transparent 1px)',
               backgroundSize: '60px 60px',
               pointerEvents: 'none',
             }}
@@ -138,7 +138,7 @@ export default function BenWhiteLocationPage() {
             <div
               style={{
                 fontSize: '0.75rem',
-                color: 'rgba(255,255,255,0.4)',
+                color: 'rgba(26,58,71,0.4)',
                 marginBottom: '24px',
                 display: 'flex',
                 gap: '8px',
@@ -192,7 +192,7 @@ export default function BenWhiteLocationPage() {
                 >
                   Address
                 </div>
-                <div style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.9)' }}>
+                <div style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.9)' }}>
                   2108 W Ben White Blvd, Austin TX 78704
                 </div>
               </div>
@@ -229,8 +229,8 @@ export default function BenWhiteLocationPage() {
                 alignItems: 'center',
                 gap: '10px',
                 padding: '10px 20px',
-                backgroundColor: 'rgba(201,122,60,0.12)',
-                border: '1px solid rgba(201,122,60,0.35)',
+                backgroundColor: 'rgba(34,184,209,0.12)',
+                border: '1px solid rgba(34,184,209,0.35)',
                 borderRadius: '28px',
                 fontSize: '0.825rem',
                 color: 'var(--copper)',
@@ -310,18 +310,18 @@ export default function BenWhiteLocationPage() {
                       fontSize: '0.875rem',
                       color:
                         h.time === 'Closed'
-                          ? 'rgba(255,255,255,0.3)'
-                          : 'rgba(255,255,255,0.75)',
+                          ? 'rgba(26,58,71,0.3)'
+                          : 'rgba(26,58,71,0.75)',
                       marginBottom: '8px',
                       paddingBottom: '8px',
-                      borderBottom: '1px solid rgba(255,255,255,0.06)',
+                      borderBottom: '1px solid rgba(26,58,71,0.06)',
                     }}
                   >
                     <span>{h.days}</span>
                     <span
                       style={{
                         color:
-                          h.time === 'Closed' ? 'rgba(255,255,255,0.3)' : 'var(--white)',
+                          h.time === 'Closed' ? 'rgba(26,58,71,0.3)' : 'var(--white)',
                         fontWeight: 500,
                       }}
                     >
@@ -348,7 +348,7 @@ export default function BenWhiteLocationPage() {
                 <p
                   style={{
                     fontSize: '0.875rem',
-                    color: 'rgba(255,255,255,0.75)',
+                    color: 'rgba(26,58,71,0.75)',
                     lineHeight: 1.7,
                     marginBottom: '16px',
                   }}
@@ -402,7 +402,7 @@ export default function BenWhiteLocationPage() {
                         fontSize: '0.65rem',
                         letterSpacing: '0.1em',
                         textTransform: 'uppercase',
-                        color: 'rgba(255,255,255,0.4)',
+                        color: 'rgba(26,58,71,0.4)',
                         marginBottom: '3px',
                       }}
                     >
@@ -473,8 +473,8 @@ export default function BenWhiteLocationPage() {
                   key={t.name}
                   className="hover-card-lift"
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.07)',
+                    backgroundColor: 'rgba(26,58,71,0.03)',
+                    border: '1px solid rgba(26,58,71,0.07)',
                     borderRadius: '12px',
                     padding: '28px',
                   }}
@@ -484,8 +484,8 @@ export default function BenWhiteLocationPage() {
                       width: '44px',
                       height: '44px',
                       borderRadius: '10px',
-                      backgroundColor: 'rgba(201,122,60,0.12)',
-                      border: '1px solid rgba(201,122,60,0.25)',
+                      backgroundColor: 'rgba(34,184,209,0.12)',
+                      border: '1px solid rgba(34,184,209,0.25)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -510,7 +510,7 @@ export default function BenWhiteLocationPage() {
                   <p
                     style={{
                       fontSize: '0.85rem',
-                      color: 'rgba(255,255,255,0.6)',
+                      color: 'rgba(26,58,71,0.6)',
                       lineHeight: 1.65,
                     }}
                   >
@@ -585,7 +585,7 @@ export default function BenWhiteLocationPage() {
                   <p
                     style={{
                       fontSize: '0.95rem',
-                      color: 'rgba(255,255,255,0.65)',
+                      color: 'rgba(26,58,71,0.65)',
                       fontStyle: 'italic',
                       lineHeight: 1.7,
                     }}
@@ -664,7 +664,7 @@ export default function BenWhiteLocationPage() {
                       <div
                         style={{
                           fontSize: '0.825rem',
-                          color: 'rgba(255,255,255,0.55)',
+                          color: 'rgba(26,58,71,0.55)',
                           lineHeight: 1.6,
                         }}
                       >
@@ -709,8 +709,8 @@ export default function BenWhiteLocationPage() {
                   key={p.name}
                   className="hover-card-lift"
                   style={{
-                    backgroundColor: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.08)',
+                    backgroundColor: 'rgba(26,58,71,0.03)',
+                    border: '1px solid rgba(26,58,71,0.08)',
                     borderRadius: '16px',
                     padding: '36px',
                     position: 'relative',
@@ -726,7 +726,7 @@ export default function BenWhiteLocationPage() {
                       right: 0,
                       height: '2px',
                       background:
-                        'linear-gradient(90deg, var(--copper), rgba(201,122,60,0.2))',
+                        'linear-gradient(90deg, var(--copper), rgba(34,184,209,0.2))',
                     }}
                   />
 
@@ -745,7 +745,7 @@ export default function BenWhiteLocationPage() {
                         height: '60px',
                         borderRadius: '50%',
                         backgroundColor: 'var(--light-teal)',
-                        border: '2px solid rgba(201,122,60,0.4)',
+                        border: '2px solid rgba(34,184,209,0.4)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -783,7 +783,7 @@ export default function BenWhiteLocationPage() {
                   <p
                     style={{
                       fontSize: '0.875rem',
-                      color: 'rgba(255,255,255,0.65)',
+                      color: 'rgba(26,58,71,0.65)',
                       lineHeight: 1.7,
                       marginBottom: '20px',
                     }}
@@ -799,10 +799,10 @@ export default function BenWhiteLocationPage() {
                         style={{
                           fontSize: '0.68rem',
                           padding: '3px 10px',
-                          backgroundColor: 'rgba(201,122,60,0.1)',
-                          border: '1px solid rgba(201,122,60,0.2)',
+                          backgroundColor: 'rgba(34,184,209,0.1)',
+                          border: '1px solid rgba(34,184,209,0.2)',
                           borderRadius: '20px',
-                          color: 'rgba(255,255,255,0.7)',
+                          color: 'rgba(26,58,71,0.7)',
                         }}
                       >
                         {s}
@@ -837,7 +837,7 @@ export default function BenWhiteLocationPage() {
           style={{
             backgroundColor: 'var(--dark-teal)',
             padding: '80px 0',
-            borderTop: '1px solid rgba(255,255,255,0.06)',
+            borderTop: '1px solid rgba(26,58,71,0.06)',
           }}
         >
           <div className="container" style={{ textAlign: 'center' }}>

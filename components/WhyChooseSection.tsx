@@ -12,7 +12,7 @@ const reasons = [
   {
     number: '01',
     title: 'Integrated Medicine',
-    description: 'Traditional and holistic medicine under one roof since 1996. Primary care, MedSpa, pharmacy, physical medicine — one team coordinating all of your care.',
+    description: 'Traditional and holistic medicine under one roof since 1996. Primary care, peptide therapy, MedSpa, pharmacy, physical medicine — one team coordinating all of your care.',
   },
   {
     number: '02',
@@ -69,7 +69,7 @@ export default function WhyChooseSection() {
       const validItems = itemsRef.current.filter(Boolean)
       gsap.set(validItems, { willChange: 'transform' })
 
-      validItems.forEach((item, i) => {
+      validItems.forEach((item) => {
         if (!item) return
         const line = item.querySelector('.copper-line') as HTMLElement
         const content = item.querySelectorAll('h3, p')

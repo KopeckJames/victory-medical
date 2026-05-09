@@ -7,6 +7,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Medical Spa Austin TX | Victory Medical MedSpa',
   description: 'Physician-supervised aesthetic treatments in Austin, TX. Botox, dermal fillers, CoolSculpting, laser treatments, HydraFacial, IV therapy, and more at Victory Medical MedSpa.',
+  alternates: { canonical: '/medspa' },
+  openGraph: {
+    title: 'Medical Spa Austin TX | Victory Medical MedSpa',
+    description: 'Physician-supervised aesthetic treatments in Austin, TX. Botox, dermal fillers, CoolSculpting, laser treatments, HydraFacial, IV therapy, and more at Victory Medical MedSpa.',
+    url: '/medspa',
+  },
 }
 
 const medSpaServices = [

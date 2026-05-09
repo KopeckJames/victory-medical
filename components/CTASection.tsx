@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useEffect } from 'react'
-import Link from 'next/link'
+
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -114,7 +114,7 @@ export default function CTASection() {
               fontSize: '1rem', color: 'var(--muted-text)',
               lineHeight: 1.8, maxWidth: '480px',
             }}>
-              Whether you need same-day urgent care, a comprehensive primary care provider, or a physician-supervised aesthetic treatment — Victory Medical is here for you.
+              Whether you need same-day urgent care, a physician-supervised peptide therapy protocol, hormone optimization, or aesthetic treatment — Victory Medical is here for you.
             </p>
           </div>
 

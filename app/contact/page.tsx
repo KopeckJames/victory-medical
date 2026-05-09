@@ -6,6 +6,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Contact & Locations | Victory Medical Austin TX',
   description: 'Contact Victory Medical. Three locations in Austin and Westlake Hills, TX. Call (512) 462-3627. Book appointments online with Privia Health or Jane App for MedSpa.',
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact & Locations | Victory Medical Austin TX',
+    description: 'Contact Victory Medical. Three locations in Austin and Westlake Hills, TX. Call (512) 462-3627.',
+    url: '/contact',
+  },
 }
 
 const locations = [

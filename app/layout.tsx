@@ -20,9 +20,31 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Victory Medical | Complete Healthcare in Austin, TX',
-  description: 'Victory Medical provides integrated primary care, urgent care, MedSpa, allergy treatment, ketamine therapy, and more in Austin and Westlake Hills, TX since 1996.',
-  keywords: 'family practice Austin, urgent care Austin, medical spa Austin, allergy testing Austin, ketamine therapy Austin',
+  metadataBase: new URL('https://victorymed.com'),
+  title: {
+    default: 'Victory Medical | Complete Healthcare in Austin, TX',
+    template: '%s | Victory Medical Austin TX',
+  },
+  description: 'Victory Medical provides integrated primary care, urgent care, MedSpa, allergy treatment, ketamine therapy, peptide therapy, and more in Austin and Westlake Hills, TX since 1996.',
+  keywords: 'family practice Austin, urgent care Austin, medical spa Austin, allergy testing Austin, ketamine therapy Austin, peptide therapy Austin, Semax Austin, BPC-157 Austin, Sermorelin Austin, regenerative medicine Austin',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    siteName: 'Victory Medical',
+    locale: 'en_US',
+    type: 'website',
+    url: 'https://victorymed.com',
+    title: 'Victory Medical | Complete Healthcare in Austin, TX',
+    description: 'Victory Medical provides integrated primary care, urgent care, MedSpa, allergy treatment, ketamine therapy, peptide therapy, and more in Austin and Westlake Hills, TX since 1996.',
+    images: [{ url: '/og-default.jpg', width: 1200, height: 630, alt: 'Victory Medical — Complete Healthcare in Austin, TX' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Victory Medical | Complete Healthcare in Austin, TX',
+    description: 'Victory Medical provides integrated primary care, urgent care, MedSpa, allergy treatment, ketamine therapy, peptide therapy, and more in Austin and Westlake Hills, TX since 1996.',
+    images: ['/og-default.jpg'],
+  },
 }
 
 export default function RootLayout({
@@ -39,7 +61,7 @@ export default function RootLayout({
     telephone: '+15124623627',
     email: 'info@victorymed.com',
     foundingDate: '1996',
-    medicalSpecialty: ['Family Practice', 'Urgent Care', 'Aesthetics', 'Mental Health', 'Allergy'],
+    medicalSpecialty: ['Family Practice', 'Urgent Care', 'Aesthetics', 'Mental Health', 'Allergy', 'Regenerative Medicine', 'Peptide Therapy'],
     location: [
       {
         '@type': 'MedicalClinic',

@@ -82,6 +82,18 @@ const treatments = [
     href: '/services#hormones',
     image: '/treatments/longevity.jpg',
   },
+  {
+    number: '07',
+    category: 'Peptide Therapy',
+    title: 'Precision\nMedicine',
+    description: 'Physician-prescribed peptide protocols for cognitive enhancement, fat loss, tissue repair, and longevity. 10 science-backed protocols, one supervised program.',
+    stat: '10',
+    statLabel: 'peptide protocols',
+    color: 'rgba(34,109,122,0.09)',
+    borderColor: 'rgba(34,109,122,0.22)',
+    href: '/peptides',
+    image: '/treatments/longevity.jpg',
+  },
 ]
 
 export default function TreatmentShowcase() {

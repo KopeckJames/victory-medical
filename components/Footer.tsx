@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 const footerLinks = {
   services: [
@@ -9,6 +10,8 @@ const footerLinks = {
     { label: 'Allergy Services', href: '/services#allergy' },
     { label: 'Weight Loss', href: '/services#weight-loss' },
     { label: 'Ketamine Therapy', href: '/services#ketamine' },
+    { label: 'Peptide Therapy', href: '/peptides' },
+    { label: 'Hormone Therapy', href: '/services#hormones' },
     { label: 'Pharmacy', href: '/services#pharmacy' },
   ],
   medspa: [
@@ -106,47 +109,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
-              <div
-                style={{
-                  width: '36px',
-                  height: '36px',
-                  background: 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
-                  borderRadius: '8px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '18px',
-                  fontWeight: 700,
-                  color: 'white',
-                  fontFamily: 'var(--font-playfair)',
-                  flexShrink: 0,
-                }}
-              >
-                V
-              </div>
-              <div>
-                <div
-                  style={{
-                    fontFamily: 'var(--font-playfair)',
-                    fontSize: '1.1rem',
-                    fontWeight: 600,
-                    color: 'var(--white)',
-                    lineHeight: 1.1,
-                  }}
-                >
-                  Victory Medical
-                </div>
-                <div
-                  style={{
-                    fontSize: '0.6rem',
-                    letterSpacing: '0.15em',
-                    textTransform: 'uppercase',
-                    color: 'var(--gold)',
-                  }}
-                >
-                  Since 1996
-                </div>
-              </div>
+              <Image
+                src="/Victory-Medical-in-Austin.png"
+                alt="Victory Medical Logo"
+                width={150}
+                height={57}
+                style={{ objectFit: 'contain', width: 'auto', height: '48px' }}
+              />
             </div>
 
             <p
@@ -158,7 +127,7 @@ export default function Footer() {
                 marginBottom: '24px',
               }}
             >
-              Providing integrated medicine in Central Texas since 1996. Complete healthcare — from primary care to medical spa — under one roof.
+              Providing integrated medicine in Central Texas since 1996. From primary care and urgent care to peptide therapy, ketamine, and medical spa — complete care under one roof.
             </p>
 
             {/* Social Links */}

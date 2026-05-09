@@ -51,6 +51,15 @@ const services = [
     links: ['Allergy Testing', 'Immunotherapy', 'Asthma', 'Rapid Desensitization'],
     bg: '#f5fbfc',
   },
+  {
+    id: 'peptides',
+    title: 'Peptide Therapy',
+    subtitle: 'Precision medicine for performance & longevity',
+    description: 'Physician-prescribed peptide protocols targeting cognitive enhancement, body composition, accelerated recovery, and metabolic optimization. Five science-backed peptides, one physician-supervised program.',
+    links: ['Semax', 'CJC-1295 + Ipamorelin', 'BPC-157', 'Sermorelin', 'Selank', 'KPV', 'MOTS-c'],
+    href: '/peptides',
+    bg: '#f5fbfc',
+  },
 ]
 
 export default function ServicesSection() {
@@ -58,7 +67,6 @@ export default function ServicesSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const headingRef = useRef<HTMLDivElement>(null)
   const cardsContainerRef = useRef<HTMLDivElement>(null)
-  const activeContentRef = useRef<HTMLDivElement>(null)
   const prevActiveIndex = useRef(0)
 
   useEffect(() => {

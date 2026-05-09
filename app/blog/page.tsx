@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     'Expert insights on ketamine therapy, allergy treatment, medical weight loss, concierge medicine, and MedSpa services from the providers at Victory Medical in Austin, TX.',
   keywords:
     'Victory Medical blog, Austin healthcare, ketamine therapy Austin, allergy treatment Austin, medical weight loss Austin, CoolSculpting Austin',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'Health & Wellness Blog | Victory Medical Austin TX',
+    description: 'Expert health and wellness insights from Victory Medical providers in Austin, TX.',
+    url: '/blog',
+  },
 }
 
 export default function BlogPage() {

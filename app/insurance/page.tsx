@@ -6,6 +6,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Insurance & Coverage | Victory Medical Austin TX',
   description: 'Victory Medical accepts most major insurance plans in Austin and Westlake Hills, TX. Blue Cross Blue Shield, Aetna, Cigna, Medicare, Medicaid, and more. Transparent self-pay rates for urgent care starting at $75.',
+  alternates: { canonical: '/insurance' },
+  openGraph: {
+    title: 'Insurance & Coverage | Victory Medical Austin TX',
+    description: 'Victory Medical accepts most major insurance plans in Austin and Westlake Hills, TX. Self-pay urgent care from $75.',
+    url: '/insurance',
+  },
 }
 
 const insurers = [

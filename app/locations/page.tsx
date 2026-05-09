@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: 'Locations | Victory Medical — Austin & Westlake Hills TX',
   description:
     'Three Victory Medical locations serving Central Texas — South Austin on Victory Drive, Ben White MedSpa, and Westlake Hills on Bee Caves Rd. Walk-ins welcome. Primary care, urgent care, MedSpa, and more.',
+  alternates: { canonical: '/locations' },
+  openGraph: {
+    title: 'Locations | Victory Medical — Austin & Westlake Hills TX',
+    description: 'Three Victory Medical locations serving Central Texas. Walk-ins welcome.',
+    url: '/locations',
+  },
 }
 
 const serviceAreas = [

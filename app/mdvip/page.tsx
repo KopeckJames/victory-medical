@@ -6,6 +6,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'MDVIP Concierge Medicine Austin TX | Victory Medical Westlake Hills',
   description: 'MDVIP concierge medicine at Victory Medical Westlake Hills. Same-day appointments, 24/7 direct physician access, and a patient panel capped at 150. Experience relationship-based medicine in Austin TX at 3811 Bee Caves Rd.',
+  alternates: { canonical: '/mdvip' },
+  openGraph: {
+    title: 'MDVIP Concierge Medicine Austin TX | Victory Medical Westlake Hills',
+    description: 'MDVIP concierge medicine at Victory Medical Westlake Hills. Same-day appointments, 24/7 direct physician access, patient panel capped at 150.',
+    url: '/mdvip',
+  },
 }
 
 const benefits = [

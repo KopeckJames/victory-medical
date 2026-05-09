@@ -9,6 +9,12 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'About Us & Our Providers | Victory Medical Austin TX',
   description: 'Meet our team of 20+ physicians, nurse practitioners, and specialists. Victory Medical — integrated healthcare in Central Texas since 1996.',
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Us & Our Providers | Victory Medical Austin TX',
+    description: 'Meet our team of 20+ physicians, nurse practitioners, and specialists. Victory Medical — integrated healthcare in Central Texas since 1996.',
+    url: '/about',
+  },
 }
 
 const milestones = [

@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Medical Services | Victory Medical Austin TX',
   description:
     'Comprehensive medical services in Austin and Westlake Hills, TX. Family practice, urgent care, allergy treatment, ketamine therapy, weight loss, hormone therapy, physical medicine, and more.',
+  alternates: { canonical: '/services' },
+  openGraph: {
+    title: 'Medical Services | Victory Medical Austin TX',
+    description: 'Comprehensive medical services in Austin and Westlake Hills, TX. Family practice, urgent care, allergy treatment, ketamine therapy, weight loss, hormone therapy, physical medicine, and more.',
+    url: '/services',
+  },
 }
 
 const services: Service[] = [
@@ -80,16 +86,17 @@ const services: Service[] = [
     title: 'Medical Weight Loss',
     subtitle: 'Medically supervised, personalized programs',
     description:
-      'Physician-supervised weight loss programs combining prescription therapy, nutritional guidance, and personal coaching. Custom appetite suppressants and injection therapy accelerate and sustain your results.',
+      'Physician-supervised weight loss programs combining prescription therapy, peptide protocols, nutritional guidance, and personal coaching. From GLP-1 medications to metabolic peptides — your program is built around your biology.',
     features: [
       'Custom appetite suppressant prescriptions',
       'Compounded weight loss medications',
+      'Tesamorelin peptide — visceral fat reduction',
+      'AOD-9604 peptide — non-hormonal fat metabolism',
       'B-12 injections',
       'Lipo-B injections',
       'Nutritional consultation',
       'Personal weight loss coaches',
       'Weight loss counseling and surveillance',
-      'HCG therapy',
       'Ongoing progress monitoring',
     ],
     callout: 'Your program is built around your metabolism, lifestyle, and goals.',
@@ -100,12 +107,14 @@ const services: Service[] = [
     title: 'Natural Hormone Replacement',
     subtitle: 'Club Longevity — Holistic anti-aging medicine',
     description:
-      'Custom-compounded natural hormone therapy for menopause, low testosterone, and anti-aging. Our "Club Longevity" program takes a comprehensive approach combining hormones, exercise, diet, and supplements.',
+      'Custom-compounded natural hormone therapy for menopause, low testosterone, and anti-aging. Our "Club Longevity" program takes a comprehensive approach combining hormones, peptides, exercise, diet, and supplements.',
     features: [
       'Bioidentical hormone therapy',
       'Menopause management',
       'Low testosterone treatment',
       'Custom-compounded formulations',
+      'CJC-1295 + Ipamorelin growth hormone peptides',
+      'Semax cognitive peptide therapy',
       'Anti-aging and longevity medicine',
       'Fatigue and energy optimization',
       'Sleep quality improvement',
@@ -113,7 +122,7 @@ const services: Service[] = [
       'Cognitive clarity optimization',
       'Ongoing labs and monitoring',
     ],
-    callout: '"Club Longevity" — a holistic alternative to traditional HRT.',
+    callout: '"Club Longevity" — hormones + peptides + lifestyle for comprehensive anti-aging.',
   },
   {
     id: 'ketamine',
@@ -202,22 +211,24 @@ const services: Service[] = [
     id: 'regenerative-medicine',
     icon: '⟡',
     title: 'Regenerative Medicine & Peptide Therapy',
-    subtitle: 'Cutting-edge cellular health optimization',
+    subtitle: 'Precision peptide protocols for performance & longevity',
     description:
-      'Advanced regenerative therapies designed to support cellular repair, longevity, and peak performance. Led by Judith Chedville, Director of Regenerative Medicine, our peptide protocols and regenerative treatments offer a forward-looking approach to health optimization.',
+      'Victory Medical offers physician-prescribed peptide therapy for cognitive enhancement, body composition, accelerated recovery, and metabolic optimization. All five protocols are backed by clinical science and prescribed following comprehensive labs and a physician consultation.',
     features: [
-      'Peptide therapy protocols',
-      'BPC-157 tissue repair',
-      'Thymosin Alpha-1 immune support',
-      'Sermorelin and growth hormone peptides',
+      'Semax — cognitive enhancement & neuroprotection',
+      'CJC-1295 + Ipamorelin — growth hormone optimization',
+      'BPC-157 — tissue repair, gut health & recovery',
+      'Tesamorelin — visceral fat reduction & metabolic optimization',
+      'AOD-9604 — non-hormonal fat metabolism support',
+      'GHK-CU — skin rejuvenation, hair density & tissue repair',
+      'Sermorelin — natural pituitary-driven GH release',
+      'Selank — anxiety relief, focus & neurotransmitter balance',
+      'KPV — anti-inflammatory gut & immune support',
+      'MOTS-c — mitochondrial energy & metabolic optimization',
       'NAD+ infusion therapy',
-      'Cellular health optimization',
-      'Longevity and anti-aging protocols',
-      'Athletic performance support',
-      'Post-surgery recovery acceleration',
       'Comprehensive labs and monitoring',
     ],
-    callout: 'Judith Chedville, Director of Regenerative Medicine, designs every protocol to your individual biology.',
+    callout: 'See our dedicated Peptide Therapy page for all 10 protocol details → /peptides',
   },
   {
     id: 'additional',

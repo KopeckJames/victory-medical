@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -30,6 +31,7 @@ const serviceMegaMenu = {
       { label: 'Regenerative Medicine', href: '/services#regenerative-medicine' },
       { label: 'Pharmacy', href: '/services#pharmacy' },
       { label: 'MDVIP Concierge', href: '/mdvip' },
+      { label: 'Peptide Therapy', href: '/peptides' },
     ],
   },
 }
@@ -139,11 +141,13 @@ export default function Navbar() {
     return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
 
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname)
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname)
     setMobileOpen(false)
     setActiveDropdown(null)
     setMobileExpanded(null)
-  }, [pathname])
+  }
 
   return (
     <>
@@ -177,30 +181,16 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" style={{ textDecoration: 'none', flexShrink: 0 }}>
             <div ref={logoRef} style={{ display: 'flex', alignItems: 'center', gap: '10px', willChange: 'transform' }}>
-              <div style={{
-                width: '36px', height: '36px',
-                background: 'linear-gradient(135deg, var(--copper) 0%, #4fc8dd 100%)',
-                borderRadius: '8px',
-                display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontSize: '18px', fontWeight: 700, color: 'white',
-                fontFamily: 'var(--font-playfair)',
-              }}>
-                V
-              </div>
-              <div>
-                <div style={{
-                  fontFamily: 'var(--font-playfair)',
-                  fontSize: '1.1rem', fontWeight: 600,
-                  color: 'var(--white)', lineHeight: 1.1,
-                }}>
-                  Victory Medical
-                </div>
-                <div style={{
-                  fontSize: '0.6rem', letterSpacing: '0.15em',
-                  textTransform: 'uppercase', color: 'var(--gold)', lineHeight: 1,
-                }}>
-                  Austin, TX · Since 1996
-                </div>
+              {/* Clip container hides PRIVIA sub-branding row; shows Victory Medical + icon only */}
+              <div style={{ overflow: 'hidden', height: '48px', width: '170px', flexShrink: 0 }}>
+                <Image
+                  src="/Victory-Medical-in-Austin.png"
+                  alt="Victory Medical"
+                  width={150}
+                  height={57}
+                  priority
+                  style={{ objectFit: 'contain', objectPosition: 'top center', width: '170px', height: '64px' }}
+                />
               </div>
             </div>
           </Link>

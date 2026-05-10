@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -262,7 +262,6 @@ export default function Hero() {
           zIndex: 1,
         }} />
         {/* Video hero — replace VIDEO_SRC with actual mp4 URL to enable */}
-        {/* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */}
         {(false as boolean) && (
           <video
             autoPlay

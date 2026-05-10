@@ -199,7 +199,13 @@ export default function TestimonialsSection() {
 
   const handleRowHover = (rowNum: number, paused: boolean) => {
     const tween = rowNum === 1 ? row1TweenRef.current : row2TweenRef.current
-    if (tween) paused ? tween.pause() : tween.resume()
+    if (tween) {
+      if (paused) {
+        tween.pause()
+      } else {
+        tween.resume()
+      }
+    }
   }
 
   return (

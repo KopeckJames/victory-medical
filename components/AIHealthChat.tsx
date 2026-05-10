@@ -66,12 +66,15 @@ export default function AIHealthChat() {
 
   // Button pulse animation
   useEffect(() => {
-    if (!isOpen && buttonRef.current) {
+    const btn = buttonRef.current
+    if (!isOpen && btn) {
       const tl = gsap.timeline({ repeat: -1, repeatDelay: 3 })
-      tl.to(buttonRef.current, { scale: 1.08, duration: 0.4, ease: 'power2.out' })
-        .to(buttonRef.current, { scale: 1, duration: 0.4, ease: 'power2.in' })
+      tl.to(btn, { scale: 1.08, duration: 0.4, ease: 'power2.out' })
+        .to(btn, { scale: 1, duration: 0.4, ease: 'power2.in' })
     }
-    return () => gsap.killTweensOf(buttonRef.current)
+    return () => {
+      if (btn) gsap.killTweensOf(btn)
+    }
   }, [isOpen])
 
   // Scroll to bottom

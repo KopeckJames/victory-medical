@@ -80,24 +80,7 @@ export default function LocationsSection() {
     return () => ctx.revert()
   }, [])
 
-  // Cross-fade on location change
-  useEffect(() => {
-    if (!detailRef.current) return
-    if (isFirstRender.current) {
-      isFirstRender.current = false
-      // First render: just animate in
-      animateDetailIn()
-      return
-    }
-    // Cross-fade out then in
-    gsap.to(detailRef.current, {
-      opacity: 0, y: -12, duration: 0.2, ease: 'power2.in',
-      onComplete: animateDetailIn,
-    })
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeLocation])
-
-  const animateDetailIn = () => {
+  function animateDetailIn() {
     if (!detailRef.current) return
     gsap.fromTo(detailRef.current,
       { opacity: 0, y: 12 },
@@ -116,6 +99,22 @@ export default function LocationsSection() {
       { clipPath: 'inset(0 0% 0 0)', stagger: 0.05, duration: 0.35, ease: 'power3.out', delay: 0.2 }
     )
   }
+
+  // Cross-fade on location change
+  useEffect(() => {
+    if (!detailRef.current) return
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+      // First render: just animate in
+      animateDetailIn()
+      return
+    }
+    // Cross-fade out then in
+    gsap.to(detailRef.current, {
+      opacity: 0, y: -12, duration: 0.2, ease: 'power2.in',
+      onComplete: animateDetailIn,
+    })
+  }, [activeLocation])
 
   const loc = locations[activeLocation]
 

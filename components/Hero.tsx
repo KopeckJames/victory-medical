@@ -252,35 +252,24 @@ export default function Hero() {
           zIndex: 2,
           pointerEvents: 'none',
         }} />
-        {/* Hero photo */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          backgroundImage: `url('/hero/medical-team.jpg')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          zIndex: 1,
-        }} />
-        {/* Video hero — replace VIDEO_SRC with actual mp4 URL to enable */}
-        {(false as boolean) && (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{
-              position: 'absolute',
-              inset: 0,
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: 'center',
-              zIndex: 1,
-            }}
-          >
-            {/* <source src="/hero.mp4" type="video/mp4" /> */}
-          </video>
-        )}
+        {/* Hero video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center top',
+            zIndex: 1,
+          }}
+        >
+          <source src="/hero/hero.mp4" type="video/mp4" />
+        </video>
       </div>
 
       {/* Content */}

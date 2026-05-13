@@ -11,7 +11,7 @@ if (typeof window !== 'undefined') {
 const stats = [
   { value: 28, suffix: '+', label: 'Years Serving Austin', description: 'Trusted since 1996', decimals: 0 },
   { value: 25, suffix: '+', label: 'Services Offered', description: 'Complete under one roof', decimals: 0 },
-  { value: 341, suffix: '', label: 'Patient Reviews', description: '4.1★ average rating', decimals: 0 },
+  { value: 1600, suffix: '', label: 'Patient Reviews', description: '4.3★ average rating', decimals: 0 },
   { value: 97, suffix: '%', label: 'Patient Satisfaction', description: 'Would recommend us', decimals: 0 },
   { value: 3, suffix: '', label: 'Austin Locations', description: 'Including Westlake Hills', decimals: 0 },
 ]

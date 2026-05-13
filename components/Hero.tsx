@@ -25,7 +25,7 @@ const stats = [
   { end: 1996, start: 1960, label: 'Founded', suffix: '', decimals: 0 },
   { end: 3, start: 0, label: 'Locations', suffix: '', decimals: 0 },
   { end: 25, start: 0, label: 'Services', suffix: '+', decimals: 0 },
-  { end: 4.1, start: 0, label: '341 Reviews', suffix: '★', decimals: 1 },
+  { end: 4.3, start: 0, label: '1.6k Reviews', suffix: '★', decimals: 1 },
 ]
 
 export default function Hero() {

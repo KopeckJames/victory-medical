@@ -152,7 +152,7 @@ export default function TestimonialsSection() {
       if (ratingRef.current) {
         const obj = { val: 0 }
         gsap.to(obj, {
-          val: 4.1, duration: 1.5, ease: 'power3.out',
+          val: 4.3, duration: 1.5, ease: 'power3.out',
           scrollTrigger: { trigger: ratingRef.current, start: 'top 85%', once: true },
           onUpdate: () => {
             if (ratingRef.current) ratingRef.current.textContent = obj.val.toFixed(1)
@@ -245,7 +245,7 @@ export default function TestimonialsSection() {
                   </svg>
                 ))}
               </div>
-              <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)', marginTop: '4px' }}>341 reviews</div>
+              <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)', marginTop: '4px' }}>1.6k reviews</div>
             </div>
           </div>
         </div>

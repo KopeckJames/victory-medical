@@ -1,0 +1,49 @@
+{
+ "slug": "terms-conditions",
+ "path": "/terms-conditions",
+ "type": "page",
+ "metaTitle": "Terms & Conditions | Victory Medical Services & Medical Spa",
+ "metaDescription": "Terms & Conditions -",
+ "h1": null,
+ "datePublished": "2018-12-06T16:01:18+00:00",
+ "dateModified": "2022-05-03T13:54:26+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "Welcome to the Victory Medical Website"
+  },
+  {
+   "t": "p",
+   "html": "Victory Medical provides their services to you subject to the following notices, terms, and conditions."
+  },
+  {
+   "t": "p",
+   "html": "LINKS TO OTHER SITES<br/>Our web site may link to sites not maintained or related to Victory Medical . We provide these links as a service to our users. We do not sponsor or endorse these other sites and we have not reviewed the other sites. We are not responsible for the content of any other sites. You may access those other sites through the links at your own risk."
+  },
+  {
+   "t": "p",
+   "html": "PRIVACY POLICY<br/>Victory Medical respects the privacy of its users. Please read our\u00a0<a href=\"/privacy-policy\">Privacy Policy</a>."
+  },
+  {
+   "t": "p",
+   "html": "DISCLAIMER<br/>This site is provided by Victory Medical on an \u201cas is\u201d basis. Victory Medical makes no representations or warranties of any kind, express or implied, as to the operation of the site or the information, content, materials, or products included on this site. Victory Medical disclaims all warranties, express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. Victory Medical will not be liable for any damages of any kind arising from the use of this site, including, but not limited to direct, indirect, incidental, punitive, and consequential damages."
+  },
+  {
+   "t": "p",
+   "html": "APPLICABLE LAW<br/>This site is created and controlled by Victory Medical in the State of Texas, USA. As such, the laws of the State of Texas will govern these disclaimers, terms, and conditions, without giving effect to any principles of conflicts of laws. We reserve the right to make changes to our site and these disclaimers, terms, and conditions at any time."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/logo-logo.png",
+   "alt": "Victory Medical Logo"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"tel:+5124623627\">(512) 462-DOCS (3627)</a>"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"mailto:info@victorymed.com\">info@victorymed.com</a>"
+  }
+ ]
+}

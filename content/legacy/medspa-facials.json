@@ -1,0 +1,285 @@
+{
+ "slug": "medspa-facials",
+ "path": "/medspa-facials",
+ "type": "page",
+ "metaTitle": "Pore Cleansing, Oxy Trio Facial Treatment in Texas by Victory MedSpa",
+ "metaDescription": "Revitalize your skin with our variety of pore cleansing, oxy trio facial treatments in Texas. Book an appointment online or call at (512) 462-3627.",
+ "h1": "FACIALS: FACE & NECK",
+ "datePublished": "2019-01-29T13:51:37+00:00",
+ "dateModified": "2024-09-10T18:56:56+00:00",
+ "blocks": [
+  {
+   "t": "cta",
+   "text": "ALSO AVAILABLE: CHEST & BACK",
+   "href": "/medspa-facials-body"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Full-Mini-Facial-253x300.png",
+   "alt": "Full Mini Facial"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Oxy-Trio-Facial-253x300.png",
+   "alt": "Oxy Trio Facial"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Detox-Pore-Cleanse-253x300.png",
+   "alt": "Detox Pore Cleanse"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Dermaplane.png",
+   "alt": "Dermaplane"
+  },
+  {
+   "t": "p",
+   "html": "Gently scrapes off the top layer of dulling, dead, skin cells, to reveal a smoother, brighter complexion. Additionally, this gets rid of vellus hair (peach fuzz)."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Microdermabrasion.png",
+   "alt": "Microdermabrasion"
+  },
+  {
+   "t": "p",
+   "html": "A non-chemical, non-invasive procedure that uses a spray of microcrystals to remove the outermost layer of dead skin cells to reveal younger, healthier looking skin."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Brown-and-Lash-Tint.png",
+   "alt": "Brown and Lash Tint"
+  },
+  {
+   "t": "p",
+   "html": "Semi-permanent dye that darkens and defines brows and lashes."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Lactic-Peel.png",
+   "alt": "Lactic Peel"
+  },
+  {
+   "t": "p",
+   "html": "Our Lactic Peel aids in removing germs, dead cells, and toxins from the skin. This process leads to improved skin tone and texture."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Enzyme-Peel.png",
+   "alt": "Enzyme Peel"
+  },
+  {
+   "t": "p",
+   "html": "The Enzyme Peel contains a blend of natural fruit ingredients, offering gentle exfoliation properties that removes the top layers of the skin, leading to a fresher more glowing complexion."
+  },
+  {
+   "t": "h2",
+   "text": "REFRESH AND CLEAR YOUR FACE"
+  },
+  {
+   "t": "p",
+   "html": "If laser therapy isn\u2019t for you, the Victory MedSpa specialists at Victory Medical offer effective facial treatments that leave your skin revitalized and refreshed, shaving years off your appearance. From microdermabrasion to enzyme treatments, these facial treatments bring out the best in your skin, giving you something to smile about."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/full-mini2.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "FULL / MINI FACIAL"
+  },
+  {
+   "t": "p",
+   "html": "This facial is customized to each client. It includes a deep cleanse, exfoliation, extractions, and extreme hydration."
+  },
+  {
+   "t": "cta",
+   "text": "BOOK NOW",
+   "href": "https://victory.janeapp.com/"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/oxy-trio-white.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "OXY TRIO FACIAL"
+  },
+  {
+   "t": "p",
+   "html": "This facial stimulates oxygenation and circulation within the skin, rejuvenating sluggish, stressed, or acne affected skin as it draws oxygen to the skin\u2019s surface, resulting in a radiant, healthy glow."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/detox-pore-white.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "DETOX PORE CLEANSE FACIAL"
+  },
+  {
+   "t": "p",
+   "html": "The Detox Pore Cleanse facial offers a gentle, deep pore cleansing treatment that provides clarifying and antioxidant action that helps promote a clear complexion."
+  },
+  {
+   "t": "cta",
+   "text": "BOOK NOW",
+   "href": "https://www.zocdoc.com/wl/victorymedical/search/"
+  },
+  {
+   "t": "h2",
+   "text": "BEAUTIFUL RESULTS"
+  },
+  {
+   "t": "cta",
+   "text": "BEFORE & AFTERS",
+   "href": "/medspa-gallery"
+  },
+  {
+   "t": "h2",
+   "text": "Things You Might Also Like"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Botox-Dysport.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Botox & Dysport"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Facials.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Facials"
+  },
+  {
+   "t": "p",
+   "html": "Facials"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Chemical-Peels.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Chemical Peels"
+  },
+  {
+   "t": "p",
+   "html": "Chemical Peels"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Scarlet-RF-Microneedling-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Scarlet RF"
+  },
+  {
+   "t": "p",
+   "html": "Scarlet RF"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PDO-Threading.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PDO Threading"
+  },
+  {
+   "t": "p",
+   "html": "PDO Threading"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Laser-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Laser Treatments"
+  },
+  {
+   "t": "p",
+   "html": "Laser Treatments"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Fillers.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Fillers"
+  },
+  {
+   "t": "p",
+   "html": "Fillers"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PRP-Therapy.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PRP Therapy"
+  },
+  {
+   "t": "p",
+   "html": "PRP Therapy"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Micro-Needling.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Micro-Needling"
+  },
+  {
+   "t": "p",
+   "html": "Micro-Needling"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Injectables.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Injectables"
+  },
+  {
+   "t": "p",
+   "html": "Injectables"
+  },
+  {
+   "t": "h2",
+   "text": "Areas Served"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/lakeway-hydrafacial-treatments\">Lakeway Hydrafacial Treatments</a><br/>\n<a href=\"/marble-falls-hydrafacial-treatments\">Marble Falls Hydrafacial Treatments</a>"
+  },
+  {
+   "t": "h2",
+   "text": "BEAUTIFUL RESULTS"
+  }
+ ]
+}

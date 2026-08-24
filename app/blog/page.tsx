@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import { BLOG_POSTS } from '@/lib/blog-data'
+import { getLegacyPosts } from '@/lib/legacy'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -254,6 +255,69 @@ export default function BlogPage() {
                     </span>
                   </div>
                   </div>{/* end card content */}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Article Archive (migrated from the original site) ────────── */}
+        <section className="section" style={{ backgroundColor: 'var(--bg-soft)' }}>
+          <div className="container">
+            <div className="section-label" style={{ marginBottom: '12px' }}>
+              From the Archive
+            </div>
+            <h2
+              className="heading-display"
+              style={{
+                fontSize: 'clamp(1.5rem, 3vw, 2.2rem)',
+                color: 'var(--text-primary)',
+                marginBottom: '32px',
+              }}
+            >
+              More Health Articles
+            </h2>
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+                gap: '10px 28px',
+              }}
+            >
+              {getLegacyPosts().map((post) => (
+                <Link
+                  key={post.slug}
+                  href={post.path}
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'baseline',
+                    gap: '12px',
+                    padding: '12px 4px',
+                    borderBottom: '1px solid var(--border-soft)',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: '0.92rem',
+                      fontWeight: 500,
+                      color: 'var(--text-primary)',
+                      lineHeight: 1.45,
+                    }}
+                  >
+                    {post.title}
+                  </span>
+                  <span
+                    style={{
+                      fontSize: '0.7rem',
+                      color: 'var(--text-secondary)',
+                      whiteSpace: 'nowrap',
+                      flexShrink: 0,
+                    }}
+                  >
+                    {post.datePublished?.slice(0, 4) ?? ''}
+                  </span>
                 </Link>
               ))}
             </div>

@@ -1,0 +1,28 @@
+{
+ "slug": "covid-vaccine-information",
+ "path": "/covid-vaccine-information",
+ "type": "page",
+ "metaTitle": "COVID VACCINE INFORMATION - Victory Medical Services & Medical Spa",
+ "metaDescription": "COVID VACCINE INFORMATION -",
+ "h1": null,
+ "datePublished": "2021-01-06T14:41:41+00:00",
+ "dateModified": "2023-04-26T14:32:48+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "<strong>If you are experiencing symptoms of COVID masks are recommended at Victory\u00a0Medical.</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>We understand that locating vaccines can be frustrating. We have provided a link below as an additional resource to assist you in finding a location that was allocated COVID vaccines for the current week.</strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Department of State Health Services:\u00a0</strong><strong><a href=\"https://www.dshs.state.tx.us/coronavirus/immunize/vaccineallocations.aspx\">COVID 19 Vaccine Allocations</a></strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong>In the right hand column, each week the state posts where COVID vaccines have been allocated, their contact information, and how many vaccines went to that location.</strong>"
+  }
+ ]
+}

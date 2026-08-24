@@ -1,0 +1,34 @@
+{
+ "slug": "physical-medicine",
+ "path": "/physical-medicine",
+ "type": "page",
+ "metaTitle": "Individualized Physical Medicine Department in Texas",
+ "metaDescription": "Victory Medical has specialized physical medicine department in Texas. Call 512-462-3627 or click on the link to know more.",
+ "h1": null,
+ "datePublished": "2018-12-06T18:21:54+00:00",
+ "dateModified": "2024-10-23T17:54:04+00:00",
+ "blocks": [
+  {
+   "t": "img",
+   "src": "/legacy/physical-therapy.png",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/chiropractic-therapy.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Victory Medical, West Lake Hills"
+  },
+  {
+   "t": "h3",
+   "text": "3811 Bee Caves Rd, West Lake Hills, TX 78746"
+  },
+  {
+   "t": "h3",
+   "text": "(512) 462-3627"
+  }
+ ]
+}

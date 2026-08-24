@@ -1,0 +1,93 @@
+{
+ "slug": "medspa-body-skin",
+ "path": "/medspa-body-skin",
+ "type": "page",
+ "metaTitle": "Specialized MedSpa Body Treatment \u2013 Victory MedSpa Texas",
+ "metaDescription": "Enhance your body with the specialized MedSpa body treatment provided by Victory MedSpa in Texas. Click to know more about our services.",
+ "h1": "ENHANCE YOUR BODY",
+ "datePublished": "2019-01-30T18:52:30+00:00",
+ "dateModified": "2024-10-18T16:50:16+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "Whether you want a touch up, need a refreshing pick up to your skin, or need to battle the damaging effects of aging, the Victory MedSpa body treatment can help you. Have a look at our detailed services below!"
+  },
+  {
+   "t": "h3",
+   "text": "FACIALS (CHEST & BACK)"
+  },
+  {
+   "t": "p",
+   "html": "Revitalize your skin with cleansing and nourishing facials for your chest or back."
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/medspa-facials\"> LEARN MORE</a>"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/icon-arrows_115x.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "CHEMICAL PEELS"
+  },
+  {
+   "t": "p",
+   "html": "Remove your old, surface skin layer and expose younger, brighter skin."
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/chemical-peels-body\"> LEARN MORE</a>"
+  },
+  {
+   "t": "h3",
+   "text": "LASER TREATMENTS"
+  },
+  {
+   "t": "p",
+   "html": "From facial treatments, to hair removal, the Victory MedSpa has you covered."
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/laser-body-treatments\"> LEARN MORE</a>"
+  },
+  {
+   "t": "h3",
+   "text": "AGNUS RF"
+  },
+  {
+   "t": "p",
+   "html": "Contour and tighten your skin for a more defined, youthful appearance with Agnus RF."
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/agnes-rf\"> LEARN MORE</a>"
+  },
+  {
+   "t": "h3",
+   "text": "AQUAFIRME"
+  },
+  {
+   "t": "p",
+   "html": "Restore hydration to your skin for a smoother, refreshed complexion."
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/aquafirme\"> LEARN MORE</a>"
+  },
+  {
+   "t": "h3",
+   "text": "SCARLET RF"
+  },
+  {
+   "t": "p",
+   "html": "Boost collagen production for firmer, younger-looking skin with Scarlet RF"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/scarlet-rf\"> LEARN MORE</a>"
+  }
+ ]
+}

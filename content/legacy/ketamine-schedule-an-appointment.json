@@ -1,0 +1,59 @@
+{
+ "slug": "ketamine-schedule-an-appointment",
+ "path": "/ketamine-schedule-an-appointment",
+ "type": "page",
+ "metaTitle": "Schedule an Appointment - Victory Medical Services & Medical Spa",
+ "metaDescription": "Schedule an Appointment -",
+ "h1": "Take a step towards happiness today",
+ "datePublished": "2019-01-31T23:28:32+00:00",
+ "dateModified": "2021-07-26T19:21:53+00:00",
+ "blocks": [
+  {
+   "t": "img",
+   "src": "/legacy/icon-drop-small_15x.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/ketamine\">Ketamine Home</a>"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/why-ketamine\">Why Ketamine</a>"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/case-studies\">Case Studies</a>"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/ketamine-faqs\">FAQs</a>"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/ketamine-schedule-an-appointment\">Schedule an Appt</a>"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/icon-phone2.png",
+   "alt": "Phone"
+  },
+  {
+   "t": "h3",
+   "text": "512-462-DOCS (3627)"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/icon-mail2.png",
+   "alt": "Phone"
+  },
+  {
+   "t": "h3",
+   "text": "info@victorymed.com"
+  },
+  {
+   "t": "h2",
+   "text": "Need more information before you schedule an appointment? Contact us directly with any questions or concerns and we will be happy to assist you."
+  }
+ ]
+}

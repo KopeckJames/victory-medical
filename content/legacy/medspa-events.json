@@ -1,0 +1,63 @@
+{
+ "slug": "medspa-events",
+ "path": "/medspa-events",
+ "type": "page",
+ "metaTitle": "Upcoming Events - Victory Medical Services & Medical Spa",
+ "metaDescription": "Upcoming Events -",
+ "h1": "MEDSPA EVENTS",
+ "datePublished": "2019-01-30T16:59:03+00:00",
+ "dateModified": "2021-07-26T20:02:29+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "<strong><em>Follow us on social media to always stay up to date on events, specials, and MedSpa news!</em></strong>"
+  },
+  {
+   "t": "p",
+   "html": "<em>Set back time and enhance your beautiful features today!</em>"
+  },
+  {
+   "t": "cta",
+   "text": "BOOK NOW",
+   "href": "https://victory.janeapp.com/"
+  },
+  {
+   "t": "cta",
+   "text": "CONTACT",
+   "href": "/medspa-ask-a-question"
+  },
+  {
+   "t": "p",
+   "html": "<strong><a href=\"/medspa-about\">ABOUT</a></strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong><a href=\"/medspa-gallery\">BEFORE & AFTER</a></strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong><a href=\"/medspa-specials\">SPECIALS</a></strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong><a href=\"/medspa-events\">EVENTS</a></strong>"
+  },
+  {
+   "t": "p",
+   "html": "<strong><a href=\"/medspa-contact\">CONTACT</a></strong>"
+  },
+  {
+   "t": "h2",
+   "text": "Spa Treatments"
+  },
+  {
+   "t": "h2",
+   "text": "Spa Products"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/victory-logo-white-vertical.png",
+   "alt": ""
+  }
+ ]
+}

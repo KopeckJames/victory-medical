@@ -1,0 +1,50 @@
+{
+ "slug": "family-practice",
+ "path": "/family-practice",
+ "type": "page",
+ "metaTitle": "Specialized Family Practice Departments for all individuals in Texas",
+ "metaDescription": "We provide holistic treatment for all family members and treat all patient with cure. Book an appointment now to get specialized treatment.",
+ "h1": null,
+ "datePublished": "2018-12-06T16:31:10+00:00",
+ "dateModified": "2025-02-13T15:35:31+00:00",
+ "blocks": [
+  {
+   "t": "img",
+   "src": "/legacy/Primary-Care.png",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Preventative-Care.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Areas Served"
+  },
+  {
+   "t": "h2",
+   "text": "Areas Served"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/cedar-park-tx-family-doctors\">Cedar Family Doctors</a><br/><a href=\"/lakeway-family-doctors\">Lakeway Family Doctors</a><br/><a href=\"/marble-falls-tx-family-doctors\">Marble Falls Family Doctors</a>"
+  },
+  {
+   "t": "h2",
+   "text": "Areas Served"
+  },
+  {
+   "t": "h2",
+   "text": "Victory Medical, West Lake Hills"
+  },
+  {
+   "t": "h3",
+   "text": "3811 Bee Caves Rd, West Lake Hills, TX 78746"
+  },
+  {
+   "t": "h3",
+   "text": "(512) 462-3627"
+  }
+ ]
+}

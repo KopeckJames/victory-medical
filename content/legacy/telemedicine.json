@@ -1,0 +1,54 @@
+{
+ "slug": "telemedicine",
+ "path": "/telemedicine",
+ "type": "page",
+ "metaTitle": "We Provide Full Spectrum Healthcare and Medical Care Services in Texas",
+ "metaDescription": "At Victory Medical, we provide complete healthcare & effective medical care in Texas. Check out the website or give us a call at (512) 462-3627.",
+ "h1": "Better Health Without Leaving Home",
+ "datePublished": "2021-04-06T18:07:09+00:00",
+ "dateModified": "2024-05-17T22:44:33+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "QUALITY SERVICE YOU CAN TRUST FOR ALL YOUR PRIMARY CARE NEEDS, NOW FROM THE COMFORT OF YOUR HOME."
+  },
+  {
+   "t": "p",
+   "html": "Throughout the course of your life, you need a physician you can trust. At Victory Medical primary care clinic, you will find a team that is dedicated to building intimate, long-term relationships with every member of your family."
+  },
+  {
+   "t": "p",
+   "html": "Telemedicine can be a very effective way to receive non-emergency medical care. Our team of expert physicians provide comprehensive, individualized treatment plans for patients of all ages covering a wide variety of conditions."
+  },
+  {
+   "t": "cta",
+   "text": "BOOK YOUR VIRTUAL APPOINTMENT TODAY",
+   "href": "https://www.zocdoc.com/wl/victorymedical/search/?address=Austin%2C+TX&after_5pm=false&before_10am=false&day_filter=AnyDay&dr_specialty=153&filters=%7B%7D&gender=-1&insurance_carrier=&insurance_plan=-1&language=-1&offset=0&reason_visit=75&searchQueryGuid=9f285008-f69b-4179-b4eb-bc8e89306c5c&sees_children=false&should_insurance_picker_open=false&sort_type=Default&visitType=virtualVisit"
+  },
+  {
+   "t": "p",
+   "html": "Conditions We Can Treat"
+  },
+  {
+   "t": "p",
+   "html": "Most ailments that you would consider seeing an urgent care provider can be treated, or at least assessed, with a telemedicine visit. This includes:"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "Cold and flu",
+    "Sore throat",
+    "Allergies",
+    "Rashes and skin conditions",
+    "Pink eye",
+    "Sports injuries, sprains and strains",
+    "Nausea and vomiting",
+    "\u2026"
+   ]
+  },
+  {
+   "t": "h2",
+   "text": "Areas Served"
+  }
+ ]
+}

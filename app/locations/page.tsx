@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
@@ -203,9 +204,9 @@ export default function LocationsPage() {
 
                   {/* CTAs */}
                   <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                    <a href="/locations/austin" className="btn-primary" style={{ padding: '12px 28px', fontSize: '0.8rem' }}>
+                    <Link href="/locations/austin" className="btn-primary" style={{ padding: '12px 28px', fontSize: '0.8rem' }}>
                       View Location Details
-                    </a>
+                    </Link>
                     <a
                       href="https://maps.google.com/?q=4303+Victory+Drive+Austin+TX+78704"
                       target="_blank" rel="noopener noreferrer"
@@ -317,9 +318,9 @@ export default function LocationsPage() {
                   </div>
 
                   <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                    <a href="/locations/ben-white" className="btn-primary" style={{ padding: '10px 20px', fontSize: '0.75rem' }}>
+                    <Link href="/locations/ben-white" className="btn-primary" style={{ padding: '10px 20px', fontSize: '0.75rem' }}>
                       View Location
-                    </a>
+                    </Link>
                     <a
                       href="https://maps.google.com/?q=2108+W+Ben+White+Blvd+Austin+TX+78704"
                       target="_blank" rel="noopener noreferrer"
@@ -428,9 +429,9 @@ export default function LocationsPage() {
                   </div>
 
                   <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                    <a href="/locations/westlake-hills" className="btn-primary" style={{ padding: '10px 20px', fontSize: '0.75rem' }}>
+                    <Link href="/locations/westlake-hills" className="btn-primary" style={{ padding: '10px 20px', fontSize: '0.75rem' }}>
                       View Location
-                    </a>
+                    </Link>
                     <a
                       href="https://maps.google.com/?q=3811+Bee+Caves+Rd+Westlake+Hills+TX+78746"
                       target="_blank" rel="noopener noreferrer"

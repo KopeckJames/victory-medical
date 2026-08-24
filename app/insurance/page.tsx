@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -316,9 +317,9 @@ export default function InsurancePage() {
                 </p>
               </div>
               <div style={{ flexShrink: 0, textAlign: 'center' }}>
-                <a href="/mdvip" className="btn-primary" style={{ whiteSpace: 'nowrap' }}>
+                <Link href="/mdvip" className="btn-primary" style={{ whiteSpace: 'nowrap' }}>
                   Learn About MDVIP
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,0 +1,189 @@
+{
+ "slug": "medspa-treatments",
+ "path": "/medspa-treatments",
+ "type": "page",
+ "metaTitle": "All Treatments - Victory Medical Services & Medical Spa",
+ "metaDescription": "All Treatments -",
+ "h1": "MEDSPA TREATMENTS",
+ "datePublished": "2019-01-30T19:55:04+00:00",
+ "dateModified": "2024-10-16T16:25:23+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "<strong><em>Set back time and enhance your beautiful features today!</em></strong>"
+  },
+  {
+   "t": "h2",
+   "text": "FACE"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Laser-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Laser Treatments"
+  },
+  {
+   "t": "p",
+   "html": "Laser Treatments"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Fillers.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Fillers"
+  },
+  {
+   "t": "p",
+   "html": "Fillers"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PRP-Therapy.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PRP Therapy"
+  },
+  {
+   "t": "p",
+   "html": "PRP Therapy"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Micro-Needling.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Micro-Needling"
+  },
+  {
+   "t": "p",
+   "html": "Micro-Needling"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Injectables.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Injectables"
+  },
+  {
+   "t": "p",
+   "html": "Injectables"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Botox-Dysport.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Botox & Dysport"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Facials.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Facials"
+  },
+  {
+   "t": "p",
+   "html": "Facials"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Chemical-Peels.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Chemical Peels"
+  },
+  {
+   "t": "p",
+   "html": "Chemical Peels"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Scarlet-RF-Microneedling-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Scarlet RF"
+  },
+  {
+   "t": "p",
+   "html": "Scarlet RF"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PDO-Threading.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PDO Threading"
+  },
+  {
+   "t": "p",
+   "html": "PDO Threading"
+  },
+  {
+   "t": "h2",
+   "text": "BODY"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/body-facial.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Facials (CHEST & BACK)"
+  },
+  {
+   "t": "p",
+   "html": "Facials"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Chemical-peel.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Chemical Peels"
+  },
+  {
+   "t": "p",
+   "html": "Chemical Peels"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/body-laser-treatment.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Laser Treatments"
+  },
+  {
+   "t": "p",
+   "html": "Laser Treatments"
+  }
+ ]
+}

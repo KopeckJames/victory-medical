@@ -1,0 +1,102 @@
+{
+ "slug": "medspa-about",
+ "path": "/medspa-about",
+ "type": "page",
+ "metaTitle": "About MedSpa Aestheticians - Victory Medical Services & Medical Spa",
+ "metaDescription": "About MedSpa Aestheticians -",
+ "h1": "THE MEDSPA TEAM",
+ "datePublished": "2019-01-30T19:32:18+00:00",
+ "dateModified": "2025-05-30T15:38:11+00:00",
+ "blocks": [
+  {
+   "t": "img",
+   "src": "/legacy/Melissa.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "MELISSA GABRIELLI"
+  },
+  {
+   "t": "h3",
+   "text": "DNP, APRN, FNP-BC, PMHNP-BC"
+  },
+  {
+   "t": "p",
+   "html": "I started using Botox to treat TMJ and chronic migraines in 2014. I quickly learned that I have a passion for art of aesthetics. Since 2014, I have had extensive training in therapeutic and cosmetic Botox. I am certified for Botox and various Fillers through the American Academy of Facial Esthetics. I also serve as a consultant for fellow aesthetically trained providers. I believe in whole person care. Wouldn\u2019t it be great to look as good on the outside as you feel on the inside? I can help with both."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/icon-education_05x.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<strong>Education:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Doctorates in Nursing from University of South Alabama with board certification in mental health and family practice."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/icon-service_05x.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<strong>Services Provided:</strong>"
+  },
+  {
+   "t": "p",
+   "html": "Therapeutic and cosmetic Botox, Fillers, IV Ketamine Infusion, IV Vitamin Infusion."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/icon-schedule_05x.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<em>9-5 Monday-Friday</em><br/>\n<em>Monday through Saturday</em><br/>\n<em>By appointment only</em>"
+  },
+  {
+   "t": "p",
+   "html": "<em>9-5 Monday-Friday</em><br/>\n<em>Monday through Saturday</em><br/>\n<em>By appointment only</em>"
+  },
+  {
+   "t": "cta",
+   "text": "Book Appointment",
+   "href": "https://victory.janeapp.com/"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/008-Aleksandra-Zylka-scaled.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "OLA ZYLKA,"
+  },
+  {
+   "t": "h2",
+   "text": "MSN, FNP-C"
+  },
+  {
+   "t": "h3",
+   "text": "Nurse Practitioner and Nurse Injector"
+  },
+  {
+   "t": "p",
+   "html": "With over 5 years of nursing experience and 3+ years in aesthetics, I have a strong clinical background and a passion for achieving natural, long-lasting results. In 2021, travel nursing led me to Austin, where I earned my neurotoxin certification through Texas Laser and Aesthetics. Since then, I have been dedicated to advancing my expertise and staying at the forefront of innovative aesthetic techniques. In December 2024, I completed my Master of Science in Nursing with a 4.0 GPA and am preparing for board certification."
+  },
+  {
+   "t": "p",
+   "html": "I take a comprehensive approach to aesthetics, integrating injectables like Botox/Dysport, dermal fillers, and Sculptra with lasers and advanced facial treatments for optimal outcomes. I aim to provide personalized care and natural, confidence-boosting enhancements that help clients feel and look their best."
+  },
+  {
+   "t": "p",
+   "html": "<em>9-5 Monday-Friday</em><br/>\n<em>Monday through Saturday</em><br/>\n<em>By appointment only</em>"
+  }
+ ]
+}

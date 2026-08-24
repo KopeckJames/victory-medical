@@ -1,0 +1,44 @@
+{
+ "slug": "medspa-specials",
+ "path": "/medspa-specials",
+ "type": "page",
+ "metaTitle": "Monthly Specials - Victory Medical Services & Medical Spa",
+ "metaDescription": "Monthly Specials -",
+ "h1": "AUGUST 2026 SPECIALS",
+ "datePublished": "2019-01-30T18:17:46+00:00",
+ "dateModified": "2026-08-04T16:52:08+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "View all of our monthly MedSpa specials below<br/>\nand schedule your appointment today!"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-August-Scarlet-RF-Package-Special.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-August-EVO-Microneedling-Package-Special.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<strong><em>Whether you want to have your own personal spa day, or throw a party with friends, Victory MedSpa has got you covered!<sup>*</sup></em></strong>"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/birthday_img1-600x384.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/birthday_img2-600x330.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "* Birthday offers cannot be combined with any<br/>\nother offer and excludes members who are already receiving 10% off."
+  }
+ ]
+}

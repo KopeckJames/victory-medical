@@ -1,0 +1,177 @@
+{
+ "slug": "aquafirme",
+ "path": "/aquafirme",
+ "type": "page",
+ "metaTitle": "AquaFirme in Austin",
+ "metaDescription": "Hydrate and rejuvenate your skin with AquaFirme at Victory MedSpa in Austin. Book now! 512-462-3627",
+ "h1": "AQUAFIRME IN AUSTIN",
+ "datePublished": "2024-10-18T16:29:32+00:00",
+ "dateModified": "2024-10-22T18:17:30+00:00",
+ "blocks": [
+  {
+   "t": "cta",
+   "text": "NEED MORE INFO? CALL US TODAY!",
+   "href": "tel:5129696900"
+  },
+  {
+   "t": "h2",
+   "text": "AQUAFIRME"
+  },
+  {
+   "t": "p",
+   "html": "The AquaFirme is an advanced, noninvasive skin treatment system that uses two different technologies, EVO and EXO2, to help exfoliate and brighten dull skin. It also helps with hair restoration by rejuvenating hair follicles and stimulating hair growth! EVO delivers nourishing ingredients deep into the skin to give it a healthy glow and EXO2 oxygenates and hydrates the skin. The treatment involves the use of specially formulated nutrient-rich solutions along with vacuum suction and spiral movements to remove unwanted build up and congestion. Together, these next generation technologies give your skin a natural boost! The results are noticeably dewy, glowing, healthy skin. The treatment is completely pain-free and there\u2019s no downtime."
+  },
+  {
+   "t": "cta",
+   "text": "BOOK NOW!",
+   "href": "https://victory.janeapp.com/#/the-aquafirme"
+  },
+  {
+   "t": "h2",
+   "text": "BEAUTIFUL RESULTS"
+  },
+  {
+   "t": "cta",
+   "text": "BEFORE & AFTERS",
+   "href": "/medspa-gallery"
+  },
+  {
+   "t": "h2",
+   "text": "Things You Might Also Like"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Botox-Dysport.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Botox & Dysport"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Facials.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Facials"
+  },
+  {
+   "t": "p",
+   "html": "Facials"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Chemical-Peels.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Chemical Peels"
+  },
+  {
+   "t": "p",
+   "html": "Chemical Peels"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Scarlet-RF-Microneedling-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Scarlet RF"
+  },
+  {
+   "t": "p",
+   "html": "Scarlet RF"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PDO-Threading.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PDO Threading"
+  },
+  {
+   "t": "p",
+   "html": "PDO Threading"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Laser-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Laser Treatments"
+  },
+  {
+   "t": "p",
+   "html": "Laser Treatments"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Fillers.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Fillers"
+  },
+  {
+   "t": "p",
+   "html": "Fillers"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PRP-Therapy.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PRP Therapy"
+  },
+  {
+   "t": "p",
+   "html": "PRP Therapy"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Micro-Needling.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Micro-Needling"
+  },
+  {
+   "t": "p",
+   "html": "Micro-Needling"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Injectables.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Injectables"
+  },
+  {
+   "t": "p",
+   "html": "Injectables"
+  },
+  {
+   "t": "p",
+   "html": "LOCATION & HOURS<br/>2108 W. Ben White | Austin, TX 78704"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"tel:+15129696900\">512.969.6900</a>"
+  }
+ ]
+}

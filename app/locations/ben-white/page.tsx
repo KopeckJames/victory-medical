@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -145,9 +146,9 @@ export default function BenWhiteLocationPage() {
                 alignItems: 'center',
               }}
             >
-              <a href="/locations" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
+              <Link href="/locations" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
                 Locations
-              </a>
+              </Link>
               <span>/</span>
               <span>Ben White</span>
             </div>
@@ -521,7 +522,7 @@ export default function BenWhiteLocationPage() {
             </div>
 
             <div style={{ textAlign: 'center', marginTop: '48px' }}>
-              <a href="/medspa" style={{
+              <Link href="/medspa" style={{
                 fontSize: '0.8rem',
                 letterSpacing: '0.08em',
                 textTransform: 'uppercase',
@@ -530,7 +531,7 @@ export default function BenWhiteLocationPage() {
                 fontWeight: 500,
               }}>
                 View Full MedSpa Treatment Menu →
-              </a>
+              </Link>
             </div>
           </div>
         </section>

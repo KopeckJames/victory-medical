@@ -1,0 +1,84 @@
+{
+ "slug": "urgent-care",
+ "path": "/urgent-care",
+ "type": "page",
+ "metaTitle": "Affordable Urgent Care | Emergency Medical Care Texas",
+ "metaDescription": "We provide fast and high quality emergency medical care services. Get urgent care in Texas at 50-300% lesser fee. Click to know more.",
+ "h1": null,
+ "datePublished": "2018-12-06T19:00:13+00:00",
+ "dateModified": "2024-10-23T15:38:52+00:00",
+ "blocks": [
+  {
+   "t": "h2",
+   "text": "FAST, HIGH QUALITY CARE FOR WHEN YOU NEED IT THE MOST"
+  },
+  {
+   "t": "p",
+   "html": "At 50-300% less than the average cost of an emergency room visit, Victory Medical provides fast access to high-quality urgent medical care. The experienced team of board-certified doctors, nurse practitioners, and physician assistants see patients of all ages and are equipped to handle most non-life-threatening situations. Whether you have pain, allergies, burns, sprains / strains, or other injuries / illnesses, patients in and around Austin and Westlake Hills, Texas, can find quick relief and the care you need."
+  },
+  {
+   "t": "h2",
+   "text": "URGENT CARE SERVICES"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/cast3.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Minor Injuries"
+  },
+  {
+   "t": "p",
+   "html": "Pain, Allergies, Burns, Sprains / Strains, other Injuries / Illness"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/injury3.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Sports Injury"
+  },
+  {
+   "t": "p",
+   "html": "Physical Rehab, Chiropractic Care"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/allergy3.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Acute Illness"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/clock3.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "Extended Hours"
+  },
+  {
+   "t": "p",
+   "html": "Open weekends and extended evening hours."
+  },
+  {
+   "t": "h2",
+   "text": "Victory Medical, West Lake Hills"
+  },
+  {
+   "t": "h3",
+   "text": "3811 Bee Caves Rd, West Lake Hills, TX 78746"
+  },
+  {
+   "t": "h3",
+   "text": "(512) 462-3627"
+  }
+ ]
+}

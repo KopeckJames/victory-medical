@@ -1,0 +1,70 @@
+{
+ "slug": "medspa-gallery",
+ "path": "/medspa-gallery",
+ "type": "page",
+ "metaTitle": "Before and After Gallery - Victory Medical Services & Medical Spa",
+ "metaDescription": "-1367",
+ "h1": "BEFORE & AFTERS",
+ "datePublished": "2019-01-29T20:31:27+00:00",
+ "dateModified": "2024-10-31T19:15:30+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "<strong><em>View these real life images to see how individuals are transformed<br/>\nthrough the services offered at Victory MedSpa</em></strong>"
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-be03145543134aa047e\">Botox/Dysport</a>",
+    "<a href=\"#tab-9c66b00e9573b6d1ccb\">Juvederm/Restylane</a>",
+    "<a href=\"#tab-e96652587d1d0e8c025\">Scarlet</a>",
+    "<a href=\"#tab-8458e4dc3022a41b934\">Agnes</a>",
+    "<a href=\"#tab-e31faadee82d1a79de5\">Juvederm</a>",
+    "<a href=\"#tab-f6e0cf93db49fab2f1d\">Radiesse</a>",
+    "<a href=\"#tab-a2e10e161d66f4b959c\">Laser</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-be03145543134aa047e\">Botox/Dysport</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-9c66b00e9573b6d1ccb\">Juvederm/Restylane</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-e96652587d1d0e8c025\">Scarlet</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-8458e4dc3022a41b934\">Agnes</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-e31faadee82d1a79de5\">Juvederm</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-f6e0cf93db49fab2f1d\">Radiesse</a>"
+   ]
+  },
+  {
+   "t": "ul",
+   "items": [
+    "<a href=\"#tab-a2e10e161d66f4b959c\">Laser</a>"
+   ]
+  }
+ ]
+}

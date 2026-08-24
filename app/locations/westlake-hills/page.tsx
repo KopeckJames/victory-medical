@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -106,9 +107,9 @@ export default function WestlakeHillsLocationPage() {
                 alignItems: 'center',
               }}
             >
-              <a href="/locations" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
+              <Link href="/locations" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
                 Locations
-              </a>
+              </Link>
               <span>/</span>
               <span>Westlake Hills</span>
             </div>
@@ -696,9 +697,9 @@ export default function WestlakeHillsLocationPage() {
                     own dedicated physician, same-day or next-day appointments, unhurried visits,
                     and a comprehensive annual wellness program tailored to your health goals.
                   </p>
-                  <a href="/mdvip" className="btn-primary">
+                  <Link href="/mdvip" className="btn-primary">
                     Learn About MDVIP
-                  </a>
+                  </Link>
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
@@ -967,9 +968,9 @@ export default function WestlakeHillsLocationPage() {
               >
                 Book Online via Privia
               </a>
-              <a href="/mdvip" className="btn-outline">
+              <Link href="/mdvip" className="btn-outline">
                 Learn About MDVIP
-              </a>
+              </Link>
             </div>
           </div>
         </section>

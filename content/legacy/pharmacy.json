@@ -1,0 +1,201 @@
+{
+ "slug": "pharmacy",
+ "path": "/pharmacy",
+ "type": "page",
+ "metaTitle": "VMC Pharmacy: A full service compounding pharmacy in Texas",
+ "metaDescription": "VMC pharmacy does professional compounding to provide you custom medication formulated for each individual. Call at (512) 462-3627 or visit the pharmacy.",
+ "h1": null,
+ "datePublished": "2018-12-07T16:36:42+00:00",
+ "dateModified": "2026-01-20T18:28:07+00:00",
+ "blocks": [
+  {
+   "t": "cta",
+   "text": "Order Select Treatments Online",
+   "href": "https://www.victoryselect.com/"
+  },
+  {
+   "t": "cta",
+   "text": "Patient Portal",
+   "href": "https://vmc.pharmetika.com/patient_access/portal/login"
+  },
+  {
+   "t": "cta",
+   "text": "Provider Portal",
+   "href": "https://vmc.pharmetika.com/provider_access/login?"
+  },
+  {
+   "t": "p",
+   "html": "First-time users (providers and patients): Contact <strong>(512) 279-0985</strong> or <a href=\"mailto:info@vmcpharmacy.com\">info@vmcpharmacy.com</a> for an account setup invitation."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/vmc-pharmacy-2-crop-u19921.png",
+   "alt": "logo of VMC pharmacy"
+  },
+  {
+   "t": "h3",
+   "text": "A FULL-SERVICE COMPOUNDING PHARMACY"
+  },
+  {
+   "t": "p",
+   "html": "The <strong><a href=\"/\">Victory Medical Pharmacy</a></strong> offers traditional prescriptions, a wide selection of vitamins, nutritional supplements, and the most effective over-the-counter remedies on the market. Because we are a compounding pharmacy, specially trained pharmacists can prepare custom medications prescribed by our doctors and formulated especially for you and your family."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/mortar-pestle.png",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "WHAT DOES COMPOUNDING DO FOR ME?"
+  },
+  {
+   "t": "p",
+   "html": "The demand for <a href=\"https://www.victoryselect.com\">professional compounding</a> has increased as healthcare professionals and patients realize that the limited number of strengths and dosages that are commercially available do not meet the specific needs of many patients. These patients often have a better response to a customized dosage that is \u201cjust what the doctor ordered.\u201d"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/compounds_2x-crop-u19985.png",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/one-icon-1.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Custom formulations containing the best dose of medication for each individual"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/two-icon.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Medications in dosage forms that are not commercially available"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/three-icon.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Medications free of problem-causing ingredients such as dyes, sugar, lactose, or alcohol"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/four-icon.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Combinations of various compatible medications in a single dosage"
+  },
+  {
+   "t": "h2",
+   "text": "VMC PHARMACY LOCATION:"
+  },
+  {
+   "t": "p",
+   "html": "<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SELRES_start\">\ufeff</span>"
+  },
+  {
+   "t": "p",
+   "html": "<em><strong>Austin,Texas</strong></em>"
+  },
+  {
+   "t": "p",
+   "html": "4303 Victory Drive<br/>\nAustin, TX 78704"
+  },
+  {
+   "t": "p",
+   "html": "<em>View Map</em>"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"tel:+5124623627\">512-462-DOCS (3627)</a><br/>\nOPTION 1 for pharmacy"
+  },
+  {
+   "t": "p",
+   "html": "<strong>Hours of Operation:</strong><br/>\nMon-Fri:\u00a0\u00a0 8am \u2013 7pm<br/>\nSaturday:\u00a0\u00a0 9am \u2013 5pm<br/>\nSunday:\u00a0\u00a0 12pm \u2013 5pm"
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/stethoscope-solid2-1.png\"></a>Family / General Medicine"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/stethoscope-solid2-1.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/prescription-solid2.png\"></a>On Site Pharmacy"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/prescription-solid2.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/allergy2.png\"></a>Allergy Testing & Services"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/allergy2.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/ambulance-solid2.png\"></a>Urgent Care Services"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/ambulance-solid2.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/spa-solid2.png\"></a>MedSpa Services"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/spa-solid2.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/weight-loss2.png\"></a>Weight Loss"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/weight-loss2.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "<a href=\"/wp-content/uploads/2018/12/user-circle-regular2.png\"></a>Walkins Welcome"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/user-circle-regular2.png",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Victory Medical, West Lake Hills"
+  },
+  {
+   "t": "h3",
+   "text": "3811 Bee Caves Rd, West Lake Hills, TX 78746"
+  },
+  {
+   "t": "h3",
+   "text": "(512) 462-3627"
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "slug": "medspa-home",
+ "path": "/medspa-home",
+ "type": "page",
+ "metaTitle": "Austin Medical Spa | Victory Medical Services & Medical Spa",
+ "metaDescription": "Victory MedSpa in Austin offers a full menu of the most innovative non-invasive treatments, including Coolsculpting\u00ae, Botox\u00ae, laser treatments, Juvederm\u00ae, and chemical peels.",
+ "h1": null,
+ "datePublished": "2021-04-29T15:00:17+00:00",
+ "dateModified": "2026-08-04T16:49:53+00:00",
+ "blocks": [
+  {
+   "t": "p",
+   "html": "Victory MedSpa"
+  },
+  {
+   "t": "p",
+   "html": "WELCOME TO AUSTIN\u2019S PREMIERE MEDICAL SPA,<br/>\nSPECIALIZING IN THE ART OF NON-INVASIVE AESTHETICS."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/07-DSC04948-1024x683.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "Victory MedSpa offers a full menu of the most innovative non-invasive treatments, including Coolsculpting\u00ae, laser treatments, Juvederm\u00ae, medical-grade chemical peels, and our #1 wrinkle eliminator. Our experienced, friendly staff is ready to treat you to luxury that will leave you looking and feeling younger."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "Victory MedSpa"
+  },
+  {
+   "t": "h2",
+   "text": "August MedSpa Specials"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-August-Scarlet-RF-Package-Special.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-August-EVO-Microneedling-Package-Special.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-Austin-Products-1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "cta",
+   "text": "PRODUCTS",
+   "href": "/medspa-products"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-Austin-Treatments-1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "cta",
+   "text": "TREATMENTS",
+   "href": "/medspa-treatments"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-Austin-Gallery-1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "cta",
+   "text": "GALLERY",
+   "href": "/medspa-gallery"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-Austin-Coolsculpting-1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-Austin-Botox-Injections-1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Victory-MedSpa-Austin-Hydrafacials-1.jpg",
+   "alt": ""
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "Laser Hair Removal"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "ladybypool"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "Dysport"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "smilingwoman"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "Forever Young BBL"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "womanwithdrink"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "Coolsculpting"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "womaningreenswimsuit"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "PDO Thread Lift"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/dummy.png",
+   "alt": "smilingmaturewoman"
+  }
+ ]
+}

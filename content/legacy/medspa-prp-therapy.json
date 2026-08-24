@@ -1,0 +1,225 @@
+{
+ "slug": "medspa-prp-therapy",
+ "path": "/medspa-prp-therapy",
+ "type": "page",
+ "metaTitle": "PRP Therapy for Facial Rejuvenation and Hair Restoration in Texas",
+ "metaDescription": "Victory MedSpa provides PRP stem cell therapy in Texas for facial rejuvenation, hair restoration and accelerate healing. Click to know more.",
+ "h1": "AUSTIN PRP THERAPY",
+ "datePublished": "2019-01-30T13:48:23+00:00",
+ "dateModified": "2026-04-27T14:41:00+00:00",
+ "blocks": [
+  {
+   "t": "cta",
+   "text": "FACE LIFT",
+   "href": "#prp-face"
+  },
+  {
+   "t": "cta",
+   "text": "HAIR RESTORATION",
+   "href": "#prp-hair"
+  },
+  {
+   "t": "p",
+   "html": "Platelet-rich plasma therapy, or PRP, is finding its way into cosmetic treatment areas because of its ability to support the appearance of healthier-looking skin. This same approach has also become popular for refreshing the look of skin and promoting fuller-looking hair. At the Victory MedSpa in Austin, our aestheticians have extensive experience using PRP therapy to address your cosmetic concerns. To find out how PRP can help you, call to schedule a consultation or appointment today."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/blood-1813410_1920-crop-u95892.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h3",
+   "text": "HOW DOES IT WORK?"
+  },
+  {
+   "t": "p",
+   "html": "Platelet-rich plasma, or PRP, therapy is fast gaining in popularity in the cosmetic medicine world. It\u2019s helpful to step back and take a look at the science to understand how PRP works."
+  },
+  {
+   "t": "p",
+   "html": "Your blood is made up of three components \u2014 white cells, red cells, and platelets \u2014 all of which are contained in your plasma. The main function of your platelets is to clot your blood when necessary. Your platelets also contain hundreds of proteins that act as growth factors, which aid in healing."
+  },
+  {
+   "t": "p",
+   "html": "During a PRP treatment, your blood is removed, and your platelets are isolated using a centrifuge. The specialists at the Victory MedSpa take this concentrate and add it back into your plasma, creating plasma that has 5-10 times the amount of platelets as found in normal plasma. They inject this concentrate back into the areas you want to treat."
+  },
+  {
+   "t": "img",
+   "src": "/legacy/prp-facial-269x300.png",
+   "alt": ""
+  },
+  {
+   "t": "p",
+   "html": "Our Austin PRP Facial refreshes the appearance of your skin using your own platelet-rich plasma derived from the serum portion of the blood. The platelets contain naturally occurring growth factors that help support a smoother, brighter, and more youthful-looking complexion when applied to the skin."
+  },
+  {
+   "t": "h2",
+   "text": "PRP HAIR RESTORATION"
+  },
+  {
+   "t": "p",
+   "html": "Stimulate hair re-growth with our PRP Hair Restoration services in Austin. The plasma, rich in platelets, is injected directly into the scalp at the level of the hair follicles. Just like with our facial, these cells with renewing properties will then promote restorative growth. Contact the Victory MedSpa today to find out more about PRP Hair Restoration."
+  },
+  {
+   "t": "h2",
+   "text": "BEAUTIFUL RESULTS"
+  },
+  {
+   "t": "cta",
+   "text": "BEFORE & AFTERS",
+   "href": "/medspa-gallery"
+  },
+  {
+   "t": "h2",
+   "text": "Things You Might Also Like"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Laser-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Laser Treatments"
+  },
+  {
+   "t": "p",
+   "html": "Laser Treatments"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Fillers.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Fillers"
+  },
+  {
+   "t": "p",
+   "html": "Fillers"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PRP-Therapy.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PRP Therapy"
+  },
+  {
+   "t": "p",
+   "html": "PRP Therapy"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Micro-Needling.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Micro-Needling"
+  },
+  {
+   "t": "p",
+   "html": "Micro-Needling"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Injectables.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Injectables"
+  },
+  {
+   "t": "p",
+   "html": "Injectables"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Botox-Dysport.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Botox & Dysport"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Facials.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Facials"
+  },
+  {
+   "t": "p",
+   "html": "Facials"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Chemical-Peels.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Chemical Peels"
+  },
+  {
+   "t": "p",
+   "html": "Chemical Peels"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/Scarlet-RF-Microneedling-Treatments.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "Scarlet RF"
+  },
+  {
+   "t": "p",
+   "html": "Scarlet RF"
+  },
+  {
+   "t": "img",
+   "src": "/legacy/PDO-Threading.jpg",
+   "alt": ""
+  },
+  {
+   "t": "h2",
+   "text": "PDO Threading"
+  },
+  {
+   "t": "p",
+   "html": "PDO Threading"
+  },
+  {
+   "t": "h2",
+   "text": "BEAUTIFUL RESULTS"
+  },
+  {
+   "t": "h2",
+   "text": "\u200bBOOK YOUR APPOINTMENT"
+  },
+  {
+   "t": "p",
+   "html": "<em>Set back time and enhance your beautiful features today!</em>"
+  },
+  {
+   "t": "cta",
+   "text": "Book Now",
+   "href": "https://victory.janeapp.com/"
+  },
+  {
+   "t": "cta",
+   "text": "Contact",
+   "href": "/medspa-contact"
+  }
+ ]
+}

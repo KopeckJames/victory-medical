@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -119,9 +120,9 @@ export default function AustinLocationPage() {
                 alignItems: 'center',
               }}
             >
-              <a href="/locations" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
+              <Link href="/locations" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
                 Locations
-              </a>
+              </Link>
               <span>/</span>
               <span>Austin</span>
             </div>
@@ -524,9 +525,9 @@ export default function AustinLocationPage() {
                   assistants, and specialists serves this location. Board-certified providers
                   across primary care, allergy, integrative medicine, mental health, and more.
                 </p>
-                <a href="/about" className="btn-outline">
+                <Link href="/about" className="btn-outline">
                   Meet the Full Team
-                </a>
+                </Link>
               </div>
               <div
                 style={{

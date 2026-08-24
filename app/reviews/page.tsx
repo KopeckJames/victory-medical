@@ -4,11 +4,11 @@ import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Patient Reviews | Victory Medical Austin TX — 1,600+ Patient Reviews',
+  title: 'Patient Reviews — 4.3★ Across 1,600+ Patients',
   description: 'Read what Victory Medical patients say. 4.3-star average across 1,600+ reviews on Google, Healthgrades, and Zocdoc. Patients praise urgent care speed, Dr. Franklin, ketamine therapy, Botox results, and MedSpa staff in Austin and Westlake Hills TX.',
   alternates: { canonical: '/reviews' },
   openGraph: {
-    title: 'Patient Reviews | Victory Medical Austin TX — 1,600+ Patient Reviews',
+    title: 'Patient Reviews — 4.3★ Across 1,600+ Patients',
     description: '4.3-star average across 1,600+ patient reviews. Urgent care, ketamine therapy, MedSpa, and primary care in Austin TX.',
     url: '/reviews',
   },

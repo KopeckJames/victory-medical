@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import ServicesMarquee from '@/components/ServicesMarquee'
@@ -13,6 +14,10 @@ import NewsletterSection from '@/components/NewsletterSection'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
 import SectionDivider from '@/components/SectionDivider'
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
 
 export default function HomePage() {
   return (

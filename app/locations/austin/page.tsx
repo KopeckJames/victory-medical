@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'Victory Medical Austin — Primary & Urgent Care | 4303 Victory Drive',
   description:
     'Victory Medical South Austin — family practice, urgent care, allergy treatment, weight loss, hormone therapy, ketamine, and on-site pharmacy at 4303 Victory Drive, Austin TX 78704. Walk-ins welcome. (512) 462-3627.',
+  alternates: { canonical: '/locations/austin' },
 }
 
 const services = [

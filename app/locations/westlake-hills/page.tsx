@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'Victory Medical Westlake Hills — MDVIP & Primary Care | Bee Caves Rd',
   description:
     'Victory Medical Westlake Hills — primary care, urgent care, allergy, MedSpa, and exclusive MDVIP concierge medicine at 3811 Bee Caves Rd, Westlake Hills TX 78746. Walk-ins welcome. (512) 462-3627.',
+  alternates: { canonical: '/locations/westlake-hills' },
 }
 
 const services = [

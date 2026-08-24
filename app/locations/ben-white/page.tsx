@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'Victory MedSpa Austin — Ben White Blvd | Botox, CoolSculpting, IV Therapy',
   description:
     'Victory MedSpa on W Ben White Blvd, Austin TX — physician-supervised Botox, dermal fillers, CoolSculpting, HydraFacial, laser treatments, IV vitamin therapy, and ketamine consultations. Book via Jane App. (512) 969-6900.',
+  alternates: { canonical: '/locations/ben-white' },
 }
 
 const treatments = [

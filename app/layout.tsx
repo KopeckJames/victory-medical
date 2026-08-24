@@ -27,9 +27,6 @@ export const metadata: Metadata = {
   },
   description: 'Victory Medical provides integrated primary care, urgent care, MedSpa, allergy treatment, ketamine therapy, peptide therapy, and more in Austin and Westlake Hills, TX since 1996.',
   keywords: 'family practice Austin, urgent care Austin, medical spa Austin, allergy testing Austin, ketamine therapy Austin, peptide therapy Austin, Semax Austin, BPC-157 Austin, Sermorelin Austin, regenerative medicine Austin',
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     siteName: 'Victory Medical',
     locale: 'en_US',

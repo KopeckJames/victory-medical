@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import ReadingProgress from '@/components/ReadingProgress'
 import LegacyBlocks from '@/components/LegacyBlocks'
+import JsonLd from '@/components/JsonLd'
 import { getLegacyIndex, getLegacyPage, formatLegacyDate } from '@/lib/legacy'
 
 // Pages cloned from the old WordPress site, served at their exact old URLs
@@ -70,8 +71,34 @@ export default async function LegacyPageRoute({ params }: Props) {
     ? peers
     : [0, 1, 2].map((i) => peers[(start + i) % peers.length])
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://victorymed.com/' },
+      { '@type': 'ListItem', position: 2, name: hub.label, item: `https://victorymed.com${hub.href}` },
+      { '@type': 'ListItem', position: 3, name: title },
+    ],
+  }
+  const articleLd =
+    page.type === 'post'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: title,
+          description: page.metaDescription || undefined,
+          datePublished: page.datePublished || undefined,
+          dateModified: page.dateModified || undefined,
+          author: { '@type': 'MedicalOrganization', name: 'Victory Medical' },
+          publisher: { '@type': 'MedicalOrganization', name: 'Victory Medical', url: 'https://victorymed.com' },
+          mainEntityOfPage: `https://victorymed.com${page.path}`,
+        }
+      : null
+
   return (
     <>
+      <JsonLd data={breadcrumbLd} />
+      {articleLd && <JsonLd data={articleLd} />}
       <Navbar />
       <main>
         {page.type === 'post' && <ReadingProgress />}

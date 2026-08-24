@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
+import JsonLd from '@/components/JsonLd'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
@@ -103,8 +104,27 @@ const hours = [
 ]
 
 export default function BenWhiteLocationPage() {
+  const clinicLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalClinic',
+    name: 'Victory MedSpa — Ben White',
+    description: 'Physician-supervised medical spa: Botox, dermal fillers, CoolSculpting, HydraFacial, laser treatments, and IV vitamin therapy on W Ben White Blvd, Austin.',
+    url: 'https://victorymed.com/locations/ben-white',
+    telephone: '+1-512-969-6900',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '2108 W Ben White Blvd',
+      addressLocality: 'Austin',
+      addressRegion: 'TX',
+      postalCode: '78704',
+      addressCountry: 'US',
+    },
+    parentOrganization: { '@type': 'MedicalOrganization', name: 'Victory Medical', url: 'https://victorymed.com' },
+  }
+
   return (
     <>
+      <JsonLd data={clinicLd} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

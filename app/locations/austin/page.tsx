@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
+import JsonLd from '@/components/JsonLd'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
@@ -77,8 +78,27 @@ const hours = [
 ]
 
 export default function AustinLocationPage() {
+  const clinicLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalClinic',
+    name: 'Victory Medical Main — South Austin',
+    description: 'Full-service family practice, urgent care, allergy treatment, weight loss, hormone therapy, ketamine therapy, and on-site pharmacy in South Austin.',
+    url: 'https://victorymed.com/locations/austin',
+    telephone: '+1-512-462-3627',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '4303 Victory Drive',
+      addressLocality: 'Austin',
+      addressRegion: 'TX',
+      postalCode: '78704',
+      addressCountry: 'US',
+    },
+    parentOrganization: { '@type': 'MedicalOrganization', name: 'Victory Medical', url: 'https://victorymed.com' },
+  }
+
   return (
     <>
+      <JsonLd data={clinicLd} />
       <Navbar />
       <main>
         {/* ── Hero ─────────────────────────────────────────────── */}

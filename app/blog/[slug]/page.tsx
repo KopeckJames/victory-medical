@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import ReadingProgress from '@/components/ReadingProgress'
+import JsonLd from '@/components/JsonLd'
 import { BLOG_POSTS } from '@/lib/blog-data'
 import type { Metadata } from 'next'
 
@@ -50,8 +51,31 @@ export default async function BlogPostPage({ params }: Props) {
 
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== slug).slice(0, 2)
 
+  const articleLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: { '@type': 'Person', name: post.author, jobTitle: post.authorTitle },
+    publisher: { '@type': 'MedicalOrganization', name: 'Victory Medical', url: 'https://victorymed.com' },
+    image: post.featuredImage ? `https://victorymed.com${post.featuredImage}` : undefined,
+    mainEntityOfPage: `https://victorymed.com/blog/${post.slug}`,
+  }
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://victorymed.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://victorymed.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title },
+    ],
+  }
+
   return (
     <>
+      <JsonLd data={articleLd} />
+      <JsonLd data={breadcrumbLd} />
       <Navbar />
       <main>
         <ReadingProgress />

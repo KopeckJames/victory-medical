@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import CTASection from '@/components/CTASection'
 import ServicesAccordion from '@/components/ServicesAccordion'
@@ -315,6 +316,8 @@ const ServicesPage: NextPage = () => {
             </p>
           </div>
         </section>
+
+        <PageVisual src="/generated/core-services.jpg" alt="Physician consulting with a patient in a modern exam room" />
 
         {/* Services Accordion */}
         <section style={{ backgroundColor: 'var(--teal)', padding: '80px 0' }}>

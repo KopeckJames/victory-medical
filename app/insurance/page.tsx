@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageVisual from '@/components/PageVisual'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -150,6 +151,8 @@ export default function InsurancePage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-insurance.jpg" alt="Friendly front-desk check-in at the clinic reception" />
 
         {/* ── Accepted Plans Grid ───────────────────────────────────────── */}
         <section className="section" style={{ backgroundColor: 'var(--teal)' }}>

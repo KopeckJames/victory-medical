@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import ContactForm from '@/components/ContactForm'
 import type { Metadata } from 'next'
@@ -213,6 +214,8 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
+
+        <PageVisual src="/generated/core-contact.jpg" alt="Clinic team member taking a call at the front desk" />
 
         {/* Booking Options */}
         <section className="section" style={{ backgroundColor: 'var(--teal)' }}>

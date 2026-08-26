@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageVisual from '@/components/PageVisual'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
@@ -75,6 +76,8 @@ export default function LocationsPage() {
             </p>
           </div>
         </section>
+
+        <PageVisual src="/generated/core-locations.jpg" alt="Austin Texas skyline over greenbelt at golden hour" />
 
         {/* ── Location Cards ────────────────────────────────────── */}
         <section style={{ backgroundColor: 'var(--teal)', padding: '80px 0' }}>

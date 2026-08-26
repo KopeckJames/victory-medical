@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageVisual from '@/components/PageVisual'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
@@ -94,6 +95,8 @@ export default function BlogPage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-blog.jpg" alt="Health and wellness flat lay with stethoscope and journal" />
 
         {/* ── Post Grid ────────────────────────────────────────────────── */}
         <section

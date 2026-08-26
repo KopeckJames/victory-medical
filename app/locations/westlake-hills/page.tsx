@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageVisual from '@/components/PageVisual'
 import Navbar from '@/components/Navbar'
 import JsonLd from '@/components/JsonLd'
 import Footer from '@/components/Footer'
@@ -280,6 +281,8 @@ export default function WestlakeHillsLocationPage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-loc-westlake.jpg" alt="Hill-country clinic exterior among oak trees in Westlake" />
 
         {/* ── Hours & Details ───────────────────────────────────── */}
         <section style={{ backgroundColor: 'var(--light-teal)', padding: '64px 0' }}>

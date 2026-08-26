@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
@@ -237,6 +238,8 @@ export default function MDVIPPage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-mdvip.jpg" alt="Concierge physician in an unhurried seated consultation" />
 
         {/* ── What is MDVIP ─────────────────────────────────────────────── */}
         <section className="section" style={{ backgroundColor: 'var(--teal)' }}>

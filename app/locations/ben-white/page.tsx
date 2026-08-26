@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageVisual from '@/components/PageVisual'
 import Navbar from '@/components/Navbar'
 import JsonLd from '@/components/JsonLd'
 import Footer from '@/components/Footer'
@@ -297,6 +298,8 @@ export default function BenWhiteLocationPage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-loc-benwhite.jpg" alt="Boutique medspa entrance with skincare retail shelf" />
 
         {/* ── Hours & Booking ───────────────────────────────────── */}
         <section style={{ backgroundColor: 'var(--light-teal)', padding: '64px 0' }}>

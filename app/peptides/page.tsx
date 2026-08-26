@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
@@ -509,6 +510,8 @@ export default function PeptidesPage() {
             </div>
           </div>
         </section>
+
+        <PageVisual src="/generated/core-peptides.jpg" alt="Minimalist longevity-science still life with peptide vials" />
 
         {/* ── Quick Nav ────────────────────────────────────────────────────── */}
         <nav

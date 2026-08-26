@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PageVisual from '@/components/PageVisual'
 import Navbar from '@/components/Navbar'
 import JsonLd from '@/components/JsonLd'
 import Footer from '@/components/Footer'
@@ -275,6 +276,8 @@ export default function AustinLocationPage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-loc-austin.jpg" alt="Modern medical clinic exterior with landscaping in South Austin" />
 
         {/* ── At a Glance ──────────────────────────────────────── */}
         <section style={{ backgroundColor: 'var(--light-teal)', padding: '64px 0' }}>

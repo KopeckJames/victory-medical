@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
 import type { Metadata } from 'next'
@@ -311,6 +312,8 @@ export default function ReviewsPage() {
             ]}
           />
         </div>
+
+        <PageVisual src="/generated/core-reviews.jpg" alt="Bright welcoming clinic waiting room" />
 
         {/* ── Rating Breakdown ──────────────────────────────────────────── */}
         <section style={{ backgroundColor: 'var(--teal)', padding: '60px 0' }}>

@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import CTASection from '@/components/CTASection'
 import BeforeAfterGallery from '@/components/BeforeAfterSlider'
@@ -248,6 +249,8 @@ export default function MedSpaPage() {
             </div>
           </div>
         </section>
+
+        <PageVisual src="/generated/core-medspa.jpg" alt="Luxury medspa treatment lounge with aesthetic devices" />
 
         {/* Providers strip */}
         <section

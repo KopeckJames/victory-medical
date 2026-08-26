@@ -9,6 +9,11 @@
  "dateModified": "2024-10-31T19:15:30+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/medspa-gallery.jpg",
+   "alt": "Medspa consultation studio with treatment chair and skincare products"
+  },
+  {
    "t": "p",
    "html": "<strong><em>View these real life images to see how individuals are transformed<br/>\nthrough the services offered at Victory MedSpa</em></strong>"
   },

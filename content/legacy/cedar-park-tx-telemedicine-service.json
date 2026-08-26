@@ -9,6 +9,11 @@
  "dateModified": "2024-05-17T22:48:04+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/telemed-1.jpg",
+   "alt": "Patient having a telemedicine video visit with a physician from home"
+  },
+  {
    "t": "p",
    "html": "You are probably familiar with your doctor walking into the exam room armed with their laptop. As your exam goes, they make notes and send your prescriptions to your pharmacy with a touch of a button."
   },

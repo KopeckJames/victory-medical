@@ -9,6 +9,11 @@
  "dateModified": "2024-05-20T22:15:04+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/rpm-3.jpg",
+   "alt": "Care-team nurse reviewing remote patient vitals dashboard at a clinic workstation"
+  },
+  {
    "t": "h2",
    "text": "Better Health Without Leaving Home"
   },

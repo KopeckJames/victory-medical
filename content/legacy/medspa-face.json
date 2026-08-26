@@ -9,6 +9,11 @@
  "dateModified": "2024-10-18T16:41:58+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/medspa-face.jpg",
+   "alt": "Close portrait showing healthy glowing facial skin after aesthetic treatment"
+  },
+  {
    "t": "p",
    "html": "Let your face shine in the way it deserves with any of our MedSpa facial treatments. Whether you want a touch up, need a refreshing pick up to your skin, or need to battle the damaging effects of aging, the Victory MedSpa can help you. Have a look at our detailed services below!"
   },

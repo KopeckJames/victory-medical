@@ -9,6 +9,11 @@
  "dateModified": "2024-05-20T22:16:21+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/rpm-2.jpg",
+   "alt": "Wearable health monitor syncing heart-rate data to a smartphone app"
+  },
+  {
    "t": "h2",
    "text": "Better Health Without Leaving Home"
   },

@@ -9,6 +9,11 @@
  "dateModified": "2026-03-19T20:29:22+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/cleopatra.jpg",
+   "alt": "Esthetician performing a rejuvenating facial treatment in a serene medspa room"
+  },
+  {
    "t": "ul",
    "items": [
     "Full Service Medical Clinic in Austin, TX\n \n\n\n\n\nProviding Integrated Medicine in Central Texas since 1996"

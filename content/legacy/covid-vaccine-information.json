@@ -9,6 +9,11 @@
  "dateModified": "2023-04-26T14:32:48+00:00",
  "blocks": [
   {
+   "t": "img",
+   "src": "/generated/covid-info.jpg",
+   "alt": "Clinician preparing a vaccine in a bright, clean clinic"
+  },
+  {
    "t": "p",
    "html": "<strong>If you are experiencing symptoms of COVID masks are recommended at Victory\u00a0Medical.</strong>"
   },

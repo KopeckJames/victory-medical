@@ -501,14 +501,25 @@ footer .disclaimer-text {
   .section-label { font-size: 0.75rem !important; }
 }
 
-/* Nav visibility */
+/* Nav visibility — the two-tier header needs room for 7 nav items plus the
+   stacked booking CTAs, so it only unfolds at 1280px. */
 .nav-desktop { display: none; }
+.nav-cta-stack { display: none; }
+.utility-bar-links { display: none; }
 .nav-hamburger { display: flex; }
 .mobile-menu-overlay { display: block; }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .nav-desktop { display: flex; }
+  .nav-cta-stack { display: flex; }
   .nav-hamburger { display: none !important; }
   .mobile-menu-overlay { display: none !important; }
+}
+/* Utility-bar links survive down to tablet; below that only phone + directions */
+@media (min-width: 900px) {
+  .utility-bar-links { display: flex; }
+}
+@media (max-width: 899px) {
+  .utility-bar-inner { justify-content: flex-end !important; }
 }
 
 /* Footer responsive grid */

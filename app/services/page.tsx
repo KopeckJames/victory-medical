@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const services: Service[] = [
   {
     id: 'primary-care',
+    pageHref: '/family-practice',
     icon: '⊕',
     title: 'Family & Primary Care',
     subtitle: 'Board-certified physicians for the whole family',
@@ -42,6 +43,7 @@ const services: Service[] = [
   },
   {
     id: 'urgent-care',
+    pageHref: '/urgent-care',
     icon: '⚡',
     title: 'Urgent Care',
     subtitle: '50–300% less than the average ER visit',
@@ -63,6 +65,7 @@ const services: Service[] = [
   },
   {
     id: 'allergy',
+    pageHref: '/allergy-services',
     icon: '◎',
     title: 'Allergy Services',
     subtitle: 'Harvard Protocol — Unique to Victory Medical',
@@ -83,6 +86,7 @@ const services: Service[] = [
   },
   {
     id: 'weight-loss',
+    pageHref: '/weight-loss',
     icon: '◇',
     title: 'Medical Weight Loss',
     subtitle: 'Medically supervised, personalized programs',
@@ -104,6 +108,7 @@ const services: Service[] = [
   },
   {
     id: 'hormones',
+    pageHref: '/natural-hormone-replacement',
     icon: '⟳',
     title: 'Natural Hormone Replacement',
     subtitle: 'Club Longevity — Holistic anti-aging medicine',
@@ -127,6 +132,7 @@ const services: Service[] = [
   },
   {
     id: 'ketamine',
+    pageHref: '/ketamine',
     icon: '✦',
     title: 'Ketamine Therapy',
     subtitle: 'One of few licensed infusion clinics in the US',
@@ -148,6 +154,7 @@ const services: Service[] = [
   },
   {
     id: 'physical-medicine',
+    pageHref: '/physical-medicine',
     icon: '⊞',
     title: 'Physical Medicine',
     subtitle: 'Chiropractic, PT, and massage under one roof',
@@ -168,6 +175,7 @@ const services: Service[] = [
   },
   {
     id: 'pharmacy',
+    pageHref: '/pharmacy',
     icon: '⬡',
     title: 'On-Site Compounding Pharmacy',
     subtitle: 'Custom medications formulated for you',
@@ -210,6 +218,7 @@ const services: Service[] = [
   },
   {
     id: 'regenerative-medicine',
+    pageHref: '/peptides',
     icon: '⟡',
     title: 'Regenerative Medicine & Peptide Therapy',
     subtitle: 'Precision peptide protocols for performance & longevity',

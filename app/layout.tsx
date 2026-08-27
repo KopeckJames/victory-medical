@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
-import SocialProof from '@/components/SocialProof'
 import AIHealthChat from '@/components/AIHealthChat'
 import StickyBookingBar from '@/components/StickyBookingBar'
 
@@ -108,7 +107,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
         <a href="#main-content" className="skip-link">Skip to main content</a>
-        <SocialProof />
         <div id="main-content">{children}</div>
         <StickyBookingBar />
         <AIHealthChat />

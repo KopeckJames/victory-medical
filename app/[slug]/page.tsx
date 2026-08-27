@@ -8,6 +8,8 @@ import ReadingProgress from '@/components/ReadingProgress'
 import LegacyBlocks from '@/components/LegacyBlocks'
 import JsonLd from '@/components/JsonLd'
 import { getLegacyIndex, getLegacyPage, formatLegacyDate } from '@/lib/legacy'
+import ServicePageTemplate from '@/components/ServicePageTemplate'
+import { getServiceContent } from '@/lib/services'
 
 // Pages cloned from the old WordPress site, served at their exact old URLs
 // so organic rankings carry over 1:1. Static routes (about, services, …)
@@ -23,6 +25,23 @@ type Props = { params: Promise<{ slug: string }> }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
+
+  // Rebuilt service pages supply their own metadata
+  const service = getServiceContent(slug)
+  if (service) {
+    return {
+      title: { absolute: service.metaTitle },
+      description: service.metaDescription,
+      alternates: { canonical: service.path },
+      openGraph: {
+        title: service.metaTitle,
+        description: service.metaDescription,
+        url: service.path,
+        type: 'website',
+      },
+    }
+  }
+
   const page = getLegacyPage(slug)
   if (!page) return { title: 'Page Not Found | Victory Medical' }
   return {
@@ -53,6 +72,12 @@ const CATEGORY_HUB: Record<string, { label: string; href: string }> = {
 
 export default async function LegacyPageRoute({ params }: Props) {
   const { slug } = await params
+
+  // Service pages rebuilt in the current design render from their own content
+  // rather than the cloned WordPress blocks — same URL either way.
+  const service = getServiceContent(slug)
+  if (service) return <ServicePageTemplate content={service} />
+
   const entry = getLegacyIndex().find((e) => e.slug === slug)
   const page = getLegacyPage(slug)
   if (!entry || !page) notFound()

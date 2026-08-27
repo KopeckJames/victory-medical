@@ -88,30 +88,43 @@ const utilityItems: UtilityItem[] = [
 ]
 
 /* ─── Main nav (bottom row) ─── */
-const serviceMegaMenu = {
-  col1: {
-    heading: 'Clinical Care',
+/* Every service keeps its own page at the URL it had on the old site — the
+   mega menu mirrors the legacy Services dropdown so those pages stay one
+   click from anywhere. */
+const serviceMegaMenu = [
+  {
+    heading: 'Primary & Family Care',
     items: [
-      { label: 'Family & Primary Care', href: '/services#primary-care' },
-      { label: 'Urgent Care', href: '/services#urgent-care' },
-      { label: 'Allergy Services', href: '/services#allergy' },
-      { label: 'Medical Weight Loss', href: '/services#weight-loss' },
-      { label: 'Hormone Therapy', href: '/services#hormones' },
-      { label: 'Physical Medicine', href: '/services#physical-medicine' },
-    ],
-  },
-  col2: {
-    heading: 'Specialized',
-    items: [
-      { label: 'Ketamine Therapy', href: '/services#ketamine' },
-      { label: 'Acupuncture', href: '/services#acupuncture' },
-      { label: 'Regenerative Medicine', href: '/services#regenerative-medicine' },
-      { label: 'Pharmacy', href: '/services#pharmacy' },
+      { label: 'Family Practice', href: '/family-practice' },
+      { label: 'Preventative Care', href: '/preventative-care' },
+      { label: 'Primary Care', href: '/general-medical-care' },
+      { label: 'Urgent Care', href: '/urgent-care' },
+      { label: 'Heartwise Physical', href: '/victoryheartwise' },
       { label: 'MDVIP Concierge', href: '/mdvip' },
-      { label: 'Peptide Therapy', href: '/peptides' },
     ],
   },
-}
+  {
+    heading: 'Specialty Care',
+    items: [
+      { label: 'Allergy Services', href: '/allergy-services' },
+      { label: 'Natural Hormone Replacement', href: '/natural-hormone-replacement' },
+      { label: 'Medical Weight Loss', href: '/weight-loss' },
+      { label: 'Ketamine Therapy', href: '/ketamine' },
+      { label: 'Peptide Therapy', href: '/peptides' },
+      { label: 'Pharmacy', href: '/pharmacy' },
+    ],
+  },
+  {
+    heading: 'Physical & Aesthetic',
+    items: [
+      { label: 'Physical Medicine', href: '/physical-medicine' },
+      { label: 'Chiropractic', href: '/chiropractic' },
+      { label: 'Physical Therapy', href: '/physical-therapy' },
+      { label: 'CoolSculpting®', href: '/coolsculpting' },
+      { label: 'Mammogram Screening', href: '/mammogram-screening-austin' },
+    ],
+  },
+]
 
 type NavLink = {
   label: string
@@ -127,7 +140,7 @@ const navLinks: NavLink[] = [
   {
     label: 'Services',
     href: '/services',
-    dropdown: [...serviceMegaMenu.col1.items, ...serviceMegaMenu.col2.items],
+    dropdown: serviceMegaMenu.flatMap((col) => col.items),
     megaMenu: true,
   },
   {
@@ -467,18 +480,20 @@ export default function Navbar() {
                     {link.megaMenu && (
                       <div style={{
                         ...dropdownPanel,
-                        position: 'absolute', top: 'calc(100% + 18px)', left: '50%',
-                        minWidth: '520px',
-                        transform: `translateX(-50%) translateY(${activeDropdown === link.label ? '0' : '10px'})`,
+                        // Left-anchored: three columns centred on the item would
+                        // hang off the left edge at 1280px.
+                        position: 'absolute', top: 'calc(100% + 18px)', left: 0,
+                        minWidth: '760px', maxWidth: 'calc(100vw - 48px)',
+                        transform: `translateY(${activeDropdown === link.label ? '0' : '10px'})`,
                         opacity: activeDropdown === link.label ? 1 : 0,
                         visibility: activeDropdown === link.label ? 'visible' : 'hidden',
                         transition: 'opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease',
                       }}>
-                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '16px 0 0' }}>
-                          {[serviceMegaMenu.col1, serviceMegaMenu.col2].map((col, i) => (
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', padding: '16px 0 0' }}>
+                          {serviceMegaMenu.map((col, i) => (
                             <div key={col.heading} style={{
-                              padding: i === 0 ? '0 8px 0 16px' : '0 16px 0 8px',
-                              borderLeft: i === 1 ? '1px solid var(--border-soft)' : undefined,
+                              padding: i === 0 ? '0 8px 0 16px' : i === serviceMegaMenu.length - 1 ? '0 16px 0 8px' : '0 8px',
+                              borderLeft: i > 0 ? '1px solid var(--border-soft)' : undefined,
                             }}>
                               <div style={{
                                 fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase',

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import Link from 'next/link'
 import { gsap } from 'gsap'
 
 export interface Service {
@@ -11,6 +12,8 @@ export interface Service {
   description: string
   features: string[]
   callout?: string
+  /** Dedicated page for this service, kept at its original URL */
+  pageHref?: string
 }
 
 interface ServicesAccordionProps {
@@ -350,15 +353,32 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
                           {service.callout}
                         </div>
                       )}
-                      <a
-                        href="https://www.priviahealth.com/practice/victory-medical/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-primary"
-                        style={{ padding: '12px 24px', fontSize: '0.8rem' }}
-                      >
-                        Book This Service
-                      </a>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                        <a
+                          href="https://www.priviahealth.com/practice/victory-medical/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn-primary"
+                          style={{ padding: '12px 24px', fontSize: '0.8rem' }}
+                        >
+                          Book This Service
+                        </a>
+                        {service.pageHref && (
+                          <Link
+                            href={service.pageHref}
+                            style={{
+                              fontSize: '0.8rem',
+                              fontWeight: 600,
+                              letterSpacing: '0.05em',
+                              color: 'var(--copper)',
+                              textDecoration: 'none',
+                              whiteSpace: 'nowrap',
+                            }}
+                          >
+                            Full {service.title} page →
+                          </Link>
+                        )}
+                      </div>
                     </div>
 
                     {/* Right: features grid */}

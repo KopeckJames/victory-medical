@@ -51,7 +51,7 @@ export default function AIHealthChat() {
         setTimeout(() => {
           setMessages([{
             role: 'assistant',
-            content: "Hi! I'm the Victory Medical AI assistant. I can help you find the right service, answer health questions, or help you book an appointment. What can I help you with today?",
+            content: "Hi there — I'm Victory Medical's AI assistant, here to help with services, hours, or getting you booked. What's going on today?",
           }])
         }, 300)
       }
@@ -136,7 +136,7 @@ export default function AIHealthChat() {
     } catch {
       setMessages(prev => [
         ...prev.slice(0, -1),
-        { role: 'assistant', content: "I'm having trouble connecting right now. Please call us at (512) 462-3627 or visit our contact page." },
+        { role: 'assistant', content: "Sorry — I'm having trouble connecting right now. Give us a call at (512) 462-3627 and someone will help you out." },
       ])
     } finally {
       setIsLoading(false)
@@ -191,7 +191,7 @@ export default function AIHealthChat() {
               <div style={{
                 fontSize: '0.875rem', fontWeight: 600,
                 color: 'var(--white)', fontFamily: 'var(--font-playfair)',
-              }}>Victory Health AI</div>
+              }}>Victory Medical</div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span style={{
                   width: '6px', height: '6px', borderRadius: '50%',
@@ -199,7 +199,7 @@ export default function AIHealthChat() {
                   boxShadow: '0 0 6px rgba(34,197,94,0.6)',
                 }} />
                 <span style={{ fontSize: '0.65rem', color: 'rgba(26,58,71,0.5)', letterSpacing: '0.05em' }}>
-                  Online · Instant responses
+                  Virtual assistant · replies right away
                 </span>
               </div>
             </div>
@@ -225,7 +225,7 @@ export default function AIHealthChat() {
             <div style={{ textAlign: 'center', padding: '20px 0' }}>
               <div style={{ fontSize: '2rem', marginBottom: '12px' }}>⚕</div>
               <p style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.4)', lineHeight: 1.6 }}>
-                Your personal Victory Medical guide.<br/>Ask me anything about our services.
+                Questions about a service, a symptom,<br/>or booking a visit? Ask away.
               </p>
             </div>
           )}
@@ -366,7 +366,7 @@ export default function AIHealthChat() {
           backgroundColor: 'rgba(0,0,0,0.1)',
           flexShrink: 0,
         }}>
-          AI assistant for general info only. Not medical advice.
+          Virtual assistant · general info, not medical advice. Call (512) 462-3627 for care.
         </div>
       </div>
 
@@ -387,7 +387,7 @@ export default function AIHealthChat() {
           position: 'relative',
           zIndex: 1,
         }}
-        aria-label="Open AI health assistant"
+        aria-label="Open Victory Medical chat"
       >
         {isOpen ? (
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">

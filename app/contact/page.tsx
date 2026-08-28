@@ -71,6 +71,24 @@ const locations = [
     mapEmbed: null,
     featured: false,
   },
+  {
+    name: 'VMC Pharmacy — Inside Victory Medical Main',
+    address: '4303 Victory Drive',
+    city: 'Austin, TX 78704',
+    phone: '(512) 279-0985',
+    email: 'info@vmcpharmacy.com',
+    fax: null,
+    hours: [
+      { days: 'Monday – Friday', time: '8:00 AM – 7:00 PM' },
+      { days: 'Saturday', time: '9:00 AM – 5:00 PM' },
+      { days: 'Sunday', time: '12:00 PM – 5:00 PM' },
+    ],
+    drawStation: null,
+    services: ['Compounding', 'Traditional Prescriptions', 'Peptides', 'Vitamins & Supplements', 'Ships to 20 States'],
+    mapUrl: 'https://maps.google.com/?q=4303+Victory+Drive+Austin+TX+78704',
+    mapEmbed: null,
+    featured: false,
+  },
 ]
 
 const bookingOptions = [

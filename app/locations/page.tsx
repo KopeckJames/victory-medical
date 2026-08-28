@@ -71,8 +71,9 @@ export default function LocationsPage() {
               lineHeight: 1.7,
             }}>
               Three Central Texas locations — South Austin, Ben White MedSpa, and Westlake
-              Hills — plus statewide telemedicine. Walk-ins always welcome at our primary care
-              and urgent care campuses.
+              Hills — plus our full-service compounding pharmacy on the Victory Drive campus
+              and statewide telemedicine. Walk-ins always welcome at our primary care and
+              urgent care campuses.
             </p>
           </div>
         </section>
@@ -446,6 +447,120 @@ export default function LocationsPage() {
                   </div>
                 </div>
               </div>
+
+              {/* VMC Pharmacy — inside the Victory Drive campus */}
+              <div style={{
+                borderRadius: '16px',
+                overflow: 'hidden',
+                border: '1px solid rgba(26,58,71,0.09)',
+                backgroundColor: 'rgba(26,58,71,0.025)',
+                display: 'flex',
+                flexDirection: 'column',
+              }}>
+                <div style={{ height: '3px', background: 'linear-gradient(90deg, rgba(217,139,31,0.6), transparent)' }} />
+                <div style={{ padding: '32px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <span style={{
+                    display: 'inline-block',
+                    fontSize: '0.62rem', letterSpacing: '0.12em', textTransform: 'uppercase',
+                    fontWeight: 600, color: 'rgba(191,122,27,0.95)',
+                    backgroundColor: 'rgba(217,139,31,0.08)',
+                    border: '1px solid rgba(217,139,31,0.25)',
+                    borderRadius: '20px', padding: '4px 12px', marginBottom: '16px',
+                  }}>
+                    Full-Service Compounding Pharmacy
+                  </span>
+
+                  <h2 style={{
+                    fontFamily: 'var(--font-playfair)',
+                    fontSize: '1.5rem', fontWeight: 400,
+                    color: 'var(--white)', marginBottom: '16px', lineHeight: 1.2,
+                  }}>
+                    VMC Pharmacy
+                  </h2>
+
+                  <div style={{ marginBottom: '20px' }}>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)', marginBottom: '2px' }}>
+                      4303 Victory Drive
+                    </div>
+                    <div style={{ fontSize: '0.875rem', color: 'rgba(26,58,71,0.75)', marginBottom: '6px' }}>
+                      Austin, TX 78704
+                    </div>
+                    <div style={{ fontSize: '0.78rem', color: 'rgba(26,58,71,0.5)', marginBottom: '12px', fontStyle: 'italic' }}>
+                      Inside Victory Medical Main
+                    </div>
+                    <a href="tel:5122790985" style={{
+                      fontSize: '1rem', fontWeight: 600, color: 'var(--copper)', textDecoration: 'none',
+                    }}>
+                      (512) 279-0985
+                    </a>
+                  </div>
+
+                  <div style={{ marginBottom: '20px' }}>
+                    <div style={{
+                      fontSize: '0.6rem', letterSpacing: '0.12em', textTransform: 'uppercase',
+                      color: 'var(--gold)', fontWeight: 600, marginBottom: '8px',
+                    }}>
+                      Hours
+                    </div>
+                    {[
+                      { days: 'Mon – Fri', time: '8am – 7pm' },
+                      { days: 'Saturday', time: '9am – 5pm' },
+                      { days: 'Sunday', time: '12pm – 5pm' },
+                    ].map((h) => (
+                      <div key={h.days} style={{
+                        display: 'flex', justifyContent: 'space-between',
+                        padding: '6px 0', borderBottom: '1px solid rgba(26,58,71,0.05)',
+                        fontSize: '0.8rem',
+                      }}>
+                        <span style={{ color: 'rgba(26,58,71,0.5)' }}>{h.days}</span>
+                        <span style={{ color: 'rgba(26,58,71,0.85)', fontWeight: 500 }}>{h.time}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div style={{ marginBottom: '20px' }}>
+                    {['Custom compounding on site', 'Prescriptions ship to 20 states', 'Call option 1 from the main line'].map((h) => (
+                      <div key={h} style={{
+                        display: 'flex', alignItems: 'center', gap: '8px',
+                        fontSize: '0.8rem', color: 'rgba(26,58,71,0.65)', marginBottom: '6px',
+                      }}>
+                        <span style={{
+                          width: '5px', height: '5px', borderRadius: '50%',
+                          backgroundColor: 'rgba(217,139,31,0.8)', flexShrink: 0,
+                        }} />
+                        {h}
+                      </div>
+                    ))}
+                  </div>
+
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginBottom: '28px', flex: 1 }}>
+                    {['Compounded Medications', 'Traditional Prescriptions', 'Peptides', 'Vitamins & Supplements', 'Hormone Compounds', 'Weight Loss Compounds'].map((s) => (
+                      <span key={s} style={{
+                        fontSize: '0.68rem', padding: '3px 10px',
+                        backgroundColor: 'rgba(26,58,71,0.05)',
+                        border: '1px solid rgba(26,58,71,0.1)',
+                        borderRadius: '20px', color: 'rgba(26,58,71,0.65)',
+                      }}>
+                        {s}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                    <Link href="/pharmacy" className="btn-primary" style={{ padding: '10px 20px', fontSize: '0.75rem' }}>
+                      Pharmacy Services
+                    </Link>
+                    <a
+                      href="https://www.vmcpharmacy.com/"
+                      target="_blank" rel="noopener noreferrer"
+                      className="btn-outline"
+                      style={{ padding: '10px 20px', fontSize: '0.75rem' }}
+                    >
+                      vmcpharmacy.com ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -538,9 +653,12 @@ export default function LocationsPage() {
         /* Two sub-cards: side-by-side on desktop */
         .loc-sub-grid {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: repeat(3, 1fr);
           gap: 24px;
           align-items: stretch;
+        }
+        @media (max-width: 1100px) {
+          .loc-sub-grid { grid-template-columns: 1fr 1fr; }
         }
 
         /* Tablet: featured stacks, sub-cards stay 2-col */

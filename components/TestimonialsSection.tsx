@@ -129,7 +129,6 @@ export default function TestimonialsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const row1Ref = useRef<HTMLDivElement>(null)
   const row2Ref = useRef<HTMLDivElement>(null)
-  const ratingRef = useRef<HTMLSpanElement>(null)
   const row1TweenRef = useRef<gsap.core.Tween | null>(null)
   const row2TweenRef = useRef<gsap.core.Tween | null>(null)
 
@@ -147,18 +146,6 @@ export default function TestimonialsSection() {
           scrollTrigger: { trigger: '.testimonials-label', start: 'top 85%' },
         }
       )
-
-      // Rating counter
-      if (ratingRef.current) {
-        const obj = { val: 0 }
-        gsap.to(obj, {
-          val: 4.3, duration: 1.5, ease: 'power3.out',
-          scrollTrigger: { trigger: ratingRef.current, start: 'top 85%', once: true },
-          onUpdate: () => {
-            if (ratingRef.current) ratingRef.current.textContent = obj.val.toFixed(1)
-          },
-        })
-      }
 
       // Row 1: scroll left
       if (row1Ref.current) {
@@ -228,25 +215,6 @@ export default function TestimonialsSection() {
             }}>
               What Our Patients Say
             </h2>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div>
-              <div style={{
-                fontFamily: 'var(--font-playfair)',
-                fontSize: '2.5rem', fontWeight: 600,
-                color: 'var(--white)', lineHeight: 1,
-              }}>
-                <span ref={ratingRef}>0.0</span>
-              </div>
-              <div style={{ display: 'flex', gap: '2px', marginTop: '4px' }}>
-                {[1,2,3,4].map(i => (
-                  <svg key={i} width="14" height="14" viewBox="0 0 14 14" fill="#f5c518">
-                    <path d="M7 1L8.8 5.2L13.4 5.6L10 8.6L11 13.2L7 10.8L3 13.2L4 8.6L0.6 5.6L5.2 5.2L7 1Z"/>
-                  </svg>
-                ))}
-              </div>
-              <div style={{ fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)', marginTop: '4px' }}>1.6k reviews</div>
-            </div>
           </div>
         </div>
       </div>

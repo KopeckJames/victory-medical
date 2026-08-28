@@ -12,6 +12,7 @@ import TestimonialsSection from '@/components/TestimonialsSection'
 import LocationsSection from '@/components/LocationsSection'
 import NewsletterSection from '@/components/NewsletterSection'
 import CTASection from '@/components/CTASection'
+import PriviaSection from '@/components/PriviaSection'
 import Footer from '@/components/Footer'
 import SectionDivider from '@/components/SectionDivider'
 
@@ -39,6 +40,7 @@ export default function HomePage() {
         <LocationsSection />
         <NewsletterSection />
         <CTASection />
+        <PriviaSection />
       </main>
       <Footer />
     </>

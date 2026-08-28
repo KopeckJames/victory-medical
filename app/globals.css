@@ -238,7 +238,15 @@ a:hover { color: var(--accent); }
   to { transform: translateX(-50%); }
 }
 .marquee-track { animation: marquee 30s linear infinite; }
-.marquee-track:hover { animation-play-state: paused; }
+/* Pause on hover or keyboard focus so a moving service is actually clickable */
+.marquee-track:hover,
+.marquee-track:focus-within { animation-play-state: paused; }
+.marquee-link:hover { color: var(--accent) !important; }
+.marquee-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
 
 /* Custom Cursor — disabled on light theme for cleaner medical feel */
 /* @media (pointer: fine) { * { cursor: none !important; } } */

@@ -111,7 +111,7 @@ const serviceMegaMenu = [
       { label: 'Medical Weight Loss', href: '/weight-loss' },
       { label: 'Ketamine Therapy', href: '/ketamine' },
       { label: 'Peptide Therapy', href: '/peptides' },
-      { label: 'Pharmacy', href: '/pharmacy' },
+      { label: 'VMC Pharmacy', href: '/pharmacy' },
     ],
   },
   {
@@ -174,6 +174,7 @@ const navLinks: NavLink[] = [
       { label: 'Austin — Victory Drive', href: '/locations/austin' },
       { label: 'Westlake Hills', href: '/locations/westlake-hills' },
       { label: 'MedSpa — Ben White', href: '/locations/ben-white' },
+      { label: 'VMC Pharmacy', href: '/pharmacy' },
     ],
   },
   { label: 'Podcasts', href: '/blog' },

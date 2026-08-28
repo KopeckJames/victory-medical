@@ -12,7 +12,7 @@ const footerLinks = {
     { label: 'Ketamine Therapy', href: '/services#ketamine' },
     { label: 'Peptide Therapy', href: '/peptides' },
     { label: 'Hormone Therapy', href: '/services#hormones' },
-    { label: 'Pharmacy', href: '/services#pharmacy' },
+    { label: 'VMC Pharmacy', href: '/pharmacy' },
   ],
   medspa: [
     { label: 'Botox & Dysport', href: '/medspa#injectables' },

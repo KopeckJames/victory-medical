@@ -72,6 +72,17 @@ export async function POST(request: Request) {
               controller.enqueue(encoder.encode(chunk.delta.text))
             }
           }
+        } catch (error) {
+          // Response headers are already flushed by this point, so the outer
+          // catch can no longer turn this into a JSON error. Without this
+          // branch an API failure closed the stream silently and the caller
+          // saw an empty 200 with nothing logged.
+          console.error('Chat API stream error:', error)
+          controller.enqueue(
+            encoder.encode(
+              "I'm having trouble connecting right now. Please call us at (512) 462-3627 and our team can help."
+            )
+          )
         } finally {
           controller.close()
         }

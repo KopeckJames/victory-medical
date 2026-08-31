@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
@@ -111,6 +112,18 @@ export default function RootLayout({
         <StickyBookingBar />
         <AIHealthChat />
         <Analytics />
+
+        {/* Klara patient messaging. The queue must exist before the bundle
+            evaluates it, so the config runs beforeInteractive. */}
+        <Script id="klara-config" strategy="beforeInteractive">
+          {`window.klaraWidget = window.klaraWidget || [];
+window.klaraWidget.push(["setWidgetId", "66394cd9-4a74-4e55-8aff-8e31f58f8f7a"]);`}
+        </Script>
+        <Script
+          id="klara-widget"
+          src="https://s3.amazonaws.com/widget-frontend.klara.com/bundle.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   )

@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar'
 import PageVisual from '@/components/PageVisual'
 import Footer from '@/components/Footer'
 import Breadcrumb from '@/components/Breadcrumb'
+import BirdeyeWidget from '@/components/BirdeyeWidget'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -581,6 +582,20 @@ export default function ReviewsPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* ── Birdeye review widgets ───────────────────────────────── */}
+        <section style={{ backgroundColor: 'var(--teal)', padding: '60px 0' }}>
+          <div className="container">
+            <BirdeyeWidget
+              id="birdeye-9915183"
+              src="https://birdeye.com/embed/v7/170561075358063/9/9876543219915183"
+            />
+            <BirdeyeWidget
+              id="birdeye-9915184"
+              src="https://birdeye.com/embed/v7/170561074111111/9/9876543219915184"
+            />
           </div>
         </section>
 

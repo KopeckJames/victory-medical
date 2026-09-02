@@ -149,14 +149,14 @@ export default function AIHealthChat() {
   }
 
   return (
-    <div style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 9000 }}>
+    <div style={{ position: 'fixed', bottom: '24px', left: '24px', zIndex: 9000 }}>
       {/* Chat Panel */}
       <div
         ref={panelRef}
         style={{
           position: 'absolute',
           bottom: '72px',
-          right: 0,
+          left: 0,
           width: 'min(380px, calc(100vw - 32px))',
           height: 'min(560px, calc(100vh - 120px))',
           backgroundColor: '#f5fbfc',

@@ -54,7 +54,7 @@ function getRecommendation(answers: string[]): Recommendation[] {
     return [
       {
         service: 'Medical Spa',
-        description: 'Physician-supervised aesthetic treatments including injectables, laser treatments, CoolSculpting, and more. Free consultation available.',
+        description: 'Physician-supervised aesthetic treatments including injectables, laser treatments, CoolSculpting, and more.',
         href: '/medspa',
         cta: 'Explore MedSpa',
         booking: 'https://victory.janeapp.com/',
@@ -68,14 +68,14 @@ function getRecommendation(answers: string[]): Recommendation[] {
         description: 'IV ketamine infusion for treatment-resistant depression, PTSD, anxiety, and chronic pain. Physician-monitored with 70%+ response rates.',
         href: '/services#ketamine',
         cta: 'Learn About Ketamine',
-        booking: 'https://www.priviahealth.com/practice/victory-medical/',
+        booking: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
       },
       {
         service: 'Hormone Replacement (Club Longevity)',
         description: 'Bioidentical hormone therapy to restore vitality, energy, and mental clarity. Comprehensive bloodwork and personalized protocols.',
         href: '/services#hormones',
         cta: 'Explore Club Longevity',
-        booking: 'https://www.priviahealth.com/practice/victory-medical/',
+        booking: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
       },
     ]
   }
@@ -86,7 +86,7 @@ function getRecommendation(answers: string[]): Recommendation[] {
         description: 'Physician-supervised programs with GLP-1 medications, metabolic testing, and ongoing support. Science-backed, sustainable results.',
         href: '/services#weight-loss',
         cta: 'Learn About Weight Loss',
-        booking: 'https://www.priviahealth.com/practice/victory-medical/',
+        booking: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
       },
     ]
   }
@@ -98,7 +98,7 @@ function getRecommendation(answers: string[]): Recommendation[] {
         description: 'Walk-ins welcome, extended hours, on-site labs and X-ray. We see you today — no appointment needed.',
         href: '/services#urgent-care',
         cta: 'Find Urgent Care',
-        booking: 'https://www.priviahealth.com/practice/victory-medical/',
+        booking: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
       },
     ]
   }
@@ -108,14 +108,14 @@ function getRecommendation(answers: string[]): Recommendation[] {
       description: 'Comprehensive primary care with your dedicated provider. Annual physicals, chronic disease management, and personalized preventive care.',
       href: '/services#primary-care',
       cta: 'Book Primary Care',
-      booking: 'https://www.priviahealth.com/practice/victory-medical/',
+      booking: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
     },
     {
       service: 'Allergy Services',
       description: 'Our exclusive Harvard Protocol provides lasting allergy relief in months, not years. Unique to Victory Medical in Central Texas.',
       href: '/services#allergy',
       cta: 'Learn About Allergy Care',
-      booking: 'https://www.priviahealth.com/practice/victory-medical/',
+      booking: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
     },
   ]
 }

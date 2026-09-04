@@ -211,14 +211,6 @@ export default function MedSpaPage() {
               >
                 Book MedSpa Appointment
               </a>
-              <a
-                href="https://victory.janeapp.com/#/consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-              >
-                Free Consultation
-              </a>
             </div>
 
             {/* Location note */}

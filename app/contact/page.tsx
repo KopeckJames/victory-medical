@@ -96,7 +96,7 @@ const bookingOptions = [
     title: 'Primary Care & Urgent Care',
     description: 'Book with our physicians, PAs, and NPs for family medicine, urgent care, allergy services, weight loss, hormone therapy, and more.',
     cta: 'Book Online with Privia Health',
-    url: 'https://www.priviahealth.com/practice/victory-medical/',
+    url: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
     note: 'Available 24/7 online',
   },
   {
@@ -105,13 +105,6 @@ const bookingOptions = [
     cta: 'Book MedSpa Online',
     url: 'https://victory.janeapp.com/',
     note: 'Powered by Jane App',
-  },
-  {
-    title: 'MedSpa Consultation',
-    description: 'Not sure which treatment is right for you? Schedule a free consultation with one of our MedSpa providers.',
-    cta: 'Schedule Free Consultation',
-    url: 'https://victory.janeapp.com/#/consultation',
-    note: 'Complimentary — no obligation',
   },
   {
     title: 'Patient Portal',

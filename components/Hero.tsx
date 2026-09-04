@@ -332,7 +332,7 @@ export default function Hero() {
             {/* CTAs */}
             <div ref={ctaRef} style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '64px' }}>
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

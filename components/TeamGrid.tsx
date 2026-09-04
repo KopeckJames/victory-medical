@@ -16,6 +16,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   'Physical Medicine': '#6aa88a',
   MDVIP: '#22b8d1',
   Pharmacy: '#8bb8a8',
+  Administration: '#a0897a',
 }
 
 function getCategoryColor(categories: string[]) {
@@ -343,7 +344,7 @@ export default function TeamGrid({ team }: TeamGridProps) {
           color: 'rgba(26,58,71,0.25)',
           display: 'flex', alignItems: 'center',
         }}>
-          {filtered.length} provider{filtered.length !== 1 ? 's' : ''}
+          {filtered.length} team member{filtered.length !== 1 ? 's' : ''}
         </span>
       </div>
 
@@ -376,7 +377,7 @@ export default function TeamGrid({ team }: TeamGridProps) {
             ◎
           </div>
           <div style={{ fontSize: '1rem', color: 'rgba(26,58,71,0.5)', fontFamily: 'var(--font-playfair)' }}>
-            No providers in this category
+            No team members in this category
           </div>
           <div style={{ fontSize: '0.8rem', color: 'rgba(26,58,71,0.3)', maxWidth: '300px', lineHeight: 1.6 }}>
             Try selecting a different department or view all providers.

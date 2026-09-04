@@ -252,7 +252,7 @@ export default function AustinLocationPage() {
             {/* CTA buttons */}
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -703,7 +703,7 @@ export default function AustinLocationPage() {
                   {
                     label: 'Privia Patient Portal',
                     value: 'priviahealth.com',
-                    href: 'https://www.priviahealth.com/practice/victory-medical/',
+                    href: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
                     isLink: true,
                   },
                 ].map((item) => (
@@ -794,7 +794,7 @@ export default function AustinLocationPage() {
               style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}
             >
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

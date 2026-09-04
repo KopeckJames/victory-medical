@@ -34,7 +34,6 @@ const insurers = [
 const selfPayRates = [
   { service: 'Urgent Care Visit', price: '$75 – $150', note: 'Walk-in, no appointment needed' },
   { service: 'Annual Physical', price: 'Call for pricing', note: 'Comprehensive preventive exam' },
-  { service: 'MedSpa Consultation', price: 'Free', note: 'No obligation' },
   { service: 'Botox', price: 'Starting at $11/unit', note: 'Physician-supervised' },
   { service: 'IV Vitamin Therapy', price: 'Starting at $125', note: 'Custom-blended infusions' },
   { service: 'Ketamine Consultation', price: 'Call for pricing', note: 'Covered by some plans' },
@@ -130,7 +129,7 @@ export default function InsurancePage() {
                 Call to Verify Coverage
               </a>
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"
@@ -432,7 +431,7 @@ export default function InsurancePage() {
                   Call (512) 462-3627
                 </a>
                 <a
-                  href="https://www.priviahealth.com/practice/victory-medical/"
+                  href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-outline"

@@ -231,7 +231,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>Victory Medical's MDVIP Program</h2>
 <p>Victory Medical joined the MDVIP network in 2020 as part of our long-standing commitment to patient-centered care. Founded in 1996 by Dr. William Franklin with the philosophy that patients deserve to be treated as whole people — not as appointment slots — the MDVIP program aligns naturally with everything our practice has stood for since the beginning.</p>
-<p>To learn whether MDVIP membership at Victory Medical is a good fit for you, call (512) 462-3627 to schedule a no-obligation consultation. Our patient coordinators can answer questions about pricing, Medicare compatibility, and how to transition from standard to concierge care.</p>
+<p>To learn whether MDVIP membership at Victory Medical is a good fit for you, call (512) 462-3627 to schedule a consultation. Our patient coordinators can answer questions about pricing, Medicare compatibility, and how to transition from standard to concierge care.</p>
 `,
   },
 
@@ -280,7 +280,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Victory MedSpa offers DualSculpting — using two CoolSculpting systems simultaneously on different areas of the body. This approach cuts total treatment time in half and is popular for patients targeting both flanks and the abdomen in the same visit, or treating bilateral areas like inner thighs together.</p>
 
 <h2>Scheduling Your Consultation</h2>
-<p>CoolSculpting consultations at Victory MedSpa are complimentary. Call (512) 969-6900 or book online through the Jane App. Our dedicated MedSpa is located at 2108 W Ben White Blvd, Austin, TX 78704 — a standalone MedSpa space that moved to its current location in 2024 to provide a more focused, spa-quality experience for aesthetic patients.</p>
+<p>To book a CoolSculpting consultation at Victory MedSpa, call (512) 969-6900 or book online through the Jane App. Our dedicated MedSpa is located at 2108 W Ben White Blvd, Austin, TX 78704 — a standalone MedSpa space that moved to its current location in 2024 to provide a more focused, spa-quality experience for aesthetic patients.</p>
 `,
   },
 ]

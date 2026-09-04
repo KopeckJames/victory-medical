@@ -179,13 +179,13 @@ export default function NewsletterSection() {
                   fontSize: '1.2rem', fontWeight: 400,
                   color: 'var(--white)', marginBottom: '8px',
                 }}>
-                  Free Consultation Offer
+                  Victory Medical Insider
                 </h3>
                 <p style={{
                   fontSize: '0.8rem', color: 'var(--copper)',
                   marginBottom: '24px', fontWeight: 500,
                 }}>
-                  Subscribe and receive a complimentary 15-min consultation
+                  Subscribe for health tips, seasonal offers, and practice news
                 </p>
 
                 <form onSubmit={handleSubmit}>

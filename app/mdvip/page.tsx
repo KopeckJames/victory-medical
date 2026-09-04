@@ -217,7 +217,7 @@ export default function MDVIPPage() {
                 Request MDVIP Information
               </a>
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"
@@ -651,7 +651,7 @@ export default function MDVIPPage() {
 
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   <a
-                    href="https://www.priviahealth.com/practice/victory-medical/"
+                    href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary"

@@ -276,14 +276,6 @@ export default function BenWhiteLocationPage() {
               >
                 Book via Jane App
               </a>
-              <a
-                href="https://victory.janeapp.com/#/consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-              >
-                Free Consultation
-              </a>
             </div>
           </div>
         </section>
@@ -619,14 +611,6 @@ export default function BenWhiteLocationPage() {
                     a day spa — a medical-grade aesthetic clinic.&rdquo;
                   </p>
                 </blockquote>
-                <a
-                  href="https://victory.janeapp.com/#/consultation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-outline"
-                >
-                  Book Free Consultation
-                </a>
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -892,8 +876,8 @@ export default function BenWhiteLocationPage() {
                 lineHeight: 1.7,
               }}
             >
-              Complimentary consultations available for all new aesthetic patients. Book
-              online through Jane App or call our dedicated MedSpa line.
+              Book online through Jane App or call our dedicated MedSpa line to schedule
+              your visit.
             </p>
             <div
               style={{
@@ -910,14 +894,6 @@ export default function BenWhiteLocationPage() {
                 className="btn-primary"
               >
                 Book via Jane App
-              </a>
-              <a
-                href="https://victory.janeapp.com/#/consultation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline"
-              >
-                Free Consultation
               </a>
             </div>
           </div>

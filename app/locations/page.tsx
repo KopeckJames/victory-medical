@@ -294,7 +294,7 @@ export default function LocationsPage() {
                   </div>
 
                   <div style={{ marginBottom: '20px' }}>
-                    {['Book via Jane App', 'Physician-supervised', 'Free consultations'].map((h) => (
+                    {['Book via Jane App', 'Physician-supervised', 'Board-certified team'].map((h) => (
                       <div key={h} style={{
                         display: 'flex', alignItems: 'center', gap: '8px',
                         fontSize: '0.8rem', color: 'rgba(26,58,71,0.65)', marginBottom: '6px',
@@ -627,7 +627,7 @@ export default function LocationsPage() {
                 care, follow-ups, prescription refills, and more — anywhere in Texas.
               </p>
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank" rel="noopener noreferrer"
                 className="btn-primary"
                 style={{ padding: '12px 28px', fontSize: '0.8rem' }}

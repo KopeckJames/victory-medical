@@ -257,7 +257,7 @@ export default function WestlakeHillsLocationPage() {
             {/* CTA buttons */}
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -884,7 +884,7 @@ export default function WestlakeHillsLocationPage() {
                   {
                     label: 'Privia Patient Portal',
                     value: 'priviahealth.com',
-                    href: 'https://www.priviahealth.com/practice/victory-medical/',
+                    href: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best',
                     isLink: true,
                   },
                 ].map((item) => (
@@ -985,7 +985,7 @@ export default function WestlakeHillsLocationPage() {
               }}
             >
               <a
-                href="https://www.priviahealth.com/practice/victory-medical/"
+                href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"

@@ -129,7 +129,7 @@ export default function StickyBookingBar() {
           </a>
           <a
             ref={bookBtnRef}
-            href="https://www.priviahealth.com/practice/victory-medical/"
+            href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"

@@ -3,7 +3,6 @@ import Script from 'next/script'
 import { Playfair_Display, Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
-import AIHealthChat from '@/components/AIHealthChat'
 import StickyBookingBar from '@/components/StickyBookingBar'
 
 const playfair = Playfair_Display({
@@ -110,7 +109,6 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">Skip to main content</a>
         <div id="main-content">{children}</div>
         <StickyBookingBar />
-        <AIHealthChat />
         <Analytics />
 
         {/* Klara patient messaging. The queue must exist before the bundle

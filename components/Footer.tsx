@@ -24,7 +24,7 @@ const footerLinks = {
   ],
   resources: [
     { label: 'Patient Portal', href: 'https://vmc.pharmetika.com/patient_access/portal/login', external: true },
-    { label: 'Book Appointment', href: 'https://www.priviahealth.com/practice/victory-medical/', external: true },
+    { label: 'Book Appointment', href: 'https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best', external: true },
     { label: 'Book MedSpa', href: 'https://victory.janeapp.com/', external: true },
     { label: 'Buy Supplements', href: 'https://victoryselect.com', external: true },
     { label: 'Careers', href: '/about#careers' },
@@ -93,7 +93,7 @@ export default function Footer() {
               (512) 462-3627
             </a>
             <a
-              href="https://www.priviahealth.com/practice/victory-medical/"
+              href="https://providers.priviahealth.com/search?network_affiliation=Victory+Medical&sort=relevance%2Cnetworks%2Cavailability_density_best"
               target="_blank" rel="noopener noreferrer"
               className="btn-primary"
               style={{ padding: '11px 24px' }}

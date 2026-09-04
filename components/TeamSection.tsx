@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { FEATURED_TEAM } from '@/lib/team-data'
+import { TEAM } from '@/lib/team-data'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)
@@ -92,8 +92,8 @@ export default function TeamSection() {
           </Link>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
-          {FEATURED_TEAM.map((member, i) => (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '18px' }}>
+          {TEAM.filter((m) => !m.anchor && !m.categories.includes('Administration')).map((member, i) => (
             <div
               key={i}
               className="team-card"
@@ -107,7 +107,7 @@ export default function TeamSection() {
             >
               {/* Photo area with curtain */}
               <div style={{
-                height: '200px',
+                height: '190px',
                 position: 'relative',
                 overflow: 'hidden',
                 backgroundColor: 'var(--dark-teal)',
@@ -117,7 +117,7 @@ export default function TeamSection() {
                     src={member.imageUrl}
                     alt={member.name}
                     fill
-                    sizes="200px"
+                    sizes="210px"
                     style={{ objectFit: 'cover', objectPosition: 'center top' }}
                   />
                 ) : (
@@ -159,37 +159,25 @@ export default function TeamSection() {
                 />
               </div>
 
-              {/* Content */}
-              <div style={{ padding: '28px' }}>
+              {/* Content — compact: identity only, no bio */}
+              <div style={{ padding: '18px 20px 20px' }}>
                 <h3 style={{
                   fontFamily: 'var(--font-playfair)',
-                  fontSize: '1.1rem', fontWeight: 400,
-                  color: 'var(--white)', marginBottom: '4px',
+                  fontSize: '1rem', fontWeight: 400,
+                  color: 'var(--white)', marginBottom: '4px', lineHeight: 1.25,
                 }}>
                   {member.name}
                 </h3>
                 <div style={{
-                  fontSize: '0.75rem', color: 'var(--copper)',
-                  marginBottom: '4px', fontWeight: 500,
+                  fontSize: '0.72rem', color: 'var(--copper)',
+                  marginBottom: '10px', fontWeight: 500, lineHeight: 1.4,
                 }}>
                   {member.title}
                 </div>
-                <div style={{
-                  fontSize: '0.7rem', color: 'rgba(26,58,71,0.4)',
-                  marginBottom: '16px', lineHeight: 1.5,
-                }}>
-                  {member.credentials}
-                </div>
-                <p style={{
-                  fontSize: '0.825rem', color: 'rgba(26,58,71,0.65)',
-                  lineHeight: 1.7, marginBottom: '16px',
-                }}>
-                  {member.bio}
-                </p>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                  {member.specialties.map((s) => (
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+                  {member.specialties.slice(0, 3).map((s) => (
                     <span key={s} className="specialty-tag" style={{
-                      fontSize: '0.65rem', padding: '3px 10px',
+                      fontSize: '0.6rem', padding: '2px 9px',
                       backgroundColor: 'rgba(34,184,209,0.08)',
                       border: '1px solid rgba(34,184,209,0.2)',
                       borderRadius: '20px', color: 'rgba(26,58,71,0.7)',

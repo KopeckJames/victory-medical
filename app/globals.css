@@ -550,9 +550,9 @@ footer .disclaimer-text {
 
 /* Why-Victory cards: the desktop 3-up seamless tile stacks into rounded,
    comfortably spaced cards on smaller screens. */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .why-intro { grid-template-columns: 1fr !important; gap: 24px !important; margin-bottom: 48px !important; }
-  .why-grid { grid-template-columns: 1fr 1fr !important; gap: 14px !important; }
+  .why-grid { grid-template-columns: 1fr 1fr !important; gap: 16px !important; }
   .why-card { border-radius: 14px !important; padding: 28px !important; }
   /* Readable, well-wrapped card copy on smaller screens */
   .why-card h3 { font-size: 1.2rem !important; }

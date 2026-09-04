@@ -127,7 +127,7 @@ export default function WhyChooseSection() {
       }} />
 
       <div className="container">
-        <div style={{
+        <div className="why-intro" style={{
           display: 'grid', gridTemplateColumns: '1fr 1fr',
           gap: '80px', marginBottom: '80px', alignItems: 'end',
         }}>
@@ -149,7 +149,7 @@ export default function WhyChooseSection() {
           </p>
         </div>
 
-        <div style={{
+        <div className="why-grid" style={{
           display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '2px',
         }}>
@@ -157,6 +157,7 @@ export default function WhyChooseSection() {
             <div
               key={reason.number}
               ref={(el) => { itemsRef.current[i] = el }}
+              className="why-card"
               style={{
                 padding: '40px',
                 backgroundColor: 'rgba(26,58,71,0.03)',

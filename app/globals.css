@@ -537,10 +537,37 @@ footer .disclaimer-text {
   gap: 60px;
 }
 @media (max-width: 1024px) {
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px 48px; }
 }
+/* Mobile: brand spans full width, the three link groups sit two-across so the
+   footer stays compact instead of one very tall single column. */
 @media (max-width: 640px) {
-  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 24px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-main { padding-top: 44px !important; padding-bottom: 36px !important; }
+  .footer-cta-strip { padding: 32px 0 !important; }
+}
+
+/* Why-Victory cards: the desktop 3-up seamless tile stacks into rounded,
+   comfortably spaced cards on smaller screens. */
+@media (max-width: 900px) {
+  .why-intro { grid-template-columns: 1fr !important; gap: 24px !important; margin-bottom: 48px !important; }
+  .why-grid { grid-template-columns: 1fr 1fr !important; gap: 14px !important; }
+  .why-card { border-radius: 14px !important; padding: 28px !important; }
+  /* Readable, well-wrapped card copy on smaller screens */
+  .why-card h3 { font-size: 1.2rem !important; }
+  .why-card p {
+    font-size: 0.95rem !important;
+    line-height: 1.8 !important;
+    color: rgba(26, 58, 71, 0.72) !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+    hyphens: none;
+  }
+}
+@media (max-width: 560px) {
+  .why-grid { grid-template-columns: 1fr !important; gap: 12px !important; }
+  .why-card { padding: 26px 24px !important; }
 }
 
 /* CTA Section */

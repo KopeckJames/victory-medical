@@ -43,7 +43,7 @@ export default function Footer() {
       }}
     >
       {/* Pre-footer CTA strip */}
-      <div style={{
+      <div className="footer-cta-strip" style={{
         borderBottom: '1px solid rgba(26,58,71,0.06)',
         padding: '48px 0',
         background: 'linear-gradient(135deg, rgba(34,184,209,0.07) 0%, transparent 60%)',
@@ -104,10 +104,10 @@ export default function Footer() {
         </div>
       </div>
       {/* Main Footer */}
-      <div className="container" style={{ paddingTop: '80px', paddingBottom: '60px' }}>
+      <div className="container footer-main" style={{ paddingTop: '80px', paddingBottom: '60px' }}>
         <div className="footer-grid">
           {/* Brand Column */}
-          <div>
+          <div className="footer-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
               <Image
                 src="/Victory-Medical-in-Austin.png"

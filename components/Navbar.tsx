@@ -29,7 +29,6 @@ const HIGHLIGHT = '#d98b1f'
 
 const UTILITY_H = 38
 const MAIN_H = 88
-const MAIN_H_SCROLLED = 64
 
 /* ─── Icons ─── */
 const iconProps = { width: 14, height: 14, viewBox: '0 0 24 24', fill: 'currentColor' } as const
@@ -213,12 +212,10 @@ export default function Navbar() {
         start: 'top -20',
         onEnter: () => {
           gsap.to(utilityRef.current, { height: 0, opacity: 0, duration: 0.35, ease: 'power3.out' })
-          gsap.to(mainRowRef.current, { height: MAIN_H_SCROLLED, duration: 0.4, ease: 'power3.out' })
           gsap.to(logoRef.current, { scale: 0.85, duration: 0.4, ease: 'power3.out' })
         },
         onLeaveBack: () => {
           gsap.to(utilityRef.current, { height: UTILITY_H, opacity: 1, duration: 0.35, ease: 'power3.out' })
-          gsap.to(mainRowRef.current, { height: MAIN_H, duration: 0.4, ease: 'power3.out' })
           gsap.to(logoRef.current, { scale: 1, duration: 0.4, ease: 'power3.out' })
         },
       })
@@ -378,7 +375,7 @@ export default function Navbar() {
           ref={mainRowRef}
           style={{
             height: `${MAIN_H}px`, display: 'flex', alignItems: 'center',
-            backgroundColor: '#ffffff', willChange: 'height',
+            backgroundColor: '#ffffff',
           }}
         >
           <div className="container" style={{
@@ -548,7 +545,7 @@ export default function Navbar() {
             </nav>
 
             {/* Stacked booking CTAs */}
-            <div className="nav-cta-stack" style={{ flexDirection: 'column', gap: '8px', flexShrink: 0 }}>
+            <div className="nav-cta-stack" style={{ flexDirection: 'column', gap: '7px', flexShrink: 0 }}>
               {[
                 { label: 'Book With a Provider', href: BOOK_PROVIDER },
                 { label: 'Book a Mammogram', href: BOOK_MAMMOGRAM },
@@ -560,7 +557,7 @@ export default function Navbar() {
                   rel="noopener noreferrer"
                   style={{
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    minWidth: '200px', padding: '11px 18px',
+                    minWidth: '200px', padding: '9px 18px',
                     backgroundColor: 'var(--accent)', color: '#ffffff',
                     borderRadius: '4px', textDecoration: 'none',
                     fontSize: '0.72rem', fontWeight: 700,

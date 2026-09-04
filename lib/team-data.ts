@@ -114,19 +114,6 @@ export const TEAM: TeamMember[] = [
     notable: 'Army veteran · 37+ years practice · Allergy specialist',
     featured: false,
   },
-  {
-    name: 'Dr. Luke Kotin, MD',
-    title: 'Family Medicine Physician',
-    credentials: 'MD — Texas Tech El Paso · Residency Baylor Scott & White Round Rock',
-    bio: 'Grew up in Central Texas. Developed a passion for primary care and lifestyle medicine while working with underserved communities on the Texas border. In his time off, he performs music, records at home, and loves Italian and Indian cooking.',
-    specialties: ['Family Medicine', 'Lifestyle Medicine', 'Preventive Care'],
-    categories: ['Physicians'],
-    location: 'South Austin',
-    initials: 'LK',
-    imageUrl: '/team/kotin.png',
-    notable: 'Musician & composer · Lifestyle medicine focus',
-    featured: false,
-  },
 
   // ─── NURSE PRACTITIONERS ────────────────────────────────────────────────────
   {
